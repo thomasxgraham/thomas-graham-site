@@ -95,30 +95,8 @@
           <div>
             <section class="story-section" id="tldr">
               <h2 class="section-title">tl;dr</h2>
-              <div class="tldr-layout">
-                <div class="reading-copy">
-                  <p class="body">
-                    AdventHealth’s telephony support team was seeing sustained, high call volume
-                    tied to patients struggling to access the AdventHealth app. The question was:
-                    what was actually driving those calls? To find out, I went directly into the
-                    Five9 call database, reviewed transcripts, and rebuilt the categorization
-                    system from scratch because the existing agent-applied tags were too
-                    inconsistent and too broad to surface meaningful patterns.
-                  </p>
-                  <p class="body">
-                    What emerged was not a list of separate problems. It was a single, systemic
-                    access failure playing out across multiple stages. Patients were not calling
-                    because features were broken. They were calling because the identity and
-                    security system was failing them silently, at multiple points, in ways they
-                    could not understand or recover from on their own.
-                  </p>
-                  <p class="body">
-                    The research reframed the problem from “too many calls” to “our system is not
-                    designed to help patients understand or resolve access failures without human
-                    intervention.”
-                  </p>
-                </div>
-                <article class="note-panel tldr-summary-card">
+              <div class=”tldr-layout”>
+                <article class=”note-panel tldr-summary-card”>
                   <ul class="tldr-summary-list">
                     <li>“Can’t log in” turned out to be a symptom, not a root cause.</li>
                     <li>
@@ -342,24 +320,10 @@
 
             <section class="story-section" id="outcome-research">
               <h2 class="section-title">Outcome of the Research</h2>
-              <div class="story-columns media-right">
-                <div class="reading-copy">
-                  <p class="body">
-                    The research produced a set of structural recommendations organized around five
-                    opportunity areas: evaluating where security steps stack in a single journey
-                    without meaningful added risk reduction; exploring a tiered authentication model
-                    that aligns security requirements with the sensitivity of the data being
-                    accessed; improving the system’s ability to communicate its own state to
-                    patients so they understand why access is blocked and what will actually
-                    resolve it; reducing compounding failure opportunities by preventing retry and
-                    reset actions when the underlying issue is unrelated to credentials; and
-                    aligning Product, Design, and Security teams on a shared access failure
-                    lifecycle so solutions address the same root problem at every layer.
-                  </p>
-                </div>
-                <article class="note-panel">
-                  <div class="label">Recommendations</div>
-                  <ul class="compact-list">
+              <div class=”story-columns media-right”>
+                <article class=”note-panel”>
+                  <div class=”label”>Recommendations</div>
+                  <ul class=”compact-list”>
                     <li>Evaluate where multiple security “doors” stack in a single journey without meaningful added risk reduction.</li>
                     <li>Explore a tiered authentication model that matches friction to the sensitivity of the data being accessed.</li>
                     <li>Make access state visible so patients understand why they are blocked and what resolves it.</li>
@@ -367,15 +331,9 @@
                     <li>Align Product, Design, and Security on one shared access failure lifecycle.</li>
                   </ul>
                 </article>
-                <div class="reading-copy reading-copy-span">
-                  <p class="body">
-                    Following delivery of the telephony findings, the decision was made to explore
-                    a faster-to-implement intervention: testing whether redesigning the “Connect
-                    Your Records” flow, specifically improving the visibility of the codeless
-                    access path, could reduce support call volume. That study ran and produced
-                    important findings of its own. The broader dependency-level recommendations from
-                    this analysis are currently under reassessment as the team determines next
-                    steps.
+                <div class=”reading-copy reading-copy-span”>
+                  <p class=”body”>
+                    The dependency-level recommendations from this analysis fed directly into the Connect Your Records prototype study — the next question in the access investigation. That study tested whether a UI intervention could reduce call volume, found the real issue upstream, and pointed back to the structural failures this analysis had already identified.
                   </p>
                 </div>
               </div>
@@ -424,20 +382,19 @@
           </div>
         </section>
 
-        <section class="section full-bleed-section full-bleed-section-soft" id="contact">
-          <div class="full-bleed-section-inner">
-            <section class="story-section contact-story-panel">
-              <div class="section-kicker">Contact</div>
-              <h2 class="section-title">If you’d like to talk through the study, I’m happy to share more context.</h2>
-              <p class="body">
-                The portfolio version is intentionally focused on the decision story. If you want to
-                discuss the Five9 analysis, the access-failure lifecycle, or where Product, Design,
-                and Security could intervene differently, I’d be glad to continue the conversation.
-              </p>
-              <div class="button-row">
-                <a class="button button-secondary" href="./case-study.html#contact">Get in touch about this study</a>
-              </div>
-            </section>
+        <section class="contact-hero" id="contact" data-content-id="contact.intro">
+          <div class="contact-hero-inner">
+            <div class="section-kicker">Contact</div>
+            <h2 class="section-title">If you’d like to talk through the study, I’m happy to share more context.</h2>
+            <p class="body">
+              If you want to discuss the Five9 analysis, the access-failure lifecycle, or where Product, Design, and Security could intervene at each stage — I’m happy to get into it.
+            </p>
+            <p class="body contact-microcopy">
+              A good conversation is usually a better start than a formal intake form.
+            </p>
+            <div class="button-row">
+              <a class="button button-accent" href="mailto:hello@thomas-graham.me?subject=Telephony%20data%20analysis">Get in touch about this study</a>
+            </div>
           </div>
         </section>
       </main>

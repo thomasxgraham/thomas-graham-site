@@ -5,7 +5,18 @@
       "Bash(git --version)",
       "Bash(git init *)",
       "Bash(git add *)",
-      "Bash(git -c user.name=\"Thomas Graham\" -c user.email=\"thomasxgraham@users.noreply.github.com\" commit -m \"Initial commit: portfolio site\")"
+      "Bash(git -c user.name=\"Thomas Graham\" -c user.email=\"thomasxgraham@users.noreply.github.com\" commit -m \"Initial commit: portfolio site\")",
+      "Bash(git config *)",
+      "Bash(git commit *)",
+      "Bash(ssh-keygen -t ed25519 -f ~/.ssh/dreamhost_deploy -N \"\" -C \"github-actions-deploy\")",
+      "Bash(git remote *)",
+      "Bash(git push *)",
+      "Bash(ssh -T git@github.com)",
+      "Bash(ssh-keygen -t ed25519 -f ~/.ssh/github_thomasxgraham -N \"\" -C \"thomasxgraham-github\")",
+      "Bash(ssh-keyscan github.com)",
+      "Bash(git fetch *)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(python3 -c \"import json,sys; data=json.load\\(sys.stdin\\); print\\(data[0]['text']\\)\")"
     ]
   }
 }
