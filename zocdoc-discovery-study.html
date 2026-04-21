@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Insights from a Zocdoc Search — Thomas Graham</title>
+    <meta
+      name="description"
+      content="A report-based case study about how patients evaluated search, trust, guidance, and booking signals while using ZocDoc."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="brand" href="./index.html">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-copy">
+            <strong>Thomas Graham</strong>
+            <span>UX Researcher · Product Thinker · ResearchOps Builder</span>
+          </span>
+        </a>
+        <nav class="main-nav" aria-label="Primary">
+          <a href="./index.html">Home</a>
+          <a href="./about.html">About</a>
+          <a href="./case-study.html" aria-current="page">Work</a>
+          <a href="./research-reports.html">Reports</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="section stage wave-lines work-stage">
+          <div class="story-head work-head">
+            <div class="case-hero-copy">
+              <div class="micro-label">Case study</div>
+              <h1 class="page-title">Insights from a Zocdoc Search</h1>
+              <p class="story-lead support">
+                Scheduling only works when people believe the results in front of them. This study
+                focused on the moment patients decide whether a provider list feels useful enough to
+                act on or unreliable enough to abandon. If search surfaced the right trust signals
+                early, it could support scheduling adoption. If it forced patients to second-guess
+                insurance coverage, specialty fit, or availability, it would create more work
+                instead of less.
+              </p>
+              <div class="button-row">
+                <a class="button button-secondary button-back" href="./case-study.html">Back to selected work</a>
+              </div>
+            </div>
+              <div class="meta-grid work-meta-grid research-dashboard" aria-label="Study profile">
+                <article class="research-card research-card-number">
+                  <div class="meta-label">Participants</div>
+                  <div class="research-number">7</div>
+                </article>
+                <article class="research-card">
+                  <div class="meta-label">Study type</div>
+                  <div class="meta-copy">Discovery research</div>
+                </article>
+                <article class="research-card">
+                  <div class="meta-label">Methods</div>
+                  <div class="meta-copy">Moderated interviews + task observation</div>
+                </article>
+                <article class="research-card">
+                  <div class="meta-label">Decision area</div>
+                  <div class="meta-copy">Search trust, guided support, and scheduling adoption.</div>
+                </article>
+                <article class="research-card research-card-wide">
+                  <div class="meta-label">Questions explored</div>
+                  <div class="meta-copy">Scheduling adoption, friction points, and guided search behavior</div>
+                </article>
+              </div>
+            </div>
+          </section>
+
+        <section class="section case-layout">
+          <aside class="toc">
+            <div class="micro-label">On this page</div>
+            <a href="#tldr">tl;dr</a>
+            <a href="#what-we-learned">What We Learned</a>
+            <a href="#outcome-research">Outcome of the Research</a>
+            <a href="#continue-exploring">Continue Exploring</a>
+            <a href="#contact">Contact</a>
+          </aside>
+
+          <div>
+            <section class="story-section" id="tldr">
+              <h2 class="section-title">tl;dr</h2>
+              <div class="tldr-layout">
+                <div class="reading-copy">
+                  <p class="body">
+                    This discovery study looked at how patients judged the ZocDoc scheduling
+                    experience in real time: what created confidence, what introduced doubt, and
+                    where guided support helped or slowed them down. The goal was to understand what
+                    would make provider matching feel credible enough for people to keep moving
+                    toward booking.
+                  </p>
+                  <p class="body">
+                    The strongest signals were consistent. Trust rose when insurance, specialty fit,
+                    provider details, and availability aligned. It dropped when the experience asked
+                    patients to do too much interpretation on their own.
+                  </p>
+                </div>
+                <article class="note-panel tldr-summary-card">
+                  <ul class="tldr-summary-list">
+                    <li>Insurance accuracy and verification were top priorities because they quickly signaled whether a provider was actually viable.</li>
+                    <li>ZocDoc’s guided search was appreciated when it narrowed results and saved time.</li>
+                    <li>Provider matching and search result accuracy determined whether the platform felt trustworthy.</li>
+                    <li>Typing stayed the preferred way to search, even when participants were open to voice or AI-assisted input.</li>
+                    <li>Fast filtering and visible availability made it easier for people to compare options and move toward booking.</li>
+                  </ul>
+                </article>
+              </div>
+            </section>
+
+            <section class="story-section" id="what-we-learned">
+              <h2 class="section-title">What We Learned</h2>
+
+              <article class="report-chapter">
+                <div class="story-columns media-right">
+                  <div class="reading-copy">
+                    <h3>Trust Started with Insurance and Accurate Matching</h3>
+                    <p class="body">
+                      Insurance filtering was the first major credibility test. Participants wanted to
+                      believe that the results reflected their current plan, but confidence dropped
+                      quickly when specialty labels felt wrong or the provider mix seemed
+                      inconsistent with what they had asked for.
+                    </p>
+                    <p class="body">
+                      That made insurance more than a filter. It acted as a trust signal. If patients
+                      were unsure whether the system had their coverage right, they began to question
+                      the entire provider list. Several participants wanted stronger ways to verify
+                      that the platform was working from accurate and current insurance information.
+                    </p>
+                    <p class="body">
+                      This also exposed why provider matching mattered so much. A result that looked
+                      slightly off could turn a promising search into a frustrating one because it
+                      signaled that the platform might not understand the patient’s actual need.
+                    </p>
+                  </div>
+                  <figure class="story-media-frame">
+                    <img
+                      src="./assets/zocdoc-inline/gayle-qualifying-insurance.png"
+                      alt="Interview still about insurance qualification from the original study"
+                    />
+                    <figcaption class="study-frame-caption">
+                      Interview still discussing uncertainty around insurance qualification.
+                    </figcaption>
+                  </figure>
+                </div>
+              </article>
+
+              <div class="report-quote-band">
+                <blockquote class="report-quote-copy">
+                  “This says orthopedics, but he’s a physician assistant. There’s no way he does
+                  surgery. So like why? I just, I’m frustrated.”
+                  <cite>Meagan M.</cite>
+                </blockquote>
+              </div>
+
+              <article class="report-chapter">
+                <div class="story-columns media-left">
+                  <figure class="story-media-frame study-graphic-frame">
+                    <img
+                      src="./assets/zocdoc-inline/edgar-guided-search.png"
+                      alt="Guided-search interface still from the original study"
+                    />
+                    <figcaption class="study-frame-caption">
+                      Guided prompts were most helpful when they narrowed the search early and
+                      visibly improved relevance.
+                    </figcaption>
+                  </figure>
+                  <div class="reading-copy">
+                    <h3>Guided Support Helped When It Felt Timely and Optional</h3>
+                    <p class="body">
+                      Guided search was one of the clearest mixed signals in the study. Participants
+                      liked the idea of a flow that could narrow results and reduce the burden of
+                      sorting through too many irrelevant providers.
+                    </p>
+                    <p class="body">
+                      The value was real when the prompts came early enough, clarified the search,
+                      and led to visibly better results. In those moments, the experience felt
+                      supportive.
+                    </p>
+                  </div>
+                  <div class="reading-copy reading-copy-span">
+                    <p class="body">
+                      That same feature became frustrating when it appeared too late, slowed the
+                      process, or seemed disconnected from what the patient was already trying to do.
+                      The study showed that guided support works best as a confidence booster, not as
+                      a forced detour.
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+              <div class="report-quote-band report-quote-band-right">
+                <blockquote class="report-quote-copy">
+                  “I think that {adding more questions to narrow providers} would really slow it
+                  down... and with my insurance, I may have to go to a PCP to get a referral anyway.”
+                  <cite>Robert C.</cite>
+                </blockquote>
+              </div>
+
+              <article class="report-chapter">
+                <div class="story-columns media-right">
+                  <div class="reading-copy">
+                    <h3>Availability and Filtering Determined Whether Results Felt Actionable</h3>
+                    <p class="body">
+                      Once participants reached the results page, the search shifted from discovery to
+                      qualification. Insurance, provider type, and location stayed important, but
+                      availability often became the deciding factor.
+                    </p>
+                    <p class="body">
+                      People were willing to trade reputation or familiarity for a provider who could
+                      be booked quickly. When availability was absent, hard to find, or required a
+                      separate call, the result often stopped feeling useful.
+                    </p>
+                  </div>
+                  <figure class="story-media-frame study-graphic-frame">
+                    <img
+                      src="./assets/zocdoc-inline/louis-provider-availability.png"
+                      alt="Provider availability still from the original study"
+                    />
+                    <figcaption class="study-frame-caption">
+                      Availability often became the deciding signal once participants began
+                      comparing providers.
+                    </figcaption>
+                  </figure>
+                  <div class="reading-copy reading-copy-span">
+                    <p class="body">
+                      This is also where filtering gaps became more costly. Missing sort options,
+                      weak relevance, or results that ignored known criteria made patients open extra
+                      tabs, cross-check Google, or abandon the option entirely. The product had to do
+                      more than list providers. It had to support comparison and action.
+                    </p>
+                  </div>
+                  <figure class="story-media-frame study-graphic-frame story-media-span">
+                    <img
+                      src="./assets/zocdoc-inline/louis-search-results-frustrating.png"
+                      alt="Search results still showing frustrating results from the original study"
+                    />
+                    <figcaption class="study-frame-caption">
+                      Weakly matched results quickly eroded trust in the provider list.
+                    </figcaption>
+                  </figure>
+                </div>
+              </article>
+            </section>
+
+            <section class="story-section">
+              <h2 class="section-title">Secondary observations</h2>
+              <div class="observation-grid">
+                <article class="observation-card">
+                  <h3>Cross-Selling: Relevance and Consent Matter</h3>
+                  <p class="body">
+                    Participants were generally open to being offered alternative provider options,
+                    especially when their first-choice provider was unavailable.
+                  </p>
+                  <p class="body">
+                    However, this openness came with clear boundaries. Participants emphasized the
+                    importance of relevance and consent. They were comfortable being redirected to
+                    non-specialists for general concerns, but when it came to specific conditions,
+                    like dermatological issues or hair loss, they strongly preferred seeing a
+                    specialist.
+                  </p>
+                </article>
+
+                <article class="observation-card">
+                  <h3>Looking for Other Services: Anchored in the Primary Need</h3>
+                  <p class="body">
+                    While the primary goal for most participants was to find a new primary care
+                    provider, many also considered additional services during their search. These
+                    included pediatric care for family members or follow-up appointments for specific
+                    health needs.
+                  </p>
+                  <p class="body">
+                    These secondary considerations were typically prompted by the platform or by the
+                    participant’s own reflection during the process, not by an explicit cross-sell.
+                  </p>
+                </article>
+
+                <article class="observation-card">
+                  <h3>Use of AI and Voice Input: Modern, but Not Always Welcome</h3>
+                  <p class="body">
+                    Participants recognized the potential of AI and voice input to modernize the
+                    search experience, but their enthusiasm was tempered by concerns about control,
+                    privacy, and practicality.
+                  </p>
+                  <p class="body">
+                    Typing remained the preferred method of input, particularly on desktop, where
+                    participants felt more in control and less exposed. Voice input was seen as more
+                    useful on mobile devices, where typing can be cumbersome, but even then it was
+                    considered optional.
+                  </p>
+                </article>
+
+                <article class="observation-card">
+                  <h3>Feature Suggestions: Smarter, Simpler, More Personalized</h3>
+                  <p class="body">
+                    Participants offered a range of thoughtful suggestions for improving the
+                    platform. Many wanted smarter filtering, such as the ability to immediately
+                    narrow results based on known information like insurance or location.
+                  </p>
+                  <p class="body">
+                    Others suggested visual enhancements, like icons or badges to highlight top-rated
+                    providers or those with immediate availability. These ideas point toward a future
+                    where scheduling is not just functional, but personalized and intuitive.
+                  </p>
+                </article>
+              </div>
+            </section>
+
+            <section class="story-section" id="outcome-research">
+              <h2 class="section-title">Outcome of the Research</h2>
+              <div class="story-columns media-right">
+                <div class="reading-copy">
+                  <p class="body">
+                    The study sharpened the product conversation around trust. It showed that search
+                    quality was not simply a relevance problem; it was a confidence problem. Patients
+                    needed stronger proof that the platform understood their insurance, respected
+                    their criteria, and could help them move toward a realistic appointment.
+                  </p>
+                  <p class="body">
+                    That reframed several potential improvements. Insurance qualification needed to
+                    feel more authoritative. Guided search needed to become an assistive layer rather
+                    than a mandatory step. Availability and filtering needed to be treated as action
+                    signals, not just supporting details.
+                  </p>
+                </div>
+                <article class="note-panel">
+                  <div class="label">Implications</div>
+                  <ul class="compact-list">
+                    <li>Strengthen confidence in insurance qualification before patients commit to a result set.</li>
+                    <li>Use guided search to reduce effort, but only when it improves relevance and stays optional.</li>
+                    <li>Treat availability, filtering, and specialty fit as core decision signals in the results experience.</li>
+                  </ul>
+                </article>
+                <div class="reading-copy reading-copy-span">
+                  <p class="body">
+                    It also clarified how important timing is when introducing supportive features.
+                    Participants were open to guidance when it reduced work, but they resisted it when
+                    it arrived too late or took control away from them. That distinction matters in
+                    research because it turns a vague finding about “friction” into a product decision
+                    about sequencing, control, and optionality.
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <section class="section full-bleed-section" id="continue-exploring">
+          <div class="full-bleed-section-inner">
+            <section class="story-section">
+              <h2 class="section-title">Continue Exploring</h2>
+              <div class="related-grid">
+                <article class="related-card">
+                  <div class="label">Related case study</div>
+                  <h3>Virtual Chat Assistant Study</h3>
+                  <p class="body">
+                    A survey-based study about how patients evaluated automation, human fallback,
+                    and the conditions under which a chat assistant would feel useful rather than
+                    intrusive.
+                  </p>
+                  <div class="tag-list" aria-label="Related case study tags">
+                    <span class="tag">Survey</span>
+                    <span class="tag">Kano model</span>
+                  </div>
+                  <div class="button-row">
+                    <a class="button button-secondary" href="./virtual-chat-assistant-study.html">Read this case study</a>
+                  </div>
+                </article>
+                <article class="related-card">
+                  <div class="label">Selected work</div>
+                  <h3>Browse more research work</h3>
+                  <p class="body">
+                    Explore the broader work archive for additional studies, enterprise projects,
+                    and research-led product work across healthcare and complex systems.
+                  </p>
+                  <div class="tag-list" aria-label="Related archive tags">
+                    <span class="tag">Archive</span>
+                    <span class="tag">Research portfolio</span>
+                  </div>
+                  <div class="button-row">
+                    <a class="button button-secondary" href="./case-study.html">View selected work</a>
+                  </div>
+                </article>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <section class="section full-bleed-section full-bleed-section-soft" id="contact">
+          <div class="full-bleed-section-inner">
+            <section class="story-section contact-story-panel">
+              <div class="section-kicker">Contact</div>
+              <h2 class="section-title">If you’d like to talk through the study, I’m happy to share more context.</h2>
+              <p class="body">
+                The portfolio version is intentionally focused on the research story. If you want to
+                discuss the study in more detail, I’d be glad to continue the conversation.
+              </p>
+              <div class="button-row">
+                <a class="button button-secondary" href="./case-study.html#contact">Get in touch about this study</a>
+              </div>
+            </section>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer-bar">
+        <span class="footer-note">Thomas Graham — UX Researcher</span>
+        <div class="dot-row" aria-hidden="true">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

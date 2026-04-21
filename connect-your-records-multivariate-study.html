@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Connect Your Records: Multivariate Prototype Study — Thomas Graham</title>
+    <meta
+      name="description"
+      content="A case study about testing three Connect Your Records flow variants to understand whether clearer codeless access could reduce support demand, and learning that the deeper issue was mental-model clarity rather than UI visibility."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="brand" href="./index.html">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-copy">
+            <strong>Thomas Graham</strong>
+            <span>UX Researcher · Product Thinker · ResearchOps Builder</span>
+          </span>
+        </a>
+        <nav class="main-nav" aria-label="Primary">
+          <a href="./index.html">Home</a>
+          <a href="./about.html">About</a>
+          <a href="./case-study.html" aria-current="page">Work</a>
+          <a href="./research-reports.html">Reports</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="section stage wave-lines work-stage">
+          <div class="story-head work-head">
+            <div class="case-hero-copy">
+              <div class="micro-label">Case study</div>
+              <h1 class="page-title">Connect Your Records: Multivariate Prototype Study</h1>
+              <p class="story-lead support">
+                After identifying support call volume tied to patients struggling to connect their
+                health records, the team tested whether improving the visibility and clarity of the
+                “Connect Your Records” flow could reduce the likelihood of patients calling support.
+                I designed and ran a between-subjects prototype study to test whether surfacing the
+                codeless pathway more clearly would actually change that behavior.
+              </p>
+              <div class="button-row">
+                <a class="button button-secondary button-back" href="./case-study.html"
+                  >Back to selected work</a
+                >
+              </div>
+            </div>
+            <div class="meta-grid work-meta-grid research-dashboard" aria-label="Study profile">
+              <article class="research-card research-card-number">
+                <div class="meta-label">Participants</div>
+                <div class="research-number">45</div>
+              </article>
+              <article class="research-card">
+                <div class="meta-label">Study type</div>
+                <div class="meta-copy">Between-subjects prototype study</div>
+              </article>
+              <article class="research-card">
+                <div class="meta-label">Methods</div>
+                <div class="meta-copy">
+                  3 variants, 15 participants per variant, post-task ratings, and open-text
+                  responses
+                </div>
+              </article>
+              <article class="research-card">
+                <div class="meta-label">Decision area</div>
+                <div class="meta-copy">
+                  Whether clearer codeless access could reduce support demand in the Connect Your
+                  Records flow
+                </div>
+              </article>
+              <article class="research-card research-card-wide">
+                <div class="meta-label">Questions explored</div>
+                <div class="meta-copy">
+                  Confidence before and after task, expectation alignment, likelihood to call
+                  support, and whether the codeless path was actually being missed
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section case-layout">
+          <aside class="toc">
+            <div class="micro-label">On this page</div>
+            <a href="#tldr">tl;dr</a>
+            <a href="#what-we-learned">What We Learned</a>
+            <a href="#outcome-research">Outcome of the Research</a>
+            <a href="#continue-exploring">Continue Exploring</a>
+            <a href="#contact">Contact</a>
+          </aside>
+
+          <div>
+            <section class="story-section" id="tldr">
+              <h2 class="section-title">tl;dr</h2>
+              <div class="tldr-layout">
+                <div class="reading-copy">
+                  <p class="body">
+                    After identifying sustained support call volume tied to patients struggling to
+                    connect their health records, the team tested whether improving the visibility
+                    and clarity of the “Connect Your Records” flow could reduce the likelihood of
+                    patients calling support. Specifically: if we made the codeless pathway more
+                    obvious and the process more self-explanatory, would fewer patients pick up the
+                    phone?
+                  </p>
+                  <p class="body">
+                    I designed and ran a between-subjects prototype study across 45 participants,
+                    fifteen per variant, testing the current production experience against two
+                    redesigned alternatives. The results were clear, if counterintuitive: patients
+                    generally navigated all three variants successfully and felt confident in their
+                    next steps. The current design performed best.
+                  </p>
+                  <p class="body">
+                    The study’s most important finding wasn’t which variant won. It was that
+                    visibility and clarity improvements weren’t the right lever. Call volume was
+                    being driven by something the interface couldn’t solve: patients didn’t
+                    understand what the code was, where it came from, or what it meant for their
+                    records.
+                  </p>
+                </div>
+                <article class="note-panel tldr-summary-card">
+                  <ul class="tldr-summary-list">
+                    <li>All three variants performed well on clarity and navigability.</li>
+                    <li>
+                      The current Control design outperformed both redesigns on post-task
+                      confidence and expectation alignment while keeping call likelihood low.
+                    </li>
+                    <li>
+                      The Preliminary decision-first variant performed worst across nearly every
+                      measure.
+                    </li>
+                    <li>
+                      The study disproved its own central hypothesis: patients were not simply
+                      missing the codeless pathway.
+                    </li>
+                    <li>
+                      The findings redirected the team back toward the telephony data and the deeper
+                      access dependency issues that were the original focus of the research.
+                    </li>
+                  </ul>
+                </article>
+              </div>
+            </section>
+
+            <section class="story-section" id="what-we-learned">
+              <h2 class="section-title">What We Learned</h2>
+
+              <article class="report-chapter">
+                <div class="story-columns media-right">
+                  <div class="reading-copy">
+                    <h3>What the Study Was Designed to Test</h3>
+                    <p class="body">
+                      The Connect Your Records flow asks patients to link their health records to
+                      their AdventHealth account using a 15-character code found on their After
+                      Visit Summary. Patients who do not have the code can proceed without it, but
+                      that pathway was not always obvious, and the hypothesis was that patients were
+                      calling support simply because they could not find it.
+                    </p>
+                    <p class="body">
+                      Three variants were tested: the current Control, a Side-by-Side version that
+                      gave both pathways equal visual weight, and a Preliminary decision-first
+                      version that asked patients up front whether they had a code before showing
+                      them the form. Each participant saw one variant and completed post-task
+                      confidence, alignment, and call-likelihood measures on a 1–7 scale.
+                    </p>
+                  </div>
+                  <figure class="story-media-frame study-chart-frame story-media-span">
+                    <div class="chart-head">
+                      <div class="chart-kicker">Variant comparison</div>
+                      <div class="chart-title">Where participant attention concentrated</div>
+                    </div>
+                    <div class="variant-compare">
+                      <div class="variant-phones">
+                        <article class="variant-card">
+                          <div class="variant-label">Control</div>
+                          <div class="variant-phone">
+                            <div class="variant-screen">
+                              <div class="variant-brand">AdventHealth</div>
+                              <h4 class="variant-heading">Connect Your Records</h4>
+                              <p class="variant-copy">Enter your access code and date of birth.</p>
+                              <div class="variant-ui-block"></div>
+                              <div class="variant-ui-block"></div>
+                              <div class="variant-button"></div>
+                              <div class="variant-ui-block variant-secondary" style="height: 20px;"></div>
+                              <span class="heat-spot heat-spot-primary" style="left: 10%; top: 22%;"></span>
+                              <span class="heat-spot heat-spot-secondary" style="left: 26%; top: 42%;"></span>
+                              <span class="heat-spot heat-spot-secondary" style="left: 33%; top: 68%;"></span>
+                            </div>
+                          </div>
+                        </article>
+                        <article class="variant-card">
+                          <div class="variant-label">Side-by-Side</div>
+                          <div class="variant-phone">
+                            <div class="variant-screen">
+                              <div class="variant-brand">AdventHealth</div>
+                              <h4 class="variant-heading">Enter your access code</h4>
+                              <p class="variant-copy">Both pathways are visible with equal weight.</p>
+                              <div class="variant-ui-block"></div>
+                              <div class="variant-ui-block"></div>
+                              <div class="variant-button"></div>
+                              <div class="variant-button variant-secondary"></div>
+                              <span class="heat-spot heat-spot-primary" style="left: 40%; top: 18%;"></span>
+                              <span class="heat-spot heat-spot-secondary" style="left: 26%; top: 40%;"></span>
+                              <span class="heat-spot heat-spot-tertiary" style="left: 42%; top: 72%;"></span>
+                            </div>
+                          </div>
+                        </article>
+                        <article class="variant-card">
+                          <div class="variant-label">Preliminary</div>
+                          <div class="variant-phone">
+                            <div class="variant-screen">
+                              <div class="variant-brand">AdventHealth</div>
+                              <h4 class="variant-heading">Do you have a personal activation code?</h4>
+                              <p class="variant-copy">Patients are asked to decide before they have context.</p>
+                              <div class="variant-button"></div>
+                              <div class="variant-button variant-secondary"></div>
+                              <div class="variant-ui-block variant-secondary" style="height: 16px;"></div>
+                              <span class="heat-spot heat-spot-primary" style="left: 34%; top: 36%;"></span>
+                              <span class="heat-spot heat-spot-secondary" style="left: 44%; top: 50%;"></span>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                    </div>
+                    <figcaption class="study-frame-caption">
+                      The heatmap pattern across the three variants showed where attention pooled. In
+                      the Control, attention split between the code field and the codeless link. In
+                      the Preliminary variant, attention clustered around the decision prompt,
+                      introducing uncertainty rather than reducing it.
+                    </figcaption>
+                  </figure>
+                </div>
+              </article>
+
+              <article class="report-chapter">
+                <div class="story-columns media-left">
+                  <figure class="story-media-frame study-chart-frame">
+                    <div class="chart-head">
+                      <div class="chart-kicker">Confidence</div>
+                      <div class="chart-title">The Control held its ground</div>
+                    </div>
+                    <div class="bar-chart">
+                      <div class="chart-legend-inline">
+                        <span class="chart-legend-token"><span class="chart-swatch" style="--swatch:#317bb1"></span>Pre-task confidence</span>
+                        <span class="chart-legend-token"><span class="chart-swatch" style="--swatch:#f2912f"></span>Post-task confidence</span>
+                      </div>
+                      <div class="bar-chart-plot">
+                        <article class="bar-group">
+                          <div class="bar-group-bars">
+                            <div class="bar" style="--value:4.5; --max:7; --bar-color:#317bb1;"><span class="bar-value">4.5</span></div>
+                            <div class="bar" style="--value:6.1; --max:7; --bar-color:#f2912f;"><span class="bar-value">6.1</span></div>
+                          </div>
+                          <div class="bar-group-label">Control</div>
+                        </article>
+                        <article class="bar-group">
+                          <div class="bar-group-bars">
+                            <div class="bar" style="--value:3.7; --max:7; --bar-color:#317bb1;"><span class="bar-value">3.7</span></div>
+                            <div class="bar" style="--value:5.5; --max:7; --bar-color:#f2912f;"><span class="bar-value">5.5</span></div>
+                          </div>
+                          <div class="bar-group-label">Preliminary</div>
+                        </article>
+                        <article class="bar-group">
+                          <div class="bar-group-bars">
+                            <div class="bar" style="--value:4; --max:7; --bar-color:#317bb1;"><span class="bar-value">4.0</span></div>
+                            <div class="bar" style="--value:5.8; --max:7; --bar-color:#f2912f;"><span class="bar-value">5.8</span></div>
+                          </div>
+                          <div class="bar-group-label">Side-by-Side</div>
+                        </article>
+                      </div>
+                    </div>
+                    <figcaption class="study-frame-caption">
+                      All three variants improved participant confidence post-task, but the Control
+                      produced the largest gain and the highest absolute post-task score.
+                    </figcaption>
+                  </figure>
+                  <div class="reading-copy">
+                    <h3>The Control Held Its Ground</h3>
+                    <p class="body">
+                      The current production design, which the team expected to be the weakest
+                      performer, earned the highest post-task confidence scores and the strongest
+                      expectation alignment of all three variants. Participants described it as
+                      intuitive and easy to follow.
+                    </p>
+                    <p class="body">
+                      Notably, they did not struggle to find the codeless pathway. They found it
+                      and used it without significant hesitation. That was important because it
+                      directly challenged the underlying assumption that visibility alone was the
+                      source of support demand.
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="report-chapter">
+                <div class="story-columns media-right">
+                  <div class="reading-copy">
+                    <h3>The Side-by-Side Was a Modest Improvement in One Dimension</h3>
+                    <p class="body">
+                      Presenting both pathways with equal visual weight produced the lowest overall
+                      call likelihood of any variant. That was meaningful. But it trailed the
+                      Control on post-confidence and expectation alignment, suggesting that
+                      surfacing both options simultaneously introduced some ambiguity about which
+                      path applied to the participant’s situation.
+                    </p>
+                    <p class="body">
+                      The result mattered because it showed that a cleaner visual treatment could
+                      move one metric in the right direction without necessarily becoming the most
+                      trusted or most intuitive version of the experience overall.
+                    </p>
+                  </div>
+                  <figure class="story-media-frame study-chart-frame">
+                    <div class="chart-head">
+                      <div class="chart-kicker">Support likelihood</div>
+                      <div class="chart-title">The Preliminary variant created the problem it was trying to solve</div>
+                    </div>
+                    <div class="bar-chart">
+                      <div class="chart-legend-inline">
+                        <span class="chart-legend-token"><span class="chart-swatch" style="--swatch:#317bb1"></span>Low likelihood to call</span>
+                        <span class="chart-legend-token"><span class="chart-swatch" style="--swatch:#f2912f"></span>High likelihood to call</span>
+                      </div>
+                      <div class="bar-chart-plot">
+                        <article class="bar-group">
+                          <div class="bar-group-bars">
+                            <div class="bar" style="--value:53.3; --max:60; --bar-color:#317bb1;"><span class="bar-value">53.3%</span></div>
+                            <div class="bar" style="--value:26.7; --max:60; --bar-color:#f2912f;"><span class="bar-value">26.7%</span></div>
+                          </div>
+                          <div class="bar-group-label">Control</div>
+                        </article>
+                        <article class="bar-group">
+                          <div class="bar-group-bars">
+                            <div class="bar" style="--value:33.3; --max:60; --bar-color:#317bb1;"><span class="bar-value">33.3%</span></div>
+                            <div class="bar" style="--value:26.7; --max:60; --bar-color:#f2912f;"><span class="bar-value">26.7%</span></div>
+                          </div>
+                          <div class="bar-group-label">Preliminary</div>
+                        </article>
+                        <article class="bar-group">
+                          <div class="bar-group-bars">
+                            <div class="bar" style="--value:53.3; --max:60; --bar-color:#317bb1;"><span class="bar-value">53.3%</span></div>
+                            <div class="bar" style="--value:13.3; --max:60; --bar-color:#f2912f;"><span class="bar-value">13.3%</span></div>
+                          </div>
+                          <div class="bar-group-label">Side-by-Side</div>
+                        </article>
+                      </div>
+                    </div>
+                    <figcaption class="study-frame-caption">
+                      The Side-by-Side variant produced the lowest high-call likelihood, but the
+                      gap between variants was smaller than expected, suggesting the bigger call
+                      drivers existed outside the scope of UI clarity alone.
+                    </figcaption>
+                  </figure>
+                  <div class="reading-copy reading-copy-span">
+                    <h3>The Preliminary Variant Created the Problem It Was Trying to Solve</h3>
+                    <p class="body">
+                      The decision-first design, asking patients to declare up front whether they
+                      had a code before showing them anything else, produced the worst outcomes
+                      across the board: highest call likelihood, lowest confidence, lowest
+                      expectation alignment, and the longest time-on-study. Participant responses
+                      pointed to why: being asked to make a decision before understanding the
+                      context introduced uncertainty rather than reducing it.
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="report-chapter">
+                <div class="story-columns media-left">
+                  <figure class="story-media-frame study-chart-frame">
+                    <div class="chart-head">
+                      <div class="chart-kicker">Expectation alignment</div>
+                      <div class="chart-title">The real finding was upstream of the interface</div>
+                    </div>
+                    <div class="bar-chart">
+                      <div class="bar-chart-plot">
+                        <article class="bar-group">
+                          <div class="bar-group-bars">
+                            <div class="bar" style="--value:6.0; --max:7; --bar-color:#317bb1;"><span class="bar-value">6.0</span></div>
+                          </div>
+                          <div class="bar-group-label">Control</div>
+                        </article>
+                        <article class="bar-group">
+                          <div class="bar-group-bars">
+                            <div class="bar" style="--value:5.4; --max:7; --bar-color:#317bb1;"><span class="bar-value">5.4</span></div>
+                          </div>
+                          <div class="bar-group-label">Preliminary</div>
+                        </article>
+                        <article class="bar-group">
+                          <div class="bar-group-bars">
+                            <div class="bar" style="--value:5.9; --max:7; --bar-color:#317bb1;"><span class="bar-value">5.9</span></div>
+                          </div>
+                          <div class="bar-group-label">Side-by-Side</div>
+                        </article>
+                      </div>
+                    </div>
+                    <figcaption class="study-frame-caption">
+                      The Control aligned best with what participants expected this task to require,
+                      which helped clarify that the core issue was not the discoverability of the
+                      codeless path.
+                    </figcaption>
+                  </figure>
+                  <div class="reading-copy">
+                    <h3>The Real Finding: This Was a Mental Model Problem, Not a Visibility Problem</h3>
+                    <p class="body">
+                      The most important output of this study was what it ruled out. Patients across
+                      all three variants navigated the flow successfully. They were not missing the
+                      codeless pathway. What they lacked was a clear understanding of what the code
+                      was, where it came from, and what connecting records actually meant for them.
+                    </p>
+                    <p class="body">
+                      That gap, between system terminology and patient mental model, is not
+                      something a button label or layout change can close. It pointed back to the
+                      telephony findings: the root cause was upstream of the interface.
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </section>
+
+            <section class="story-section" id="outcome-research">
+              <h2 class="section-title">Outcome of the Research</h2>
+              <div class="story-columns media-right">
+                <div class="reading-copy">
+                  <p class="body">
+                    The study produced three near-term recommendations: dive deeper into the Five9
+                    call data to pinpoint the specific call drivers tied to the Connect Records
+                    flow; reframe the codeless pathway so that proceeding without a code feels
+                    normal and expected rather than like a workaround; and add Amplitude analytics
+                    tags to the flow to capture actual patient behavior in production rather than
+                    inferring it from prototype studies.
+                  </p>
+                </div>
+                <article class="note-panel">
+                  <div class="label">Recommendations</div>
+                  <ul class="compact-list">
+                    <li>Deep dive into Five9 call drivers tied specifically to Connect Records.</li>
+                    <li>Make “no code” feel normal and safe rather than exceptional.</li>
+                    <li>Add Amplitude tags so production behavior can be observed directly.</li>
+                  </ul>
+                </article>
+                <div class="reading-copy reading-copy-span">
+                  <p class="body">
+                    The study results prompted the team to step back and reassess direction. Rather
+                    than moving forward with a variant redesign, the findings redirected attention
+                    toward the telephony data and the broader access dependency issues that had been
+                    identified earlier. This outcome is worth naming directly: the study was
+                    designed to validate a specific hypothesis about visibility as a lever for
+                    reducing call volume. The data said that hypothesis was wrong, and that honest
+                    clarity about the problem was more valuable than a quick win that did not move
+                    the needle.
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <section class="section full-bleed-section" id="continue-exploring">
+          <div class="full-bleed-section-inner">
+            <section class="story-section">
+              <h2 class="section-title">Continue Exploring</h2>
+              <div class="related-grid">
+                <article class="related-card">
+                  <div class="label">Related case study</div>
+                  <h3>Telephony Data Analysis</h3>
+                  <p class="body">
+                    The broader telephony analysis showed that support demand was being driven by a
+                    systemic access failure lifecycle, which is what gave this prototype study its
+                    most important context.
+                  </p>
+                  <div class="tag-list" aria-label="Related case study tags">
+                    <span class="tag">AdventHealth</span>
+                    <span class="tag">Five9</span>
+                  </div>
+                  <div class="button-row">
+                    <a class="button button-secondary" href="./telephony-data-analysis.html">Read this case study</a>
+                  </div>
+                </article>
+                <article class="related-card">
+                  <div class="label">Selected work</div>
+                  <h3>Browse more research-led product work</h3>
+                  <p class="body">
+                    Explore the wider work archive for additional healthcare studies, operational
+                    analyses, and research-led product decisions across complex systems.
+                  </p>
+                  <div class="tag-list" aria-label="Related archive tags">
+                    <span class="tag">Archive</span>
+                    <span class="tag">Prototype study</span>
+                  </div>
+                  <div class="button-row">
+                    <a class="button button-secondary" href="./case-study.html">View selected work</a>
+                  </div>
+                </article>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <section class="section full-bleed-section full-bleed-section-soft" id="contact">
+          <div class="full-bleed-section-inner">
+            <section class="story-section contact-story-panel">
+              <div class="section-kicker">Contact</div>
+              <h2 class="section-title">If you’d like to talk through the study, I’m happy to share more context.</h2>
+              <p class="body">
+                The portfolio version is intentionally focused on the decision story. If you want to
+                discuss the prototype variants, how the hypothesis shifted, or what this study ruled
+                out, I’d be glad to continue the conversation.
+              </p>
+              <div class="button-row">
+                <a class="button button-secondary" href="./case-study.html#contact">Get in touch about this study</a>
+              </div>
+            </section>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer-bar">
+        <span class="footer-note">Thomas Graham — UX Researcher</span>
+        <div class="dot-row" aria-hidden="true">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

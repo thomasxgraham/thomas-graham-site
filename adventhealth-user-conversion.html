@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Improving New-User Conversion — Thomas Graham</title>
+    <meta
+      name="description"
+      content="A case study about evaluating AdventHealth's mobile onboarding flow to improve new-user conversion, activation, and retention."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="brand" href="./index.html">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-copy">
+            <strong>Thomas Graham</strong>
+            <span>UX Researcher · Product Thinker · ResearchOps Builder</span>
+          </span>
+        </a>
+        <nav class="main-nav" aria-label="Primary">
+          <a href="./index.html">Home</a>
+          <a href="./about.html">About</a>
+          <a href="./case-study.html" aria-current="page">Work</a>
+          <a href="./research-reports.html">Reports</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="section stage wave-lines work-stage">
+          <div class="story-head work-head">
+            <div class="case-hero-copy">
+              <div class="micro-label">Case study</div>
+              <h1 class="page-title">Improving New-User Conversion</h1>
+              <p class="story-lead support">
+                The AdventHealth app promised convenient access to appointments, providers, and
+                health data, but the onboarding experience was asking too much before users saw that
+                value for themselves. This evaluation focused on a simple product question: how do
+                you make account creation feel meaningful enough to finish, and compelling enough to
+                return to, when new users are deciding whether the app is worth their time?
+              </p>
+              <div class="button-row">
+                <a class="button button-secondary button-back" href="./case-study.html"
+                  >Back to selected work</a
+                >
+              </div>
+            </div>
+            <div class="meta-grid work-meta-grid research-dashboard" aria-label="Study profile">
+              <article class="research-card research-card-number">
+                <div class="meta-label">Current flow</div>
+                <div class="research-number">171s</div>
+              </article>
+              <article class="research-card">
+                <div class="meta-label">Study type</div>
+                <div class="meta-copy">Onboarding evaluation</div>
+              </article>
+              <article class="research-card">
+                <div class="meta-label">Methods</div>
+                <div class="meta-copy">
+                  Comparative app audit + heuristic review + behavioral design synthesis
+                </div>
+              </article>
+              <article class="research-card">
+                <div class="meta-label">Decision area</div>
+                <div class="meta-copy">
+                  How to reduce onboarding friction while improving activation and early retention.
+                </div>
+              </article>
+              <article class="research-card research-card-wide">
+                <div class="meta-label">Questions explored</div>
+                <div class="meta-copy">
+                  Time-to-value, feature discovery, account setup burden, and the motivational cues
+                  that could help new users continue.
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section case-layout">
+          <aside class="toc">
+            <div class="micro-label">On this page</div>
+            <a href="#tldr">tl;dr</a>
+            <a href="#what-we-learned">What We Learned</a>
+            <a href="#outcome-work">Outcome of the Work</a>
+            <a href="#continue-exploring">Continue Exploring</a>
+            <a href="#contact">Contact</a>
+          </aside>
+
+          <div>
+            <section class="story-section" id="tldr">
+              <h2 class="section-title">tl;dr</h2>
+              <div class="tldr-layout">
+                <div class="reading-copy">
+                  <p class="body">
+                    This case study examined why AdventHealth’s onboarding flow was struggling to
+                    convert new users into engaged app users, even though the product promised
+                    meaningful utility. The work approached onboarding as a retention and value
+                    problem, not just a registration problem, using comparative benchmarks and
+                    behavioral design principles to identify where the experience was losing people.
+                  </p>
+                  <p class="body">
+                    The strongest pattern was clear: the app asked for commitment early, delivered
+                    value late, and gave users too few reasons to feel momentum while they were
+                    still deciding whether the experience was worth finishing.
+                  </p>
+                </div>
+                <article class="note-panel tldr-summary-card">
+                  <ul class="tldr-summary-list">
+                    <li>Effective onboarding needed either to stay close to a 60-second window or deliver immediate value that justified taking longer.</li>
+                    <li>AdventHealth required 171 seconds to reach the home screen, and the path to record connection could take much longer once MRN friction appeared.</li>
+                    <li>Competitive comparison showed that some apps asked for less, while others asked for more but clearly delivered on their promise right away.</li>
+                    <li>Healthcare benefits from stronger baseline retention than many categories, but that advantage can be wasted if onboarding hides the product’s core value.</li>
+                    <li>Behavioral design suggested clearer opportunities around progress, personalization, investment, and reward rather than simply adding more explanation screens.</li>
+                  </ul>
+                </article>
+              </div>
+            </section>
+
+            <section class="story-section" id="what-we-learned">
+              <h2 class="section-title">What We Learned</h2>
+
+              <article class="report-chapter">
+                <div class="story-columns media-right">
+                  <div class="reading-copy">
+                    <h3>Onboarding Needed to Bridge Intent to Value More Quickly</h3>
+                    <p class="body">
+                      New users arrive at onboarding with a clear expectation: that the app will
+                      help them accomplish something meaningful. The experience has to carry them
+                      from that initial intent to their first moment of product value before doubt,
+                      distraction, or fatigue takes over.
+                    </p>
+                    <p class="body">
+                      In this evaluation, onboarding was framed as the bridge across that gap. If
+                      the flow failed to clarify what users would get, why setup mattered, or what
+                      would become easier afterward, the app risked feeling like administrative work
+                      instead of useful support.
+                    </p>
+                    <p class="body">
+                      That’s why first impressions and perceived speed mattered so much. The issue
+                      was not simply how many screens appeared. It was whether each step reinforced
+                      the app’s promise.
+                    </p>
+                  </div>
+                  <figure class="story-media-frame study-graphic-frame">
+                    <img
+                      src="./assets/adventhealth-conversion/onboarding-screens.png"
+                      alt="AdventHealth onboarding screens shown to new mobile users"
+                    />
+                    <figcaption class="study-frame-caption">
+                      The first screens set the tone for whether setup felt meaningful or merely
+                      procedural.
+                    </figcaption>
+                  </figure>
+                </div>
+              </article>
+
+              <article class="report-chapter">
+                <div class="story-columns media-left">
+                  <figure class="story-media-frame study-chart-frame">
+                    <div class="chart-head">
+                      <div class="chart-kicker">Category retention context</div>
+                      <div class="chart-title">Healthcare had a category advantage, but it still sat below the strongest habitual app categories</div>
+                    </div>
+                    <div class="chart-scroll-shell">
+                      <div class="scatter-chart">
+                        <div class="scatter-plot" aria-label="Loyalty by application category">
+                          <div class="scatter-crosshair-vertical"></div>
+                          <div class="scatter-crosshair-horizontal"></div>
+                          <div class="scatter-axis-label scatter-axis-label-x">Retention over 90 days</div>
+                          <div class="scatter-axis-label scatter-axis-label-y">Frequency of use per week</div>
+                          <div class="scatter-dot" style="--x:0.12; --y:0.69; --size:11px;" data-label="Lifestyle"></div>
+                          <div class="scatter-dot" style="--x:0.18; --y:0.87; --size:11px;" data-label="Books"></div>
+                          <div class="scatter-dot" style="--x:0.23; --y:0.62; --size:11px;" data-label="Games"></div>
+                          <div class="scatter-dot" style="--x:0.26; --y:0.64; --size:11px;" data-label="Utilities"></div>
+                          <div class="scatter-dot" style="--x:0.18; --y:0.16; --size:11px;" data-label="Entertainment"></div>
+                          <div class="scatter-dot" style="--x:0.22; --y:0.41; --size:11px;" data-label="Social Networking"></div>
+                          <div class="scatter-dot" style="--x:0.33; --y:0.47; --size:11px;" data-label="Travel"></div>
+                          <div class="scatter-dot" style="--x:0.32; --y:0.34; --size:11px;" data-label="Sports"></div>
+                          <div class="scatter-dot" style="--x:0.41; --y:0.76; --size:11px;" data-label="Weather"></div>
+                          <div class="scatter-dot" style="--x:0.41; --y:0.47; --size:11px;" data-label="Health &amp; Fitness"></div>
+                          <div class="scatter-dot" style="--x:0.33; --y:0.42; --size:11px;" data-label="Finance"></div>
+                          <div class="scatter-dot" style="--x:0.48; --y:0.36; --size:11px;" data-label="Business"></div>
+                          <div class="scatter-dot" style="--x:0.41; --y:0.20; --size:11px;" data-label="Education"></div>
+                          <div class="scatter-dot" style="--x:0.36; --y:0.34; --size:11px;" data-label="Music"></div>
+                          <div class="scatter-dot" style="--x:0.63; --y:0.87; --size:11px;" data-label="Reference"></div>
+                          <div class="scatter-dot" style="--x:0.66; --y:0.68; --size:11px;" data-label="Navigation"></div>
+                          <div class="scatter-dot" style="--x:0.70; --y:0.64; --size:11px;" data-label="Productivity"></div>
+                          <div class="scatter-dot" style="--x:0.77; --y:0.88; --size:11px;" data-label="News"></div>
+                          <div class="scatter-dot scatter-dot-highlight" style="--x:0.69; --y:0.16; --size:12px;" data-label="Medical"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <figcaption class="study-frame-caption">
+                      Healthcare apps already benefit from strong category relevance, but retention
+                      still depends on delivering value quickly.
+                    </figcaption>
+                  </figure>
+                  <div class="reading-copy">
+                    <h3>Healthcare Had a Retention Advantage, but the Product Still Had to Earn It</h3>
+                    <p class="body">
+                      Compared with many consumer categories, healthcare apps begin with a structural
+                      advantage: people often return because the underlying need is real and ongoing.
+                      That makes retention more achievable than it is for many entertainment or
+                      purely discretionary products.
+                    </p>
+                    <p class="body">
+                      But that advantage is not automatic. If onboarding obscures core tasks,
+                      creates confusion, or delays access to the product’s most important utilities,
+                      users can still disengage before they ever build a habit.
+                    </p>
+                  </div>
+                  <div class="reading-copy reading-copy-span">
+                    <p class="body">
+                      In other words, category need can buy a little patience, but it does not
+                      remove the obligation to make setup feel worthwhile. The app still had to
+                      prove that it would save time later by not wasting time now.
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="report-chapter">
+                <div class="story-columns media-right">
+                  <div class="reading-copy">
+                    <h3>AdventHealth Asked for Commitment Early but Delayed the Payoff</h3>
+                    <p class="body">
+                      Benchmarking other apps made the friction easier to see. AdventHealth took 171
+                      seconds to reach the home screen without skipping, longer than some competing
+                      flows and far beyond the ideal onboarding window cited in the source
+                      research.
+                    </p>
+                    <p class="body">
+                      More importantly, the flow still stopped short of one of the app’s biggest
+                      promises: connecting a user to their records through a medical record number.
+                      That meant the most meaningful value was still downstream from an already long
+                      setup path.
+                    </p>
+                  </div>
+                  <figure class="story-media-frame study-chart-frame story-media-span">
+                    <div class="chart-head">
+                      <div class="chart-kicker">Comparative onboarding time</div>
+                      <div class="chart-title">AdventHealth asked for more time up front than several adjacent healthcare experiences</div>
+                    </div>
+                    <div class="bar-chart bar-chart-scroll">
+                      <div class="bar-chart-plot bar-chart-plot-seven">
+                        <article class="bar-group"><div class="bar-group-bars"><div class="bar" style="--value:105; --max:400; --bar-color:#2f83c7;"><span class="bar-value">105</span></div></div><div class="bar-group-label">Amwell</div></article>
+                        <article class="bar-group"><div class="bar-group-bars"><div class="bar" style="--value:171; --max:400; --bar-color:#2f83c7;"><span class="bar-value">171</span></div></div><div class="bar-group-label">AdventHealth</div></article>
+                        <article class="bar-group"><div class="bar-group-bars"><div class="bar" style="--value:190; --max:400; --bar-color:#2f83c7;"><span class="bar-value">190</span></div></div><div class="bar-group-label">Experian</div></article>
+                        <article class="bar-group"><div class="bar-group-bars"><div class="bar" style="--value:30; --max:400; --bar-color:#2f83c7;"><span class="bar-value">30</span></div></div><div class="bar-group-label">Amazon</div></article>
+                        <article class="bar-group"><div class="bar-group-bars"><div class="bar" style="--value:84; --max:400; --bar-color:#2f83c7;"><span class="bar-value">84</span></div></div><div class="bar-group-label">GoodRX</div></article>
+                        <article class="bar-group"><div class="bar-group-bars"><div class="bar" style="--value:360; --max:400; --bar-color:#2f83c7;"><span class="bar-value">360</span></div></div><div class="bar-group-label">Teladoc</div></article>
+                        <article class="bar-group"><div class="bar-group-bars"><div class="bar" style="--value:30; --max:400; --bar-color:#2f83c7;"><span class="bar-value">30</span></div></div><div class="bar-group-label">ZocDoc</div></article>
+                      </div>
+                    </div>
+                    <figcaption class="study-frame-caption">
+                      Comparative timing made AdventHealth’s onboarding burden easier to discuss in
+                      concrete terms.
+                    </figcaption>
+                  </figure>
+                  <div class="reading-copy reading-copy-span">
+                    <p class="body">
+                      The data-points table made the tradeoff even sharper. Some products asked for
+                      very little before showing value. Others asked for a lot, but had a clearer
+                      payoff structure. AdventHealth risked sitting in the uncomfortable middle:
+                      meaningful effort up front without enough immediate reward.
+                    </p>
+                  </div>
+                  <figure class="story-media-frame study-chart-frame story-media-span">
+                    <div class="chart-head">
+                      <div class="chart-kicker">Benchmark matrix</div>
+                      <div class="chart-title">The setup burden was not just time, it was how much each product asked before value appeared</div>
+                    </div>
+                    <div class="chart-table-scroll">
+                      <table class="comparison-matrix" aria-label="Benchmark comparison of onboarding requirements">
+                        <thead>
+                          <tr>
+                            <th scope="col">Product</th>
+                            <th scope="col">Minimum info required</th>
+                            <th scope="col">Other info collected</th>
+                            <th scope="col">Screens</th>
+                            <th scope="col">Time</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Amwell</td>
+                            <td><ul class="matrix-cell-list"><li>Location</li><li>Legal name</li><li>DOB + gender</li><li>Email + password</li></ul></td>
+                            <td><ul class="matrix-cell-list"><li>Service key</li><li>Insurance</li></ul></td>
+                            <td>2</td>
+                            <td>105 sec</td>
+                          </tr>
+                          <tr>
+                            <td>AH (new customers)</td>
+                            <td><ul class="matrix-cell-list"><li>Name + email</li><li>Verify email</li><li>Password + notifications</li><li>MRN to connect records</li></ul></td>
+                            <td><ul class="matrix-cell-list"><li>Face ID</li><li>Child accounts</li><li>Partner accounts</li></ul></td>
+                            <td>4</td>
+                            <td>171 sec (sans MRN)</td>
+                          </tr>
+                          <tr>
+                            <td>Experian</td>
+                            <td><ul class="matrix-cell-list"><li>Email + password</li><li>Full name</li><li>Phone + current address</li><li>SSN + security checks</li></ul></td>
+                            <td><ul class="matrix-cell-list"><li>Credit card</li><li>Billing address</li></ul></td>
+                            <td>0</td>
+                            <td>190 sec</td>
+                          </tr>
+                          <tr>
+                            <td>Amazon</td>
+                            <td><ul class="matrix-cell-list"><li>Name + email</li><li>Verify email</li><li>Password</li></ul></td>
+                            <td><ul class="matrix-cell-list"><li>Credit card</li><li>Billing address</li><li>Shipping address</li></ul></td>
+                            <td>0</td>
+                            <td>30 sec</td>
+                          </tr>
+                          <tr>
+                            <td>GoodRX</td>
+                            <td><ul class="matrix-cell-list"><li>Location services</li><li>Notifications</li><li>Create account</li><li>Phone number</li></ul></td>
+                            <td><ul class="matrix-cell-list"><li>Name + birthday</li><li>Email</li><li>Billing address</li><li>Credit card</li></ul></td>
+                            <td>3</td>
+                            <td>84 sec</td>
+                          </tr>
+                          <tr>
+                            <td>Teladoc</td>
+                            <td><ul class="matrix-cell-list"><li>Name + DOB</li><li>Country + zip</li><li>Member ID</li><li>Address + phone</li></ul></td>
+                            <td><ul class="matrix-cell-list"><li>Username + password</li><li>Security questions</li></ul></td>
+                            <td>12</td>
+                            <td>420 sec</td>
+                          </tr>
+                          <tr>
+                            <td>ZocDoc</td>
+                            <td><ul class="matrix-cell-list"><li>Google credentials or email</li><li>Password</li><li>Name + DOB</li><li>Gender + HIPAA</li></ul></td>
+                            <td><ul class="matrix-cell-list"><li>Phone verification</li><li>PIN</li></ul></td>
+                            <td>0</td>
+                            <td>30 sec</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <figcaption class="study-frame-caption">
+                      The audit clarified how much information AdventHealth requested before users
+                      experienced core utility.
+                    </figcaption>
+                  </figure>
+                </div>
+              </article>
+
+              <article class="report-chapter">
+                <div class="story-columns media-right">
+                  <div class="reading-copy">
+                    <h3>Behavioral Design Created Better Retention Opportunities than More Explanation</h3>
+                    <p class="body">
+                      The most useful next step was not simply to rewrite onboarding copy. The
+                      stronger opportunity was to redesign the experience around motivation and
+                      momentum: variable rewards, user investment, personalization, progress cues,
+                      and reduced cognitive load.
+                    </p>
+                    <p class="body">
+                      Seen this way, onboarding becomes less like a form sequence and more like the
+                      beginning of a relationship. Each step should help the user feel that they are
+                      getting somewhere, learning something relevant, or building something that will
+                      matter to them later.
+                    </p>
+                  </div>
+                  <figure class="story-media-frame study-graphic-frame">
+                    <img
+                      src="./assets/adventhealth-conversion/behavioral-design-map.png"
+                      alt="Diagram of behavioral psychology principles relevant to onboarding"
+                    />
+                    <figcaption class="study-frame-caption">
+                      The work reframed onboarding around behavioral principles that support
+                      commitment and return usage.
+                    </figcaption>
+                  </figure>
+                  <div class="reading-copy reading-copy-span">
+                    <p class="body">
+                      The security-versus-simplicity tension remained real, but this evaluation made
+                      it easier to discuss where that balance could shift. Not every step had to feel
+                      lighter, but the user had to understand why the effort was worth it and feel
+                      progress while they were making it.
+                    </p>
+                  </div>
+                  <figure class="story-media-frame study-graphic-frame">
+                    <img
+                      src="./assets/adventhealth-conversion/security-simplicity.png"
+                      alt="Simple diagram showing the tension between security and simplicity during user registration"
+                    />
+                    <figcaption class="study-frame-caption">
+                      Registration design needed to balance healthcare-grade trust with a more
+                      humane sense of effort.
+                    </figcaption>
+                  </figure>
+                </div>
+              </article>
+            </section>
+
+            <section class="story-section" id="outcome-work">
+              <h2 class="section-title">Outcome of the Work</h2>
+              <div class="story-columns media-right">
+                <div class="reading-copy">
+                  <p class="body">
+                    This work turned a broad retention concern into a clearer onboarding strategy. It
+                    gave the team a way to talk about activation in terms of time-to-value, feature
+                    discovery, and motivational design rather than only form completion.
+                  </p>
+                  <p class="body">
+                    It also defined a practical next-step roadmap: understand where users first
+                    discover the app, track how they move through onboarding, study feature usage
+                    after account creation, and redesign the flow around a smaller set of meaningful
+                    value moments.
+                  </p>
+                </div>
+                <article class="note-panel">
+                  <div class="label">Implications</div>
+                  <ul class="compact-list">
+                    <li>Reduce the gap between account setup and the first meaningful proof of product value.</li>
+                    <li>Design onboarding as a motivational sequence, not just a registration checklist.</li>
+                    <li>Track discovery source, early usage, and drop-off so future improvements are grounded in behavior rather than assumption.</li>
+                  </ul>
+                </article>
+                <div class="reading-copy reading-copy-span">
+                  <p class="body">
+                    In that sense, the outcome was directional clarity. The evaluation identified
+                    where the product was over-asking, where it was under-rewarding, and where
+                    behavioral design could make the onboarding experience feel more intentional and
+                    more worth completing.
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <section class="section full-bleed-section" id="continue-exploring">
+          <div class="full-bleed-section-inner">
+            <section class="story-section">
+              <h2 class="section-title">Continue Exploring</h2>
+              <div class="related-grid">
+                <article class="related-card">
+                  <div class="label">Related case study</div>
+                  <h3>Redeveloping AddictionCenter.com</h3>
+                  <p class="body">
+                    A healthcare-site redevelopment centered on trust, mobile-first structure, and
+                    helping people search for treatment on their own terms.
+                  </p>
+                  <div class="tag-list" aria-label="Related case study tags">
+                    <span class="tag">Redevelopment</span>
+                    <span class="tag">Content strategy</span>
+                  </div>
+                  <div class="button-row">
+                    <a class="button button-secondary" href="./addiction-center-redevelopment.html"
+                      >Read this case study</a
+                    >
+                  </div>
+                </article>
+                <article class="related-card">
+                  <div class="label">Selected work</div>
+                  <h3>Browse more research work</h3>
+                  <p class="body">
+                    Explore the wider work archive for additional studies, enterprise projects, and
+                    research-led product work across healthcare and complex systems.
+                  </p>
+                  <div class="tag-list" aria-label="Related archive tags">
+                    <span class="tag">Archive</span>
+                    <span class="tag">Research portfolio</span>
+                  </div>
+                  <div class="button-row">
+                    <a class="button button-secondary" href="./case-study.html"
+                      >View selected work</a
+                    >
+                  </div>
+                </article>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <section class="section full-bleed-section full-bleed-section-soft" id="contact">
+          <div class="full-bleed-section-inner">
+            <section class="story-section contact-story-panel">
+              <div class="section-kicker">Contact</div>
+              <h2 class="section-title">
+                If you’d like to talk through the onboarding work, I’m happy to share more context.
+              </h2>
+              <p class="body">
+                The portfolio version is intentionally focused on the product and research story. If
+                you want to discuss the evaluation in more detail, I’d be glad to continue the
+                conversation.
+              </p>
+              <div class="button-row">
+                <a class="button button-secondary" href="./case-study.html#contact"
+                  >Get in touch about this study</a
+                >
+              </div>
+            </section>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer-bar">
+        <span class="footer-note">Thomas Graham — UX Researcher</span>
+        <div class="dot-row" aria-hidden="true">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

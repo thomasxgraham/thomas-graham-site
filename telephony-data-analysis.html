@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Telephony Data Analysis — Thomas Graham</title>
+    <meta
+      name="description"
+      content="A case study about analyzing Five9 support-call data to understand why patients were calling for help, and reframing the issue as a systemic access failure rather than isolated login problems."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="brand" href="./index.html">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-copy">
+            <strong>Thomas Graham</strong>
+            <span>UX Researcher · Product Thinker · ResearchOps Builder</span>
+          </span>
+        </a>
+        <nav class="main-nav" aria-label="Primary">
+          <a href="./index.html">Home</a>
+          <a href="./about.html">About</a>
+          <a href="./case-study.html" aria-current="page">Work</a>
+          <a href="./research-reports.html">Reports</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="section stage wave-lines work-stage">
+          <div class="story-head work-head">
+            <div class="case-hero-copy">
+              <div class="micro-label">Case study</div>
+              <h1 class="page-title">Telephony Data Analysis</h1>
+              <p class="story-lead support">
+                AdventHealth’s telephony support team was seeing sustained call volume tied to
+                patients struggling to access the AdventHealth app. I went directly into the Five9
+                call database, reviewed transcripts, and rebuilt the categorization system from
+                scratch because the existing agent-applied tags were too inconsistent and too broad
+                to surface what was actually happening.
+              </p>
+              <div class="button-row">
+                <a class="button button-secondary button-back" href="./case-study.html"
+                  >Back to selected work</a
+                >
+              </div>
+            </div>
+            <div class="meta-grid work-meta-grid research-dashboard" aria-label="Study profile">
+              <article class="research-card research-card-number">
+                <div class="meta-label">Lifecycle stages</div>
+                <div class="research-number">5</div>
+              </article>
+              <article class="research-card">
+                <div class="meta-label">Study type</div>
+                <div class="meta-copy">Operational analysis + systems synthesis</div>
+              </article>
+              <article class="research-card">
+                <div class="meta-label">Methods</div>
+                <div class="meta-copy">
+                  Five9 call-summary review, transcript spot checks, taxonomy rebuild, and access
+                  lifecycle mapping
+                </div>
+              </article>
+              <article class="research-card">
+                <div class="meta-label">Decision area</div>
+                <div class="meta-copy">
+                  Why support demand remained high and which access failures were actually driving
+                  those calls
+                </div>
+              </article>
+              <article class="research-card research-card-wide">
+                <div class="meta-label">Questions explored</div>
+                <div class="meta-copy">
+                  What patients were really calling about, where identity and security failures
+                  were surfacing, and how those failures compounded until only human support could
+                  resolve them
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section case-layout">
+          <aside class="toc">
+            <div class="micro-label">On this page</div>
+            <a href="#tldr">tl;dr</a>
+            <a href="#what-we-learned">What We Learned</a>
+            <a href="#outcome-research">Outcome of the Research</a>
+            <a href="#continue-exploring">Continue Exploring</a>
+            <a href="#contact">Contact</a>
+          </aside>
+
+          <div>
+            <section class="story-section" id="tldr">
+              <h2 class="section-title">tl;dr</h2>
+              <div class="tldr-layout">
+                <div class="reading-copy">
+                  <p class="body">
+                    AdventHealth’s telephony support team was seeing sustained, high call volume
+                    tied to patients struggling to access the AdventHealth app. The question was:
+                    what was actually driving those calls? To find out, I went directly into the
+                    Five9 call database, reviewed transcripts, and rebuilt the categorization
+                    system from scratch because the existing agent-applied tags were too
+                    inconsistent and too broad to surface meaningful patterns.
+                  </p>
+                  <p class="body">
+                    What emerged was not a list of separate problems. It was a single, systemic
+                    access failure playing out across multiple stages. Patients were not calling
+                    because features were broken. They were calling because the identity and
+                    security system was failing them silently, at multiple points, in ways they
+                    could not understand or recover from on their own.
+                  </p>
+                  <p class="body">
+                    The research reframed the problem from “too many calls” to “our system is not
+                    designed to help patients understand or resolve access failures without human
+                    intervention.”
+                  </p>
+                </div>
+                <article class="note-panel tldr-summary-card">
+                  <ul class="tldr-summary-list">
+                    <li>“Can’t log in” turned out to be a symptom, not a root cause.</li>
+                    <li>
+                      Re-categorizing the call database was necessary because the original call
+                      tagging system was too inconsistent to be actionable.
+                    </li>
+                    <li>
+                      Access failures compounded over time: retries, resets, and new code requests
+                      often made the situation worse.
+                    </li>
+                    <li>
+                      Security requirements were context-blind and created unnecessary friction for
+                      low-stakes tasks.
+                    </li>
+                    <li>
+                      Support staff had become the system’s interpreters and repair crew because
+                      the product could not explain or resolve its own failures.
+                    </li>
+                  </ul>
+                </article>
+              </div>
+            </section>
+
+            <section class="story-section" id="what-we-learned">
+              <h2 class="section-title">What We Learned</h2>
+
+              <article class="report-chapter">
+                <div class="story-columns media-right">
+                  <div class="reading-copy">
+                    <h3>The Data Had a Tagging Problem Before It Had an Insight Problem</h3>
+                    <p class="body">
+                      When I entered the Five9 database, the call records were tagged by customer
+                      service agents using a category system that was inconsistent, overlapping, and
+                      too broad to analyze meaningfully. Many calls that were fundamentally about
+                      the same issue were filed under different labels. Before any pattern analysis
+                      was possible, I re-coded the call records against the actual transcripts to
+                      create a consistent, accurate taxonomy.
+                    </p>
+                    <p class="body">
+                      That step was not part of the original ask, but without it the analysis would
+                      have produced noise, not findings. The first real decision in the work was to
+                      stop trusting the raw categories and rebuild the lens through which the team
+                      was seeing support demand.
+                    </p>
+                  </div>
+                  <figure class="story-media-frame study-chart-frame">
+                    <div class="chart-head">
+                      <div class="chart-kicker">Access outcomes</div>
+                      <div class="chart-title">What the call data appeared to show</div>
+                      <p class="chart-subtitle">
+                        Normalized access outcomes made it easier to see that verification, recovery,
+                        and vague “can’t log in” complaints were all part of the same larger pattern.
+                      </p>
+                    </div>
+                    <div class="donut-chart-layout">
+                      <div class="donut-chart" aria-hidden="true">
+                        <div class="donut-chart-center">
+                          <div class="donut-chart-number">44.6%</div>
+                          <div class="donut-chart-label">Largest segment</div>
+                        </div>
+                      </div>
+                      <div class="chart-legend-list">
+                        <div class="chart-legend-row">
+                          <span class="chart-swatch" style="--swatch:#317bb1"></span>
+                          <span>Access blocked — cause unclear</span>
+                          <span class="chart-legend-value">44.6%</span>
+                        </div>
+                        <div class="chart-legend-row">
+                          <span class="chart-swatch" style="--swatch:#f2912f"></span>
+                          <span>Access blocked — recovery failed</span>
+                          <span class="chart-legend-value">24.4%</span>
+                        </div>
+                        <div class="chart-legend-row">
+                          <span class="chart-swatch" style="--swatch:#6ba246"></span>
+                          <span>Access blocked — verification / MFA</span>
+                          <span class="chart-legend-value">21.4%</span>
+                        </div>
+                        <div class="chart-legend-row">
+                          <span class="chart-swatch" style="--swatch:#c9584d"></span>
+                          <span>Access blocked — account not ready</span>
+                          <span class="chart-legend-value">5.3%</span>
+                        </div>
+                        <div class="chart-legend-row">
+                          <span class="chart-swatch" style="--swatch:#8f77c8"></span>
+                          <span>Access blocked — security lockout</span>
+                          <span class="chart-legend-value">4.3%</span>
+                        </div>
+                      </div>
+                    </div>
+                    <figcaption class="study-frame-caption">
+                      Roughly a third of calls explicitly referenced verification or MFA failures,
+                      while the largest single category — “cause unclear” — masked a substantial
+                      portion of access failures that transcript spot-checking showed shared the
+                      same root causes.
+                    </figcaption>
+                  </figure>
+                </div>
+              </article>
+
+              <article class="report-chapter">
+                <div class="story-columns media-left">
+                  <figure class="story-media-frame study-chart-frame story-media-span">
+                    <div class="chart-head">
+                      <div class="chart-kicker">Failure lifecycle</div>
+                      <div class="chart-title">The failure had a predictable progression</div>
+                    </div>
+                    <div class="lifecycle-chart">
+                      <div class="lifecycle-grid">
+                        <article class="lifecycle-step">
+                          <div class="lifecycle-step-number">1</div>
+                          <h4>Trigger</h4>
+                          <p>Verification, MFA, password reset, or a risk-based check begins.</p>
+                        </article>
+                        <article class="lifecycle-step">
+                          <div class="lifecycle-step-number">2</div>
+                          <h4>Opaque failure</h4>
+                          <p>
+                            Codes do not arrive, contact methods are wrong, or records do not line
+                            up — without a clear explanation.
+                          </p>
+                        </article>
+                        <article class="lifecycle-step">
+                          <div class="lifecycle-step-number">3</div>
+                          <h4>Patient pain</h4>
+                          <p>
+                            The experience collapses into “I can’t log in” or “my account is not
+                            working.”
+                          </p>
+                        </article>
+                        <article class="lifecycle-step">
+                          <div class="lifecycle-step-number">4</div>
+                          <h4>Compounding failure</h4>
+                          <p>
+                            Patients retry, reset, and request more codes, often causing lockouts
+                            or tougher security checks.
+                          </p>
+                        </article>
+                        <article class="lifecycle-step">
+                          <div class="lifecycle-step-number">5</div>
+                          <h4>Human repair</h4>
+                          <p>
+                            By this stage only an agent can interpret system state and restore
+                            access.
+                          </p>
+                        </article>
+                      </div>
+                    </div>
+                    <figcaption class="study-frame-caption">
+                      Each stage of the access failure lifecycle is a byproduct of the one before
+                      it. By the time a patient calls support, the original issue has usually been
+                      compounded by their own recovery attempts.
+                    </figcaption>
+                  </figure>
+                  <div class="reading-copy">
+                    <h3>There Was One Problem, Not Many</h3>
+                    <p class="body">
+                      Once the data was accurately categorized, the pattern was clear. Calls were
+                      not being driven by a range of independent issues. They were being driven by
+                      patients hitting the same set of hidden dependencies at different points in
+                      their access journey and receiving no useful feedback from the system when
+                      those dependencies failed.
+                    </p>
+                    <p class="body">
+                      The five most common hidden failure drivers were inaccessible email accounts,
+                      unreachable phone numbers or wrong SMS delivery targets, outdated or incorrect
+                      contact information, incomplete patient record linkage, and security cooldown
+                      timers triggered by repeated failed attempts. When any one of these broke
+                      down, the system responded with a generic error. Patients had no way to
+                      understand what was actually wrong or what would actually fix it.
+                    </p>
+                  </div>
+                  <div class="reading-copy reading-copy-span">
+                    <p class="body">
+                      That meant the apparent variety in the call reasons was misleading. These
+                      were different symptoms of the same access-and-identity system failing
+                      patients at different points in the journey.
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="report-chapter">
+                <div class="story-columns media-right">
+                  <div class="reading-copy">
+                    <h3>Security Requirements Didn’t Match the Sensitivity of What Patients Needed</h3>
+                    <p class="body">
+                      One of the more significant structural observations was that the same
+                      authentication requirements applied regardless of what a patient was actually
+                      trying to do. A patient checking an appointment reminder faced the same
+                      security barriers as a patient accessing detailed clinical records.
+                    </p>
+                    <p class="body">
+                      This mismatch between security rigor and data sensitivity created unnecessary
+                      friction for low-stakes interactions and increased the probability of failure
+                      for patients who were already less digitally confident.
+                    </p>
+                  </div>
+                  <article class="note-panel">
+                    <div class="label">What support had become</div>
+                    <p class="body">
+                      Agents were not helping because they had better product tools. They were
+                      helping because the product had no other way to explain system state, repair
+                      broken dependencies, or safely resolve identity ambiguity.
+                    </p>
+                  </article>
+                  <div class="reading-copy reading-copy-span">
+                    <h3>Support Had Become the System’s Repair Crew</h3>
+                    <p class="body">
+                      By the time calls reached a human agent, the situation was almost always
+                      beyond self-service recovery. Identity ambiguity existed, retry limits were
+                      exhausted, and automated systems could not proceed safely. Support staff were
+                      spending their time diagnosing system state, repairing broken dependencies,
+                      and manually restoring access — work that existed entirely because the system
+                      had no mechanism for helping patients understand or resolve failures on their
+                      own.
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </section>
+
+            <section class="story-section" id="outcome-research">
+              <h2 class="section-title">Outcome of the Research</h2>
+              <div class="story-columns media-right">
+                <div class="reading-copy">
+                  <p class="body">
+                    The research produced a set of structural recommendations organized around five
+                    opportunity areas: evaluating where security steps stack in a single journey
+                    without meaningful added risk reduction; exploring a tiered authentication model
+                    that aligns security requirements with the sensitivity of the data being
+                    accessed; improving the system’s ability to communicate its own state to
+                    patients so they understand why access is blocked and what will actually
+                    resolve it; reducing compounding failure opportunities by preventing retry and
+                    reset actions when the underlying issue is unrelated to credentials; and
+                    aligning Product, Design, and Security teams on a shared access failure
+                    lifecycle so solutions address the same root problem at every layer.
+                  </p>
+                </div>
+                <article class="note-panel">
+                  <div class="label">Recommendations</div>
+                  <ul class="compact-list">
+                    <li>Evaluate where multiple security “doors” stack in a single journey without meaningful added risk reduction.</li>
+                    <li>Explore a tiered authentication model that matches friction to the sensitivity of the data being accessed.</li>
+                    <li>Make access state visible so patients understand why they are blocked and what resolves it.</li>
+                    <li>Reduce retries and resets that compound failure when the real issue is elsewhere.</li>
+                    <li>Align Product, Design, and Security on one shared access failure lifecycle.</li>
+                  </ul>
+                </article>
+                <div class="reading-copy reading-copy-span">
+                  <p class="body">
+                    Following delivery of the telephony findings, the decision was made to explore
+                    a faster-to-implement intervention: testing whether redesigning the “Connect
+                    Your Records” flow, specifically improving the visibility of the codeless
+                    access path, could reduce support call volume. That study ran and produced
+                    important findings of its own. The broader dependency-level recommendations from
+                    this analysis are currently under reassessment as the team determines next
+                    steps.
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <section class="section full-bleed-section" id="continue-exploring">
+          <div class="full-bleed-section-inner">
+            <section class="story-section">
+              <h2 class="section-title">Continue Exploring</h2>
+              <div class="related-grid">
+                <article class="related-card">
+                  <div class="label">Related case study</div>
+                  <h3>Connect Your Records: Multivariate Prototype Study</h3>
+                  <p class="body">
+                    The follow-on prototype study tested whether clarifying the codeless pathway
+                    could reduce support demand and ultimately confirmed that the deeper issue was
+                    still the patient’s mental model, not simple visibility.
+                  </p>
+                  <div class="tag-list" aria-label="Related case study tags">
+                    <span class="tag">AdventHealth</span>
+                    <span class="tag">Support demand</span>
+                  </div>
+                  <div class="button-row">
+                    <a class="button button-secondary" href="./connect-your-records-multivariate-study.html">Read this case study</a>
+                  </div>
+                </article>
+                <article class="related-card">
+                  <div class="label">Selected work</div>
+                  <h3>Browse more research-led product work</h3>
+                  <p class="body">
+                    Explore the wider work archive for additional healthcare studies, operational
+                    insights, and research-led product work across complex systems.
+                  </p>
+                  <div class="tag-list" aria-label="Related archive tags">
+                    <span class="tag">Archive</span>
+                    <span class="tag">Healthcare</span>
+                  </div>
+                  <div class="button-row">
+                    <a class="button button-secondary" href="./case-study.html">View selected work</a>
+                  </div>
+                </article>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <section class="section full-bleed-section full-bleed-section-soft" id="contact">
+          <div class="full-bleed-section-inner">
+            <section class="story-section contact-story-panel">
+              <div class="section-kicker">Contact</div>
+              <h2 class="section-title">If you’d like to talk through the study, I’m happy to share more context.</h2>
+              <p class="body">
+                The portfolio version is intentionally focused on the decision story. If you want to
+                discuss the Five9 analysis, the access-failure lifecycle, or where Product, Design,
+                and Security could intervene differently, I’d be glad to continue the conversation.
+              </p>
+              <div class="button-row">
+                <a class="button button-secondary" href="./case-study.html#contact">Get in touch about this study</a>
+              </div>
+            </section>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer-bar">
+        <span class="footer-note">Thomas Graham — UX Researcher</span>
+        <div class="dot-row" aria-hidden="true">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

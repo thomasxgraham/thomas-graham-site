@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Research Reports — Thomas Graham</title>
+    <meta
+      name="description"
+      content="Formal research report-outs from Thomas Graham, presented as browseable artifacts with a focused modal reader."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="reports-page">
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="brand" href="./index.html">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-copy">
+            <strong>Thomas Graham</strong>
+            <span>UX Researcher · Product Thinker · ResearchOps Builder</span>
+          </span>
+        </a>
+        <nav class="main-nav" aria-label="Primary">
+          <a href="./index.html">Home</a>
+          <a href="./about.html">About</a>
+          <a href="./case-study.html">Work</a>
+          <a href="./research-reports.html" aria-current="page">Reports</a>
+        </nav>
+      </header>
+
+      <main data-research-reports-app>
+        <section class="section stage wave-lines reports-gallery-stage">
+          <div class="reports-gallery-layout">
+            <aside class="reports-hero-rail">
+              <div class="micro-label">Formal report-outs</div>
+              <h1 class="page-title">Research Reports</h1>
+              <p class="support reports-intro">
+                These are the formal research artifacts that sat alongside my project work when a
+                team needed to walk the findings together, revisit evidence quickly, or absorb a
+                study outside the structure of a case study.
+              </p>
+
+            </aside>
+
+            <section class="reports-browse-rail" aria-label="Research report gallery">
+              <div class="reports-masonry" data-report-grid>
+                <a
+                  class="report-preview-tile"
+                  href="./assets/research-reports/chat-assistant-study/full-report.png"
+                  data-report-open="chat-assistant-study"
+                >
+                  <figure class="report-preview-figure">
+                    <div class="report-preview-frame">
+                      <div class="report-page-frame">
+                        <img
+                          src="./assets/research-reports/chat-assistant-study/page-01.png"
+                          alt="Preview of the Chat Assistant Study report"
+                        />
+                      </div>
+                    </div>
+                    <figcaption class="report-preview-meta">
+                      <span class="report-preview-title">Chat Assistant Study</span>
+                      <span class="report-preview-line">April 7, 2020 · Attitudinal survey report-out</span>
+                    </figcaption>
+                  </figure>
+                </a>
+              </div>
+            </section>
+          </div>
+        </section>
+      </main>
+
+      <div class="reports-modal" data-report-modal hidden>
+        <button
+          class="reports-modal-backdrop"
+          type="button"
+          aria-label="Close report viewer"
+          data-report-close
+        ></button>
+        <div
+          class="reports-modal-dialog"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="report-modal-title"
+        >
+          <div class="reports-modal-summary">
+            <div class="reports-modal-head">
+              <div>
+                <div class="micro-label">Research report</div>
+                <h2 class="reports-modal-title" id="report-modal-title" data-modal-title>
+                  Chat Assistant Study
+                </h2>
+              </div>
+              <button class="report-modal-close" type="button" data-report-close>
+                Close
+              </button>
+            </div>
+
+            <div class="reports-modal-meta">
+              <div class="reports-modal-meta-row">
+                <span class="label">Date</span>
+                <span data-modal-date>April 7, 2020</span>
+              </div>
+              <div class="reports-modal-meta-row">
+                <span class="label">Study type</span>
+                <span data-modal-study-type>Attitudinal survey report-out</span>
+              </div>
+            </div>
+
+            <p class="support reports-modal-summary-copy" data-modal-summary>
+              A formal research readout capturing how ACA patients responded to virtual chat
+              assistants, where automation felt helpful, and where it risked undermining trust in
+              Care Advocacy.
+            </p>
+
+            <div class="reports-modal-findings">
+              <div class="label">Key findings</div>
+              <ul class="compact-list" data-modal-findings>
+                <li>Patients preferred clear communication before the assistant appeared in care flows.</li>
+                <li>The ability to bypass the assistant and reach a human remained the strongest value signal.</li>
+                <li>Automation was acceptable when it supported care, but risky when it interrupted human continuity.</li>
+              </ul>
+            </div>
+
+            <div class="button-row">
+              <a
+                class="button button-secondary"
+                href="./virtual-chat-assistant-study.html"
+                data-modal-case-study
+                >Open related case study</a
+              >
+            </div>
+          </div>
+
+          <div class="reports-modal-viewport" data-modal-viewport tabindex="0">
+            <div class="reports-modal-pages" data-modal-pages>
+              <figure class="report-page-frame">
+                <img
+                  src="./assets/research-reports/chat-assistant-study/page-01.png"
+                  alt="Chat Assistant Study report page 1"
+                />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer-bar">
+        <span class="footer-note">Thomas Graham — UX Researcher</span>
+        <div class="dot-row" aria-hidden="true">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./research-reports.js"></script>
+  </body>
+</html>

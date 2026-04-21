@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh auth *)",
+      "Bash(git --version)",
+      "Bash(git init *)",
+      "Bash(git add *)",
+      "Bash(git -c user.name=\"Thomas Graham\" -c user.email=\"thomasxgraham@users.noreply.github.com\" commit -m \"Initial commit: portfolio site\")"
+    ]
+  }
+}

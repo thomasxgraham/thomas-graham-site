@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyChart Bedside ED: Onboarding Timing Study — Thomas Graham</title>
+    <meta
+      name="description"
+      content="A case study about benchmarking the MyChart Bedside ED onboarding journey, identifying where BYOD registration broke down, and supporting a lower-friction access model."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="brand" href="./index.html">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-copy">
+            <strong>Thomas Graham</strong>
+            <span>UX Researcher · Product Thinker · ResearchOps Builder</span>
+          </span>
+        </a>
+        <nav class="main-nav" aria-label="Primary">
+          <a href="./index.html">Home</a>
+          <a href="./about.html">About</a>
+          <a href="./case-study.html" aria-current="page">Work</a>
+          <a href="./research-reports.html">Reports</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="section stage wave-lines work-stage">
+          <div class="story-head work-head">
+            <div class="case-hero-copy">
+              <div class="micro-label">Case study</div>
+              <h1 class="page-title">MyChart Bedside ED: Onboarding Timing Study</h1>
+              <p class="story-lead support">
+                When AdventHealth moved its Emergency Department bedside experience from hospital
+                tablets to a Bring Your Own Device model, patients were suddenly expected to
+                download an app, create an account, verify their identity, complete MFA, and sign
+                in before they could access any bedside features. In the ED, that full registration
+                gauntlet was landing on people who were stressed, often on poor cellular
+                connections, and increasingly relying on nurses to get through it.
+              </p>
+              <div class="button-row">
+                <a class="button button-secondary button-back" href="./case-study.html"
+                  >Back to selected work</a
+                >
+              </div>
+            </div>
+            <div class="meta-grid work-meta-grid research-dashboard" aria-label="Study profile">
+              <article class="research-card research-card-number">
+                <div class="meta-label">Median time</div>
+                <div class="research-number">5:58</div>
+              </article>
+              <article class="research-card">
+                <div class="meta-label">Study type</div>
+                <div class="meta-copy">Rapid timing study</div>
+              </article>
+              <article class="research-card">
+                <div class="meta-label">Methods</div>
+                <div class="meta-copy">
+                  10 proxy timing runs + journey mapping + observational notes
+                </div>
+              </article>
+              <article class="research-card">
+                <div class="meta-label">Decision area</div>
+                <div class="meta-copy">
+                  How to reduce ED onboarding friction in a BYOD model without increasing nurse burden.
+                </div>
+              </article>
+              <article class="research-card research-card-wide">
+                <div class="meta-label">Questions explored</div>
+                <div class="meta-copy">
+                  Total onboarding time, app handoff penalty, connectivity impact, and where the
+                  current registration path shifted failure cost onto nurses.
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section case-layout">
+          <aside class="toc">
+            <div class="micro-label">On this page</div>
+            <a href="#tldr">tl;dr</a>
+            <a href="#what-we-learned">What We Learned</a>
+            <a href="#outcome-research">Outcome of the Research</a>
+            <a href="#continue-exploring">Continue Exploring</a>
+            <a href="#contact">Contact</a>
+          </aside>
+
+          <div>
+            <section class="story-section" id="tldr">
+              <h2 class="section-title">tl;dr</h2>
+              <div class="tldr-layout">
+                <div class="reading-copy">
+                  <p class="body">
+                    When AdventHealth shifted its Emergency Department digital experience to a Bring
+                    Your Own Device model, it introduced an unintended burden: patients arriving in
+                    the ED were now expected to download an app, create an account, verify their
+                    identity, complete MFA, and log in before they could access any digital
+                    bedside features. What had previously been handled on pre-registered hospital
+                    tablets was now a full onboarding gauntlet sitting squarely on the patient's
+                    shoulders, and increasingly on nurses.
+                  </p>
+                  <p class="body">
+                    To address this, I led a rapid timing study to benchmark the full end-to-end
+                    onboarding journey, from SMS invite to first successful access of MyChart
+                    Bedside ED, and to quantify exactly where the process was breaking down. The
+                    findings revealed a median completion time of just under six minutes, with
+                    meaningful delays concentrated in the account creation and app handoff phases.
+                  </p>
+                  <p class="body">
+                    The research gave leadership the credible, step-level evidence they needed to
+                    pursue a fundamentally different approach: a low-friction, code-based entry
+                    point that routes patients directly into Bedside features without requiring full
+                    account registration.
+                  </p>
+                </div>
+                <article class="note-panel tldr-summary-card">
+                  <ul class="tldr-summary-list">
+                    <li>The median onboarding time was 5:58, just over the 5-minute leadership benchmark, with a range of 3:05 to 8:20 depending on device, network, and user confidence.</li>
+                    <li>The app download handoff added a median of 1:49, and up to 3:06 in worst-case runs, making it a significant and discrete friction point.</li>
+                    <li>The real bottleneck was not the app itself, but a registration model designed for convenience-driven digital consumers rather than patients in acute care.</li>
+                    <li>Nurses were absorbing the failure cost, becoming de facto IT support and adding stress to an already high-pressure environment.</li>
+                    <li>A code-based bypass is now in testing, and early results show a meaningful reduction in the time nurses spend troubleshooting onboarding with patients.</li>
+                  </ul>
+                </article>
+              </div>
+            </section>
+
+            <section class="story-section" id="what-we-learned">
+              <h2 class="section-title">What We Learned</h2>
+
+              <article class="report-chapter">
+                <div class="story-columns media-right">
+                  <div class="reading-copy">
+                    <h3>The BYOD Shift Created a Friction Gap No One Had Fully Mapped</h3>
+                    <p class="body">
+                      AdventHealth's Emergency Department had previously provided patients with
+                      pre-registered tablets, giving them immediate access to digital bedside
+                      features. When the model shifted to BYOD, the assumption was that patients
+                      would use their own phones, but the onboarding path they were handed was not
+                      built for an ED context. It was the standard AdventHealth account creation
+                      flow: designed for a patient sitting at home with a stable connection and time
+                      to spare. In the ED, neither of those things is true.
+                    </p>
+                    <p class="body">
+                      Mapping the full journey made the gap visible. From the moment a patient
+                      received an SMS invite, they had to open a link, create an account, provide
+                      personal information, verify their email, set up MFA, download the
+                      AdventHealth app, log in a second time, and verify their identity again, all
+                      before seeing a single Bedside feature.
+                    </p>
+                  </div>
+                  <figure class="story-media-frame study-graphic-frame">
+                    <img
+                      src="./assets/ed-onboarding-study/sms-invite.png"
+                      alt="SMS invite message used to begin the MyChart Bedside ED onboarding flow"
+                    />
+                    <figcaption class="study-frame-caption">
+                      Patients entered the experience through a text-message invite, which kicked off
+                      the full registration path before they could access bedside features.
+                    </figcaption>
+                  </figure>
+                  <figure class="story-media-frame study-chart-frame story-media-span">
+                    <div class="chart-head">
+                      <div class="chart-kicker">Timing flow</div>
+                      <div class="chart-title">Where the onboarding journey was losing time</div>
+                      <div class="chart-subtitle">
+                        Median completion time from SMS invite to first successful Bedside access:
+                        5:58
+                      </div>
+                    </div>
+                    <div class="process-timeline" aria-label="Onboarding timing flow">
+                      <div class="timeline-track">
+                        <div class="timeline-segment" style="--share:27; --segment-color:#5f7f0d;">
+                          <span class="timeline-segment-label">Open invite</span>
+                        </div>
+                        <div class="timeline-segment" style="--share:216; --segment-color:#0f4b72;">
+                          <span class="timeline-segment-label">Account completion</span>
+                        </div>
+                        <div class="timeline-segment" style="--share:62; --segment-color:#1f9fda;">
+                          <span class="timeline-segment-label">Begin download</span>
+                        </div>
+                        <div class="timeline-segment" style="--share:24; --segment-color:#4f9890;">
+                          <span class="timeline-segment-label">Install / open</span>
+                        </div>
+                        <div class="timeline-segment" style="--share:29; --segment-color:#567b05;">
+                          <span class="timeline-segment-label">Sign into app</span>
+                        </div>
+                      </div>
+                      <div class="timeline-metric-grid">
+                        <article class="timeline-metric">
+                          <div class="timeline-metric-time">0:27</div>
+                          <div class="timeline-metric-label">Start</div>
+                          <div class="timeline-metric-copy">
+                            The invite and initial handoff happened quickly; the delay started once
+                            registration began.
+                          </div>
+                        </article>
+                        <article class="timeline-metric">
+                          <div class="timeline-metric-time">3:36</div>
+                          <div class="timeline-metric-label">Account completion</div>
+                          <div class="timeline-metric-copy">
+                            Verification, MFA, and repeated identity steps consumed the largest
+                            stretch of the journey.
+                          </div>
+                        </article>
+                        <article class="timeline-metric">
+                          <div class="timeline-metric-time">1:55</div>
+                          <div class="timeline-metric-label">App handoff to access</div>
+                          <div class="timeline-metric-copy">
+                            The redirect into download, install, and re-entry added a second
+                            concentrated block of friction.
+                          </div>
+                        </article>
+                      </div>
+                    </div>
+                    <figcaption class="study-frame-caption">
+                      The benchmark timeline made the entire journey visible, including where the
+                      account-creation stretch and app handoff were consuming the most time.
+                    </figcaption>
+                  </figure>
+                  <div class="reading-copy reading-copy-span">
+                    <p class="body">
+                      Across 10 proxy runs, that journey took a median of 5:58, with the account
+                      creation phase alone accounting for 3:36 of that time. The study turned a
+                      vaguely understood pain point into a concrete sequence of delays that leaders
+                      could finally discuss step by step.
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="report-chapter">
+                <div class="story-columns media-left">
+                  <figure class="story-media-frame study-chart-frame">
+                    <div class="chart-head">
+                      <div class="chart-kicker">Timing buckets</div>
+                      <div class="chart-title">The friction was concentrated in two measurable places</div>
+                    </div>
+                    <div class="metric-callout-grid" aria-label="Timing buckets">
+                      <article class="metric-callout">
+                        <div class="metric-callout-value">5:58</div>
+                        <div class="metric-callout-label">Total time to completion</div>
+                      </article>
+                      <article class="metric-callout">
+                        <div class="metric-callout-value">1:55</div>
+                        <div class="metric-callout-label">App download to MCB ED</div>
+                      </article>
+                      <article class="metric-callout">
+                        <div class="metric-callout-value">3:36</div>
+                        <div class="metric-callout-label">Account completion</div>
+                      </article>
+                    </div>
+                    <figcaption class="study-frame-caption">
+                      High-level timing buckets helped separate total journey time from the two
+                      biggest contributors: account completion and the app handoff.
+                    </figcaption>
+                  </figure>
+                  <div class="reading-copy">
+                    <h3>The Handoff Penalty Was Real and Discrete</h3>
+                    <p class="body">
+                      One of the study's two core questions was whether the app download handoff,
+                      the moment patients are redirected from the web registration flow into the App
+                      Store to download the AdventHealth app, added meaningful time. It did. The
+                      handoff added a median of 1:49, and in some runs as much as 3:06.
+                    </p>
+                    <p class="body">
+                      This was not just an inconvenience. It was a context switch that interrupted
+                      momentum at the worst possible moment, right after patients had already
+                      completed a multi-step registration process. The timing study made that delay
+                      visible as its own problem rather than just another small annoyance inside the
+                      broader flow.
+                    </p>
+                  </div>
+                  <div class="reading-copy reading-copy-span">
+                    <p class="body">
+                      Because the handoff could be measured on its own, it became much easier to
+                      argue for removing it entirely rather than trying to smooth it over with
+                      better copy or more onboarding guidance.
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="report-chapter">
+                <div class="story-columns media-right">
+                  <div class="reading-copy">
+                    <h3>Connectivity Made Everything Worse, and Nurses Were Caught in the Middle</h3>
+                    <p class="body">
+                      Test runs were conducted on devices without Wi-Fi enabled, a deliberate choice
+                      to reflect the actual ED environment, where patients are unlikely to be
+                      connected to the hospital network. The timing data captured under these
+                      conditions is more representative of what real patients experience, and it
+                      showed. Cellular-only runs trended longer, and qualitative notes flagged slow
+                      load times and delayed SMS verification codes as key friction drivers.
+                    </p>
+                  </div>
+                  <article class="note-panel">
+                    <div class="label">Human cost</div>
+                    <p class="body">
+                      This burden was not visible in the timing numbers alone, but it was consistent
+                      across participant observations and nurse feedback and became one of the most
+                      compelling arguments for changing the model.
+                    </p>
+                  </article>
+                  <div class="reading-copy reading-copy-span">
+                    <p class="body">
+                      Beyond the timing data, one of the most important things this study surfaced
+                      was the human cost of a broken onboarding flow. ED nurses, whose primary job
+                      is clinical care, had become informal IT support for patients trying to
+                      navigate the registration process. Every stuck patient was a nurse pulled away
+                      from something more important.
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="report-chapter">
+                <div class="story-columns media-left story-columns-lead-span">
+                  <div class="reading-copy">
+                    <h3>The Root Problem Was a Registration Flow Designed for the Wrong Context</h3>
+                    <p class="body">
+                      The account creation flow was not poorly designed in absolute terms. It was
+                      designed for the wrong setting. In an ED, patients have already handed over
+                      their personal information when they were admitted. Asking them to re-enter
+                      that same information through a multi-step digital registration process is not
+                      just slow, it is redundant.
+                    </p>
+                    <p class="body">
+                      That redundancy created a perception mismatch between the care patients had
+                      already received and the digital experience being offered to complement it. The
+                      app was asking them to prove who they were all over again before they could
+                      reach something that should have felt like bedside support.
+                    </p>
+                  </div>
+                  <div class="reading-copy reading-copy-span">
+                    <p class="body">
+                      The study made it clear that the problem was deeper than onboarding polish. It
+                      was structural. A flow designed for convenience-driven digital consumers was
+                      being dropped into an acute-care setting where patients needed speed,
+                      simplicity, and continuity more than conventional account setup logic.
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </section>
+
+            <section class="story-section" id="outcome-research">
+              <h2 class="section-title">Outcome of the Research</h2>
+              <div class="story-columns media-right">
+                <div class="reading-copy">
+                  <p class="body">
+                    The research made a direct case for two things: quantifying the current cost in
+                    time and friction, and pointing toward a fundamentally different entry model.
+                    The recommended direction was a location-based, code-driven access path.
+                    Patients receive a unique code tied to their room upon admission, which routes
+                    them directly into MyChart Bedside ED features without requiring full account
+                    registration.
+                  </p>
+                  <p class="body">
+                    This approach uses information the hospital already has, eliminates redundant
+                    data entry, and bypasses the app download handoff entirely for first-time
+                    access. That
+                    made it a much better match for an acute-care context than the existing
+                    registration-first model.
+                  </p>
+                </div>
+                <article class="note-panel">
+                  <div class="label">Implications</div>
+                  <ul class="compact-list">
+                    <li>Use a code-based entry model that routes patients directly into bedside features without full account creation.</li>
+                    <li>Remove redundant data entry when the hospital already has the patient context needed for access.</li>
+                    <li>Reduce the troubleshooting burden placed on nurses by eliminating the highest-friction parts of the journey.</li>
+                  </ul>
+                </article>
+                <div class="reading-copy reading-copy-span">
+                  <p class="body">
+                    The code-based access model is currently in testing. Early results are
+                    meaningful: the time nurses spend troubleshooting onboarding with patients has
+                    decreased noticeably. The process is not entirely hands-off yet, but the volume
+                    of multi-step troubleshooting has been reduced, which means nurses are spending
+                    less time in an IT support role and more time on clinical care.
+                  </p>
+                </div>
+              </div>
+
+              <div class="report-gallery">
+                <article class="note-panel">
+                  <div class="label">A note on methodology</div>
+                  <p class="body">
+                    Because the true Bedside ED SMS invite flow was not accessible during the study
+                    window, runs were conducted using an analog path beginning at adventhealth.com.
+                    The core steps, account creation, verification, MFA, app download, and app
+                    sign-in, were preserved. Timing benchmarks should be understood in that context
+                    and validated against the live invite flow when accessible.
+                  </p>
+                </article>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <section class="section full-bleed-section" id="continue-exploring">
+          <div class="full-bleed-section-inner">
+            <section class="story-section">
+              <h2 class="section-title">Continue Exploring</h2>
+              <div class="related-grid">
+                <article class="related-card">
+                  <div class="label">Related case study</div>
+                  <h3>Improving new-user conversion in the AdventHealth app</h3>
+                  <p class="body">
+                    A related AdventHealth case study focused on onboarding friction, activation,
+                    and how digital health products need to earn attention before they ask for too
+                    much setup effort.
+                  </p>
+                  <div class="tag-list" aria-label="Related case study tags">
+                    <span class="tag">AdventHealth</span>
+                    <span class="tag">Onboarding</span>
+                  </div>
+                  <div class="button-row">
+                    <a class="button button-secondary" href="./adventhealth-user-conversion.html">Read this case study</a>
+                  </div>
+                </article>
+                <article class="related-card">
+                  <div class="label">Selected work</div>
+                  <h3>Browse more research-led product work</h3>
+                  <p class="body">
+                    Explore the wider work archive for additional healthcare studies, research-led
+                    product decisions, and operational work across complex systems.
+                  </p>
+                  <div class="tag-list" aria-label="Related archive tags">
+                    <span class="tag">Archive</span>
+                    <span class="tag">Healthcare</span>
+                  </div>
+                  <div class="button-row">
+                    <a class="button button-secondary" href="./case-study.html">View selected work</a>
+                  </div>
+                </article>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <section class="section full-bleed-section full-bleed-section-soft" id="contact">
+          <div class="full-bleed-section-inner">
+            <section class="story-section contact-story-panel">
+              <div class="section-kicker">Contact</div>
+              <h2 class="section-title">If you’d like to talk through the study, I’m happy to share more context.</h2>
+              <p class="body">
+                The portfolio version is intentionally focused on the research story. If you want to
+                discuss the timing study, the BYOD shift, or the code-based access model in more
+                detail, I’d be glad to continue the conversation.
+              </p>
+              <div class="button-row">
+                <a class="button button-secondary" href="./case-study.html#contact">Get in touch about this study</a>
+              </div>
+            </section>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer-bar">
+        <span class="footer-note">Thomas Graham — UX Researcher</span>
+        <div class="dot-row" aria-hidden="true">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

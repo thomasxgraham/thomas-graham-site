@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Virtual Chat Assistant Study — Thomas Graham</title>
+    <meta
+      name="description"
+      content="A report-based case study about how ACA patients felt about virtual chat assistants, the features they valued, and where automation risked eroding trust in Care Advocacy."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="brand" href="./index.html">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-copy">
+            <strong>Thomas Graham</strong>
+            <span>UX Researcher · Product Thinker · ResearchOps Builder</span>
+          </span>
+        </a>
+        <nav class="main-nav" aria-label="Primary">
+          <a href="./index.html">Home</a>
+          <a href="./about.html">About</a>
+          <a href="./case-study.html" aria-current="page">Work</a>
+          <a href="./research-reports.html">Reports</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="section stage wave-lines work-stage">
+          <div class="story-head work-head">
+            <div class="case-hero-copy">
+              <div class="micro-label">Case study</div>
+              <h1 class="page-title">Virtual Chat Assistant Study</h1>
+              <p class="story-lead support">
+                Building on previous research, this study aimed to better understand the experiences
+                and opinions of ACA patients regarding chatbots in Care Advocacy. The central
+                question was not simply whether a virtual assistant was useful, but how to integrate
+                one without making patients feel that human support had been taken away. If the
+                assistant felt like a benefit rather than a substitute, it could improve
+                responsiveness without eroding trust.
+              </p>
+              <div class="button-row">
+                <a class="button button-secondary button-back" href="./case-study.html"
+                  >Back to selected work</a
+                >
+              </div>
+            </div>
+            <div class="meta-grid work-meta-grid research-dashboard" aria-label="Study profile">
+              <article class="research-card research-card-number">
+                <div class="meta-label">Participants</div>
+                <div class="research-number">1.1k</div>
+              </article>
+              <article class="research-card">
+                <div class="meta-label">Study type</div>
+                <div class="meta-copy">Attitudinal survey</div>
+              </article>
+              <article class="research-card">
+                <div class="meta-label">Methods</div>
+                <div class="meta-copy">Online survey + feature ranking</div>
+              </article>
+              <article class="research-card">
+                <div class="meta-label">Decision area</div>
+                <div class="meta-copy">How to introduce automation without eroding trust in Care Advocacy.</div>
+              </article>
+              <article class="research-card research-card-wide">
+                <div class="meta-label">Questions explored</div>
+                <div class="meta-copy">
+                  Introduction preferences, valued capabilities, and patient comfort with starting or
+                  transferring into chat automation.
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section case-layout">
+          <aside class="toc">
+            <div class="micro-label">On this page</div>
+            <a href="#tldr">tl;dr</a>
+            <a href="#what-we-learned">What We Learned</a>
+            <a href="#outcome-research">Outcome of the Research</a>
+            <a href="#continue-exploring">Continue Exploring</a>
+            <a href="#contact">Contact</a>
+          </aside>
+
+          <div>
+            <section class="story-section" id="tldr">
+              <h2 class="section-title">tl;dr</h2>
+              <div class="tldr-layout">
+                <div class="reading-copy">
+                  <p class="body">
+                    Building on previous research, this study set out to better understand how ACA
+                    patients felt about virtual chat assistants in the Care Advocacy experience. The
+                    goal was not simply to test whether automation was acceptable, but to learn how
+                    it should be introduced, which tasks it could credibly support, and where human
+                    interaction remained a non-negotiable part of care.
+                  </p>
+                  <p class="body">
+                    The study revealed a clear pattern: patients could see the value of automation
+                    for speed and routine tasks, but they wanted it introduced carefully, kept in a
+                    supporting role, and paired with easy access to a human Care Advocate.
+                  </p>
+                </div>
+                <article class="note-panel tldr-summary-card">
+                  <ul class="tldr-summary-list">
+                    <li>Patients preferred clear communication before the change, with email emerging as the strongest introduction path.</li>
+                    <li>The ability to bypass the assistant and reach a human Care Advocate ranked as the most valuable capability.</li>
+                    <li>Immediate responses and 24/7 availability were appealing, but only when paired with easy access to human help.</li>
+                    <li>Starting with a virtual assistant was mostly tolerated or disliked, while human-first interactions with chat as an option were more acceptable.</li>
+                    <li>Being transferred from a Care Advocate to automation was more strongly resisted and reinforced the importance of human continuity.</li>
+                  </ul>
+                </article>
+              </div>
+            </section>
+
+            <section class="story-section" id="what-we-learned">
+              <h2 class="section-title">What We Learned</h2>
+
+              <article class="report-chapter">
+                <div class="story-columns media-right">
+                  <div class="reading-copy">
+                    <h3>Patients Wanted Clear Communication Before the Change</h3>
+                    <p class="body">
+                      The strongest preference in the study was not about a feature. It was about how
+                      the change should be introduced. Most patients wanted a direct explanation by
+                      email before encountering a virtual assistant inside the experience.
+                    </p>
+                  </div>
+                  <figure class="story-media-frame study-chart-frame">
+                    <div class="chart-head">
+                      <div class="chart-kicker">Preferred introduction channel</div>
+                      <div class="chart-title">Email was the clearest way to introduce the change</div>
+                    </div>
+                    <div class="hbar-chart" aria-label="Preferred introduction channels">
+                      <article class="hbar-row">
+                        <div class="hbar-row-head">
+                          <div class="hbar-label">An email explaining when the change will happen and how it will affect my experience</div>
+                          <div class="hbar-value">40%</div>
+                        </div>
+                        <div class="hbar-track"><div class="hbar-fill" style="--value:40; --max:40; --bar-color:#1e79ae;"></div></div>
+                      </article>
+                      <article class="hbar-row">
+                        <div class="hbar-row-head">
+                          <div class="hbar-label">A notification in your mobile application and portal</div>
+                          <div class="hbar-value">29%</div>
+                        </div>
+                        <div class="hbar-track"><div class="hbar-fill" style="--value:29; --max:40; --bar-color:#1e79ae;"></div></div>
+                      </article>
+                      <article class="hbar-row">
+                        <div class="hbar-row-head">
+                          <div class="hbar-label">I do not want to be introduced to a virtual chat assistant</div>
+                          <div class="hbar-value">29%</div>
+                        </div>
+                        <div class="hbar-track"><div class="hbar-fill" style="--value:29; --max:40; --bar-color:#1e79ae;"></div></div>
+                      </article>
+                      <article class="hbar-row">
+                        <div class="hbar-row-head">
+                          <div class="hbar-label">An explanation when I begin a chat with my Care Advocate</div>
+                          <div class="hbar-value">26%</div>
+                        </div>
+                        <div class="hbar-track"><div class="hbar-fill" style="--value:26; --max:40; --bar-color:#1e79ae;"></div></div>
+                      </article>
+                      <article class="hbar-row">
+                        <div class="hbar-row-head">
+                          <div class="hbar-label">A separate webpage with information explaining the update</div>
+                          <div class="hbar-value">12%</div>
+                        </div>
+                        <div class="hbar-track"><div class="hbar-fill" style="--value:12; --max:40; --bar-color:#1e79ae;"></div></div>
+                      </article>
+                      <article class="hbar-row">
+                        <div class="hbar-row-head">
+                          <div class="hbar-label">Other</div>
+                          <div class="hbar-value">7%</div>
+                        </div>
+                        <div class="hbar-track"><div class="hbar-fill" style="--value:7; --max:40; --bar-color:#1e79ae;"></div></div>
+                      </article>
+                    </div>
+                    <figcaption class="study-frame-caption">
+                      Email was the clearest preferred channel for introducing the change.
+                    </figcaption>
+                  </figure>
+                  <div class="reading-copy reading-copy-span">
+                    <p class="body">
+                      That mattered because a meaningful portion of respondents also said they did not
+                      want to be introduced to a virtual assistant at all. The finding suggests that
+                      communication needed to do more than announce a new tool. It needed to frame
+                      the assistant as useful, explain how it would affect care, and reduce the fear
+                      that human support was being taken away.
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="report-chapter">
+                <div class="story-columns media-left story-columns-lead-span">
+                  <div class="reading-copy">
+                    <h3>Convenience Was Valuable, but Human Bypass Was Essential</h3>
+                    <p class="body">
+                      When patients ranked potential capabilities, the most valued feature was the
+                      ability to bypass the virtual assistant and reach a human Care Advocate.
+                      Immediate answers and 24/7 availability followed closely behind.
+                    </p>
+                    <p class="body">
+                      This ranking showed that patients did see real value in automation. They wanted
+                      speed, accessibility, and help with routine tasks. But that value only held if
+                      the system preserved a clear escape hatch back to a person.
+                    </p>
+                  </div>
+                  <figure class="story-media-frame study-chart-frame story-media-span">
+                    <div class="chart-head">
+                      <div class="chart-kicker">Attribute ranking</div>
+                      <div class="chart-title">Human bypass outranked every other capability</div>
+                    </div>
+                    <div class="chart-table-scroll">
+                      <table class="ranking-table" aria-label="Ranked virtual assistant attributes">
+                        <thead>
+                          <tr>
+                            <th scope="col">Item</th>
+                            <th scope="col">Rank</th>
+                            <th scope="col">Score</th>
+                            <th scope="col">Rankings</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Ability to bypass the virtual assistant to reach a human Care Advocate</td>
+                            <td>1</td>
+                            <td><div class="score-meta">5,470</div><div class="score-meter"><div class="score-meter-fill" style="--value:5470; --max:5470;"></div></div></td>
+                            <td>950</td>
+                          </tr>
+                          <tr>
+                            <td>Ability to respond immediately to my questions</td>
+                            <td>2</td>
+                            <td><div class="score-meta">5,184</div><div class="score-meter"><div class="score-meter-fill" style="--value:5184; --max:5470;"></div></div></td>
+                            <td>940</td>
+                          </tr>
+                          <tr>
+                            <td>24/7 availability</td>
+                            <td>3</td>
+                            <td><div class="score-meta">4,885</div><div class="score-meter"><div class="score-meter-fill" style="--value:4885; --max:5470;"></div></div></td>
+                            <td>941</td>
+                          </tr>
+                          <tr>
+                            <td>Ability to refill medications for me</td>
+                            <td>4</td>
+                            <td><div class="score-meta">4,571</div><div class="score-meter"><div class="score-meter-fill" style="--value:4571; --max:5470;"></div></div></td>
+                            <td>945</td>
+                          </tr>
+                          <tr>
+                            <td>Ability to leave a message for my provider/care advocate</td>
+                            <td>5</td>
+                            <td><div class="score-meta">4,518</div><div class="score-meter"><div class="score-meter-fill" style="--value:4518; --max:5470;"></div></div></td>
+                            <td>951</td>
+                          </tr>
+                          <tr>
+                            <td>Ability to schedule an appointment for me</td>
+                            <td>6</td>
+                            <td><div class="score-meta">4,456</div><div class="score-meter"><div class="score-meter-fill" style="--value:4456; --max:5470;"></div></div></td>
+                            <td>935</td>
+                          </tr>
+                          <tr>
+                            <td>Always available wherever you are in your account</td>
+                            <td>7</td>
+                            <td><div class="score-meta">2,972</div><div class="score-meter"><div class="score-meter-fill" style="--value:2972; --max:5470;"></div></div></td>
+                            <td>918</td>
+                          </tr>
+                          <tr>
+                            <td>Ability to help with technical support</td>
+                            <td>8</td>
+                            <td><div class="score-meta">2,185</div><div class="score-meter"><div class="score-meter-fill" style="--value:2185; --max:5470;"></div></div></td>
+                            <td>917</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <figcaption class="study-frame-caption">
+                      Human bypass, immediate responses, and 24/7 availability emerged as the
+                      strongest value signals.
+                    </figcaption>
+                  </figure>
+                  <div class="reading-copy reading-copy-span">
+                    <p class="body">
+                      In other words, convenience was attractive, but not on its own. The assistant
+                      became credible when it felt like a support layer rather than a gatekeeper.
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="report-chapter">
+                <div class="story-columns media-right">
+                  <div class="reading-copy">
+                    <h3>Starting with Chat Was More Tolerated than Desired</h3>
+                    <p class="body">
+                      Starting Care Advocacy interactions with a virtual chat assistant produced a
+                      mixed but cautious response. Many patients said they would dislike starting
+                      this way, while a smaller group said they could live with it or might even like
+                      it.
+                    </p>
+                  </div>
+                  <figure class="story-media-frame study-chart-frame study-graphic-frame-compact">
+                    <div class="chart-head">
+                      <div class="chart-kicker">Start with chat</div>
+                    </div>
+                    <div class="bar-chart bar-chart-scroll">
+                      <div class="bar-chart-plot bar-chart-plot-five">
+                        <article class="bar-group"><div class="bar-group-bars"><div class="bar" style="--value:47; --max:50; --bar-color:#1e79ae;"><span class="bar-value">47%</span></div></div><div class="bar-group-label">I would hate it</div></article>
+                        <article class="bar-group"><div class="bar-group-bars"><div class="bar" style="--value:27; --max:50; --bar-color:#1e79ae;"><span class="bar-value">27%</span></div></div><div class="bar-group-label">I can live with it</div></article>
+                        <article class="bar-group"><div class="bar-group-bars"><div class="bar" style="--value:15; --max:50; --bar-color:#1e79ae;"><span class="bar-value">15%</span></div></div><div class="bar-group-label">No feelings</div></article>
+                        <article class="bar-group"><div class="bar-group-bars"><div class="bar" style="--value:10; --max:50; --bar-color:#1e79ae;"><span class="bar-value">10%</span></div></div><div class="bar-group-label">I would like it</div></article>
+                        <article class="bar-group"><div class="bar-group-bars"><div class="bar" style="--value:2; --max:50; --bar-color:#1e79ae;"><span class="bar-value">2%</span></div></div><div class="bar-group-label">It must be that way</div></article>
+                      </div>
+                    </div>
+                  </figure>
+                  <div class="reading-copy">
+                    <p class="body">
+                      The more favorable reaction came from a different model: beginning without a
+                      virtual assistant but having the option available later. That shift matters
+                      because it shows patients were not rejecting automation in principle. They were
+                      rejecting a loss of control at the beginning of the interaction.
+                    </p>
+                  </div>
+                  <figure class="story-media-frame study-chart-frame study-graphic-frame-compact">
+                    <div class="chart-head">
+                      <div class="chart-kicker">Start without chat</div>
+                    </div>
+                    <div class="bar-chart bar-chart-scroll">
+                      <div class="bar-chart-plot bar-chart-plot-five">
+                        <article class="bar-group"><div class="bar-group-bars"><div class="bar" style="--value:51; --max:55; --bar-color:#1e79ae;"><span class="bar-value">51%</span></div></div><div class="bar-group-label">I would like it</div></article>
+                        <article class="bar-group"><div class="bar-group-bars"><div class="bar" style="--value:22; --max:55; --bar-color:#1e79ae;"><span class="bar-value">22%</span></div></div><div class="bar-group-label">No feelings</div></article>
+                        <article class="bar-group"><div class="bar-group-bars"><div class="bar" style="--value:17; --max:55; --bar-color:#1e79ae;"><span class="bar-value">17%</span></div></div><div class="bar-group-label">I can live with it</div></article>
+                        <article class="bar-group"><div class="bar-group-bars"><div class="bar" style="--value:6; --max:55; --bar-color:#1e79ae;"><span class="bar-value">6%</span></div></div><div class="bar-group-label">I would hate it</div></article>
+                        <article class="bar-group"><div class="bar-group-bars"><div class="bar" style="--value:5; --max:55; --bar-color:#1e79ae;"><span class="bar-value">5%</span></div></div><div class="bar-group-label">It must be that way</div></article>
+                      </div>
+                    </div>
+                  </figure>
+                  <figure class="story-media-frame study-chart-frame story-media-span">
+                    <div class="chart-head">
+                      <div class="chart-kicker">Kano framing</div>
+                      <div class="chart-title">Starting with chat landed in the low-value, low-tolerance zone</div>
+                    </div>
+                    <div class="chart-scroll-shell">
+                      <div class="scatter-chart">
+                        <div class="scatter-plot scatter-plot-fluid" aria-label="Kano-style plot for starting with chat">
+                          <div class="scatter-crosshair-vertical"></div>
+                          <div class="scatter-crosshair-horizontal"></div>
+                          <div class="scatter-axis-label scatter-axis-label-x">Expectation match / performance</div>
+                          <div class="scatter-axis-label scatter-axis-label-y">Attractiveness / tolerance</div>
+                          <div class="scatter-quadrant-label" style="top:22px; left:70px;">Attractive</div>
+                          <div class="scatter-quadrant-label" style="top:22px; right:34px;">Performance</div>
+                          <div class="scatter-quadrant-label" style="bottom:42px; left:70px;">Indifferent</div>
+                          <div class="scatter-quadrant-label" style="bottom:42px; right:34px;">Must-be</div>
+                          <div class="scatter-dot scatter-dot-highlight" style="--x:0.14; --y:0.08; --size:14px;" data-label="Starting with chat assistant"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </figure>
+                </div>
+              </article>
+
+              <article class="report-chapter">
+                <div class="story-columns media-right">
+                  <div class="reading-copy">
+                    <h3>Transfer to Automation Triggered Stronger Resistance</h3>
+                    <p class="body">
+                      The sharpest warning sign in the study came when patients were asked how they
+                      would feel about being transferred from a human Care Advocate to an automated
+                      assistant for certain tasks. That move produced stronger resistance than simply
+                      offering chat as a possible starting point.
+                    </p>
+                  </div>
+                  <figure class="story-media-frame study-chart-frame study-graphic-frame-compact">
+                    <div class="chart-head">
+                      <div class="chart-kicker">Transfer to chat</div>
+                    </div>
+                    <div class="bar-chart bar-chart-scroll">
+                      <div class="bar-chart-plot bar-chart-plot-five">
+                        <article class="bar-group"><div class="bar-group-bars"><div class="bar" style="--value:30; --max:35; --bar-color:#1e79ae;"><span class="bar-value">30%</span></div></div><div class="bar-group-label">I would hate it</div></article>
+                        <article class="bar-group"><div class="bar-group-bars"><div class="bar" style="--value:28; --max:35; --bar-color:#1e79ae;"><span class="bar-value">28%</span></div></div><div class="bar-group-label">I can live with it</div></article>
+                        <article class="bar-group"><div class="bar-group-bars"><div class="bar" style="--value:22; --max:35; --bar-color:#1e79ae;"><span class="bar-value">22%</span></div></div><div class="bar-group-label">No feelings</div></article>
+                        <article class="bar-group"><div class="bar-group-bars"><div class="bar" style="--value:14; --max:35; --bar-color:#1e79ae;"><span class="bar-value">14%</span></div></div><div class="bar-group-label">I would like it</div></article>
+                        <article class="bar-group"><div class="bar-group-bars"><div class="bar" style="--value:1; --max:35; --bar-color:#1e79ae;"><span class="bar-value">1%</span></div></div><div class="bar-group-label">It must be that way</div></article>
+                      </div>
+                    </div>
+                  </figure>
+                  <div class="reading-copy">
+                    <p class="body">
+                      The contrast with “never transfer me” was especially revealing. Patients were
+                      clear that human interaction still felt like a baseline expectation of Care
+                      Advocacy. Automation could be accepted when it supported the experience, but it
+                      became risky when it interrupted continuity or looked like a replacement for the
+                      person already helping them.
+                    </p>
+                  </div>
+                  <figure class="story-media-frame study-chart-frame study-graphic-frame-compact">
+                    <div class="chart-head">
+                      <div class="chart-kicker">Never transfer</div>
+                    </div>
+                    <div class="bar-chart bar-chart-scroll">
+                      <div class="bar-chart-plot bar-chart-plot-five">
+                        <article class="bar-group"><div class="bar-group-bars"><div class="bar" style="--value:45; --max:50; --bar-color:#1e79ae;"><span class="bar-value">45%</span></div></div><div class="bar-group-label">I would like it</div></article>
+                        <article class="bar-group"><div class="bar-group-bars"><div class="bar" style="--value:26; --max:50; --bar-color:#1e79ae;"><span class="bar-value">26%</span></div></div><div class="bar-group-label">I can live with it</div></article>
+                        <article class="bar-group"><div class="bar-group-bars"><div class="bar" style="--value:17; --max:50; --bar-color:#1e79ae;"><span class="bar-value">17%</span></div></div><div class="bar-group-label">No feelings</div></article>
+                        <article class="bar-group"><div class="bar-group-bars"><div class="bar" style="--value:9; --max:50; --bar-color:#1e79ae;"><span class="bar-value">9%</span></div></div><div class="bar-group-label">I would hate it</div></article>
+                        <article class="bar-group"><div class="bar-group-bars"><div class="bar" style="--value:4; --max:50; --bar-color:#1e79ae;"><span class="bar-value">4%</span></div></div><div class="bar-group-label">It must be that way</div></article>
+                      </div>
+                    </div>
+                  </figure>
+                </div>
+              </article>
+            </section>
+
+            <section class="story-section" id="outcome-research">
+              <h2 class="section-title">Outcome of the Research</h2>
+              <div class="story-columns media-right">
+                <div class="reading-copy">
+                  <p class="body">
+                    The study gave the team a clearer set of guardrails for introducing automation
+                    into Care Advocacy. It showed that virtual chat assistants could add value, but
+                    only if they were framed as supportive, optional, and clearly subordinate to
+                    human care.
+                  </p>
+                  <p class="body">
+                    That shifted the conversation away from “Should we have a chatbot?” and toward a
+                    better product question: “Under what conditions does a chat assistant feel like a
+                    benefit instead of a loss of human support?”
+                  </p>
+                </div>
+                <article class="note-panel">
+                  <div class="label">Implications</div>
+                  <ul class="compact-list">
+                    <li>Introduce automation through clear expectation-setting before patients encounter it in care flows.</li>
+                    <li>Preserve immediate access to a human Care Advocate as a trust-preserving fallback.</li>
+                    <li>Position chat assistants as support for routine tasks, not as a replacement for human continuity.</li>
+                  </ul>
+                </article>
+                <div class="reading-copy reading-copy-span">
+                  <p class="body">
+                    It also reinforced that attitudes toward automation can be misleading if you only
+                    ask whether people “like” the concept. Patients were far more nuanced than that.
+                    They could appreciate convenience in theory while still rejecting the exact
+                    moments where automation interrupted human continuity.
+                  </p>
+                  <p class="body">
+                    It also showed the value of pairing feature ranking with a model like Kano. That
+                    combination made it easier to separate what felt attractive from what simply felt
+                    tolerable, and to identify where product decisions could unintentionally introduce
+                    dissatisfaction even when the feature set looked strong on paper.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <section class="story-section">
+              <div class="section-kicker">Recommendations</div>
+              <h2 class="section-title">The Assistant Needed to Be Introduced as Support, Not Substitution</h2>
+              <div class="recommendation-grid">
+                <article class="recommendation-card">
+                  <h3>Clear Communication</h3>
+                  <p class="body">
+                    Introduce the virtual chat assistant through multiple channels, including email,
+                    in-app notifications, and explanations during interactions with Care Advocates.
+                  </p>
+                </article>
+                <article class="recommendation-card">
+                  <h3>Human Interaction</h3>
+                  <p class="body">
+                    Ensure that patients have the option to bypass the virtual assistant and reach a
+                    human Care Advocate when needed.
+                  </p>
+                </article>
+                <article class="recommendation-card">
+                  <h3>Training and Support</h3>
+                  <p class="body">
+                    Provide training and support so patients understand how to use the virtual chat
+                    assistant effectively when it can save them time.
+                  </p>
+                </article>
+                <article class="recommendation-card">
+                  <h3>Feedback Mechanism</h3>
+                  <p class="body">
+                    Implement an ongoing feedback loop to gather patient input and improve the
+                    experience as expectations evolve.
+                  </p>
+                </article>
+              </div>
+            </section>
+
+          </div>
+        </section>
+
+        <section class="section full-bleed-section" id="continue-exploring">
+          <div class="full-bleed-section-inner">
+            <section class="story-section">
+              <h2 class="section-title">Continue Exploring</h2>
+              <div class="related-grid">
+                <article class="related-card">
+                  <div class="label">Related case study</div>
+                  <h3>Insights from a Zocdoc Search</h3>
+                  <p class="body">
+                    A moderated discovery study about search trust, guided support, and the signals
+                    patients needed to feel confident enough to continue toward booking.
+                  </p>
+                  <div class="tag-list" aria-label="Related case study tags">
+                    <span class="tag">Moderated</span>
+                    <span class="tag">Task observation</span>
+                  </div>
+                  <div class="button-row">
+                    <a class="button button-secondary" href="./zocdoc-discovery-study.html">Read this case study</a>
+                  </div>
+                </article>
+                <article class="related-card">
+                  <div class="label">Selected work</div>
+                  <h3>Browse more research work</h3>
+                  <p class="body">
+                    Explore the wider work archive for additional studies, enterprise projects, and
+                    research-led product work across healthcare and complex systems.
+                  </p>
+                  <div class="tag-list" aria-label="Related archive tags">
+                    <span class="tag">Archive</span>
+                    <span class="tag">Research portfolio</span>
+                  </div>
+                  <div class="button-row">
+                    <a class="button button-secondary" href="./case-study.html">View selected work</a>
+                  </div>
+                </article>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <section class="section full-bleed-section full-bleed-section-soft" id="contact">
+          <div class="full-bleed-section-inner">
+            <section class="story-section contact-story-panel">
+              <div class="section-kicker">Contact</div>
+              <h2 class="section-title">If you’d like to talk through the study, I’m happy to share more context.</h2>
+              <p class="body">
+                The portfolio version is intentionally focused on the research story. If you want to
+                discuss the study in more detail, I’d be glad to continue the conversation.
+              </p>
+              <div class="button-row">
+                <a class="button button-secondary" href="./case-study.html#contact">Get in touch about this study</a>
+              </div>
+            </section>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer-bar">
+        <span class="footer-note">Thomas Graham — UX Researcher</span>
+        <div class="dot-row" aria-hidden="true">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
