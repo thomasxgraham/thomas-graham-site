@@ -685,7 +685,6 @@ main {
 }
 
 .work-door-line {
-  max-width: 24ch;
   color: #5c554d;
   font-size: 0.98rem;
   line-height: 1.6;
@@ -3464,6 +3463,10 @@ main:has(.contact-hero:last-child) + .footer-bar {
 
   .work-door-grid {
     grid-template-columns: minmax(0, 1fr);
+  }
+
+  .toc {
+    display: none;
   }
 
   .work-door-card,

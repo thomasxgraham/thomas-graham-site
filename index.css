@@ -690,7 +690,7 @@ main > .section {
 .process-section {
   display: grid;
   gap: 0;
-  padding-bottom: 0;
+  padding-bottom: clamp(26px, 4vw, 42px);
 }
 
 .process-section .section-head {
@@ -698,13 +698,13 @@ main > .section {
 }
 
 .process-section .section-body-intro {
-  margin-top: 14px;
+  margin-top: clamp(28px, 5vw, 54px);
   margin-bottom: 0;
   max-width: 900px;
 }
 
 #research-process {
-  padding-top: 18px;
+  padding-top: 8px;
 }
 
 .process-tray {
@@ -716,7 +716,8 @@ main > .section {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 16px;
-  margin-top: 18px;
+  margin-top: clamp(26px, 4vw, 36px);
+  margin-bottom: clamp(26px, 4vw, 42px);
 }
 
 .process-card {

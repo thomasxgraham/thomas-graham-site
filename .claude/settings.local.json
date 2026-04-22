@@ -30,7 +30,23 @@
       "Bash(pip3 install *)",
       "Bash(python3 -c \"import pdfplumber; pdf = pdfplumber.open\\('/Users/admin/Documents/Projects/thomas-graham.me_old/_archive/2026-04-15-pre-restart/source/TC_Samples.pdf'\\); print\\(f'Pages: {len\\(pdf.pages\\)}'\\); [print\\(f'--- PAGE {i+1} ---\\\\n{p.extract_text\\(\\)}'\\) for i, p in enumerate\\(pdf.pages[:10]\\)]\")",
       "Bash(python3 -c ' *)",
-      "Bash(python3)"
+      "Bash(python3)",
+      "Bash(git -C /Users/admin/Documents/Projects/Portfolio/prototype rev-parse --show-toplevel)",
+      "Read(//Users/admin/Documents/Projects/Portfolio/**)",
+      "Bash(git -C /Users/admin/Documents/Projects/Portfolio/prototype status --short)",
+      "Bash(git -C /Users/admin/Documents/Projects/Portfolio/prototype status)",
+      "Bash(git -C /Users/admin/Documents/Projects/Portfolio/prototype diff --name-only)",
+      "Bash(git -C /Users/admin/Documents/Projects/Portfolio/prototype ls-files --others --exclude-standard)",
+      "Bash(git -C /Users/admin/Documents/Projects/Portfolio/prototype ls-files --others)",
+      "Bash(git -C /Users/admin/Documents/Projects/Portfolio/prototype ls-files griffin-malware-tool.html team-cymru-brand-system.html team-cymru-website-redesign.html telephony-data-analysis.html)",
+      "Bash(git -C /Users/admin/Documents/Projects/Portfolio/prototype diff HEAD -- telephony-data-analysis.html)",
+      "Bash(git -C /Users/admin/Documents/Projects/Portfolio/prototype log --oneline -10)",
+      "Bash(git -C /Users/admin/Documents/Projects/Portfolio/prototype show --stat bac6f4d)",
+      "Bash(git -C /Users/admin/Documents/Projects/Portfolio/prototype diff index.html)",
+      "Bash(git -C /Users/admin/Documents/Projects/Portfolio/prototype diff index.css)",
+      "Bash(git -C /Users/admin/Documents/Projects/Portfolio/prototype fetch origin)",
+      "Bash(git -C /Users/admin/Documents/Projects/Portfolio/prototype diff origin/main HEAD --name-only)",
+      "Bash(git -C /Users/admin/Documents/Projects/Portfolio/prototype diff origin/main HEAD -- index.html)"
     ]
   }
 }
