@@ -14,7 +14,9 @@
     <div class="site-shell">
       <header class="site-header">
         <a class="brand" href="./index.html">
-          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-mark" aria-hidden="true">
+            <img src="./assets/profile-thomas.jpeg" alt="" />
+          </span>
           <span class="brand-copy">
             <strong>Thomas Graham</strong>
             <span>UX Researcher · Product Thinker · ResearchOps Builder</span>
@@ -24,7 +26,6 @@
           <a href="./index.html">Home</a>
           <a href="./about.html">About</a>
           <a href="./case-study.html" aria-current="page">Work</a>
-          <a href="./research-reports.html">Reports</a>
         </nav>
       </header>
 
@@ -40,68 +41,67 @@
                 timing — form a single arc. Each one answered a question the previous one raised.
               </p>
             </div>
+            <div class="work-hero-links" aria-label="Related work areas">
+              <div class="micro-label">Explore other work</div>
+              <div class="work-hero-link-stack">
+                <a class="button button-secondary" href="./product-design.html"
+                  >Go to Product Design</a
+                >
+                <a class="button button-secondary" href="./creativity.html">Go to Creativity</a>
+              </div>
+            </div>
           </div>
         </section>
 
         <section class="section case-layout work-layout">
           <aside class="toc">
             <div class="micro-label">On this page</div>
-            <a href="#reports">Research Reports</a>
             <a href="#project-ed">Reducing ED onboarding friction in a BYOD model</a>
             <a href="#project-telephony">Understanding why patients call support</a>
             <a href="#project-connect-records">Testing whether Connect Records clarity would reduce support calls</a>
             <a href="#project-01">Improving new-user conversion in the AdventHealth app</a>
             <a href="#project-02">Reducing time-to-insight from two weeks to four days</a>
             <a href="#project-03">Redeveloping AddictionCenter.com for trust, search, and support</a>
-            <a href="#project-04">Complex enterprise work, shared selectively</a>
             <a href="#project-05">Designing the E2-D training experience across courseware and simulation</a>
-            <a href="#legacy-note">A foundation built across design, delivery, and experiential work</a>
+            <a href="#reports">Research Reports</a>
             <a href="#contact">Contact</a>
           </aside>
 
           <div>
-            <section class="story-section work-project-section" id="reports" data-content-id="work.research_reports">
-              <div class="section-kicker">Formal report-outs</div>
-              <h2 class="section-title">Research Reports</h2>
-              <div class="project-copy-stack">
-                <p class="body">
-                  These are the formal research artifacts that sat alongside my project work when a
-                  team needed to walk the findings together, revisit evidence quickly, or absorb a
-                  study outside the structure of a case study.
-                </p>
-                <div class="button-row">
-                  <a class="button button-secondary" href="./research-reports.html">Open research reports</a>
-                </div>
-              </div>
-            </section>
-
             <section class="story-section work-project-section" id="project-ed" data-content-id="work.project_ed">
               <div class="section-kicker">AdventHealth · IT UX Researcher Intermediate</div>
               <h2 class="section-title">Reducing ED onboarding friction in a BYOD model</h2>
-              <div class="project-copy-stack">
-                <div class="project-proof-block">
-                  <div class="label">TL;DR</div>
-                  <p class="project-tldr">I benchmarked the MyChart Bedside ED onboarding journey to show exactly where a BYOD registration flow was creating delays for patients and pulling nurses into a support role.</p>
+              <div class="story-columns media-right research-listing-layout">
+                <div class="project-copy-stack research-listing-lead">
+                  <div class="project-proof-block">
+                    <div class="label">TL;DR</div>
+                    <p class="project-tldr">I benchmarked the MyChart Bedside ED onboarding journey to show exactly where a BYOD registration flow was creating delays for patients and pulling nurses into a support role.</p>
+                  </div>
+                  <p class="body">
+                    When AdventHealth shifted Emergency Department bedside access from hospital tablets
+                    to patient-owned devices, it handed patients a full registration flow at the worst
+                    possible moment. I led a rapid timing study to measure the end-to-end journey and
+                    identify where the process was breaking down.
+                  </p>
                 </div>
-                <p class="body">
-                  When AdventHealth shifted Emergency Department bedside access from hospital tablets
-                  to patient-owned devices, it handed patients a full registration flow at the worst
-                  possible moment. I led a rapid timing study to measure the end-to-end journey and
-                  identify where the process was breaking down.
-                </p>
-                <p class="body">
+                <figure class="story-media-frame study-graphic-frame study-graphic-frame-compact research-listing-thumb">
+                  <img src="./assets/ed-onboarding-study/time-buckets.png" alt="Timing buckets from the MyChart Bedside ED onboarding study" />
+                </figure>
+                <p class="body reading-copy-span research-listing-trailing">
                   The study showed a median completion time of 5:58, isolated the app handoff as a
                   meaningful friction point, and gave leadership the evidence needed to pursue a
                   code-based entry model that removes redundant setup work in an acute-care context.
                 </p>
-                <div class="button-row">
-                  <a class="button button-secondary" href="./mychart-bedside-ed-timing-study.html">Read this case study</a>
-                </div>
-                <div class="tag-list" aria-label="Project tags">
-                  <span class="tag">Emergency care</span>
-                  <span class="tag">Timing study</span>
-                  <span class="tag">BYOD</span>
-                  <span class="tag">Service design</span>
+                <div class="project-copy-stack reading-copy-span research-listing-footer">
+                  <div class="button-row">
+                    <a class="button button-secondary" href="./mychart-bedside-ed-timing-study.html">Read this case study</a>
+                  </div>
+                  <div class="tag-list" aria-label="Project tags">
+                    <span class="tag">Emergency care</span>
+                    <span class="tag">Timing study</span>
+                    <span class="tag">BYOD</span>
+                    <span class="tag">Service design</span>
+                  </div>
                 </div>
               </div>
             </section>
@@ -109,31 +109,38 @@
             <section class="story-section work-project-section" id="project-telephony" data-content-id="work.project_telephony">
               <div class="section-kicker">AdventHealth research arc · Three connected studies</div>
               <h2 class="section-title">Understanding why patients call support</h2>
-              <div class="project-copy-stack">
-                <div class="project-proof-block">
-                  <div class="label">TL;DR</div>
-                  <p class="project-tldr">I re-coded Five9 support-call data to uncover one larger access-and-identity failure lifecycle hiding behind repeated “can’t log in” complaints.</p>
+              <div class="story-columns media-right research-listing-layout">
+                <div class="project-copy-stack research-listing-lead">
+                  <div class="project-proof-block">
+                    <div class="label">TL;DR</div>
+                    <p class="project-tldr">I re-coded Five9 support-call data to uncover one larger access-and-identity failure lifecycle hiding behind repeated “can’t log in” complaints.</p>
+                  </div>
+                  <p class="body">
+                    The original call tags were too broad and inconsistent to tell a useful story, so
+                    I rebuilt the categorization system from the transcripts up. Once the noise was
+                    removed, the pattern was clear: most calls were not about different product
+                    problems. They were different expressions of the same hidden access failure.
+                  </p>
                 </div>
-                <p class="body">
-                  The original call tags were too broad and inconsistent to tell a useful story, so
-                  I rebuilt the categorization system from the transcripts up. Once the noise was
-                  removed, the pattern was clear: most calls were not about different product
-                  problems. They were different expressions of the same hidden access failure.
-                </p>
-                <p class="body">
+                <figure class="story-media-frame study-graphic-frame study-graphic-frame-compact research-listing-thumb">
+                  <img src="./assets/research-listing/telephony-thumb.png" alt="Access outcomes chart from the telephony data analysis case study" />
+                </figure>
+                <p class="body reading-copy-span research-listing-trailing">
                   The work reframed support demand as a product and systems problem. It showed how
                   verification failures, wrong delivery targets, incomplete record linkage, and
                   retries that triggered lockouts were combining into one lifecycle that the system
                   could not explain or repair without human intervention.
                 </p>
-                <div class="button-row">
-                  <a class="button button-secondary" href="./telephony-data-analysis.html">Read this case study</a>
-                </div>
-                <div class="tag-list" aria-label="Project tags">
-                  <span class="tag">Five9</span>
-                  <span class="tag">Support analysis</span>
-                  <span class="tag">Access systems</span>
-                  <span class="tag">Healthcare</span>
+                <div class="project-copy-stack reading-copy-span research-listing-footer">
+                  <div class="button-row">
+                    <a class="button button-secondary" href="./telephony-data-analysis.html">Read this case study</a>
+                  </div>
+                  <div class="tag-list" aria-label="Project tags">
+                    <span class="tag">Five9</span>
+                    <span class="tag">Support analysis</span>
+                    <span class="tag">Access systems</span>
+                    <span class="tag">Healthcare</span>
+                  </div>
                 </div>
               </div>
             </section>
@@ -141,32 +148,39 @@
             <section class="story-section work-project-section" id="project-connect-records" data-content-id="work.project_connect_records">
               <div class="section-kicker">AdventHealth · UX Researcher</div>
               <h2 class="section-title">Testing whether Connect Records clarity would reduce support calls</h2>
-              <div class="project-copy-stack">
-                <div class="project-proof-block">
-                  <div class="label">TL;DR</div>
-                  <p class="project-tldr">I ran a multivariate prototype study to test whether clearer codeless access would reduce support demand, and the data showed the real issue was patient mental models, not simple visibility.</p>
+              <div class="story-columns media-right research-listing-layout">
+                <div class="project-copy-stack research-listing-lead">
+                  <div class="project-proof-block">
+                    <div class="label">TL;DR</div>
+                    <p class="project-tldr">I ran a multivariate prototype study to test whether clearer codeless access would reduce support demand, and the data showed the real issue was patient mental models, not simple visibility.</p>
+                  </div>
+                  <p class="body">
+                    The hypothesis was straightforward: if we made the “I don’t have a code” path
+                    more visible and more clearly explained, fewer patients would feel the need to
+                    call support. I tested the current flow against two redesigned alternatives
+                    across 45 participants.
+                  </p>
                 </div>
-                <p class="body">
-                  The hypothesis was straightforward: if we made the “I don’t have a code” path
-                  more visible and more clearly explained, fewer patients would feel the need to
-                  call support. I tested the current flow against two redesigned alternatives
-                  across 45 participants.
-                </p>
-                <p class="body">
+                <figure class="story-media-frame study-graphic-frame study-graphic-frame-compact research-listing-thumb research-listing-thumb-topcrop">
+                  <img src="./assets/research-listing/connect-records-thumb.png" alt="Variant comparison view from the Connect Your Records case study" />
+                </figure>
+                <p class="body reading-copy-span research-listing-trailing">
                   The most important finding was not which variant won. It was that all three were
                   navigable enough. The deeper issue was that patients did not understand what the
                   code was, where it came from, or what connecting records meant for them. That
                   pushed the work back toward the upstream access-dependency issues identified in
                   the telephony analysis.
                 </p>
-                <div class="button-row">
-                  <a class="button button-secondary" href="./connect-your-records-multivariate-study.html">Read this case study</a>
-                </div>
-                <div class="tag-list" aria-label="Project tags">
-                  <span class="tag">Prototype study</span>
-                  <span class="tag">Connect records</span>
-                  <span class="tag">Experimentation</span>
-                  <span class="tag">Call reduction</span>
+                <div class="project-copy-stack reading-copy-span research-listing-footer">
+                  <div class="button-row">
+                    <a class="button button-secondary" href="./connect-your-records-multivariate-study.html">Read this case study</a>
+                  </div>
+                  <div class="tag-list" aria-label="Project tags">
+                    <span class="tag">Prototype study</span>
+                    <span class="tag">Connect records</span>
+                    <span class="tag">Experimentation</span>
+                    <span class="tag">Call reduction</span>
+                  </div>
                 </div>
               </div>
             </section>
@@ -174,30 +188,37 @@
             <section class="story-section work-project-section" id="project-01" data-content-id="work.project_01">
               <div class="section-kicker">AdventHealth · IT UX Researcher Intermediate</div>
               <h2 class="section-title">Improving new-user conversion in the AdventHealth app</h2>
-              <div class="project-copy-stack">
-                <div class="project-proof-block">
-                  <div class="label">TL;DR</div>
-                  <p class="project-tldr">I evaluated the onboarding experience to identify where the AdventHealth app was asking too much before users felt enough value to keep going.</p>
+              <div class="story-columns media-right research-listing-layout">
+                <div class="project-copy-stack research-listing-lead">
+                  <div class="project-proof-block">
+                    <div class="label">TL;DR</div>
+                    <p class="project-tldr">I evaluated the onboarding experience to identify where the AdventHealth app was asking too much before users felt enough value to keep going.</p>
+                  </div>
+                  <p class="body">
+                    Despite promising features, the AdventHealth mobile app was struggling to retain
+                    new users beyond onboarding. I reviewed the setup flow through a mix of
+                    comparative analysis, heuristic evaluation, and behavioral design thinking to
+                    surface the specific frictions reducing activation and early return usage.
+                  </p>
                 </div>
-                <p class="body">
-                  Despite promising features, the AdventHealth mobile app was struggling to retain
-                  new users beyond onboarding. I reviewed the setup flow through a mix of
-                  comparative analysis, heuristic evaluation, and behavioral design thinking to
-                  surface the specific frictions reducing activation and early return usage.
-                </p>
-                <p class="body">
+                <figure class="story-media-frame study-graphic-frame study-graphic-frame-compact research-listing-thumb">
+                  <img src="./assets/adventhealth-conversion/onboarding-screens.png" alt="Onboarding screens from the AdventHealth app conversion study" />
+                </figure>
+                <p class="body reading-copy-span research-listing-trailing">
                   The work reframed onboarding as a value-delivery problem rather than a simple
                   registration problem. It clarified how time-to-value, motivational cues, and
                   feature discovery could make the setup experience feel more worth finishing and
                   more likely to support retention.
                 </p>
-                <div class="button-row">
-                  <a class="button button-secondary" href="./adventhealth-user-conversion.html">Read this case study</a>
-                </div>
-                <div class="tag-list" aria-label="Project tags">
-                  <span class="tag">Mobile app</span>
-                  <span class="tag">Onboarding</span>
-                  <span class="tag">Retention</span>
+                <div class="project-copy-stack reading-copy-span research-listing-footer">
+                  <div class="button-row">
+                    <a class="button button-secondary" href="./adventhealth-user-conversion.html">Read this case study</a>
+                  </div>
+                  <div class="tag-list" aria-label="Project tags">
+                    <span class="tag">Mobile app</span>
+                    <span class="tag">Onboarding</span>
+                    <span class="tag">Retention</span>
+                  </div>
                 </div>
               </div>
             </section>
@@ -231,58 +252,39 @@
             <section class="story-section work-project-section" id="project-03" data-content-id="work.project_03">
               <div class="section-kicker">Ascentus · Director, UX Design</div>
               <h2 class="section-title">Redeveloping AddictionCenter.com for trust, search, and support</h2>
-              <div class="project-copy-stack">
-                <div class="project-proof-block">
-                  <div class="label">TL;DR</div>
-                  <p class="project-tldr">I led the redevelopment of a high-traffic recovery guide so people could research treatment with more trust, flexibility, and confidence.</p>
+              <div class="story-columns media-right research-listing-layout">
+                <div class="project-copy-stack research-listing-lead">
+                  <div class="project-proof-block">
+                    <div class="label">TL;DR</div>
+                    <p class="project-tldr">I led the redevelopment of a high-traffic recovery guide so people could research treatment with more trust, flexibility, and confidence.</p>
+                  </div>
+                  <p class="body">
+                    Addiction Center was already generating calls, but the experience was too
+                    dependent on pressure, too cluttered structurally, and too weak on mobile for the
+                    people it was trying to help. I led a redevelopment effort that combined content
+                    cleanup, mobile-first thinking, audience analysis, search redesign, and visual
+                    system changes.
+                  </p>
                 </div>
-                <p class="body">
-                  Addiction Center was already generating calls, but the experience was too
-                  dependent on pressure, too cluttered structurally, and too weak on mobile for the
-                  people it was trying to help. I led a redevelopment effort that combined content
-                  cleanup, mobile-first thinking, audience analysis, search redesign, and visual
-                  system changes.
-                </p>
-                <p class="body">
+                <figure class="story-media-frame study-graphic-frame study-graphic-frame-compact research-listing-thumb">
+                  <img src="./assets/addiction-center/homepage-final.png" alt="Homepage design from the AddictionCenter redevelopment study" />
+                </figure>
+                <p class="body reading-copy-span research-listing-trailing">
                   The goal was to make the site feel more trustworthy and more self-directed without
                   weakening conversion. After launch, the redesigned product drove a 30% increase in
                   conversions, an 18% increase in site traffic, higher call volume, and rising
                   treatment-center ad sales.
                 </p>
-                <div class="button-row">
-                  <a class="button button-secondary" href="./addiction-center-redevelopment.html">Read this case study</a>
-                </div>
-                <div class="tag-list" aria-label="Project tags">
-                  <span class="tag">Healthcare</span>
-                  <span class="tag">Content architecture</span>
-                  <span class="tag">A/B testing</span>
-                  <span class="tag">Business impact</span>
-                </div>
-              </div>
-            </section>
-
-            <section class="story-section work-project-section" id="project-04" data-content-id="work.project_04">
-              <div class="section-kicker">Team Cymru · Product Designer</div>
-              <h2 class="section-title">Complex enterprise work, shared selectively</h2>
-              <div class="project-copy-stack">
-                <div class="project-proof-block">
-                  <div class="label">TL;DR</div>
-                  <p class="project-tldr">The most complex work I’ve done isn’t publishable. But I can describe it, walk through the approach, and show artifacts in a conversation.</p>
-                </div>
-                <p class="body">
-                  I led UX and research methodology across multiple software programs, partnering
-                  with product and engineering to improve workflows, usability, and information
-                  architecture for complex enterprise tools.
-                </p>
-                <div class="note-panel">
-                  <div class="label">Confidentiality note</div>
-                  <p class="body">Detailed samples for this work are available by request.</p>
-                  <a class="button button-secondary" href="#contact">Request access</a>
-                </div>
-                <div class="tag-list" aria-label="Project tags">
-                  <span class="tag">Enterprise</span>
-                  <span class="tag">Confidential</span>
-                  <span class="tag">Systems thinking</span>
+                <div class="project-copy-stack reading-copy-span research-listing-footer">
+                  <div class="button-row">
+                    <a class="button button-secondary" href="./addiction-center-redevelopment.html">Read this case study</a>
+                  </div>
+                  <div class="tag-list" aria-label="Project tags">
+                    <span class="tag">Healthcare</span>
+                    <span class="tag">Content architecture</span>
+                    <span class="tag">A/B testing</span>
+                    <span class="tag">Business impact</span>
+                  </div>
                 </div>
               </div>
             </section>
@@ -290,30 +292,52 @@
             <section class="story-section work-project-section" id="project-05" data-content-id="work.project_05">
               <div class="section-kicker">Northrop Grumman · Project Lead / UI Designer / 3D Modeler</div>
               <h2 class="section-title">Designing the E2-D training experience across courseware and simulation</h2>
-              <div class="project-copy-stack">
-                <div class="project-proof-block">
-                  <div class="label">TL;DR</div>
-                  <p class="project-tldr">I led the interface and visual implementation for a long-running training program, then helped reshape the delivery model so the team could actually ship it on time.</p>
+              <div class="story-columns media-right research-listing-layout">
+                <div class="project-copy-stack research-listing-lead">
+                  <div class="project-proof-block">
+                    <div class="label">TL;DR</div>
+                    <p class="project-tldr">I led the interface and visual implementation for a long-running training program, then helped reshape the delivery model so the team could actually ship it on time.</p>
+                  </div>
+                  <p class="body">
+                    This three-year program covered the design and implementation of the courseware
+                    and PC-simulation experience for the E2-D Advanced Hawkeye training curriculum. My
+                    role combined leadership, interface design, 3D asset work, and team coordination
+                    across a large visual production effort.
+                  </p>
                 </div>
-                <p class="body">
-                  This three-year program covered the design and implementation of the courseware
-                  and PC-simulation experience for the E2-D Advanced Hawkeye training curriculum. My
-                  role combined leadership, interface design, 3D asset work, and team coordination
-                  across a large visual production effort.
-                </p>
-                <p class="body">
+                <figure class="story-media-frame study-graphic-frame study-graphic-frame-compact research-listing-thumb">
+                  <img src="./assets/northrop-grumman/pc-simulation.png" alt="PC simulation environment from the E2-D training case study" />
+                </figure>
+                <p class="body reading-copy-span research-listing-trailing">
                   The work mattered for two reasons. First, it created a durable interface system
                   that could hold up over years of classroom use. Second, a revised
                   waterfall-plus-agile roadmap helped the team avoid a major schedule overrun and
                   deliver three months earlier than expected.
                 </p>
-                <div class="button-row">
-                  <a class="button button-secondary" href="./northrop-grumman-training-program.html">Read this case study</a>
+                <div class="project-copy-stack reading-copy-span research-listing-footer">
+                  <div class="button-row">
+                    <a class="button button-secondary" href="./northrop-grumman-training-program.html">Read this case study</a>
+                  </div>
+                  <div class="tag-list" aria-label="Project tags">
+                    <span class="tag">Enterprise</span>
+                    <span class="tag">Training systems</span>
+                    <span class="tag">Visual systems</span>
+                  </div>
                 </div>
-                <div class="tag-list" aria-label="Project tags">
-                  <span class="tag">Enterprise</span>
-                  <span class="tag">Training systems</span>
-                  <span class="tag">Visual systems</span>
+              </div>
+            </section>
+
+            <section class="story-section work-project-section" id="reports" data-content-id="work.research_reports">
+              <div class="section-kicker">Formal report-outs</div>
+              <h2 class="section-title">Research Reports</h2>
+              <div class="project-copy-stack">
+                <p class="body">
+                  These are the formal research artifacts that sat alongside my project work when a
+                  team needed to walk the findings together, revisit evidence quickly, or absorb a
+                  study outside the structure of a case study.
+                </p>
+                <div class="button-row">
+                  <a class="button button-secondary" href="./research-reports.html">Open research reports</a>
                 </div>
               </div>
             </section>

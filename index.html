@@ -9,6 +9,19 @@
       content="Portfolio of Thomas Graham, a UX researcher with experience across research, product design, delivery, and ResearchOps. Focused on helping teams make complex, high-stakes decisions clearer."
     />
     <link rel="stylesheet" href="./index.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet" />
+    <style>
+      /* Research process diagram — responsive swap */
+      .rp-d { display: block; width: 100%; }
+      .rp-m { display: none;  width: 100%; }
+      @media (max-width: 768px) {
+        .rp-d { display: none; }
+        .rp-m { display: block; }
+      }
+      .rp-name { font-family: var(--font-display); font-style: italic; }
+      .rp-ann  { font-family: 'Caveat', cursive; }
+      .rp-num  { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+    </style>
   </head>
   <body>
     <div class="site-shell">
@@ -26,7 +39,6 @@
           <a href="./index.html" aria-current="page">Home</a>
           <a href="./about.html">About</a>
           <a href="./case-study.html">Work</a>
-          <a href="./research-reports.html">Reports</a>
         </nav>
       </header>
 
@@ -232,100 +244,289 @@
           </div>
         </section>
 
+        <!-- What I bring section hidden for now
         <section class="section contrast-section contrast-section-band wave-lines" data-content-id="home.capabilities">
-          <div class="contrast-shell contrast-shell-wide">
-            <div class="contrast-copy">
-              <h2 class="section-title">What I bring</h2>
-              <div class="contrast-summary">
-                <p class="support">
-                  Most research programs produce findings. The useful ones produce decisions. The
-                  difference is usually how well the researcher understands the product, the team,
-                  and the stakes — not just the method. I've worked close to both the research and
-                  the delivery side long enough to know where the gaps open up, and how to close
-                  them before the work loses its value.
-                </p>
-              </div>
-            </div>
-            <div class="capability-stat-grid" aria-label="Quick-reference strengths">
-              <article class="capability-stat">
-                <div class="label">Range</div>
-                <strong>Research to rollout</strong>
-              </article>
-              <article class="capability-stat">
-                <div class="label">Methods</div>
-                <strong>Generative + evaluative</strong>
-              </article>
-              <article class="capability-stat">
-                <div class="label">Contexts</div>
-                <strong>Healthcare + enterprise + defense</strong>
-              </article>
-              <article class="capability-stat">
-                <div class="label">Focus</div>
-                <strong>Signal into decisions</strong>
-              </article>
-            </div>
-            <div class="capability-list-head">
-              <div class="label">Capabilities</div>
-            </div>
-            <div class="capability-grid capability-grid-compact">
-              <article class="capability-card capability-card-compact">
-                <span class="capability-mark" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M12 3 4 7v5c0 4.5 3 7.7 8 9 5-1.3 8-4.5 8-9V7l-8-4Z"/>
-                    <path d="m9.5 12 1.7 1.7L14.8 10"/>
-                  </svg>
-                </span>
-                <h3>Clarity in ambiguity</h3>
-              </article>
-              <article class="capability-card capability-card-compact">
-                <span class="capability-mark" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="12" cy="12" r="3.5"/>
-                    <path d="M12 2.5v3"/>
-                    <path d="M12 18.5v3"/>
-                    <path d="m4.8 4.8 2.1 2.1"/>
-                    <path d="m17.1 17.1 2.1 2.1"/>
-                    <path d="M2.5 12h3"/>
-                    <path d="M18.5 12h3"/>
-                  </svg>
-                </span>
-                <h3>Patterns in the noise</h3>
-              </article>
-              <article class="capability-card capability-card-compact">
-                <span class="capability-mark" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M5 18 19 4"/>
-                    <path d="M11 4h8v8"/>
-                    <path d="M5 8v10h10"/>
-                  </svg>
-                </span>
-                <h3>Signal into decisions</h3>
-              </article>
-              <article class="capability-card capability-card-compact">
-                <span class="capability-mark" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                    <rect x="4" y="4" width="6" height="6" rx="1.4"/>
-                    <rect x="14" y="4" width="6" height="6" rx="1.4"/>
-                    <rect x="4" y="14" width="6" height="6" rx="1.4"/>
-                    <path d="M10 7h4"/>
-                    <path d="M7 10v4"/>
-                    <path d="M17 10v4"/>
-                    <path d="M10 17h4"/>
-                  </svg>
-                </span>
-                <h3>Systems that sustain the work</h3>
-              </article>
+          ...
+        </section>
+        -->
+
+        <section class="section panel process-section" data-content-id="home.process">
+          <div class="section-head cv-head">
+            <div>
+              <div class="scene-break" aria-hidden="true"></div>
+              <div class="section-kicker">How I work</div>
+              <h2 class="section-title">Where I bring users</h2>
             </div>
           </div>
         </section>
 
-        <section class="section panel process-section" data-content-id="home.process">
-          <div class="section-head">
-            <div>
-              <div class="section-kicker">How I work</div>
-              <h2 class="section-title">How I work</h2>
-            </div>
+        <section class="section stage" id="research-process" data-content-id="home.research_process">
+          <div class="tray" style="margin-top:28px; padding:10px 18px 14px;">
+
+            <!-- DESKTOP ≥ 769px · horizontal S-curve wave -->
+            <svg class="rp-d" viewBox="0 0 1480 590" aria-label="Six-phase product lifecycle diagram showing where UX research is integrated at each stage">
+              <defs>
+                <filter id="rp-sk" x="-14%" y="-14%" width="128%" height="128%">
+                  <feTurbulence type="fractalNoise" baseFrequency=".038" numOctaves="3" result="n" seed="4"/>
+                  <feDisplacementMap in="SourceGraphic" in2="n" scale="1.8" xChannelSelector="R" yChannelSelector="G"/>
+                </filter>
+                <filter id="rp-rgh" x="-10%" y="-10%" width="120%" height="120%">
+                  <feTurbulence type="fractalNoise" baseFrequency=".052" numOctaves="3" result="n" seed="7"/>
+                  <feDisplacementMap in="SourceGraphic" in2="n" scale="2.2" xChannelSelector="R" yChannelSelector="G"/>
+                </filter>
+              </defs>
+
+              <!-- S-curve bezier: LOW y=415 (01,03,05)  HIGH y=205 (02,04,06) -->
+              <path d="M 150,415 C 245,415 295,205 390,205 C 485,205 535,415 630,415 C 725,415 775,205 870,205 C 965,205 1015,415 1110,415 C 1205,415 1250,205 1340,205"
+                    fill="none" stroke="rgba(34,29,23,.22)" stroke-width="1.6" stroke-dasharray="5 6" filter="url(#rp-sk)"/>
+
+              <!-- 01 · ANALYSIS (150,415) LOW -->
+              <g transform="translate(150,415)">
+                <text class="rp-num" x="0" y="-110" text-anchor="middle" font-size="16" letter-spacing="4" fill="#b8aea2">01</text>
+                <circle r="94" fill="rgba(251,249,245,.93)" stroke="#191715" stroke-width="1.1" opacity=".62" filter="url(#rp-sk)"/>
+                <line x1="0" y1="-94" x2="0" y2="-80" stroke="#191715" stroke-width="1.8" opacity=".38"/>
+                <line x1="94" y1="0" x2="80" y2="0" stroke="#191715" stroke-width="1.8" opacity=".38"/>
+                <line x1="0" y1="94" x2="0" y2="80" stroke="#191715" stroke-width="1.8" opacity=".38"/>
+                <line x1="-94" y1="0" x2="-80" y2="0" stroke="#191715" stroke-width="1.8" opacity=".38"/>
+                <circle r="70" fill="none" stroke="#191715" stroke-width="2.2" filter="url(#rp-sk)"/>
+                <path d="M-26,-20 Q0,-44 26,-20 Q0,4 -26,-20Z" fill="none" stroke="#191715" stroke-width="2.8" stroke-linejoin="round"/>
+                <circle cx="0" cy="-20" r="10" fill="#191715"/>
+                <text class="rp-name" x="0" y="40" text-anchor="middle" dominant-baseline="central" font-size="30" fill="#191715">Analysis</text>
+              </g>
+              <g filter="url(#rp-rgh)" opacity=".72">
+                <text class="rp-ann" x="150" y="529" text-anchor="middle" font-size="28" fill="#6b645b" transform="rotate(-1.8,150,529)">discovery · ethnography</text>
+                <text class="rp-ann" x="150" y="562" text-anchor="middle" font-size="28" fill="#6b645b" transform="rotate(.7,150,562)">known → unknown-unknowns</text>
+              </g>
+
+              <!-- 02 · DESIGN (390,205) HIGH -->
+              <g transform="translate(390,205)">
+                <text class="rp-num" x="0" y="-110" text-anchor="middle" font-size="16" letter-spacing="4" fill="#b8aea2">02</text>
+                <circle r="94" fill="rgba(251,249,245,.93)" stroke="#191715" stroke-width="1.1" opacity=".62" filter="url(#rp-sk)"/>
+                <line x1="0" y1="-94" x2="0" y2="-80" stroke="#191715" stroke-width="1.8" opacity=".38"/>
+                <line x1="94" y1="0" x2="80" y2="0" stroke="#191715" stroke-width="1.8" opacity=".38"/>
+                <line x1="0" y1="94" x2="0" y2="80" stroke="#191715" stroke-width="1.8" opacity=".38"/>
+                <line x1="-94" y1="0" x2="-80" y2="0" stroke="#191715" stroke-width="1.8" opacity=".38"/>
+                <circle r="70" fill="none" stroke="#191715" stroke-width="2.2" filter="url(#rp-sk)"/>
+                <line x1="-18" y1="10" x2="0" y2="-28" stroke="#191715" stroke-width="2.8" stroke-linecap="round"/>
+                <line x1="18" y1="10" x2="0" y2="-28" stroke="#191715" stroke-width="2.8" stroke-linecap="round"/>
+                <path d="M-11,0 Q0,16 11,0" fill="none" stroke="#191715" stroke-width="2.4" stroke-linecap="round"/>
+                <circle cx="0" cy="-28" r="3.5" fill="#191715"/>
+                <text class="rp-name" x="0" y="40" text-anchor="middle" dominant-baseline="central" font-size="30" fill="#191715">Design</text>
+              </g>
+              <g filter="url(#rp-rgh)" opacity=".72">
+                <text class="rp-ann" x="390" y="50" text-anchor="middle" font-size="28" fill="#6b645b" transform="rotate(1.3,390,50)">wireframes → prototypes</text>
+                <text class="rp-ann" x="390" y="83" text-anchor="middle" font-size="28" fill="#6b645b" transform="rotate(-.5,390,83)">rapid feedback loops</text>
+              </g>
+
+              <!-- 03 · DEVELOPMENT (630,415) LOW -->
+              <g transform="translate(630,415)">
+                <text class="rp-num" x="0" y="-110" text-anchor="middle" font-size="16" letter-spacing="4" fill="#b8aea2">03</text>
+                <circle r="94" fill="rgba(251,249,245,.93)" stroke="#191715" stroke-width="1.1" opacity=".62" filter="url(#rp-sk)"/>
+                <line x1="0" y1="-94" x2="0" y2="-80" stroke="#191715" stroke-width="1.8" opacity=".38"/>
+                <line x1="94" y1="0" x2="80" y2="0" stroke="#191715" stroke-width="1.8" opacity=".38"/>
+                <line x1="0" y1="94" x2="0" y2="80" stroke="#191715" stroke-width="1.8" opacity=".38"/>
+                <line x1="-94" y1="0" x2="-80" y2="0" stroke="#191715" stroke-width="1.8" opacity=".38"/>
+                <circle r="70" fill="none" stroke="#191715" stroke-width="2.2" filter="url(#rp-sk)"/>
+                <polygon points="0,-34 22.5,-21 22.5,5 0,18 -22.5,5 -22.5,-21" fill="none" stroke="#191715" stroke-width="2.6"/>
+                <circle cx="0" cy="-8" r="10" fill="none" stroke="#191715" stroke-width="2.3"/>
+                <text class="rp-name" x="0" y="40" text-anchor="middle" dominant-baseline="central" font-size="25" fill="#191715">Development</text>
+              </g>
+              <g filter="url(#rp-rgh)" opacity=".72">
+                <text class="rp-ann" x="630" y="529" text-anchor="middle" font-size="28" fill="#6b645b" transform="rotate(-1.2,630,529)">staging tests · set tags</text>
+                <text class="rp-ann" x="630" y="562" text-anchor="middle" font-size="28" fill="#6b645b" transform="rotate(1.1,630,562)">capture interactions ←</text>
+              </g>
+
+              <!-- 04 · TESTING (870,205) HIGH -->
+              <g transform="translate(870,205)">
+                <text class="rp-num" x="0" y="-110" text-anchor="middle" font-size="16" letter-spacing="4" fill="#b8aea2">04</text>
+                <circle r="94" fill="rgba(251,249,245,.93)" stroke="#191715" stroke-width="1.1" opacity=".62" filter="url(#rp-sk)"/>
+                <line x1="0" y1="-94" x2="0" y2="-80" stroke="#191715" stroke-width="1.8" opacity=".38"/>
+                <line x1="94" y1="0" x2="80" y2="0" stroke="#191715" stroke-width="1.8" opacity=".38"/>
+                <line x1="0" y1="94" x2="0" y2="80" stroke="#191715" stroke-width="1.8" opacity=".38"/>
+                <line x1="-94" y1="0" x2="-80" y2="0" stroke="#191715" stroke-width="1.8" opacity=".38"/>
+                <circle r="70" fill="none" stroke="#191715" stroke-width="2.2" filter="url(#rp-sk)"/>
+                <path d="M-12,-30 L-12,-8 L-28,20 L28,20 L12,-8 L12,-30" fill="none" stroke="#191715" stroke-width="2.8" stroke-linejoin="round" stroke-linecap="round"/>
+                <line x1="-12" y1="-30" x2="12" y2="-30" stroke="#191715" stroke-width="2.8" stroke-linecap="round"/>
+                <text class="rp-name" x="0" y="40" text-anchor="middle" dominant-baseline="central" font-size="30" fill="#191715">Testing</text>
+              </g>
+              <g filter="url(#rp-rgh)" opacity=".72">
+                <text class="rp-ann" x="870" y="50" text-anchor="middle" font-size="28" fill="#6b645b" transform="rotate(-1.5,870,50)">larger sample sizes</text>
+                <text class="rp-ann" x="870" y="83" text-anchor="middle" font-size="28" fill="#6b645b" transform="rotate(.8,870,83)">↓ reduce risk</text>
+              </g>
+
+              <!-- 05 · DEPLOYMENT (1110,415) LOW -->
+              <g transform="translate(1110,415)">
+                <text class="rp-num" x="0" y="-110" text-anchor="middle" font-size="16" letter-spacing="4" fill="#b8aea2">05</text>
+                <circle r="94" fill="rgba(251,249,245,.93)" stroke="#191715" stroke-width="1.1" opacity=".62" filter="url(#rp-sk)"/>
+                <line x1="0" y1="-94" x2="0" y2="-80" stroke="#191715" stroke-width="1.8" opacity=".38"/>
+                <line x1="94" y1="0" x2="80" y2="0" stroke="#191715" stroke-width="1.8" opacity=".38"/>
+                <line x1="0" y1="94" x2="0" y2="80" stroke="#191715" stroke-width="1.8" opacity=".38"/>
+                <line x1="-94" y1="0" x2="-80" y2="0" stroke="#191715" stroke-width="1.8" opacity=".38"/>
+                <circle r="70" fill="none" stroke="#191715" stroke-width="2.2" filter="url(#rp-sk)"/>
+                <line x1="0" y1="18" x2="0" y2="-18" stroke="#191715" stroke-width="3" stroke-linecap="round"/>
+                <polyline points="-16,-4 0,-32 16,-4" fill="none" stroke="#191715" stroke-width="2.8" stroke-linejoin="round" stroke-linecap="round"/>
+                <line x1="-18" y1="18" x2="18" y2="18" stroke="#191715" stroke-width="2.8" stroke-linecap="round"/>
+                <text class="rp-name" x="0" y="42" text-anchor="middle" dominant-baseline="central" font-size="27" fill="#191715">Deployment</text>
+              </g>
+              <g filter="url(#rp-rgh)" opacity=".72">
+                <text class="rp-ann" x="1110" y="529" text-anchor="middle" font-size="28" fill="#6b645b" transform="rotate(-1.3,1110,529)">alpha / beta → prod</text>
+                <text class="rp-ann" x="1110" y="562" text-anchor="middle" font-size="28" fill="#6b645b" transform="rotate(.9,1110,562)">real users · live env ↑</text>
+              </g>
+
+              <!-- 06 · MAINTENANCE (1340,205) HIGH -->
+              <g transform="translate(1340,205)">
+                <text class="rp-num" x="0" y="-110" text-anchor="middle" font-size="16" letter-spacing="4" fill="#b8aea2">06</text>
+                <circle r="94" fill="rgba(251,249,245,.93)" stroke="#191715" stroke-width="1.1" opacity=".62" filter="url(#rp-sk)"/>
+                <line x1="0" y1="-94" x2="0" y2="-80" stroke="#191715" stroke-width="1.8" opacity=".38"/>
+                <line x1="94" y1="0" x2="80" y2="0" stroke="#191715" stroke-width="1.8" opacity=".38"/>
+                <line x1="0" y1="94" x2="0" y2="80" stroke="#191715" stroke-width="1.8" opacity=".38"/>
+                <line x1="-94" y1="0" x2="-80" y2="0" stroke="#191715" stroke-width="1.8" opacity=".38"/>
+                <circle r="70" fill="none" stroke="#191715" stroke-width="2.2" filter="url(#rp-sk)"/>
+                <path d="M22,0 A22,22 0 1,1 10,-20" fill="none" stroke="#191715" stroke-width="2.8" stroke-linecap="round"/>
+                <polyline points="3,-27 10,-20 18,-27" fill="none" stroke="#191715" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+                <text class="rp-name" x="0" y="40" text-anchor="middle" dominant-baseline="central" font-size="25" fill="#191715">Maintenance</text>
+              </g>
+              <g filter="url(#rp-rgh)" opacity=".72">
+                <text class="rp-ann" x="1340" y="50" text-anchor="middle" font-size="28" fill="#6b645b" transform="rotate(-1.1,1340,50)">baseline metrics</text>
+                <text class="rp-ann" x="1340" y="83" text-anchor="middle" font-size="28" fill="#6b645b" transform="rotate(1.4,1340,83)">measure · loop back ↺</text>
+              </g>
+            </svg>
+
+            <!-- MOBILE ≤ 768px · vertical zigzag S-curve -->
+            <svg class="rp-m" viewBox="0 0 380 1150" aria-label="Six-phase product lifecycle diagram in vertical layout showing where UX research is integrated">
+              <defs>
+                <filter id="rp-sk-m" x="-14%" y="-14%" width="128%" height="128%">
+                  <feTurbulence type="fractalNoise" baseFrequency=".042" numOctaves="3" result="n" seed="4"/>
+                  <feDisplacementMap in="SourceGraphic" in2="n" scale="1.4" xChannelSelector="R" yChannelSelector="G"/>
+                </filter>
+                <filter id="rp-rgh-m" x="-10%" y="-10%" width="120%" height="120%">
+                  <feTurbulence type="fractalNoise" baseFrequency=".055" numOctaves="3" result="n" seed="7"/>
+                  <feDisplacementMap in="SourceGraphic" in2="n" scale="1.8" xChannelSelector="R" yChannelSelector="G"/>
+                </filter>
+              </defs>
+
+              <!-- vertical S-curve: LEFT x=90 (01,03,05)  RIGHT x=290 (02,04,06) -->
+              <path d="M 90,110 C 90,205 290,205 290,300 C 290,395 90,395 90,490 C 90,585 290,585 290,680 C 290,775 90,775 90,870 C 90,965 290,965 290,1060"
+                    fill="none" stroke="rgba(34,29,23,.22)" stroke-width="1.4" stroke-dasharray="4 5" filter="url(#rp-sk-m)"/>
+
+              <!-- 01 · ANALYSIS (90,110) LEFT -->
+              <g transform="translate(90,110)">
+                <text class="rp-num" x="0" y="-72" text-anchor="middle" font-size="10" letter-spacing="3" fill="#b8aea2">01</text>
+                <circle r="56" fill="rgba(251,249,245,.93)" stroke="#191715" stroke-width=".9" opacity=".62" filter="url(#rp-sk-m)"/>
+                <line x1="0" y1="-56" x2="0" y2="-47" stroke="#191715" stroke-width="1.3" opacity=".38"/>
+                <line x1="56" y1="0" x2="47" y2="0" stroke="#191715" stroke-width="1.3" opacity=".38"/>
+                <line x1="0" y1="56" x2="0" y2="47" stroke="#191715" stroke-width="1.3" opacity=".38"/>
+                <line x1="-56" y1="0" x2="-47" y2="0" stroke="#191715" stroke-width="1.3" opacity=".38"/>
+                <circle r="42" fill="none" stroke="#191715" stroke-width="1.6" filter="url(#rp-sk-m)"/>
+                <path d="M-16,-12 Q0,-27 16,-12 Q0,3 -16,-12Z" fill="none" stroke="#191715" stroke-width="1.9" stroke-linejoin="round"/>
+                <circle cx="0" cy="-12" r="6" fill="#191715"/>
+                <text class="rp-name" x="0" y="26" text-anchor="middle" dominant-baseline="central" font-size="15" fill="#191715">Analysis</text>
+              </g>
+              <g filter="url(#rp-rgh-m)" opacity=".75">
+                <text class="rp-ann" x="155" y="103" text-anchor="start" font-size="17" fill="#6b645b" transform="rotate(-1.5,155,103)">discovery · ethnography</text>
+                <text class="rp-ann" x="155" y="122" text-anchor="start" font-size="17" fill="#6b645b" transform="rotate(.8,155,122)">known → unknown</text>
+              </g>
+
+              <!-- 02 · DESIGN (290,300) RIGHT -->
+              <g transform="translate(290,300)">
+                <text class="rp-num" x="0" y="-72" text-anchor="middle" font-size="10" letter-spacing="3" fill="#b8aea2">02</text>
+                <circle r="56" fill="rgba(251,249,245,.93)" stroke="#191715" stroke-width=".9" opacity=".62" filter="url(#rp-sk-m)"/>
+                <line x1="0" y1="-56" x2="0" y2="-47" stroke="#191715" stroke-width="1.3" opacity=".38"/>
+                <line x1="56" y1="0" x2="47" y2="0" stroke="#191715" stroke-width="1.3" opacity=".38"/>
+                <line x1="0" y1="56" x2="0" y2="47" stroke="#191715" stroke-width="1.3" opacity=".38"/>
+                <line x1="-56" y1="0" x2="-47" y2="0" stroke="#191715" stroke-width="1.3" opacity=".38"/>
+                <circle r="42" fill="none" stroke="#191715" stroke-width="1.6" filter="url(#rp-sk-m)"/>
+                <line x1="-11" y1="6" x2="0" y2="-17" stroke="#191715" stroke-width="1.9" stroke-linecap="round"/>
+                <line x1="11" y1="6" x2="0" y2="-17" stroke="#191715" stroke-width="1.9" stroke-linecap="round"/>
+                <path d="M-7,0 Q0,10 7,0" fill="none" stroke="#191715" stroke-width="1.7" stroke-linecap="round"/>
+                <circle cx="0" cy="-17" r="2.2" fill="#191715"/>
+                <text class="rp-name" x="0" y="26" text-anchor="middle" dominant-baseline="central" font-size="15" fill="#191715">Design</text>
+              </g>
+              <g filter="url(#rp-rgh-m)" opacity=".75">
+                <text class="rp-ann" x="224" y="293" text-anchor="end" font-size="17" fill="#6b645b" transform="rotate(1.2,224,293)">wireframes · prototypes</text>
+                <text class="rp-ann" x="224" y="312" text-anchor="end" font-size="17" fill="#6b645b" transform="rotate(-.6,224,312)">rapid feedback loops</text>
+              </g>
+
+              <!-- 03 · DEVELOPMENT (90,490) LEFT -->
+              <g transform="translate(90,490)">
+                <text class="rp-num" x="0" y="-72" text-anchor="middle" font-size="10" letter-spacing="3" fill="#b8aea2">03</text>
+                <circle r="56" fill="rgba(251,249,245,.93)" stroke="#191715" stroke-width=".9" opacity=".62" filter="url(#rp-sk-m)"/>
+                <line x1="0" y1="-56" x2="0" y2="-47" stroke="#191715" stroke-width="1.3" opacity=".38"/>
+                <line x1="56" y1="0" x2="47" y2="0" stroke="#191715" stroke-width="1.3" opacity=".38"/>
+                <line x1="0" y1="56" x2="0" y2="47" stroke="#191715" stroke-width="1.3" opacity=".38"/>
+                <line x1="-56" y1="0" x2="-47" y2="0" stroke="#191715" stroke-width="1.3" opacity=".38"/>
+                <circle r="42" fill="none" stroke="#191715" stroke-width="1.6" filter="url(#rp-sk-m)"/>
+                <polygon points="0,-20 13.5,-12.5 13.5,2 0,9 -13.5,2 -13.5,-12.5" fill="none" stroke="#191715" stroke-width="1.9"/>
+                <circle cx="0" cy="-5" r="5.5" fill="none" stroke="#191715" stroke-width="1.7"/>
+                <text class="rp-name" x="0" y="26" text-anchor="middle" dominant-baseline="central" font-size="13" fill="#191715">Development</text>
+              </g>
+              <g filter="url(#rp-rgh-m)" opacity=".75">
+                <text class="rp-ann" x="155" y="483" text-anchor="start" font-size="17" fill="#6b645b" transform="rotate(-1.1,155,483)">staging tests · tags</text>
+                <text class="rp-ann" x="155" y="502" text-anchor="start" font-size="17" fill="#6b645b" transform="rotate(1.2,155,502)">capture interactions</text>
+              </g>
+
+              <!-- 04 · TESTING (290,680) RIGHT -->
+              <g transform="translate(290,680)">
+                <text class="rp-num" x="0" y="-72" text-anchor="middle" font-size="10" letter-spacing="3" fill="#b8aea2">04</text>
+                <circle r="56" fill="rgba(251,249,245,.93)" stroke="#191715" stroke-width=".9" opacity=".62" filter="url(#rp-sk-m)"/>
+                <line x1="0" y1="-56" x2="0" y2="-47" stroke="#191715" stroke-width="1.3" opacity=".38"/>
+                <line x1="56" y1="0" x2="47" y2="0" stroke="#191715" stroke-width="1.3" opacity=".38"/>
+                <line x1="0" y1="56" x2="0" y2="47" stroke="#191715" stroke-width="1.3" opacity=".38"/>
+                <line x1="-56" y1="0" x2="-47" y2="0" stroke="#191715" stroke-width="1.3" opacity=".38"/>
+                <circle r="42" fill="none" stroke="#191715" stroke-width="1.6" filter="url(#rp-sk-m)"/>
+                <path d="M-7,-18 L-7,-5 L-17,12 L17,12 L7,-5 L7,-18" fill="none" stroke="#191715" stroke-width="1.9" stroke-linejoin="round" stroke-linecap="round"/>
+                <line x1="-7" y1="-18" x2="7" y2="-18" stroke="#191715" stroke-width="1.9" stroke-linecap="round"/>
+                <text class="rp-name" x="0" y="26" text-anchor="middle" dominant-baseline="central" font-size="15" fill="#191715">Testing</text>
+              </g>
+              <g filter="url(#rp-rgh-m)" opacity=".75">
+                <text class="rp-ann" x="224" y="673" text-anchor="end" font-size="17" fill="#6b645b" transform="rotate(-1.4,224,673)">larger sample sizes</text>
+                <text class="rp-ann" x="224" y="692" text-anchor="end" font-size="17" fill="#6b645b" transform="rotate(.7,224,692)">↓ reduce risk</text>
+              </g>
+
+              <!-- 05 · DEPLOYMENT (90,870) LEFT -->
+              <g transform="translate(90,870)">
+                <text class="rp-num" x="0" y="-72" text-anchor="middle" font-size="10" letter-spacing="3" fill="#b8aea2">05</text>
+                <circle r="56" fill="rgba(251,249,245,.93)" stroke="#191715" stroke-width=".9" opacity=".62" filter="url(#rp-sk-m)"/>
+                <line x1="0" y1="-56" x2="0" y2="-47" stroke="#191715" stroke-width="1.3" opacity=".38"/>
+                <line x1="56" y1="0" x2="47" y2="0" stroke="#191715" stroke-width="1.3" opacity=".38"/>
+                <line x1="0" y1="56" x2="0" y2="47" stroke="#191715" stroke-width="1.3" opacity=".38"/>
+                <line x1="-56" y1="0" x2="-47" y2="0" stroke="#191715" stroke-width="1.3" opacity=".38"/>
+                <circle r="42" fill="none" stroke="#191715" stroke-width="1.6" filter="url(#rp-sk-m)"/>
+                <line x1="0" y1="11" x2="0" y2="-11" stroke="#191715" stroke-width="2.1" stroke-linecap="round"/>
+                <polyline points="-10,-2 0,-20 10,-2" fill="none" stroke="#191715" stroke-width="1.9" stroke-linejoin="round" stroke-linecap="round"/>
+                <line x1="-11" y1="11" x2="11" y2="11" stroke="#191715" stroke-width="1.9" stroke-linecap="round"/>
+                <text class="rp-name" x="0" y="27" text-anchor="middle" dominant-baseline="central" font-size="13" fill="#191715">Deployment</text>
+              </g>
+              <g filter="url(#rp-rgh-m)" opacity=".75">
+                <text class="rp-ann" x="155" y="863" text-anchor="start" font-size="17" fill="#6b645b" transform="rotate(-1.3,155,863)">alpha / beta → prod</text>
+                <text class="rp-ann" x="155" y="882" text-anchor="start" font-size="17" fill="#6b645b" transform="rotate(.9,155,882)">real users · live</text>
+              </g>
+
+              <!-- 06 · MAINTENANCE (290,1060) RIGHT -->
+              <g transform="translate(290,1060)">
+                <text class="rp-num" x="0" y="-72" text-anchor="middle" font-size="10" letter-spacing="3" fill="#b8aea2">06</text>
+                <circle r="56" fill="rgba(251,249,245,.93)" stroke="#191715" stroke-width=".9" opacity=".62" filter="url(#rp-sk-m)"/>
+                <line x1="0" y1="-56" x2="0" y2="-47" stroke="#191715" stroke-width="1.3" opacity=".38"/>
+                <line x1="56" y1="0" x2="47" y2="0" stroke="#191715" stroke-width="1.3" opacity=".38"/>
+                <line x1="0" y1="56" x2="0" y2="47" stroke="#191715" stroke-width="1.3" opacity=".38"/>
+                <line x1="-56" y1="0" x2="-47" y2="0" stroke="#191715" stroke-width="1.3" opacity=".38"/>
+                <circle r="42" fill="none" stroke="#191715" stroke-width="1.6" filter="url(#rp-sk-m)"/>
+                <path d="M13,0 A13,13 0 1,1 6,-12" fill="none" stroke="#191715" stroke-width="1.9" stroke-linecap="round"/>
+                <polyline points="2,-17 6,-12 11,-17" fill="none" stroke="#191715" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round"/>
+                <text class="rp-name" x="0" y="26" text-anchor="middle" dominant-baseline="central" font-size="13" fill="#191715">Maintenance</text>
+              </g>
+              <g filter="url(#rp-rgh-m)" opacity=".75">
+                <text class="rp-ann" x="224" y="1053" text-anchor="end" font-size="17" fill="#6b645b" transform="rotate(-1,224,1053)">baseline metrics</text>
+                <text class="rp-ann" x="224" y="1072" text-anchor="end" font-size="17" fill="#6b645b" transform="rotate(1.5,224,1072)">measure · loop ↺</text>
+              </g>
+            </svg>
+
           </div>
+          <p class="body section-body-intro">
+            At each phase of the product lifecycle I take intentional steps to keep
+            the user's voice present — not as an afterthought, but as part of how
+            the work moves forward.
+          </p>
           <div class="process-grid">
             <article class="process-card">
               <div class="label">Step 01</div>
@@ -340,7 +541,7 @@
               <h3>Validate the signal</h3>
               <p class="body">
                 If something important appears in the data, I test it from different angles until
-                I’m confident it’s showing what it appears to show.
+                I'm confident it's showing what it appears to show.
               </p>
             </article>
             <article class="process-card">

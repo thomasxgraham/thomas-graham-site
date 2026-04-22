@@ -16,7 +16,21 @@
       "Bash(ssh-keyscan github.com)",
       "Bash(git fetch *)",
       "mcp__Claude_Preview__preview_start",
-      "Bash(python3 -c \"import json,sys; data=json.load\\(sys.stdin\\); print\\(data[0]['text']\\)\")"
+      "Bash(python3 -c \"import json,sys; data=json.load\\(sys.stdin\\); print\\(data[0]['text']\\)\")",
+      "Bash(brew install *)",
+      "Bash(pdftoppm -v)",
+      "Bash(brew list *)",
+      "Read(//opt/homebrew/**)",
+      "Read(//usr/local/**)",
+      "Bash(brew info *)",
+      "Bash(/opt/homebrew/bin/brew install *)",
+      "Bash(python3 -c \"import pdfplumber; print\\('pdfplumber ok'\\)\")",
+      "Bash(python3 -c \"import pypdf; print\\('pypdf ok'\\)\")",
+      "Bash(python3 -c \"import fitz; print\\('pymupdf ok'\\)\")",
+      "Bash(pip3 install *)",
+      "Bash(python3 -c \"import pdfplumber; pdf = pdfplumber.open\\('/Users/admin/Documents/Projects/thomas-graham.me_old/_archive/2026-04-15-pre-restart/source/TC_Samples.pdf'\\); print\\(f'Pages: {len\\(pdf.pages\\)}'\\); [print\\(f'--- PAGE {i+1} ---\\\\n{p.extract_text\\(\\)}'\\) for i, p in enumerate\\(pdf.pages[:10]\\)]\")",
+      "Bash(python3 -c ' *)",
+      "Bash(python3)"
     ]
   }
 }
