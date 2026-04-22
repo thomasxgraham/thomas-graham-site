@@ -689,13 +689,34 @@ main > .section {
 
 .process-section {
   display: grid;
-  gap: 20px;
+  gap: 0;
+  padding-bottom: 0;
+}
+
+.process-section .section-head {
+  margin-bottom: 0;
+}
+
+.process-section .section-body-intro {
+  margin-top: 14px;
+  margin-bottom: 0;
+  max-width: 900px;
+}
+
+#research-process {
+  padding-top: 18px;
+}
+
+.process-tray {
+  margin-top: 0;
+  padding: 10px 18px 14px;
 }
 
 .process-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 16px;
+  margin-top: 18px;
 }
 
 .process-card {
