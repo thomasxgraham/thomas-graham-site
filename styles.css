@@ -1694,7 +1694,7 @@ main:has(.contact-hero:last-child) + .footer-bar {
 .story-section {
   display: grid;
   gap: clamp(14px, 2vw, 18px);
-  padding: 0 0 24px;
+  padding: 24px 0 24px;
 }
 
 .case-layout > div > .story-section::before {
@@ -1799,7 +1799,8 @@ main:has(.contact-hero:last-child) + .footer-bar {
 .report-chapter {
   display: grid;
   gap: 16px;
-  padding-top: 18px;
+  padding-top: 50px;
+  padding-bottom: 25px;
   border-top: 1px solid var(--line);
 }
 
