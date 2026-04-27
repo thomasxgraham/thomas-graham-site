@@ -6,7 +6,7 @@
     <title>Improving New-User Conversion — Thomas Graham</title>
     <meta
       name="description"
-      content="A case study about evaluating AdventHealth's mobile onboarding flow to improve new-user conversion, activation, and retention."
+      content="A case study about evaluating AdventHealth's mobile onboarding flow to reduce sign-up and sign-in effort so users could reach the app's value more quickly."
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
@@ -19,7 +19,7 @@
           </span>
           <span class="brand-copy">
             <strong>Thomas Graham</strong>
-            <span>UX Researcher · Product Thinker · ResearchOps Builder</span>
+            <span>UX Researcher · Product Thinker</span>
           </span>
         </a>
         <nav class="main-nav" aria-label="Primary">
@@ -37,10 +37,13 @@
               <h1 class="page-title">AdventHealth App Onboarding</h1>
               <p class="story-lead support">
                 The AdventHealth app promised convenient access to appointments, providers, and
-                health data, but the onboarding experience was asking too much before users saw that
-                value for themselves. This evaluation focused on a simple product question: how do
-                you make account creation feel meaningful enough to finish, and compelling enough to
-                return to, when new users are deciding whether the app is worth their time?
+                health data — but at 171 seconds to reach the home screen, the onboarding
+                experience was front-loading effort before users could feel that promise. This
+                evaluation approached the problem not as a registration issue but as a
+                value-delivery problem, using comparative app audits, heuristic review, and
+                behavioral design principles to find where the experience was losing people. The
+                pattern was clear: the app asked for commitment early, delayed access to anything
+                meaningful, and gave users too few signals that the setup burden was worth carrying.
               </p>
               <div class="button-row">
                 <a class="button button-secondary" href="./research.html"
@@ -66,14 +69,15 @@
               <article class="research-card">
                 <div class="meta-label">Decision area</div>
                 <div class="meta-copy">
-                  How to reduce onboarding friction while improving activation and early retention.
+                  How to reduce onboarding friction so users can reach meaningful value with less
+                  sign-up and sign-in effort.
                 </div>
               </article>
               <article class="research-card research-card-wide">
                 <div class="meta-label">Questions explored</div>
                 <div class="meta-copy">
-                  Time-to-value, feature discovery, account setup burden, and the motivational cues
-                  that could help new users continue.
+                  Time-to-value, feature discovery, account setup burden, and the parts of sign-up
+                  and sign-in that were making access feel heavier than it needed to.
                 </div>
               </article>
             </div>
@@ -93,31 +97,15 @@
           <div>
             <section class="story-section" id="tldr">
               <h2 class="section-title">tl;dr</h2>
-              <div class="tldr-layout">
-                <div class="reading-copy">
-                  <p class="body">
-                    This case study examined why AdventHealth’s onboarding flow was struggling to
-                    convert new users into engaged app users, even though the product promised
-                    meaningful utility. The work approached onboarding as a retention and value
-                    problem, not just a registration problem, using comparative benchmarks and
-                    behavioral design principles to identify where the experience was losing people.
-                  </p>
-                  <p class="body">
-                    The strongest pattern was clear: the app asked for commitment early, delivered
-                    value late, and gave users too few reasons to feel momentum while they were
-                    still deciding whether the experience was worth finishing.
-                  </p>
-                </div>
-                <article class="note-panel tldr-summary-card">
-                  <ul class="tldr-summary-list">
-                    <li>Effective onboarding needed either to stay close to a 60-second window or deliver immediate value that justified taking longer.</li>
-                    <li>AdventHealth required 171 seconds to reach the home screen, and the path to record connection could take much longer once MRN friction appeared.</li>
-                    <li>Competitive comparison showed that some apps asked for less, while others asked for more but clearly delivered on their promise right away.</li>
-                    <li>Healthcare benefits from stronger baseline retention than many categories, but that advantage can be wasted if onboarding hides the product’s core value.</li>
-                    <li>Behavioral design suggested clearer opportunities around progress, personalization, investment, and reward rather than simply adding more explanation screens.</li>
-                  </ul>
-                </article>
-              </div>
+              <article class="note-panel tldr-summary-card">
+                <ul class="tldr-summary-list">
+                  <li>Effective onboarding needed either to stay close to a 60-second window or deliver immediate value that justified taking longer.</li>
+                  <li>AdventHealth required 171 seconds to reach the home screen, and the path to record connection could take much longer once MRN friction appeared.</li>
+                  <li>Competitive comparison showed that some apps asked for less, while others asked for more but clearly delivered on their promise right away.</li>
+                  <li>Healthcare products can ask for meaningful trust, but they still have to justify that effort quickly once sign-up begins.</li>
+                  <li>Behavioral design suggested clearer opportunities around progress, personalization, investment, and reward rather than simply adding more explanation screens.</li>
+                </ul>
+              </article>
             </section>
 
             <section class="story-section" id="what-we-learned">
@@ -162,8 +150,8 @@
                 <div class="story-columns media-left">
                   <figure class="story-media-frame study-chart-frame">
                     <div class="chart-head">
-                      <div class="chart-kicker">Category retention context</div>
-                      <div class="chart-title">Healthcare had a category advantage, but it still sat below the strongest habitual app categories</div>
+                      <div class="chart-kicker">Category usage context</div>
+                      <div class="chart-title">Healthcare had a relevance advantage, but the app still had to justify the effort it asked up front</div>
                     </div>
                     <div class="chart-scroll-shell">
                       <div class="scatter-chart">
@@ -195,29 +183,29 @@
                       </div>
                     </div>
                     <figcaption class="study-frame-caption">
-                      Healthcare apps already benefit from strong category relevance, but retention
-                      still depends on delivering value quickly.
+                      Healthcare apps begin with real user need, but that only helps if setup gets
+                      people to value quickly.
                     </figcaption>
                   </figure>
                   <div class="reading-copy">
-                    <h3>Healthcare Had a Retention Advantage, but the Product Still Had to Earn It</h3>
+                    <h3>Healthcare Had a Relevance Advantage, but the Product Still Had to Earn Access</h3>
                     <p class="body">
                       Compared with many consumer categories, healthcare apps begin with a structural
                       advantage: people often return because the underlying need is real and ongoing.
-                      That makes retention more achievable than it is for many entertainment or
-                      purely discretionary products.
+                      That gives them more initial patience than many entertainment or purely
+                      discretionary products.
                     </p>
                     <p class="body">
                       But that advantage is not automatic. If onboarding obscures core tasks,
                       creates confusion, or delays access to the product’s most important utilities,
-                      users can still disengage before they ever build a habit.
+                      users can still disengage before they ever reach the thing they came for.
                     </p>
                   </div>
                   <div class="reading-copy reading-copy-span">
                     <p class="body">
                       In other words, category need can buy a little patience, but it does not
                       remove the obligation to make setup feel worthwhile. The app still had to
-                      prove that it would save time later by not wasting time now.
+                      prove that the effort to get in would be repaid quickly.
                     </p>
                   </div>
                 </div>
@@ -349,7 +337,7 @@
               <article class="report-chapter">
                 <div class="story-columns media-right">
                   <div class="reading-copy">
-                    <h3>Behavioral Design Created Better Retention Opportunities than More Explanation</h3>
+                    <h3>Behavioral Design Offered Better Ways to Reduce Entry Friction than More Explanation</h3>
                     <p class="body">
                       The most useful next step was not simply to rewrite onboarding copy. The
                       stronger opportunity was to redesign the experience around motivation and
@@ -370,7 +358,7 @@
                     />
                     <figcaption class="study-frame-caption">
                       The work reframed onboarding around behavioral principles that support
-                      commitment and return usage.
+                      progress and reduce the perceived burden of getting in.
                     </figcaption>
                   </figure>
                   <div class="reading-copy reading-copy-span">
@@ -400,9 +388,9 @@
               <div class="story-columns media-right">
                 <div class="reading-copy">
                   <p class="body">
-                    This work turned a broad retention concern into a clearer onboarding strategy. It
-                    gave the team a way to talk about activation in terms of time-to-value, feature
-                    discovery, and motivational design rather than only form completion.
+                    This work turned a broad onboarding concern into a clearer access strategy. It
+                    gave the team a way to talk about time-to-value, feature discovery, and
+                    setup burden rather than only form completion.
                   </p>
                   <p class="body">
                     It also defined a practical next-step roadmap: understand where users first
@@ -416,15 +404,15 @@
                   <ul class="compact-list">
                     <li>Reduce the gap between account setup and the first meaningful proof of product value.</li>
                     <li>Design onboarding as a motivational sequence, not just a registration checklist.</li>
-                    <li>Track discovery source, early usage, and drop-off so future improvements are grounded in behavior rather than assumption.</li>
+                    <li>Track discovery source, setup drop-off, and first-use behavior so future improvements are grounded in behavior rather than assumption.</li>
                   </ul>
                 </article>
                 <div class="reading-copy reading-copy-span">
                   <p class="body">
                     In that sense, the outcome was directional clarity. The evaluation identified
-                    where the product was over-asking, where it was under-rewarding, and where
-                    behavioral design could make the onboarding experience feel more intentional and
-                    more worth completing.
+                    where the product was over-asking before sign-in, where it was under-rewarding
+                    once users arrived, and where behavioral design could make the path into the app
+                    feel more intentional and more worth completing.
                   </p>
                 </div>
               </div>
