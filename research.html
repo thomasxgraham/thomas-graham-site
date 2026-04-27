@@ -75,22 +75,17 @@
                 <div class="project-copy-stack research-listing-lead">
                   <div class="project-proof-block">
                     <div class="label">TL;DR</div>
-                    <p class="project-tldr">I benchmarked the MyChart Bedside ED onboarding journey to show exactly where a BYOD registration flow was creating delays for patients and pulling nurses into a support role.</p>
+                    <p class="project-tldr">A 5:58 median onboarding time in an ED context where stressed patients on poor connections were depending on nurses to troubleshoot registration.</p>
                   </div>
                   <p class="body">
-                    When AdventHealth shifted Emergency Department bedside access from hospital tablets
-                    to patient-owned devices, it handed patients a full registration flow at the worst
-                    possible moment. I led a rapid timing study to measure the end-to-end journey and
-                    identify where the process was breaking down.
+                    I ran 10 proxy timing runs with detailed journey mapping to measure the full BYOD registration gauntlet and identify where friction was creating nurse dependency instead of patient independence.
                   </p>
                 </div>
                 <figure class="story-media-frame study-graphic-frame study-graphic-frame-compact research-listing-thumb">
                   <img src="./assets/ed-onboarding-study/time-buckets.png" alt="Timing buckets from the MyChart Bedside ED onboarding study" />
                 </figure>
                 <p class="body reading-copy-span research-listing-trailing">
-                  The study showed a median completion time of 5:58, isolated the app handoff as a
-                  meaningful friction point, and gave leadership the evidence needed to pursue a
-                  code-based entry model that removes redundant setup work in an acute-care context.
+                  The timing data revealed a mismatch between the registration model and the context — a design built for convenience-driven digital consumers, not patients in acute care facing network instability and stress.
                 </p>
                 <div class="project-copy-stack reading-copy-span research-listing-footer">
                   <div class="button-row">
@@ -111,25 +106,19 @@
               <h2 class="section-title">Why Patients Call</h2>
               <div class="story-columns media-right research-listing-layout">
                 <div class="project-copy-stack research-listing-lead">
-                  <div class="project-proof-block">
-                    <div class="label">TL;DR</div>
-                    <p class="project-tldr">I re-coded Five9 support-call data to uncover one larger access-and-identity failure lifecycle hiding behind repeated “can’t log in” complaints.</p>
+                  <div class=”project-proof-block”>
+                    <div class=”label”>TL;DR</div>
+                    <p class=”project-tldr”>”Can’t log in” turned out to be a symptom, not a root cause — hiding five compounding access-and-identity failure stages that only support staff could untangle.</p>
                   </div>
-                  <p class="body">
-                    The original call tags were too broad and inconsistent to tell a useful story, so
-                    I rebuilt the categorization system from the transcripts up. Once the noise was
-                    removed, the pattern was clear: most calls were not about different product
-                    problems. They were different expressions of the same hidden access failure.
+                  <p class=”body”>
+                    I rebuilt the Five9 call categorization system from transcripts up because the agent-applied tags were too inconsistent to surface what was actually happening. The results mapped a lifecycle where each failure triggered retries that made the situation worse.
                   </p>
                 </div>
-                <figure class="story-media-frame study-graphic-frame study-graphic-frame-compact research-listing-thumb">
-                  <img src="./assets/research-listing/telephony-thumb.png" alt="Access outcomes chart from the telephony data analysis case study" />
+                <figure class=”story-media-frame study-graphic-frame study-graphic-frame-compact research-listing-thumb”>
+                  <img src=”./assets/research-listing/telephony-thumb.png” alt=”Access outcomes chart from the telephony data analysis case study” />
                 </figure>
-                <p class="body reading-copy-span research-listing-trailing">
-                  The work reframed support demand as a product and systems problem. It showed how
-                  verification failures, wrong delivery targets, incomplete record linkage, and
-                  retries that triggered lockouts were combining into one lifecycle that the system
-                  could not explain or repair without human intervention.
+                <p class=”body reading-copy-span research-listing-trailing”>
+                  What the analysis revealed was not just that patients were calling — it was that the system had handed the burden of repair entirely to support staff, who became interpreters for failures the product itself couldn’t explain or resolve.
                 </p>
                 <div class="project-copy-stack reading-copy-span research-listing-footer">
                   <div class="button-row">
@@ -150,26 +139,19 @@
               <h2 class="section-title">The Connect Records Study</h2>
               <div class="story-columns media-right research-listing-layout">
                 <div class="project-copy-stack research-listing-lead">
-                  <div class="project-proof-block">
-                    <div class="label">TL;DR</div>
-                    <p class="project-tldr">I ran a multivariate prototype study to test whether clearer codeless access would reduce support demand, and the data showed the real issue was patient mental models, not simple visibility.</p>
+                  <div class=”project-proof-block”>
+                    <div class=”label”>TL;DR</div>
+                    <p class=”project-tldr”>A 45-participant between-subjects study that disproved its own hypothesis — showing the navigation was clear but patients didn’t understand what the code was or why connecting records mattered.</p>
                   </div>
-                  <p class="body">
-                    The hypothesis was straightforward: if we made the “I don’t have a code” path
-                    more visible and more clearly explained, fewer patients would feel the need to
-                    call support. I tested the current flow against two redesigned alternatives
-                    across 45 participants.
+                  <p class=”body”>
+                    I tested three variants of the Connect Your Records flow — control, visibility-first, and decision-first — to see if clearer design would reduce support calls. All three were equally navigable, but the study revealed the barrier was deeper than visibility.
                   </p>
                 </div>
-                <figure class="story-media-frame study-graphic-frame study-graphic-frame-compact research-listing-thumb research-listing-thumb-topcrop">
-                  <img src="./assets/research-listing/connect-records-thumb.png" alt="Variant comparison view from the Connect Your Records case study" />
+                <figure class=”story-media-frame study-graphic-frame study-graphic-frame-compact research-listing-thumb research-listing-thumb-topcrop”>
+                  <img src=”./assets/research-listing/connect-records-thumb.png” alt=”Variant comparison view from the Connect Your Records case study” />
                 </figure>
-                <p class="body reading-copy-span research-listing-trailing">
-                  The most important finding was not which variant won. It was that all three were
-                  navigable enough. The deeper issue was that patients did not understand what the
-                  code was, where it came from, or what connecting records meant for them. That
-                  pushed the work back toward the upstream access-dependency issues identified in
-                  the telephony analysis.
+                <p class=”body reading-copy-span research-listing-trailing”>
+                  The most useful finding was often what the study didn’t prove: better design alone couldn’t solve the problem. The work redirected the team toward the upstream access-dependency issues that had emerged in the telephony analysis.
                 </p>
                 <div class="project-copy-stack reading-copy-span research-listing-footer">
                   <div class="button-row">
@@ -254,24 +236,17 @@
                 <div class="project-copy-stack research-listing-lead">
                   <div class="project-proof-block">
                     <div class="label">TL;DR</div>
-                    <p class="project-tldr">I led the redevelopment of a high-traffic recovery guide so people could research treatment with more trust, flexibility, and confidence.</p>
+                    <p class="project-tldr">80% of competitor traffic came from mobile, but AddictionCenter was still desktop-heavy and pressure-driven. A mobile-first redesign resulted in 30% higher conversions and 18% more traffic.</p>
                   </div>
                   <p class="body">
-                    Addiction Center was already generating calls, but the experience was too
-                    dependent on pressure, too cluttered structurally, and too weak on mobile for the
-                    people it was trying to help. I led a redevelopment effort that combined content
-                    cleanup, mobile-first thinking, audience analysis, search redesign, and visual
-                    system changes.
+                    I led a redevelopment that combined competitor analysis, content audit, audience surveys, and A/B testing to shift the site from pressure-dependent to self-directed research. The work started with a clear strategic constraint: if most people arrive on mobile, design for that reality first.
                   </p>
                 </div>
                 <figure class="story-media-frame study-graphic-frame study-graphic-frame-compact research-listing-thumb">
                   <img src="./assets/addiction-center/homepage-final.png" alt="Homepage design from the AddictionCenter redevelopment study" />
                 </figure>
                 <p class="body reading-copy-span research-listing-trailing">
-                  The goal was to make the site feel more trustworthy and more self-directed without
-                  weakening conversion. After launch, the redesigned product drove a 30% increase in
-                  conversions, an 18% increase in site traffic, higher call volume, and rising
-                  treatment-center ad sales.
+                  The challenge was making the site feel more trustworthy and self-directed without sacrificing the conversion focus that had built the business. Turns out those goals aligned — people made better decisions when they felt supported rather than pushed.
                 </p>
                 <div class="project-copy-stack reading-copy-span research-listing-footer">
                   <div class="button-row">
@@ -294,23 +269,17 @@
                 <div class="project-copy-stack research-listing-lead">
                   <div class="project-proof-block">
                     <div class="label">TL;DR</div>
-                    <p class="project-tldr">I led the interface and visual implementation for a long-running training program, then helped reshape the delivery model so the team could actually ship it on time.</p>
+                    <p class="project-tldr">A three-year enterprise training program that was projected to miss milestones by six months. A blended waterfall-plus-agile roadmap rebalanced the delivery and shipped three months early.</p>
                   </div>
                   <p class="body">
-                    This three-year program covered the design and implementation of the courseware
-                    and PC-simulation experience for the E2-D Advanced Hawkeye training curriculum. My
-                    role combined leadership, interface design, 3D asset work, and team coordination
-                    across a large visual production effort.
+                    I led interface design and visual implementation across courseware and PC simulation for the E2-D Advanced Hawkeye program, managing a team of 10 artists while contributing 3D models, textures, and rendered environments directly.
                   </p>
                 </div>
                 <figure class="story-media-frame study-graphic-frame study-graphic-frame-compact research-listing-thumb">
                   <img src="./assets/northrop-grumman/pc-simulation.png" alt="PC simulation environment from the E2-D training case study" />
                 </figure>
                 <p class="body reading-copy-span research-listing-trailing">
-                  The work mattered for two reasons. First, it created a durable interface system
-                  that could hold up over years of classroom use. Second, a revised
-                  waterfall-plus-agile roadmap helped the team avoid a major schedule overrun and
-                  deliver three months earlier than expected.
+                  Beyond the on-time delivery: the interface system proved durable enough to be adopted by other naval curricula, including Northrop's Triton program — a sign that the design-system thinking had solved a real problem beyond this single project.
                 </p>
                 <div class="project-copy-stack reading-copy-span research-listing-footer">
                   <div class="button-row">
