@@ -926,8 +926,71 @@ main {
   margin-top: auto;
 }
 
+.asset-lightbox-nav[hidden] {
+  display: none;
+}
+
 body.asset-lightbox-open {
   overflow: hidden;
+}
+
+/* Inline image zoom triggers — long figures inside case studies that open the
+   asset-lightbox so a reader can scroll the full-resolution image. */
+.story-media-frame[data-image-zoom] {
+  position: relative;
+  cursor: zoom-in;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.story-media-frame[data-image-zoom] > img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: top center;
+  transition: transform 0.4s ease;
+}
+
+.story-media-frame[data-image-zoom][data-zoom-fit="cover-tall"] > img {
+  aspect-ratio: 3 / 4;
+}
+
+.story-media-frame[data-image-zoom][data-zoom-fit="cover-wide"] > img {
+  aspect-ratio: 16 / 9;
+}
+
+.story-media-frame[data-image-zoom]:hover > img,
+.story-media-frame[data-image-zoom]:focus-visible > img {
+  transform: scale(1.015);
+}
+
+.story-media-frame[data-image-zoom]::after {
+  content: "Click to expand";
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 12px 7px 26px;
+  border-radius: 999px;
+  background: rgba(28, 22, 15, 0.78);
+  color: #f8f3eb;
+  font-size: 0.74rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  pointer-events: none;
+  backdrop-filter: blur(2px);
+  background-image:
+    radial-gradient(circle at 14px 50%, #f8f3eb 1px, transparent 1.6px),
+    radial-gradient(circle at 14px 50%, transparent 4.6px, #f8f3eb 4.6px, #f8f3eb 5.5px, transparent 5.5px);
+}
+
+.story-media-frame[data-image-zoom]:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
 }
 
 .work-layout .toc a {
