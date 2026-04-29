@@ -528,7 +528,15 @@ function initLegacyGalleries() {
     currentGroupIndex: 0,
     currentItemIndex: 0,
     singleMode: false,
+    lastTrigger: null,
   };
+
+  function getFocusableInDialog() {
+    const focusable = lightbox.querySelectorAll(
+      'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])'
+    );
+    return Array.from(focusable).filter((el) => !el.hidden && el.offsetParent !== null);
+  }
 
   function renderLightboxItem() {
     const group = galleryState.groups[galleryState.currentGroupIndex];
@@ -545,7 +553,8 @@ function initLegacyGalleries() {
     nextButton.disabled = galleryState.currentItemIndex === group.items.length - 1;
   }
 
-  function openLightbox(groupIndex, itemIndex) {
+  function openLightbox(groupIndex, itemIndex, trigger) {
+    galleryState.lastTrigger = trigger || document.activeElement;
     galleryState.singleMode = false;
     if (nav) nav.hidden = false;
     galleryState.currentGroupIndex = groupIndex;
@@ -556,7 +565,8 @@ function initLegacyGalleries() {
     closeButton.focus();
   }
 
-  function openSingleImage({ src, title: itemTitle, kicker: itemKicker, caption: itemCaption, alt }) {
+  function openSingleImage({ src, title: itemTitle, kicker: itemKicker, caption: itemCaption, alt, trigger }) {
+    galleryState.lastTrigger = trigger || document.activeElement;
     galleryState.singleMode = true;
     if (nav) nav.hidden = true;
     image.src = src;
@@ -572,6 +582,11 @@ function initLegacyGalleries() {
   function closeLightbox() {
     lightbox.hidden = true;
     document.body.classList.remove("asset-lightbox-open");
+    const restore = galleryState.lastTrigger;
+    galleryState.lastTrigger = null;
+    if (restore && typeof restore.focus === "function") {
+      restore.focus();
+    }
   }
 
   function stepLightbox(direction) {
@@ -610,7 +625,7 @@ function initLegacyGalleries() {
       const button = event.target.closest(".legacy-gallery-item");
       if (!button || !host.contains(button)) return;
       galleryState.groups = groupsForLightbox;
-      openLightbox(Number(button.dataset.groupIndex), Number(button.dataset.itemIndex));
+      openLightbox(Number(button.dataset.groupIndex), Number(button.dataset.itemIndex), button);
     });
   });
 
@@ -627,6 +642,7 @@ function initLegacyGalleries() {
         kicker: trigger.dataset.zoomKicker || "",
         caption: trigger.dataset.zoomCaption || (captionEl && captionEl.textContent.trim()) || "",
         alt: img && img.alt,
+        trigger,
       });
     };
 
@@ -656,6 +672,18 @@ function initLegacyGalleries() {
       stepLightbox(-1);
     } else if (event.key === "ArrowRight") {
       stepLightbox(1);
+    } else if (event.key === "Tab") {
+      const focusable = getFocusableInDialog();
+      if (focusable.length === 0) return;
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first.focus();
+      }
     }
   });
 }
