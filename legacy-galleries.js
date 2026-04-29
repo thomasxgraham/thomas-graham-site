@@ -408,6 +408,7 @@ function createLegacyGalleryItem(group, item, groupIndex, itemIndex) {
   image.src = item.src;
   image.alt = item.caption || item.title;
   image.loading = "lazy";
+  image.decoding = "async";
   frame.appendChild(image);
 
   const meta = document.createElement("div");
