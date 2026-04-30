@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Path to Wholeness — Thomas Graham</title>
+    <meta
+      name="description"
+      content="A case study evaluating AdventHealth's Wholeness onboarding flow, the heart visualization, and slider-versus-emoji input models — surfacing where the experience earned trust and where it lost it before broader release."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a><div class="site-shell">
+      <header class="site-header">
+        <a class="brand" href="./index.html">
+          <span class="brand-mark" aria-hidden="true">
+            <img src="./assets/profile-thomas.jpeg" alt="" />
+          </span>
+          <span class="brand-copy">
+            <strong>Thomas Graham</strong>
+            <span>UX Researcher · Product Thinker</span>
+          </span>
+        </a>
+        <nav class="main-nav" aria-label="Primary">
+          <a href="./index.html">Home</a>
+          <a href="./about.html">About</a>
+          <a href="./case-study.html" aria-current="page">Work</a>
+        </nav>
+      </header>
+
+      <main id="main">
+        <section class="section stage wave-lines work-stage">
+          <div class="story-head work-head">
+            <div class="case-hero-copy">
+              <div class="micro-label">Case study</div>
+              <h1 class="page-title">Your Path to Wholeness</h1>
+              <p class="story-lead support">
+                AdventHealth's Wholeness feature asks patients to reflect on their mind, body, and
+                spirit — and translates those reflections into a personal wellness score. Before the
+                experience could scale, the team needed to know whether patients actually understood
+                what they were being asked, why it mattered, and whether the design choices being
+                made were the right ones. This study evaluated the full onboarding flow, tested two
+                input models head-to-head, and surfaced where the experience was earning trust — and
+                where it was losing it.
+              </p>
+              <div class="button-row">
+                <a class="button button-secondary" href="./research.html"
+                  >Back to research</a
+                >
+              </div>
+            </div>
+            <div class="meta-grid work-meta-grid research-dashboard" aria-label="Study profile">
+              <article class="research-card research-card-number">
+                <div class="meta-label">Participants</div>
+                <div class="research-number">~35</div>
+              </article>
+              <article class="research-card">
+                <div class="meta-label">Study type</div>
+                <div class="meta-copy">Concept validation + usability testing</div>
+              </article>
+              <article class="research-card">
+                <div class="meta-label">Methods</div>
+                <div class="meta-copy">
+                  Moderated prototype walkthrough · Unmoderated A/B prototype test · Post-task survey
+                </div>
+              </article>
+              <article class="research-card">
+                <div class="meta-label">Decision area</div>
+                <div class="meta-copy">
+                  Onboarding clarity, scale interaction model, and perceived value of the Wholeness
+                  experience.
+                </div>
+              </article>
+              <article class="research-card research-card-wide">
+                <div class="meta-label">Questions explored</div>
+                <div class="meta-copy">
+                  Does the flow communicate purpose clearly? Which input model — slider or emoji —
+                  produces more confident, consistent responses? Do patients understand their
+                  Wholeness score and what to do with it?
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section case-layout">
+          <aside class="toc">
+            <div class="micro-label">On this page</div>
+            <a href="#tldr">tl;dr</a>
+            <a href="#what-we-learned">What We Learned</a>
+            <a href="#outcome-research">Outcome of the Research</a>
+            <a href="#continue-exploring">Continue Exploring</a>
+            <a href="#contact">Contact</a>
+          </aside>
+
+          <div>
+            <section class="story-section" id="tldr">
+              <h2 class="section-title">tl;dr</h2>
+              <div class="story-columns media-right">
+                <div class="reading-copy">
+                  <p class="body">
+                    This study evaluated AdventHealth's Wholeness feature before broader release —
+                    a new layer of the app designed to help patients reflect on and track their
+                    mind, body, and spirit through a personalized wellness score. The goal was to
+                    determine whether the onboarding flow communicated its purpose clearly, whether
+                    patients understood the heart visualization that anchored the experience, and
+                    which input model — a traditional slider or emoji-based scale — produced more
+                    confident and consistent responses.
+                  </p>
+                  <p class="body">
+                    The findings were direct: patients could move through the flow easily, but most
+                    didn't understand why they were doing it. Nearly half entered the experience
+                    with no clear sense of what Wholeness was, and the redesigned onboarding
+                    carousel didn't yet resolve that gap. The heart visualization was interpreted as
+                    a general wellness symbol rather than a meaningful, evolving metric. And the
+                    Wholeness Toolkit — one of the most compelling parts of the experience — was
+                    almost completely invisible to patients who hadn't been pointed toward it.
+                  </p>
+                </div>
+                <article class="note-panel tldr-summary-card">
+                  <ul class="tldr-summary-list">
+                    <li>Nearly half of participants (48%) were unsure what the feature was about even after completing onboarding — purpose clarity remains the biggest barrier to engagement.</li>
+                    <li>Patients found the flow easy to use, but couldn't articulate why they were using it. Ease of use is no longer the problem. Value discovery is.</li>
+                    <li>The heart visualization was interpreted as a generic wellness symbol, not a meaningful and trackable personal metric.</li>
+                    <li>The Wholeness Toolkit had low awareness (only 22% knew it existed), but 75% of those who found it were curious enough to explore — a strong signal of untapped value.</li>
+                    <li>Trust and privacy concerns were consistent blockers. Patients wanted to know who sees this data, how it's used, and whether it connects to their care before they'd commit to regular engagement.</li>
+                  </ul>
+                </article>
+              </div>
+            </section>
+
+            <section class="story-section" id="what-we-learned">
+              <h2 class="section-title">What We Learned</h2>
+
+              <article class="report-chapter">
+                <div class="story-columns media-right">
+                  <div class="reading-copy">
+                    <h3>People Didn't Know What Wholeness Was — Even After Onboarding</h3>
+                    <p class="body">
+                      When participants entered the Wholeness experience, 48% described themselves
+                      as unsure of what the feature was about. Only 19% connected it to emotional
+                      well-being, and just 14% identified it as a general wellness score. The
+                      redesigned onboarding carousel — which was intended to address this exact
+                      gap — had not yet moved the needle meaningfully. Clarity remained the single
+                      largest barrier to engagement.
+                    </p>
+                    <p class="body">
+                      Open comments reinforced what the numbers showed. Participants described
+                      finishing onboarding still asking basic questions: what is this for, why am I
+                      being asked this, and what does this give me? The problem wasn't unfamiliarity
+                      with wellness tracking in general. It was that the feature hadn't yet
+                      explained itself in language patients recognized or found meaningful.
+                    </p>
+                  </div>
+                  <figure class="story-media-frame study-chart-frame">
+                    <div class="chart-head">
+                      <div class="chart-kicker">Post-onboarding comprehension</div>
+                      <div class="chart-title">What participants thought Wholeness was for</div>
+                    </div>
+                    <div class="bar-chart">
+                      <div class="bar-chart-plot">
+                        <article class="bar-group">
+                          <div class="bar-group-bars">
+                            <div class="bar" style="--value:48; --max:60; --bar-color:#317bb1;"><span class="bar-value">48%</span></div>
+                          </div>
+                          <div class="bar-group-label">Unsure</div>
+                        </article>
+                        <article class="bar-group">
+                          <div class="bar-group-bars">
+                            <div class="bar" style="--value:19; --max:60; --bar-color:#317bb1;"><span class="bar-value">19%</span></div>
+                          </div>
+                          <div class="bar-group-label">Emotional well-being</div>
+                        </article>
+                        <article class="bar-group">
+                          <div class="bar-group-bars">
+                            <div class="bar" style="--value:14; --max:60; --bar-color:#317bb1;"><span class="bar-value">14%</span></div>
+                          </div>
+                          <div class="bar-group-label">General wellness score</div>
+                        </article>
+                      </div>
+                    </div>
+                    <figcaption class="study-frame-caption">
+                      Despite an updated onboarding carousel, nearly half of participants still
+                      couldn't articulate the feature's purpose after completing it.
+                    </figcaption>
+                  </figure>
+                </div>
+              </article>
+
+              <article class="report-chapter">
+                <div class="story-columns media-left">
+                  <article class="note-panel">
+                    <div class="label">Visual reference</div>
+                    <p class="body">
+                      The heart visualization is the central design element of the Wholeness
+                      experience — meant to represent a patient's wellness in a way that's
+                      intuitive, personal, and evolving. In testing, most participants interpreted
+                      it as a generic wellness symbol rather than a personal, trackable metric tied
+                      to their inputs.
+                    </p>
+                  </article>
+                  <div class="reading-copy">
+                    <h3>The Heart Metaphor Wasn't Functioning as a Visual Anchor</h3>
+                    <p class="body">
+                      The heart visualization is the central design element of the Wholeness
+                      experience — meant to represent a patient's wellness in a way that's
+                      intuitive, personal, and evolving. In testing, it wasn't landing. Most
+                      participant responses were neutral, and open comments showed limited
+                      recognition of what the heart represented, how it changed, or why its state
+                      should matter to them.
+                    </p>
+                    <p class="body">
+                      Participants defaulted to interpreting the heart as a general wellness
+                      symbol — a starting point or a decorative indicator — rather than as a
+                      dynamic, meaningful metric tied to their specific inputs. Several expressed
+                      confusion about what would cause the heart to evolve and whether their answers
+                      were actually connected to what they were seeing.
+                    </p>
+                  </div>
+                  <div class="reading-copy reading-copy-span">
+                    <p class="body">
+                      The implication is that the heart metaphor needs explicit teaching, not just
+                      visual presence. Patients aren't reading their way through onboarding —
+                      they're skimming. A brief explanatory moment, potentially through video, that
+                      shows what the heart means, how it grows, and why it matters could close the
+                      comprehension gap more effectively than copy-based explanations alone.
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="report-chapter">
+                <div class="story-columns story-columns-lead-span">
+                  <div class="reading-copy reading-copy-span">
+                    <h3>Three Patterns That Surfaced Across the Study</h3>
+                  </div>
+                  <div class="recommendation-grid reading-copy-span">
+                    <article class="recommendation-card">
+                      <h3>The Toolkit Was Invisible — But Compelling Once Found</h3>
+                      <p class="body">
+                        Only 22% of participants were aware the Wholeness Toolkit existed. But among
+                        those who encountered it, 75% said they were curious enough to explore it
+                        further. That gap between discovery and interest is significant. The Toolkit
+                        has the potential to be the clearest value driver in the entire
+                        experience — the moment patients see what Wholeness can actually do for
+                        them. Right now, most patients never get there.
+                      </p>
+                    </article>
+                    <article class="recommendation-card">
+                      <h3>Reflection and Tracking Divided Participants Along Meaningful Lines</h3>
+                      <p class="body">
+                        Participants weren't uniformly enthusiastic or uniformly skeptical about
+                        wellness tracking. Some saw genuine value in tracking mind-body-spirit data
+                        over time, particularly for long-term self-awareness and care conversations.
+                        Others preferred objective metrics — steps, heart rate, sleep — and found
+                        subjective emotional or spiritual check-ins either irrelevant or
+                        uncomfortable. This isn't a problem to solve with better copy. It suggests
+                        Wholeness may need to meet a wider range of users with a more flexible value
+                        proposition.
+                      </p>
+                    </article>
+                    <article class="recommendation-card">
+                      <h3>Trust and Privacy Were Consistent Blockers</h3>
+                      <p class="body">
+                        Three questions came up repeatedly across participants in different forms:
+                        Who sees this? What is it used for? Does my doctor see it? These weren't
+                        fringe concerns — they were widespread enough to suppress engagement even
+                        among participants who found the concept interesting. Transparent messaging
+                        about data use may need to live inside the main flow, not tucked into
+                        optional settings or fine print.
+                      </p>
+                    </article>
+                  </div>
+                </div>
+              </article>
+            </section>
+
+            <section class="story-section" id="outcome-research">
+              <h2 class="section-title">Outcome of the Research</h2>
+              <div class="story-columns media-right">
+                <div class="reading-copy">
+                  <p class="body">
+                    The study gave the product team a clear picture of where the Wholeness
+                    experience was succeeding and where it needed to change before broader release.
+                    The onboarding flow was usable, but not yet meaningful. The heart visualization
+                    was present, but not yet understood. And the Toolkit — the feature's most
+                    compelling offering — was functionally hidden from the patients who would
+                    benefit most from it.
+                  </p>
+                  <p class="body">
+                    The research pointed toward a set of targeted interventions: strengthening
+                    purpose communication throughout the onboarding journey, explicitly teaching
+                    the heart metaphor rather than leaving it to inference, surfacing the Toolkit
+                    earlier and more prominently, and adding transparent privacy messaging as a
+                    first-class part of the flow rather than an afterthought.
+                  </p>
+                </div>
+                <article class="note-panel">
+                  <div class="label">Implications</div>
+                  <ul class="compact-list">
+                    <li>Lead with value before asking for input. Patients need to understand what Wholeness gives them before they'll invest in answering questions about themselves.</li>
+                    <li>Teach the heart, don't just show it. The visualization needs an explicit explanation of what it means, how it evolves, and why it matters — ideally through a brief video moment that patients will actually watch rather than read.</li>
+                    <li>Surface the Toolkit early and make it unmistakable. It's the clearest proof that the feature delivers something useful. Hiding it is leaving the most compelling value driver off the table.</li>
+                  </ul>
+                </article>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <section class="section full-bleed-section" id="continue-exploring">
+          <div class="full-bleed-section-inner">
+            <section class="story-section">
+              <h2 class="section-title">Continue Exploring</h2>
+              <div class="related-grid">
+                <article class="related-card">
+                  <div class="label">Related case study</div>
+                  <h3>Reducing onboarding effort in the AdventHealth app</h3>
+                  <p class="body">
+                    A related AdventHealth case study focused on onboarding friction and how
+                    digital health products need to reduce sign-up and sign-in effort before they
+                    ask users to do too much setup work.
+                  </p>
+                  <div class="tag-list" aria-label="Related case study tags">
+                    <span class="tag">AdventHealth</span>
+                    <span class="tag">Onboarding</span>
+                  </div>
+                  <div class="button-row">
+                    <a class="button button-secondary" href="./adventhealth-user-conversion.html">Read this case study</a>
+                  </div>
+                </article>
+                <article class="related-card">
+                  <div class="label">Research</div>
+                  <h3>Browse more research-led product work</h3>
+                  <p class="body">
+                    Explore the wider work archive for additional healthcare studies, research-led
+                    product decisions, and operational work across complex systems.
+                  </p>
+                  <div class="tag-list" aria-label="Related archive tags">
+                    <span class="tag">Archive</span>
+                    <span class="tag">Healthcare</span>
+                  </div>
+                  <div class="button-row">
+                    <a class="button button-secondary" href="./research.html">View research</a>
+                  </div>
+                </article>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <section class="contact-hero" id="contact" data-content-id="contact.intro">
+          <div class="contact-hero-inner">
+            <div class="section-kicker">Contact</div>
+            <h2 class="section-title">Want to talk through the Wholeness study?</h2>
+            <p class="body">
+              The onboarding gap, the heart metaphor, or the slider-versus-emoji question — happy
+              to get into any of it.
+            </p>
+            <p class="body contact-microcopy">
+              A good conversation is usually a better start than a formal intake form.
+            </p>
+            <div class="button-row">
+              <a class="button button-accent" href="mailto:hello@thomas-graham.me?subject=Wholeness%20feature%20evaluation">Get in touch about this study</a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer-bar">
+        <span class="footer-note">Thomas Graham — UX Researcher</span>
+        <div class="dot-row" aria-hidden="true">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hope 3.0: Care Advocacy Chatbot Evaluation — Thomas Graham</title>
+    <meta
+      name="description"
+      content="A mixed-methods evaluation of AdventHealth's Hope 3.0 care advocacy chatbot — measuring containment, satisfaction, and where the experience broke trust across high-volume patient tasks."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a><div class="site-shell">
+      <header class="site-header">
+        <a class="brand" href="./index.html">
+          <span class="brand-mark" aria-hidden="true">
+            <img src="./assets/profile-thomas.jpeg" alt="" />
+          </span>
+          <span class="brand-copy">
+            <strong>Thomas Graham</strong>
+            <span>UX Researcher · Product Thinker</span>
+          </span>
+        </a>
+        <nav class="main-nav" aria-label="Primary">
+          <a href="./index.html">Home</a>
+          <a href="./about.html">About</a>
+          <a href="./case-study.html" aria-current="page">Work</a>
+        </nav>
+      </header>
+
+      <main id="main">
+        <section class="section stage wave-lines work-stage">
+          <div class="story-head work-head">
+            <div class="case-hero-copy">
+              <div class="micro-label">Case study</div>
+              <h1 class="page-title">Hope 3.0: Evaluating AdventHealth's Next-Generation Care Chatbot</h1>
+              <p class="story-lead support">
+                Hope is AdventHealth's care advocacy chatbot — designed to handle patient questions,
+                navigate support requests, and reduce the need for human escalation. Hope 3.0
+                introduced generative capabilities meant to handle more nuanced conversations and
+                resolve more issues without a handoff. This study evaluated whether it delivered on
+                that promise: testing real task scenarios, measuring containment and satisfaction,
+                and identifying exactly where the experience broke down.
+              </p>
+              <div class="button-row">
+                <a class="button button-secondary" href="./research.html"
+                  >Back to research</a
+                >
+              </div>
+            </div>
+            <div class="meta-grid work-meta-grid research-dashboard" aria-label="Study profile">
+              <article class="research-card research-card-number">
+                <div class="meta-label">Participants</div>
+                <div class="research-number">24–26</div>
+              </article>
+              <article class="research-card">
+                <div class="meta-label">Study type</div>
+                <div class="meta-copy">Mixed-methods usability evaluation</div>
+              </article>
+              <article class="research-card">
+                <div class="meta-label">Methods</div>
+                <div class="meta-copy">
+                  Moderated scenario-based usability (think-aloud) · Unmoderated survey ·
+                  Conversation quality rubric scoring
+                </div>
+              </article>
+              <article class="research-card">
+                <div class="meta-label">Decision area</div>
+                <div class="meta-copy">
+                  Chatbot containment, escalation timing, task completion quality, and conversation
+                  experience across high-volume patient tasks.
+                </div>
+              </article>
+              <article class="research-card research-card-wide">
+                <div class="meta-label">Questions explored</div>
+                <div class="meta-copy">
+                  Does Hope 3.0 improve containment and reduce escalations compared to its
+                  predecessor? How well does it handle nuanced, multi-step, or vaguely phrased
+                  requests? Where does the experience break trust, and what would restore it?
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section case-layout">
+          <aside class="toc">
+            <div class="micro-label">On this page</div>
+            <a href="#tldr">tl;dr</a>
+            <a href="#what-we-learned">What We Learned</a>
+            <a href="#outcome-research">Outcome of the Research</a>
+            <a href="#continue-exploring">Continue Exploring</a>
+            <a href="#contact">Contact</a>
+          </aside>
+
+          <div>
+            <section class="story-section" id="tldr">
+              <h2 class="section-title">tl;dr</h2>
+              <div class="story-columns media-right">
+                <div class="reading-copy">
+                  <p class="body">
+                    Hope 3.0 was built to do more — handle more nuanced patient requests, resolve
+                    more issues in-bot, and reduce the volume of conversations that required a
+                    human care advocate. This study put that premise to the test across the top
+                    patient-facing tasks by volume: account access, billing questions, price
+                    estimation, care navigation, and more. The study combined moderated sessions
+                    with real participants thinking aloud through task scenarios and an unmoderated
+                    survey measuring satisfaction and task completion at scale.
+                  </p>
+                  <p class="body">
+                    The findings were mixed in the right direction, but with clear gaps. The
+                    conversational tone worked. Directory lookups and labeled contact information
+                    were genuine wins. But the high-value flows patients cared about most — Price
+                    Estimator, billing guidance, escalation to a human — fell short in consistent
+                    and specific ways. Hope was pointing patients outward instead of resolving
+                    their needs inward. That distinction, between a bot that helps and a bot that
+                    redirects, is what the research made actionable.
+                  </p>
+                </div>
+                <article class="note-panel tldr-summary-card">
+                  <ul class="tldr-summary-list">
+                    <li>Overall task completion rate was 57.6% and CSAT came in at 45% — numbers that point to a bot that's moving in the right direction but hasn't yet closed the gap between capability and patient experience.</li>
+                    <li>The Price Estimator was high-value but fragile. Patients didn't know what information they'd need going in, and results didn't feel personalized to their specific plan or location.</li>
+                    <li>Billing guidance needed plain language and a single recommended action — not multiple parallel links that left patients deciding where to go next.</li>
+                    <li>Escalation to a human arrived too late and too generically. By the time patients saw a human option, they'd already lost confidence in the bot.</li>
+                    <li>Containment reached 63% — a meaningful baseline, with a defined path to improvement across a small number of high-impact flow changes.</li>
+                  </ul>
+                </article>
+              </div>
+            </section>
+
+            <section class="story-section" id="what-we-learned">
+              <h2 class="section-title">What We Learned</h2>
+
+              <article class="report-chapter">
+                <div class="story-columns media-right">
+                  <div class="reading-copy">
+                    <h3>Hope Was Pointing Outward Instead of Resolving Inward</h3>
+                    <p class="body">
+                      The most consistent pattern across tasks was that Hope responded to patient
+                      questions by directing them somewhere else — a link, a page, a menu of
+                      options — rather than answering the question directly. For patients who came
+                      to the chatbot specifically to avoid having to navigate elsewhere, this felt
+                      like the bot was adding work rather than reducing it. Open-text feedback
+                      called it out repeatedly: generic link-outs without synthesis felt like "more
+                      work," not help.
+                    </p>
+                    <p class="body">
+                      This pattern was most pronounced in billing and financial assistance tasks.
+                      Patients wanted Hope to explain what their bill meant and tell them one clear
+                      thing to do next. Instead, they received multiple similar links pointing
+                      toward different parts of the same problem. The intent to be helpful was
+                      there — but the execution created choice paralysis at the moment patients
+                      were most likely to disengage.
+                    </p>
+                  </div>
+                  <figure class="story-media-frame study-chart-frame">
+                    <div class="chart-head">
+                      <div class="chart-kicker">Outcome metrics</div>
+                      <div class="chart-title">Where Hope 3.0 stands today</div>
+                    </div>
+                    <div class="metric-callout-grid" aria-label="Hope 3.0 outcome metrics">
+                      <article class="metric-callout">
+                        <div class="metric-callout-value">57.6%</div>
+                        <div class="metric-callout-label">Task completion</div>
+                      </article>
+                      <article class="metric-callout">
+                        <div class="metric-callout-value">45%</div>
+                        <div class="metric-callout-label">CSAT</div>
+                      </article>
+                      <article class="metric-callout">
+                        <div class="metric-callout-value">63%</div>
+                        <div class="metric-callout-label">Containment</div>
+                      </article>
+                    </div>
+                    <figcaption class="study-frame-caption">
+                      A representative pattern surfaced across testing: patients who asked specific
+                      questions often received multiple parallel options rather than a direct
+                      answer — a pattern that consistently reduced satisfaction and confidence
+                      scores.
+                    </figcaption>
+                  </figure>
+                  <div class="reading-copy reading-copy-span">
+                    <p class="body">
+                      The fix isn't complex, but it requires a deliberate design shift: treat
+                      responses as outcomes, not menus. When a patient asks about their bill, Hope
+                      should explain it in plain language and present a single recommended action.
+                      When a patient needs a phone number, it should come with labeled hours and
+                      facility context — not just a link to a directory page.
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="report-chapter">
+                <div class="story-columns media-left">
+                  <article class="note-panel">
+                    <div class="label">High value, low success</div>
+                    <p class="body">
+                      The Price Estimator was one of the most sought-after capabilities in the
+                      study. Patients actively wanted to use it, tried it early, and expressed
+                      appreciation that the feature existed. That made its failure modes more
+                      consequential — they didn't know what information they'd need before starting,
+                      and the results didn't feel personalized to their specific plan or location.
+                    </p>
+                  </article>
+                  <div class="reading-copy">
+                    <h3>The Price Estimator Had High Value and Low Success</h3>
+                    <p class="body">
+                      The Price Estimator was one of the most sought-after capabilities in the
+                      study. Patients actively wanted to use it, tried it early, and expressed
+                      genuine appreciation that the feature existed. That made its failure modes
+                      more consequential. Participants consistently ran into the same wall: they
+                      didn't know what information they'd need before starting, and when they
+                      reached results, they weren't confident those results reflected their specific
+                      insurance plan or facility.
+                    </p>
+                    <p class="body">
+                      Two fixes would close most of the gap. A pre-flow primer — a brief "here's
+                      what you'll need" card before the estimator flow begins — would set
+                      expectations and reduce mid-flow abandonment. And a personalization callout —
+                      explicitly stating which plan and location Hope is using to generate an
+                      estimate — would address the confidence problem directly. Patients aren't
+                      asking for guarantees. They're asking for transparency.
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="report-chapter">
+                <div class="story-columns story-columns-lead-span">
+                  <div class="reading-copy reading-copy-span">
+                    <h3>Three Patterns That Surfaced Across the Study</h3>
+                  </div>
+                  <div class="recommendation-grid reading-copy-span">
+                    <article class="recommendation-card">
+                      <h3>Escalation Was Arriving Too Late</h3>
+                      <p class="body">
+                        When patients hit dead ends — when rephrasing didn't work, when the bot
+                        returned low-confidence responses, when the same question produced the same
+                        unhelpful answer — they wanted a clear path to a human. That path existed in
+                        Hope 3.0, but it arrived too late in the conversation and too generically. A
+                        "Talk to a person" option that appears automatically after two rephrases, a
+                        low-confidence response, or a drop in sentiment — and that routes to the
+                        right department rather than a general queue — would meaningfully improve
+                        the experience at its most frustrating moments.
+                      </p>
+                    </article>
+                    <article class="recommendation-card">
+                      <h3>Directory and Contact Lookups Were a Genuine Win</h3>
+                      <p class="body">
+                        Not everything was a gap. When Hope surfaced labeled phone numbers with
+                        hours and location context, participants responded positively and moved
+                        quickly toward resolution. This was the experience at its best: specific,
+                        actionable, and complete in a single exchange. The pattern that made
+                        directory lookups work — labeled, contextualized, one clear next step — is
+                        also the pattern that needs to be applied to every other task type.
+                      </p>
+                    </article>
+                    <article class="recommendation-card">
+                      <h3>Chat Discoverability and Reliability Undercut Trust Early</h3>
+                      <p class="body">
+                        Several participants had difficulty finding the chat entry point,
+                        particularly on mobile. In some sessions, the icon was hidden or
+                        disappeared during navigation. Occasional reliability issues — "we're
+                        having some trouble" states with no recovery path — reduced trust in the
+                        bot before the conversation had a chance to succeed. These aren't chatbot
+                        problems. They're experience infrastructure problems. But they affect
+                        satisfaction scores and perception of the bot's overall quality.
+                      </p>
+                    </article>
+                  </div>
+                </div>
+              </article>
+            </section>
+
+            <section class="story-section" id="outcome-research">
+              <h2 class="section-title">Outcome of the Research</h2>
+              <div class="story-columns media-right">
+                <div class="reading-copy">
+                  <p class="body">
+                    The study produced a prioritized set of recommendations organized around the
+                    flows with the highest volume and the widest gap between patient expectation and
+                    actual experience. Price Estimator, billing guidance, and escalation were the
+                    three areas where targeted changes would have the most immediate impact on
+                    containment, satisfaction, and confidence. The research also identified a set of
+                    instrumentation gaps — places where logging and analytics weren't yet capturing
+                    the signal needed to monitor improvement over time.
+                  </p>
+                  <p class="body">
+                    The broader framing the research offered was this: Hope 3.0 has the
+                    conversational capability to be genuinely useful. The barrier isn't the
+                    technology. It's the design decisions around how responses are constructed,
+                    when escalation is offered, and whether the experience treats patients as people
+                    who need answers or as navigators who need directions. Those decisions are
+                    correctable — and the study gave the team specific, evidence-backed direction
+                    on where to start.
+                  </p>
+                </div>
+                <article class="note-panel">
+                  <div class="label">Implications</div>
+                  <ul class="compact-list">
+                    <li>Turn responses into outcomes. Every task should end with a plain-language answer and one clear recommended action — not a menu of links that asks patients to keep deciding.</li>
+                    <li>Make escalation proactive, not reactive. Show a human handoff option automatically when intent confidence is low, when rephrases accumulate, or when sentiment drops — and route it to the right queue.</li>
+                    <li>Instrument before the next release. Log fallback events, rephrase count, turns to resolution, and intent confidence so that containment and satisfaction improvements can be measured, not just estimated.</li>
+                  </ul>
+                </article>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <section class="section full-bleed-section" id="continue-exploring">
+          <div class="full-bleed-section-inner">
+            <section class="story-section">
+              <h2 class="section-title">Continue Exploring</h2>
+              <div class="related-grid">
+                <article class="related-card">
+                  <div class="label">Related case study</div>
+                  <h3>Virtual Chat Assistant Study</h3>
+                  <p class="body">
+                    The earlier attitudinal survey that shaped how Care Advocacy framed automation
+                    in the first place — and the conditions patients said it would need to meet.
+                  </p>
+                  <div class="tag-list" aria-label="Related case study tags">
+                    <span class="tag">Care Advocacy</span>
+                    <span class="tag">Automation</span>
+                  </div>
+                  <div class="button-row">
+                    <a class="button button-secondary" href="./virtual-chat-assistant-study.html">Read this case study</a>
+                  </div>
+                </article>
+                <article class="related-card">
+                  <div class="label">Research</div>
+                  <h3>Browse more research-led product work</h3>
+                  <p class="body">
+                    Explore the wider work archive for additional healthcare studies, research-led
+                    product decisions, and operational work across complex systems.
+                  </p>
+                  <div class="tag-list" aria-label="Related archive tags">
+                    <span class="tag">Archive</span>
+                    <span class="tag">Healthcare</span>
+                  </div>
+                  <div class="button-row">
+                    <a class="button button-secondary" href="./research.html">View research</a>
+                  </div>
+                </article>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <section class="contact-hero" id="contact" data-content-id="contact.intro">
+          <div class="contact-hero-inner">
+            <div class="section-kicker">Contact</div>
+            <h2 class="section-title">Want to talk through the Hope 3.0 study?</h2>
+            <p class="body">
+              The containment numbers, the Price Estimator gap, or the escalation timing finding —
+              happy to get into any of it.
+            </p>
+            <p class="body contact-microcopy">
+              A good conversation is usually a better start than a formal intake form.
+            </p>
+            <div class="button-row">
+              <a class="button button-accent" href="mailto:hello@thomas-graham.me?subject=Hope%203.0%20chatbot%20evaluation">Get in touch about this study</a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer-bar">
+        <span class="footer-note">Thomas Graham — UX Researcher</span>
+        <div class="dot-row" aria-hidden="true">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

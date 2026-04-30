@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guided Scheduling: Care Options Concept Validation — Thomas Graham</title>
+    <meta
+      name="description"
+      content="A 100-participant prototype study testing whether a structured, filter-based provider search could help patients navigate to the right care without needing to know clinical terminology first."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a><div class="site-shell">
+      <header class="site-header">
+        <a class="brand" href="./index.html">
+          <span class="brand-mark" aria-hidden="true">
+            <img src="./assets/profile-thomas.jpeg" alt="" />
+          </span>
+          <span class="brand-copy">
+            <strong>Thomas Graham</strong>
+            <span>UX Researcher · Product Thinker</span>
+          </span>
+        </a>
+        <nav class="main-nav" aria-label="Primary">
+          <a href="./index.html">Home</a>
+          <a href="./about.html">About</a>
+          <a href="./case-study.html" aria-current="page">Work</a>
+        </nav>
+      </header>
+
+      <main id="main">
+        <section class="section stage wave-lines work-stage">
+          <div class="story-head work-head">
+            <div class="case-hero-copy">
+              <div class="micro-label">Case study</div>
+              <h1 class="page-title">Guided Scheduling: Finding Care When You Don't Know Where to Start</h1>
+              <p class="story-lead support">
+                Most patients know they're in pain. Few know which specialist treats it. This study
+                tested a guided, filter-based provider search prototype designed to help patients
+                navigate to the right care without needing to know the clinical terminology first.
+                The core question was whether a structured, step-by-step filtering experience could
+                meet patients where their mental model actually starts — not at the specialty, but
+                at the symptom.
+              </p>
+              <div class="button-row">
+                <a class="button button-secondary" href="./research.html"
+                  >Back to research</a
+                >
+              </div>
+            </div>
+            <div class="meta-grid work-meta-grid research-dashboard" aria-label="Study profile">
+              <article class="research-card research-card-number">
+                <div class="meta-label">Participants</div>
+                <div class="research-number">100</div>
+              </article>
+              <article class="research-card">
+                <div class="meta-label">Study type</div>
+                <div class="meta-copy">Concept validation + usability testing</div>
+              </article>
+              <article class="research-card">
+                <div class="meta-label">Methods</div>
+                <div class="meta-copy">
+                  Prototype task walkthrough via Maze · Think-aloud · Post-task survey · Open-text
+                  feedback
+                </div>
+              </article>
+              <article class="research-card">
+                <div class="meta-label">Decision area</div>
+                <div class="meta-copy">
+                  Guided search design, taxonomy and terminology, multi-concern selection, and
+                  filtering flexibility.
+                </div>
+              </article>
+              <article class="research-card research-card-wide">
+                <div class="meta-label">Questions explored</div>
+                <div class="meta-copy">
+                  Do patients understand and trust the guided steps? Can they distinguish between
+                  surgical and non-surgical providers? Do they want to select multiple concerns at
+                  once? Where does the taxonomy break down?
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section case-layout">
+          <aside class="toc">
+            <div class="micro-label">On this page</div>
+            <a href="#tldr">tl;dr</a>
+            <a href="#what-we-learned">What We Learned</a>
+            <a href="#outcome-research">Outcome of the Research</a>
+            <a href="#continue-exploring">Continue Exploring</a>
+            <a href="#contact">Contact</a>
+          </aside>
+
+          <div>
+            <section class="story-section" id="tldr">
+              <h2 class="section-title">tl;dr</h2>
+              <div class="story-columns media-right">
+                <div class="reading-copy">
+                  <p class="body">
+                    This study tested a prototype experience designed to guide patients toward the
+                    right provider when they don't already know what kind of care they need. Rather
+                    than asking patients to know the specialty before they search, the flow used
+                    structured filters — organized by body area and condition — to narrow provider
+                    results step by step. The study ran across two care areas: orthopedics and
+                    gynecology, with 50 participants in each group.
+                  </p>
+                  <p class="body">
+                    The most consistent finding across both groups was that patients think like
+                    patients, not clinicians. They know they have ankle pain. They don't know
+                    whether that means orthopedics, sports medicine, or something else. The guided
+                    experience was directionally right — patients responded positively to the
+                    concept of being led through a selection process — but the taxonomy was too
+                    rigid, the specialty labels too clinical, and the inability to select multiple
+                    concerns at once created friction for patients whose health situations rarely
+                    fit into a single category.
+                  </p>
+                </div>
+                <article class="note-panel tldr-summary-card">
+                  <ul class="tldr-summary-list">
+                    <li>90% of participants wanted the ability to select multiple concerns simultaneously — health problems rarely appear in isolation, and patients expect the system to reflect that.</li>
+                    <li>Patients think in symptoms, not specialties. If "ankle" isn't in the list, they want to type it. Rigid taxonomy creates dead ends before the search even begins.</li>
+                    <li>The guided flow concept was validated — patients responded positively to being helped through provider selection rather than left to navigate it alone.</li>
+                    <li>Terminology and category labels were a consistent friction point. Clinical language that providers use internally doesn't map to how patients describe their own conditions.</li>
+                    <li>Free-text input was strongly and repeatedly requested. Patients want a fallback when structured filters don't match their situation.</li>
+                  </ul>
+                </article>
+              </div>
+            </section>
+
+            <section class="story-section" id="what-we-learned">
+              <h2 class="section-title">What We Learned</h2>
+
+              <article class="report-chapter">
+                <div class="story-columns media-right">
+                  <div class="reading-copy">
+                    <h3>Patients Think in Symptoms. The Taxonomy Was Built for Clinicians.</h3>
+                    <p class="body">
+                      The filtering system organized provider options by specialty and clinical
+                      category. That structure made sense from an operational standpoint. It
+                      created friction from a patient one. Participants consistently described
+                      wanting to search the way they naturally think about their own bodies — by
+                      symptom, body part, or plain-language description of what was wrong — not by
+                      specialty name.
+                    </p>
+                    <p class="body">
+                      Thirty participants explicitly asked for more specialty options in the list.
+                      Twenty-two asked why they couldn't simply type "ankle" and surface relevant
+                      providers. Twenty more asked for a free-text input option as a fallback. These
+                      weren't isolated complaints — they were variations of the same underlying
+                      insight: the taxonomy assumed a level of clinical fluency that most patients
+                      don't have and shouldn't need to have.
+                    </p>
+                  </div>
+                  <figure class="story-media-frame study-chart-frame">
+                    <div class="chart-head">
+                      <div class="chart-kicker">Patient-language requests</div>
+                      <div class="chart-title">Three patterns of taxonomy friction</div>
+                    </div>
+                    <div class="metric-callout-grid" aria-label="Patient-language requests">
+                      <article class="metric-callout">
+                        <div class="metric-callout-value">30</div>
+                        <div class="metric-callout-label">Asked for more specialty options</div>
+                      </article>
+                      <article class="metric-callout">
+                        <div class="metric-callout-value">22</div>
+                        <div class="metric-callout-label">Wanted to type "ankle" and search</div>
+                      </article>
+                      <article class="metric-callout">
+                        <div class="metric-callout-value">20</div>
+                        <div class="metric-callout-label">Requested free-text fallback</div>
+                      </article>
+                    </div>
+                    <figcaption class="study-frame-caption">
+                      Terminology and category structure were consistent friction points across both
+                      study groups. The same underlying insight surfaced in three forms.
+                    </figcaption>
+                  </figure>
+                </div>
+              </article>
+
+              <article class="report-chapter">
+                <div class="story-columns media-left">
+                  <figure class="story-media-frame study-chart-frame">
+                    <div class="chart-head">
+                      <div class="chart-kicker">Multi-concern preference</div>
+                      <div class="chart-title">Patients want to select more than one thing at a time</div>
+                    </div>
+                    <div class="bar-chart">
+                      <div class="bar-chart-plot">
+                        <article class="bar-group">
+                          <div class="bar-group-bars">
+                            <div class="bar" style="--value:45; --max:50; --bar-color:#317bb1;"><span class="bar-value">45 / 50</span></div>
+                          </div>
+                          <div class="bar-group-label">GYN cohort</div>
+                        </article>
+                        <article class="bar-group">
+                          <div class="bar-group-bars">
+                            <div class="bar" style="--value:90; --max:100; --bar-color:#f2912f;"><span class="bar-value">90%</span></div>
+                          </div>
+                          <div class="bar-group-label">Combined</div>
+                        </article>
+                      </div>
+                    </div>
+                    <figcaption class="study-frame-caption">
+                      45 of 50 GYN participants and the majority of Ortho participants wanted
+                      multi-concern selection. Health problems rarely arrive in isolation.
+                    </figcaption>
+                  </figure>
+                  <div class="reading-copy">
+                    <h3>Multi-Concern Selection Isn't a Nice-to-Have. Patients Expect It.</h3>
+                    <p class="body">
+                      Forty-five of fifty participants in the GYN study said they wanted the ability
+                      to select multiple concerns when searching for a provider. The pattern was
+                      equally strong in the Ortho group. This wasn't a preference — it was a
+                      reflection of how patients actually experience their health. Symptoms overlap.
+                      Conditions co-exist. Patients arrive at appointments with more than one thing
+                      to address, and they want the system they use to find care to reflect that
+                      reality.
+                    </p>
+                    <p class="body">
+                      Participants described the single-selection model as creating extra work and
+                      reducing trust in the results. If they could only select one concern, they
+                      weren't sure the provider they found would be equipped to address everything
+                      they needed. Several asked whether the information they entered during search
+                      would be visible to the provider before their appointment — suggesting that
+                      the guided flow was already being understood as more than a search tool. It
+                      was being seen as a communication channel.
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="report-chapter">
+                <div class="story-columns story-columns-lead-span">
+                  <div class="reading-copy reading-copy-span">
+                    <h3>Three Patterns That Surfaced Across the Study</h3>
+                  </div>
+                  <div class="recommendation-grid reading-copy-span">
+                    <article class="recommendation-card">
+                      <h3>The Guided Concept Was Validated — With Caveats</h3>
+                      <p class="body">
+                        Patients responded positively to the idea of being guided through provider
+                        selection rather than left to navigate a list on their own. The concept of
+                        structured filtering — especially for patients who don't know what specialty
+                        they need — was seen as helpful and appropriate. The problems weren't with
+                        the concept. They were with the execution: labels that didn't match patient
+                        language, categories that were too narrow, and a lack of flexibility for
+                        patients whose situations didn't fit neatly into the options provided.
+                      </p>
+                    </article>
+                    <article class="recommendation-card">
+                      <h3>Visual Support Could Reduce Cognitive Load</h3>
+                      <p class="body">
+                        A small but notable group of participants asked for images or icons
+                        alongside category labels to help them navigate the filters. Body maps —
+                        visual representations of anatomy that patients could interact with to
+                        identify their area of concern — were suggested unprompted. This points
+                        toward a potential enhancement that could reduce the reliance on clinical
+                        terminology entirely by letting patients point to what hurts rather than
+                        name it.
+                      </p>
+                    </article>
+                    <article class="recommendation-card">
+                      <h3>Navigation and Flow Control Mattered More Than Expected</h3>
+                      <p class="body">
+                        Twenty-four participants noted navigation issues — most commonly the
+                        absence of a clear back button or the inability to revise their selections
+                        without starting over. In a guided flow built around sequential decisions,
+                        the ability to course-correct matters. Patients who felt locked into a path
+                        they'd started down became frustrated quickly. Flexibility in navigation
+                        isn't just a usability improvement — it's a trust signal.
+                      </p>
+                    </article>
+                  </div>
+                </div>
+              </article>
+            </section>
+
+            <section class="story-section" id="outcome-research">
+              <h2 class="section-title">Outcome of the Research</h2>
+              <div class="story-columns media-right">
+                <div class="reading-copy">
+                  <p class="body">
+                    The study validated the core concept of guided scheduling while identifying the
+                    specific design and taxonomy decisions that needed to change before the
+                    experience would work in production. Patients want to be helped to find care.
+                    They don't want to translate their symptoms into clinical language before they
+                    can start. The research gave the product team clear, participant-backed
+                    evidence for four specific changes: validating multi-concern selection,
+                    revisiting the taxonomy with plain-language patient terms, adding a free-text
+                    input option, and exploring visual support like icons or body maps.
+                  </p>
+                  <p class="body">
+                    The study also surfaced a more expansive opportunity. Patients were already
+                    beginning to treat the guided flow as a communication channel — a way to
+                    prepare their provider for the conversation ahead. That mental model, if
+                    deliberately supported in the design, could make the experience meaningfully
+                    more valuable than a simple search tool.
+                  </p>
+                </div>
+                <article class="note-panel">
+                  <div class="label">Implications</div>
+                  <ul class="compact-list">
+                    <li>Build the taxonomy around patient language, not clinical structure. If patients can't recognize their condition in the list, the guided experience fails before it starts.</li>
+                    <li>Multi-concern selection is validated and expected. Design for it as a default, not an edge case.</li>
+                    <li>Consider the guided flow as a pre-visit communication tool — not just a search filter. Patients are already thinking that way.</li>
+                  </ul>
+                </article>
+                <div class="reading-copy reading-copy-span">
+                  <p class="body">
+                    The strongest signal from this study wasn't any single finding — it was the
+                    consistency of the underlying pattern. Patients across both study groups, across
+                    age ranges, across different care needs, kept arriving at the same frustration:
+                    the system was asking them to meet it on its terms rather than the other way
+                    around. The research made that visible in a way that's hard to argue with — and
+                    gave the team a concrete foundation for building something more patient-centered.
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <section class="section full-bleed-section" id="continue-exploring">
+          <div class="full-bleed-section-inner">
+            <section class="story-section">
+              <h2 class="section-title">Continue Exploring</h2>
+              <div class="related-grid">
+                <article class="related-card">
+                  <div class="label">Related case study</div>
+                  <h3>Insights from a Zocdoc Search</h3>
+                  <p class="body">
+                    A moderated discovery study about search trust, guided support, and the signals
+                    patients needed to feel confident enough to continue toward booking.
+                  </p>
+                  <div class="tag-list" aria-label="Related case study tags">
+                    <span class="tag">Search</span>
+                    <span class="tag">Provider discovery</span>
+                  </div>
+                  <div class="button-row">
+                    <a class="button button-secondary" href="./zocdoc-discovery-study.html">Read this case study</a>
+                  </div>
+                </article>
+                <article class="related-card">
+                  <div class="label">Research</div>
+                  <h3>Browse more research-led product work</h3>
+                  <p class="body">
+                    Explore the wider work archive for additional healthcare studies, research-led
+                    product decisions, and operational work across complex systems.
+                  </p>
+                  <div class="tag-list" aria-label="Related archive tags">
+                    <span class="tag">Archive</span>
+                    <span class="tag">Healthcare</span>
+                  </div>
+                  <div class="button-row">
+                    <a class="button button-secondary" href="./research.html">View research</a>
+                  </div>
+                </article>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <section class="contact-hero" id="contact" data-content-id="contact.intro">
+          <div class="contact-hero-inner">
+            <div class="section-kicker">Contact</div>
+            <h2 class="section-title">Want to talk through the guided scheduling study?</h2>
+            <p class="body">
+              The taxonomy gap, the multi-concern finding, or the pre-visit communication framing —
+              happy to get into any of it.
+            </p>
+            <p class="body contact-microcopy">
+              A good conversation is usually a better start than a formal intake form.
+            </p>
+            <div class="button-row">
+              <a class="button button-accent" href="mailto:hello@thomas-graham.me?subject=Guided%20scheduling%20study">Get in touch about this study</a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer-bar">
+        <span class="footer-note">Thomas Graham — UX Researcher</span>
+        <div class="dot-row" aria-hidden="true">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
