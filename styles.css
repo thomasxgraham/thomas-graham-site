@@ -406,6 +406,91 @@ main {
   gap: 18px;
 }
 
+.testimonials-section {
+  display: grid;
+  gap: 18px;
+}
+
+.testimonials-carousel {
+  --testimonials-gap: 18px;
+  --testimonials-visible: 3;
+  display: grid;
+}
+
+.testimonials-viewport {
+  overflow: hidden;
+}
+
+.testimonials-track {
+  display: flex;
+  gap: var(--testimonials-gap);
+  align-items: stretch;
+  transition: transform 420ms ease;
+}
+
+.testimonial-card {
+  flex: 0 0 calc((100% - (var(--testimonials-visible) - 1) * var(--testimonials-gap)) / var(--testimonials-visible));
+  display: grid;
+  gap: 16px;
+  padding: 20px 20px 22px;
+  border-radius: var(--radius-card);
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.66);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.62);
+}
+
+.testimonial-card-head {
+  display: grid;
+  grid-template-columns: 72px minmax(0, 1fr);
+  gap: 14px;
+  align-items: center;
+}
+
+.testimonial-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 22px;
+  object-fit: cover;
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.testimonial-card-identity {
+  display: grid;
+  gap: 2px;
+}
+
+.testimonial-card blockquote {
+  margin: 0;
+  color: #4f4940;
+  font-size: 1.02rem;
+  line-height: 1.58;
+  font-style: italic;
+}
+
+.testimonial-card blockquote::before {
+  content: "“";
+  display: block;
+  margin-bottom: -10px;
+  color: var(--muted-soft);
+  font-family: var(--font-display);
+  font-size: 2.55rem;
+  line-height: 1;
+}
+
+.testimonial-card-name {
+  color: var(--text);
+  font-size: 0.96rem;
+  font-weight: 600;
+}
+
+.testimonial-card-role,
+.testimonial-card-company {
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
 .proof-section {
   display: grid;
   gap: 22px;
@@ -3618,6 +3703,21 @@ main:has(.contact-hero:last-child) + .footer-bar {
 
   .story-image {
     min-height: 280px;
+  }
+
+  .testimonials-track {
+    gap: 16px;
+  }
+
+  .testimonial-card-head {
+    grid-template-columns: 64px minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  .testimonial-avatar {
+    width: 64px;
+    height: 64px;
+    border-radius: 20px;
   }
 
   .asset-frame,

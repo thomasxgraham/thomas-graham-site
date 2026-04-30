@@ -115,6 +115,92 @@
           </div>
         </section>
 
+        <section class="section panel testimonials-section" data-content-id="about.testimonials">
+          <div class="section-head">
+            <div>
+              <div class="section-kicker">What collaborators say</div>
+              <h2 class="section-title">A few words from people I’ve worked with.</h2>
+            </div>
+          </div>
+          <div class="testimonials-carousel" data-testimonials-carousel>
+            <div class="testimonials-viewport">
+              <div class="testimonials-track">
+                <article class="testimonial-card">
+                  <div class="testimonial-card-head">
+                    <img
+                      class="testimonial-avatar"
+                      src="./assets/testimonials/PJH.png"
+                      alt="Portrait of PJ H." loading="lazy" decoding="async" />
+                    <div class="testimonial-card-identity">
+                      <span class="testimonial-card-name">PJ H.</span>
+                      <span class="testimonial-card-role">Lead user Experience Designer</span>
+                      <span class="testimonial-card-company">SurgarAI</span>
+                    </div>
+                  </div>
+                  <blockquote>
+                    What impressed me the most about Thomas was his ability to just hit the ground
+                    running and not be afraid to start learning the complex concepts we have at
+                    Hitachi. Thomas is ALWAYS advocating for the user and seeking to make sure he is
+                    solving what they really want.
+                  </blockquote>
+                </article>
+                <article class="testimonial-card">
+                  <div class="testimonial-card-head">
+                    <img
+                      class="testimonial-avatar"
+                      src="./assets/testimonials/DebraD.png"
+                      alt="Portrait of Debra D." loading="lazy" decoding="async" />
+                    <div class="testimonial-card-identity">
+                      <span class="testimonial-card-name">Debra D.</span>
+                      <span class="testimonial-card-role">Production Coordinator</span>
+                      <span class="testimonial-card-company">Embry-Riddle Aeronautical University</span>
+                    </div>
+                  </div>
+                  <blockquote>
+                    Tom’s personable and collaborative attitude helped produce visual solutions and
+                    kept the project on track.
+                  </blockquote>
+                </article>
+                <article class="testimonial-card">
+                  <div class="testimonial-card-head">
+                    <img
+                      class="testimonial-avatar"
+                      src="./assets/testimonials/JasonT.png"
+                      alt="Portrait of Jason T." loading="lazy" decoding="async" />
+                    <div class="testimonial-card-identity">
+                      <span class="testimonial-card-name">Jason T.</span>
+                      <span class="testimonial-card-role">President</span>
+                      <span class="testimonial-card-company">DiSti Corportation</span>
+                    </div>
+                  </div>
+                  <blockquote>
+                    Thomas is able to lead a team; mentoring, coaching, and coordinating efforts on
+                    large projects. He works very well with clients and internal customers.
+                  </blockquote>
+                </article>
+                <article class="testimonial-card">
+                  <div class="testimonial-card-head">
+                    <img
+                      class="testimonial-avatar"
+                      src="./assets/testimonials/DianaF.png"
+                      alt="Portrait of Diana F." loading="lazy" decoding="async" />
+                    <div class="testimonial-card-identity">
+                      <span class="testimonial-card-name">Diana F.</span>
+                      <span class="testimonial-card-role">Managing Editor</span>
+                      <span class="testimonial-card-company">Live Vine Media</span>
+                    </div>
+                  </div>
+                  <blockquote>
+                    Tom is a truly a highly skilled manager. In addition to being immensely capable,
+                    he readily adapts to any challenge and willingly embraces change, and he does it
+                    with a smile. He is always there to lend a hand and help others when needed.
+                  </blockquote>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section class="section panel impact-panel" data-content-id="about.personal_impact">
           <div class="section-head">
             <div>
@@ -168,5 +254,106 @@
         </div>
       </footer>
     </div>
+    <script>
+      (() => {
+        const carousel = document.querySelector("[data-testimonials-carousel]");
+        if (!carousel) return;
+
+        const viewport = carousel.querySelector(".testimonials-viewport");
+        const track = carousel.querySelector(".testimonials-track");
+        const cards = Array.from(track.querySelectorAll(".testimonial-card"));
+        const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+        const STEP_INTERVAL = 30000;
+        let visible = 3;
+        let index = 0;
+        let timerId = null;
+        let paused = false;
+
+        function getVisibleCount() {
+          if (window.innerWidth < 720) return 1;
+          if (window.innerWidth < 1080) return 2;
+          return 3;
+        }
+
+        function getMaxIndex() {
+          return Math.max(0, cards.length - visible);
+        }
+
+        function setTranslate(animate = true) {
+          const gap = Number.parseFloat(getComputedStyle(track).columnGap || getComputedStyle(track).gap || "18") || 18;
+          const cardWidth = cards[0]?.getBoundingClientRect().width || 0;
+          const offset = index * (cardWidth + gap);
+          track.style.transition = animate ? "" : "none";
+          track.style.transform = `translateX(-${offset}px)`;
+          if (!animate) {
+            requestAnimationFrame(() => {
+              track.style.transition = "";
+            });
+          }
+        }
+
+        function syncLayout(animate = false) {
+          visible = getVisibleCount();
+          carousel.style.setProperty("--testimonials-visible", String(visible));
+          index = Math.min(index, getMaxIndex());
+          setTranslate(animate);
+        }
+
+        function advance() {
+          if (paused || reduceMotion.matches) return;
+          index = index >= getMaxIndex() ? 0 : index + 1;
+          setTranslate(true);
+        }
+
+        function start() {
+          if (timerId || reduceMotion.matches || cards.length <= visible) return;
+          timerId = window.setInterval(advance, STEP_INTERVAL);
+        }
+
+        function stop() {
+          if (!timerId) return;
+          window.clearInterval(timerId);
+          timerId = null;
+        }
+
+        function updatePlayback() {
+          stop();
+          start();
+        }
+
+        carousel.addEventListener("mouseenter", () => {
+          paused = true;
+          stop();
+        });
+
+        carousel.addEventListener("mouseleave", () => {
+          paused = false;
+          start();
+        });
+
+        carousel.addEventListener("focusin", () => {
+          paused = true;
+          stop();
+        });
+
+        carousel.addEventListener("focusout", () => {
+          paused = false;
+          start();
+        });
+
+        window.addEventListener("resize", () => {
+          syncLayout(false);
+          updatePlayback();
+        });
+
+        reduceMotion.addEventListener("change", () => {
+          syncLayout(false);
+          updatePlayback();
+        });
+
+        syncLayout(false);
+        start();
+      })();
+    </script>
   </body>
 </html>
