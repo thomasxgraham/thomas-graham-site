@@ -721,9 +721,13 @@ main > .section {
 }
 
 .process-section .section-body-intro {
-  margin-top: clamp(28px, 5vw, 54px);
+  margin-top: clamp(18px, 3.2vw, 30px);
   margin-bottom: 0;
   max-width: 900px;
+}
+
+.process-section .section-head {
+  margin-bottom: 10px;
 }
 
 #research-process {
