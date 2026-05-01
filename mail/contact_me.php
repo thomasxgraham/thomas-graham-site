@@ -48,7 +48,7 @@ $cleanSubject = preg_replace("/[\r\n]+/", ' ', $subject);
 $cleanOrigin = preg_replace("/[\r\n]+/", ' ', $origin);
 $cleanTitle = preg_replace("/[\r\n]+/", ' ', $pageTitle);
 
-$to = 'hello@thomas-graham.me';
+$to = 'thomas_graham@me.com';
 $emailSubject = 'Portfolio Contact: ' . $cleanSubject;
 $emailBody = implode("\n", [
   'You have received a new message from the portfolio contact form.',
