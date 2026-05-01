@@ -61,6 +61,8 @@
     }
     .contact-modal-close {
       appearance: none;
+      display: grid;
+      place-items: center;
       border: 1px solid rgba(86, 78, 68, 0.18);
       background: rgba(255, 255, 255, 0.74);
       color: #544c44;
@@ -69,6 +71,8 @@
       height: 40px;
       font: inherit;
       font-size: 1.15rem;
+      line-height: 1;
+      padding: 0;
       cursor: pointer;
     }
     .contact-modal-kicker {
@@ -77,9 +81,7 @@
       letter-spacing: 0.18em;
       text-transform: uppercase;
     }
-    .contact-modal-support,
     .contact-modal-label,
-    .contact-modal-note,
     .contact-modal-status {
       color: #5f574f;
       font-size: 0.96rem;
@@ -138,10 +140,9 @@
       font-weight: 600;
     }
     .contact-modal-actions {
-      display: flex;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
       align-items: center;
-      justify-content: space-between;
       gap: 12px;
       padding-top: 4px;
     }
@@ -203,6 +204,7 @@
         grid-template-columns: 1fr;
       }
       .contact-modal-actions {
+        grid-template-columns: 1fr;
         align-items: start;
       }
     }
@@ -216,20 +218,13 @@
     <div class="contact-modal-backdrop" data-contact-close></div>
     <div class="contact-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="contact-modal-title">
       <div class="contact-modal-head">
-        <div>
-          <div class="contact-modal-kicker">Contact</div>
-          <h2 class="contact-modal-title" id="contact-modal-title">Start the conversation.</h2>
-        </div>
+        <h2 class="contact-modal-title" id="contact-modal-title">Start the conversation.</h2>
         <button class="contact-modal-close" type="button" aria-label="Close contact form" data-contact-close>×</button>
       </div>
-      <p class="contact-modal-support">
-        I’ll take care of the context. You just need to leave the basics so I can follow up.
-      </p>
       <form class="contact-modal-form" novalidate>
         <div class="contact-modal-meta">
           <div class="contact-modal-kicker">Subject</div>
           <div class="contact-modal-subject" data-contact-subject-label></div>
-          <div class="contact-modal-note" data-contact-origin-label></div>
         </div>
         <div class="contact-modal-grid">
           <label class="contact-modal-label">
@@ -254,8 +249,8 @@
         <input type="hidden" name="page_url" />
         <input type="hidden" name="page_title" />
         <div class="contact-modal-actions">
-          <button class="contact-modal-submit" type="submit">Send message</button>
           <div class="contact-modal-status" data-contact-status></div>
+          <button class="contact-modal-submit" type="submit">Send message</button>
         </div>
         <div class="contact-modal-fallback" data-contact-fallback hidden></div>
       </form>
@@ -271,7 +266,6 @@
   const pageUrlInput = form.elements.page_url;
   const pageTitleInput = form.elements.page_title;
   const subjectLabel = modal.querySelector("[data-contact-subject-label]");
-  const originLabel = modal.querySelector("[data-contact-origin-label]");
   const submitButton = form.querySelector(".contact-modal-submit");
 
   let activeTrigger = null;
@@ -339,7 +333,6 @@
     pageUrlInput.value = window.location.href;
     pageTitleInput.value = document.title;
     subjectLabel.textContent = subject;
-    originLabel.textContent = origin;
 
     modal.hidden = false;
     document.body.classList.add("contact-modal-open");
@@ -387,7 +380,7 @@
       statusNode.textContent = payload.message || "Thanks — I’ll follow up by email.";
       form.reset();
       subjectInput.value = subjectLabel.textContent;
-      originInput.value = originLabel.textContent;
+      originInput.value = origin;
       pageUrlInput.value = window.location.href;
       pageTitleInput.value = document.title;
       window.setTimeout(closeModal, 1200);
