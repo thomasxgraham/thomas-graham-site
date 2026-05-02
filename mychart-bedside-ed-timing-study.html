@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MyChart Bedside ED: Onboarding Timing Study — Thomas Graham</title>
+    <title>MyChart Bedside ER: Onboarding Timing Study — Thomas Graham</title>
     <meta
       name="description"
-      content="A case study about benchmarking the MyChart Bedside ED onboarding journey, identifying where BYOD registration broke down, and supporting a lower-friction access model."
+      content="A case study about benchmarking the MyChart Bedside ER onboarding journey, identifying where BYOD registration broke down, and supporting a lower-friction access model."
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
@@ -34,12 +34,12 @@
           <div class="story-head work-head">
             <div class="case-hero-copy">
               <div class="micro-label">Case study</div>
-              <h1 class="page-title">ED Access Timing</h1>
+              <h1 class="page-title">ER Access Timing</h1>
               <p class="story-lead support">
-                When AdventHealth moved its Emergency Department bedside experience from hospital
-                tablets to a Bring Your Own Device model, patients were suddenly expected to
+                When AdventHealth moved its Emergency Room bedside experience from hospital
+                tablets to a Bring Your Own Device (BYOD) model, patients were suddenly expected to
                 download an app, create an account, verify their identity, complete MFA, and sign
-                in before they could access any bedside features. In the ED, that full registration
+                in before they could access any bedside features. In the ER, that full registration
                 gauntlet was landing on people who were stressed, often on poor cellular
                 connections, and increasingly relying on nurses to get through it.
               </p>
@@ -67,7 +67,7 @@
               <article class="research-card">
                 <div class="meta-label">Decision area</div>
                 <div class="meta-copy">
-                  How to reduce ED onboarding friction in a BYOD model without increasing nurse burden.
+                  How to reduce ER onboarding friction in a BYOD model without increasing nurse burden.
                 </div>
               </article>
               <article class="research-card research-card-wide">
@@ -97,8 +97,8 @@
               <article class="note-panel tldr-summary-card">
                 <ul class="tldr-summary-list">
                   <li>The median onboarding time was 5:58, just over the 5-minute leadership benchmark, with a range of 3:05 to 8:20 depending on device, network, and user confidence.</li>
-                  <li>The app download handoff added a median of 1:49, and up to 3:06 in worst-case runs, making it a significant and discrete friction point.</li>
-                  <li>The real bottleneck was not the app itself, but a registration model designed for convenience-driven digital consumers rather than patients in acute care.</li>
+                  <li>The app download handoff added a median of 1:49, and up to 3:06 in worst-case runs. It was its own bottleneck, separable from the rest.</li>
+                  <li>The real bottleneck was the registration model itself: a flow designed for convenience-driven digital consumers, dropped into acute care.</li>
                   <li>Nurses were absorbing the failure cost, becoming de facto IT support and adding stress to an already high-pressure environment.</li>
                   <li>A code-based bypass is now in testing, and early results show a meaningful reduction in the time nurses spend troubleshooting onboarding with patients.</li>
                 </ul>
@@ -113,13 +113,13 @@
                   <div class="reading-copy">
                     <h3>The BYOD Shift Created a Friction Gap No One Had Fully Mapped</h3>
                     <p class="body">
-                      AdventHealth's Emergency Department had previously provided patients with
+                      AdventHealth's Emergency Room had previously provided patients with
                       pre-registered tablets, giving them immediate access to digital bedside
                       features. When the model shifted to BYOD, the assumption was that patients
                       would use their own phones, but the onboarding path they were handed was not
-                      built for an ED context. It was the standard AdventHealth account creation
+                      built for an ER context. It was the standard AdventHealth account creation
                       flow: designed for a patient sitting at home with a stable connection and time
-                      to spare. In the ED, neither of those things is true.
+                      to spare. In the ER, neither of those things is true.
                     </p>
                     <p class="body">
                       Mapping the full journey made the gap visible. From the moment a patient
@@ -132,7 +132,7 @@
                   <figure class="story-media-frame study-graphic-frame">
                     <img
                       src="./assets/ed-onboarding-study/sms-invite.png"
-                      alt="SMS invite message used to begin the MyChart Bedside ED onboarding flow" loading="lazy" decoding="async" />
+                      alt="SMS invite message used to begin the MyChart Bedside ER onboarding flow" loading="lazy" decoding="async" />
                     <figcaption class="study-frame-caption">
                       Patients entered the experience through a text-message invite, which kicked off
                       the full registration path before they could access bedside features.
@@ -222,7 +222,7 @@
                       </article>
                       <article class="metric-callout">
                         <div class="metric-callout-value">1:55</div>
-                        <div class="metric-callout-label">App download to MCB ED</div>
+                        <div class="metric-callout-label">App download to MCB ER</div>
                       </article>
                       <article class="metric-callout">
                         <div class="metric-callout-value">3:36</div>
@@ -266,11 +266,11 @@
                     <h3>Connectivity Made Everything Worse, and Nurses Were Caught in the Middle</h3>
                     <p class="body">
                       Test runs were conducted on devices without Wi-Fi enabled, a deliberate choice
-                      to reflect the actual ED environment, where patients are unlikely to be
+                      to reflect the actual ER environment, where patients are unlikely to be
                       connected to the hospital network. The timing data captured under these
                       conditions is more representative of what real patients experience, and it
                       showed. Cellular-only runs trended longer, and qualitative notes flagged slow
-                      load times and delayed SMS verification codes as key friction drivers.
+                      load times and delayed SMS verification codes as the heaviest drag on the runs.
                     </p>
                   </div>
                   <article class="note-panel">
@@ -281,11 +281,9 @@
                   </article>
                   <div class="reading-copy reading-copy-span">
                     <p class="body">
-                      Beyond the timing data, one of the most important things this study surfaced
-                      was the human cost of a broken onboarding flow. ED nurses, whose primary job
-                      is clinical care, had become informal IT support for patients trying to
-                      navigate the registration process. Every stuck patient was a nurse pulled away
-                      from something more important.
+                      Beyond the timing data, the study surfaced something quieter: ER nurses had
+                      become informal IT support for patients trying to navigate the registration
+                      process. Their primary job is clinical care.
                     </p>
                   </div>
                 </div>
@@ -297,16 +295,16 @@
                     <h3>The Root Problem Was a Registration Flow Designed for the Wrong Context</h3>
                     <p class="body">
                       The account creation flow was not poorly designed in absolute terms. It was
-                      designed for the wrong setting. In an ED, patients have already handed over
+                      designed for the wrong setting. In an ER, patients have already handed over
                       their personal information when they were admitted. Asking them to re-enter
                       that same information through a multi-step digital registration process is not
                       just slow, it is redundant.
                     </p>
                     <p class="body">
-                      That redundancy created a perception mismatch between the care patients had
-                      already received and the digital experience being offered to complement it. The
-                      app was asking them to prove who they were all over again before they could
-                      reach something that should have felt like bedside support.
+                      That redundancy created a gap between the care patients had already received
+                      and the digital experience being offered to complement it. The app was asking
+                      them to prove who they were all over again before they could reach something
+                      that should have felt like bedside support.
                     </p>
                   </div>
                   <div class="reading-copy reading-copy-span">
@@ -314,7 +312,7 @@
                       The study made it clear that the problem was deeper than onboarding polish. It
                       was structural. A flow designed for convenience-driven digital consumers was
                       being dropped into an acute-care setting where patients needed speed,
-                      simplicity, and continuity more than conventional account setup logic.
+                      simplicity, and continuity more than they needed to prove who they were.
                     </p>
                   </div>
                 </div>
@@ -330,7 +328,7 @@
                     time and friction, and pointing toward a fundamentally different entry model.
                     The recommended direction was a location-based, code-driven access path.
                     Patients receive a unique code tied to their room upon admission, which routes
-                    them directly into MyChart Bedside ED features without requiring full account
+                    them directly into MyChart Bedside ER features without requiring full account
                     registration.
                   </p>
                   <p class="body">
@@ -364,7 +362,7 @@
                 <article class="note-panel">
                   <div class="label">A note on methodology</div>
                   <p class="body">
-                    Because the true Bedside ED SMS invite flow was not accessible during the study
+                    Because the true Bedside ER SMS invite flow was not accessible during the study
                     window, runs were conducted using an analog path beginning at adventhealth.com.
                     The core steps, account creation, verification, MFA, app download, and app
                     sign-in, were preserved. Timing benchmarks should be understood in that context
@@ -385,9 +383,8 @@
                   <div class="label">Related case study</div>
                   <h3>Reducing onboarding effort in the AdventHealth app</h3>
                   <p class="body">
-                    A related AdventHealth case study focused on onboarding friction and how
-                    digital health products need to reduce sign-up and sign-in effort before they
-                    ask users to do too much setup work.
+                    Another AdventHealth study on onboarding friction. Where the path gets in the
+                    way of the product before users can use it.
                   </p>
                   <div class="tag-list" aria-label="Related case study tags">
                     <span class="tag">AdventHealth</span>
@@ -401,8 +398,8 @@
                   <div class="label">Research</div>
                   <h3>Browse more research-led product work</h3>
                   <p class="body">
-                    Explore the wider work archive for additional healthcare studies, research-led
-                    product decisions, and operational work across complex systems.
+                    Browse the wider archive for more healthcare research, product decisions
+                    shaped by it, and the operational work behind both.
                   </p>
                   <div class="tag-list" aria-label="Related archive tags">
                     <span class="tag">Archive</span>
@@ -420,13 +417,10 @@
         <section class="contact-hero" id="contact" data-content-id="contact.intro">
           <div class="contact-hero-inner">
             <div class="section-kicker">Contact</div>
-            <h2 class="section-title">Want to talk through the ED timing work?</h2>
+            <h2 class="section-title">Want to talk through the ER timing work?</h2>
             <p class="body">
               The methodology, the BYOD shift, or what the code-based access model is doing in
-              practice — happy to get into any of it.
-            </p>
-            <p class="body contact-microcopy">
-              A good conversation is usually the best start.
+              practice: happy to get into any of it.
             </p>
             <div class="button-row">
               <a class="button button-accent" href="mailto:hello@thomas-graham.me?subject=MyChart%20Bedside%20ED%20timing%20study">Get in touch about this study</a>
