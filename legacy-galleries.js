@@ -155,13 +155,6 @@ const legacyGalleryAreas = {
             caption:
               "A related web direction emphasizing a different visual hierarchy while staying within the same product family.",
           },
-          {
-            type: "Dashboard",
-            title: "Bars and data view",
-            src: "./assets/legacy-projects/TC/TC-Bars.png",
-            caption:
-              "A data-centric screen from the Team Cymru work that belongs with the interface archive rather than the brand archive.",
-          },
         ],
       },
       {
@@ -275,72 +268,57 @@ const legacyGalleryAreas = {
           "A representative identity mark from the Drug Center work.",
       },
       {
-        type: "Logo / identity",
-        title: "Latino Open mark 1",
-        src: "./assets/legacy-projects/Freelance/LO_1.png",
+        type: "Product identity",
+        title: "BARS",
+        lightboxTitle: "BARS: Data Made Structural",
+        src: "./assets/legacy-projects/TC/TC-Bars.png",
+        thumbnail: "./assets/legacy-projects/TC/thumbs/tc-bars-thumb.png",
+        thumbnailAlt: "BARS product logo thumbnail",
+        alt: "BARS (Botnet Analysis and Reporting Service) product logo",
+        body: [
+          "BARS, the Botnet Analysis and Reporting Service, was the most explicitly data-driven mark. Bar-chart forms became part of the letterforms so the name and function were fused together.",
+          "Its heavier all-caps treatment gave it a more operational tone than Malware Hawk or Foreshadow. The set worked because each mark followed its own idea while sharing a disciplined visual register.",
+        ],
         caption:
-          "Identity exploration from the Latino Open work.",
+          "BARS: bar chart forms integrated directly into the letterforms, making the product's function inseparable from its name.",
       },
       {
-        type: "Logo / identity",
-        title: "Latino Open mark 2",
-        src: "./assets/legacy-projects/Freelance/LO_2.png",
-        caption:
-          "A second identity direction from the same project set.",
-      },
-      {
-        type: "Brand system",
-        title: "Team Cymru branding",
-        src: "./assets/legacy-projects/TC/TC-Branding.png",
-        caption:
-          "Brand-direction work that belongs on the creative side rather than the interface side of the archive.",
-      },
-      {
-        type: "Banner",
-        title: "Team Cymru banner",
-        src: "./assets/legacy-projects/TC/TC-banner.png",
-        caption:
-          "A banner application from the same visual system.",
-      },
-    ],
-  },
-  "creativity-illustration": {
-    label: "Illustration & Promotional Visuals",
-    items: [
-      {
-        type: "Promotional art",
-        title: "Eurotrip",
-        src: "./assets/legacy-projects/Freelance/eurotrip.png",
-        caption:
-          "A promotional concept from the freelance archive.",
-      },
-      {
-        type: "Event poster",
-        title: "Latino Open poster",
-        src: "./assets/legacy-projects/Freelance/LL-LatinoOpen6.jpg",
-        caption:
-          "One of the event-focused promotional pieces from the freelance archive.",
-      },
-      {
-        type: "Illustration",
+        type: "Product identity",
         title: "ForeShadow",
+        lightboxTitle: "Foreshadow: Depth and Signal",
         src: "./assets/legacy-projects/TC/TC-ForeShadow.png",
+        thumbnail: "./assets/legacy-projects/TC/thumbs/tc-foreshadow-thumb.png",
+        thumbnailAlt: "Foreshadow product logo thumbnail",
+        alt: "Foreshadow product logo — bold typographic mark with concentric circle icon",
+        body: [
+          "Foreshadow dealt with early signals, the information that appears before a threat becomes obvious. The concentric-circle mark expressed that idea directly: detection expanding outward, like radar at the edge of visibility.",
+          "The wordmark used contrasting weights to carry the same idea in type. \"FORE\" and \"SHADOW\" feel visually connected but not identical, giving the name a built-in sense of before and after.",
+        ],
         caption:
-          "A more expressive visual exploration from the Team Cymru set.",
+          "Foreshadow: concentric circles as a detection metaphor, paired with bold contrasting typography that mirrored the product concept.",
       },
       {
-        type: "Illustration",
+        type: "Product identity",
         title: "Malware Hawk",
+        lightboxTitle: "Malware Hawk: Fast, Precise, Watchful",
         src: "./assets/legacy-projects/TC/TC-malewarehawk.png",
+        thumbnail: "./assets/legacy-projects/TC/thumbs/tc-malware-hawk-thumb.png",
+        thumbnailAlt: "Malware Hawk product logo thumbnail",
+        alt: "Malware Hawk product logo — geometric origami bird in teal",
+        body: [
+          "Malware Hawk needed to feel close to Griffin without borrowing the same symbol. The geometric bird gave it a related detection language while making the product feel faster and more specialized.",
+          "Folded planes suggested precision and movement. The thin wordmark softened the technical mark just enough to make it feel considered rather than purely mechanical.",
+        ],
         caption:
-          "A character-led visual concept that clearly belongs with the creative archive.",
+          "Malware Hawk: a geometric origami bird built from the same teal palette as Griffin, signaling precision, speed, and watchfulness.",
       },
       {
-        type: "Campaign visual",
-        title: "Rise",
+        type: "Product identity",
+        title: "RISE Chile",
         src: "./assets/legacy-projects/TC/TC-Rise.png",
+        thumbnail: "./assets/legacy-projects/TC/thumbs/tc-rise-thumb.png",
         caption:
-          "Another non-interface artifact from the same body of work.",
+          "A companion product identity from the Team Cymru security portfolio.",
       },
     ],
   },
@@ -405,8 +383,8 @@ function createLegacyGalleryItem(group, item, groupIndex, itemIndex) {
   frame.className = "legacy-gallery-frame";
 
   const image = document.createElement("img");
-  image.src = item.src;
-  image.alt = item.caption || item.title;
+  image.src = item.thumbnail || item.thumb || item.src;
+  image.alt = item.thumbnailAlt || item.caption || item.title;
   image.loading = "lazy";
   image.decoding = "async";
   frame.appendChild(image);
@@ -493,14 +471,12 @@ function buildAssetLightbox() {
           </div>
           <button class="asset-lightbox-close" type="button" aria-label="Close image preview">Close</button>
         </div>
-        <div class="asset-lightbox-copy">
-          <p class="body asset-lightbox-caption"></p>
-        </div>
         <div class="asset-lightbox-nav">
           <button class="asset-lightbox-prev" type="button">Previous</button>
           <button class="asset-lightbox-next" type="button">Next</button>
         </div>
       </div>
+      <div class="asset-lightbox-copy"></div>
     </div>
   `;
 
@@ -521,7 +497,7 @@ function initLegacyGalleries() {
   const image = lightbox.querySelector(".asset-lightbox-image");
   const kicker = lightbox.querySelector(".asset-lightbox-kicker");
   const title = lightbox.querySelector(".asset-lightbox-title");
-  const caption = lightbox.querySelector(".asset-lightbox-caption");
+  const copy = lightbox.querySelector(".asset-lightbox-copy");
   const nav = lightbox.querySelector(".asset-lightbox-nav");
 
   const galleryState = {
@@ -546,12 +522,33 @@ function initLegacyGalleries() {
     if (!item) return;
 
     image.src = item.src;
-    image.alt = item.caption || item.title;
-    title.textContent = item.title;
-    kicker.textContent = `${group.title} · ${item.type}`;
-    caption.textContent = item.caption || "";
+    image.alt = item.alt || item.caption || item.title;
+    title.textContent = item.lightboxTitle || item.title;
+    kicker.textContent = item.lightboxKicker || `${group.title} · ${item.type}`;
+    renderLightboxCopy(item.body, item.caption);
     prevButton.disabled = galleryState.currentItemIndex === 0;
     nextButton.disabled = galleryState.currentItemIndex === group.items.length - 1;
+  }
+
+  function renderLightboxCopy(body, itemCaption) {
+    copy.replaceChildren();
+    const paragraphs = Array.isArray(body) ? body : body ? [body] : [];
+
+    paragraphs.forEach((paragraph) => {
+      const bodyParagraph = document.createElement("p");
+      bodyParagraph.className = "body";
+      bodyParagraph.textContent = paragraph;
+      copy.appendChild(bodyParagraph);
+    });
+
+    if (itemCaption) {
+      const captionParagraph = document.createElement("p");
+      captionParagraph.className = paragraphs.length
+        ? "body asset-lightbox-caption asset-lightbox-image-caption"
+        : "body asset-lightbox-caption";
+      captionParagraph.textContent = itemCaption;
+      copy.appendChild(captionParagraph);
+    }
   }
 
   function openLightbox(groupIndex, itemIndex, trigger) {
@@ -574,7 +571,7 @@ function initLegacyGalleries() {
     image.alt = alt || itemCaption || itemTitle || "";
     title.textContent = itemTitle || "";
     kicker.textContent = itemKicker || "";
-    caption.textContent = itemCaption || "";
+    renderLightboxCopy([], itemCaption || "");
     lightbox.hidden = false;
     document.body.classList.add("asset-lightbox-open");
     closeButton.focus();
