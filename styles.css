@@ -1569,6 +1569,15 @@ body.reports-modal-open {
   width: 100%;
 }
 
+#case-study-index {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0;
+}
+
+#case-study-index > div {
+  grid-column: 1 / -1;
+}
+
 #case-study-index .research-browse-masonry {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
