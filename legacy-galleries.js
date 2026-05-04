@@ -135,29 +135,6 @@ const legacyGalleryAreas = {
         ],
       },
       {
-        slug: "team-cymru-interfaces",
-        eyebrow: "Product Design",
-        title: "Team Cymru interfaces",
-        description:
-          "Selected interface and web artifacts from the Team Cymru work that fit the product-design side of the portfolio.",
-        items: [
-          {
-            type: "Web interface",
-            title: "Team Cymru web concept",
-            src: "./assets/legacy-projects/TC/TC-Web.png",
-            caption:
-              "A web-facing product concept showing the interaction and visual framing of the platform.",
-          },
-          {
-            type: "Web interface",
-            title: "Griffin web direction",
-            src: "./assets/legacy-projects/TC/TC-Griffin-Web.png",
-            caption:
-              "A related web direction emphasizing a different visual hierarchy while staying within the same product family.",
-          },
-        ],
-      },
-      {
         slug: "defense-interfaces",
         eyebrow: "Product Design",
         title: "Defense interfaces",

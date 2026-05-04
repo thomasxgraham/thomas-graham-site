@@ -377,6 +377,13 @@ main {
   font-size: 0.96rem;
 }
 
+.about-skill-strip {
+  justify-content: center;
+  width: min(100%, 620px);
+  margin: 0 auto clamp(28px, 5vw, 44px);
+  text-align: center;
+}
+
 .tray {
   padding: 22px 24px 24px;
   border-radius: var(--radius-panel);
@@ -419,6 +426,7 @@ main {
 
 .testimonials-viewport {
   overflow: hidden;
+  touch-action: pan-y;
 }
 
 .testimonials-track {

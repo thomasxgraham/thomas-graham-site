@@ -31,6 +31,12 @@
 
       <main id="main">
         <section class="section stage wave-lines" data-content-id="about.intro">
+          <div class="line-strip about-skill-strip">
+            <span>Research</span>
+            <span>Product</span>
+            <span>ResearchOps</span>
+            <span>Delivery</span>
+          </div>
           <div class="about-top">
             <div class="portrait-stage">
               <div class="micro-label">About</div>
@@ -39,12 +45,6 @@
                   class="portrait-photo-about"
                   src="./assets/about-portrait.png"
                   alt="Thomas Graham smiling in a blazer and checkered shirt" loading="lazy" decoding="async" />
-              </div>
-              <div class="line-strip">
-                <span>Research</span>
-                <span>Product</span>
-                <span>ResearchOps</span>
-                <span>Delivery</span>
               </div>
             </div>
             <div class="about-copy">
@@ -251,11 +251,15 @@
         const track = carousel.querySelector(".testimonials-track");
         const cards = Array.from(track.querySelectorAll(".testimonial-card"));
         const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
-        const STEP_INTERVAL = 30000;
+        const STEP_INTERVAL = 10000;
+        const SWIPE_THRESHOLD = 44;
         let visible = 3;
         let index = 0;
         let timerId = null;
         let paused = false;
+        let swipePointerId = null;
+        let swipeStartX = 0;
+        let swipeStartY = 0;
 
         function getVisibleCount() {
           if (window.innerWidth < 720) return 1;
@@ -293,6 +297,12 @@
           setTranslate(true);
         }
 
+        function step(delta) {
+          index = Math.max(0, Math.min(getMaxIndex(), index + delta));
+          setTranslate(true);
+          updatePlayback();
+        }
+
         function start() {
           if (timerId || reduceMotion.matches || cards.length <= visible) return;
           timerId = window.setInterval(advance, STEP_INTERVAL);
@@ -325,6 +335,38 @@
         });
 
         carousel.addEventListener("focusout", () => {
+          paused = false;
+          start();
+        });
+
+        viewport.addEventListener("pointerdown", (event) => {
+          if (event.pointerType === "mouse" && event.button !== 0) return;
+          swipePointerId = event.pointerId;
+          swipeStartX = event.clientX;
+          swipeStartY = event.clientY;
+          paused = true;
+          stop();
+          if (viewport.setPointerCapture) {
+            viewport.setPointerCapture(event.pointerId);
+          }
+        });
+
+        viewport.addEventListener("pointerup", (event) => {
+          if (swipePointerId !== event.pointerId) return;
+          const deltaX = event.clientX - swipeStartX;
+          const deltaY = event.clientY - swipeStartY;
+          swipePointerId = null;
+          paused = false;
+
+          if (Math.abs(deltaX) > SWIPE_THRESHOLD && Math.abs(deltaX) > Math.abs(deltaY)) {
+            step(deltaX < 0 ? 1 : -1);
+          } else {
+            start();
+          }
+        });
+
+        viewport.addEventListener("pointercancel", () => {
+          swipePointerId = null;
           paused = false;
           start();
         });
