@@ -1563,6 +1563,26 @@ body.reports-modal-open {
   column-gap: 22px;
 }
 
+#case-study-index,
+#case-study-index > div,
+#case-study-index .research-browser-section {
+  width: 100%;
+}
+
+#case-study-index .research-browse-masonry {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+  gap: 22px;
+  column-count: initial;
+  column-gap: normal;
+}
+
+#case-study-index .research-browse-card {
+  display: grid;
+  margin: 0;
+  break-inside: auto;
+}
+
 .research-browse-card {
   display: inline-grid;
   width: 100%;
