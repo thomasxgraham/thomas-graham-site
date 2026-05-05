@@ -1604,7 +1604,7 @@ body.reports-modal-open {
   height: 100%;
 }
 
-@media (max-width: 980px) {
+@media (max-width: 860px) {
   #case-study-index .research-browse-masonry {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -3679,7 +3679,7 @@ main:has(.contact-hero:last-child) + .footer-bar {
   }
 
   .research-browse-masonry {
-    column-count: 2;
+    column-count: 3;
     column-gap: 18px;
   }
 
@@ -3834,6 +3834,12 @@ main:has(.contact-hero:last-child) + .footer-bar {
     grid-auto-columns: auto;
     overflow: visible;
     padding-bottom: 4px;
+  }
+}
+
+@media (max-width: 860px) {
+  .research-browse-masonry {
+    column-count: 2;
   }
 }
 
