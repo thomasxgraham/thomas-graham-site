@@ -984,8 +984,9 @@ main > .section {
 }
 
 .process-flow-copy.section-body-intro {
-  margin: clamp(28px, 4vw, 44px) auto;
-  max-width: 900px;
+  margin: clamp(42px, 5vw, 60px) auto;
+  max-width: 760px;
+  text-align: center;
 }
 
 .contact-section-simple {
