@@ -1886,6 +1886,10 @@ main:has(.contact-hero:last-child) + .footer-bar {
   min-width: 0;
 }
 
+.case-hero-copy .micro-label + .page-title {
+  margin-top: clamp(10px, 1.4vw, 18px);
+}
+
 .case-hero-copy .button-row {
   margin-top: auto;
   padding-top: 28px;
