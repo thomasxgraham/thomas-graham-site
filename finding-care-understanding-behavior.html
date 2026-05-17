@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finding Care - Understanding Behavior — Thomas Graham</title>
+    <meta
+      name="description"
+      content="A 30-participant AdventHealth study observing how patients used the Find Care experience to search for providers and services."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="finding-care-page">
+    <a class="skip-link" href="#main">Skip to main content</a><div class="site-shell">
+      <header class="site-header">
+        <a class="brand" href="./index.html">
+          <span class="brand-mark" aria-hidden="true">
+            <img src="./assets/profile-thomas.jpeg" alt="" />
+          </span>
+          <span class="brand-copy">
+            <strong>Thomas Graham</strong>
+            <span>UX Researcher · Product Thinker</span>
+          </span>
+        </a>
+        <nav class="main-nav" aria-label="Primary">
+          <a href="./index.html">Home</a>
+          <a href="./about.html">About</a>
+          <a href="./case-study.html" aria-current="page">Work</a>
+        </nav>
+      </header>
+
+      <main id="main">
+        <section class="section stage wave-lines work-stage">
+          <div class="story-head work-head">
+            <div class="case-hero-copy">
+              <div class="micro-label">Case study</div>
+              <h1 class="page-title">Finding Care - Understanding Behavior</h1>
+              <p class="story-lead support">
+                A study observing how patients interacted with the updated Find Care experience in
+                their AdventHealth accounts, with a focus on usability, search behavior, and what
+                made provider results feel useful.
+              </p>
+              <div class="button-row">
+                <a class="button button-secondary" href="./research.html">Back to research</a>
+              </div>
+            </div>
+            <div class="meta-grid work-meta-grid research-dashboard" aria-label="Study profile">
+              <article class="research-card research-card-number">
+                <div class="meta-label">Participants</div>
+                <div class="research-number">30</div>
+              </article>
+              <article class="research-card">
+                <div class="meta-label">Study type</div>
+                <div class="meta-copy">Find Care behavior study</div>
+              </article>
+              <article class="research-card">
+                <div class="meta-label">Methods</div>
+                <div class="meta-copy">Task observation + moderated interviews</div>
+              </article>
+              <article class="research-card">
+                <div class="meta-label">Published</div>
+                <div class="meta-copy">June 14, 2024</div>
+              </article>
+              <article class="research-card research-card-wide">
+                <div class="meta-label">Questions explored</div>
+                <div class="meta-copy">
+                  How patients begin finding care, how they use search and filters, and where
+                  provider availability, insurance, and relevance shape trust.
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section case-layout">
+          <aside class="toc">
+            <div class="micro-label">On this page</div>
+            <a href="#study-overview">Study Overview</a>
+            <a href="#key-findings">Key Findings</a>
+            <a href="#who-we-interviewed">Who We Interviewed</a>
+            <a href="#observations">Our Observations</a>
+            <a href="#other-observations">Other Observations</a>
+            <a href="#conclusion">Conclusion</a>
+            <a href="#contact">Contact</a>
+          </aside>
+
+          <div>
+            <section class="story-section" id="study-overview">
+              <h2 class="section-title">Study Overview</h2>
+              <article class="report-chapter">
+                <div class="story-columns media-right">
+                  <div class="reading-copy">
+                    <p class="body">
+                      The study aimed to observe and analyze how patients interact with the updated
+                      Find Care experience in our patients' accounts. This was done to gain insights
+                      into its usability, experience, and overall reception.
+                    </p>
+                    <p class="body">
+                      The findings will be used to make design improvements and guide
+                      decision-making in future iterations. We also tested the assumptions that
+                      consumers might overlook other areas of the search bar and that behaviors
+                      between the Find Care and Search Results pages will differ.
+                    </p>
+                  </div>
+                  <figure class="story-media-frame">
+                    <img
+                      src="./assets/finding-care-understanding-behavior/observing-johnathan-searching-pcp.png"
+                      alt="Observation still of a participant searching for a primary care physician"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <figcaption class="study-frame-caption">
+                      Observing Johnathan searching for a PCP.
+                    </figcaption>
+                  </figure>
+                </div>
+              </article>
+            </section>
+
+            <section class="story-section" id="key-findings">
+              <h2 class="section-title">Key Findings</h2>
+              <article class="note-panel tldr-summary-card">
+                <ul class="tldr-summary-list">
+                  <li>The top entry points for finding care were the Find Care menu option and PCP chip.</li>
+                  <li>Participants scrolled past providers that did not offer online scheduling, profile images, or patient reviews.</li>
+                  <li>The ability to filter by insurance, gender, language, and specialty was found to be valuable.</li>
+                  <li>The participants had difficulties accessing specialty care due to limited availability of options.</li>
+                  <li>Participants who were very specific with their search criteria more often than not returned zero results with no explanation of why.</li>
+                  <li>The inability to find other services like acupuncture or physical therapy was a point of contention.</li>
+                  <li>Of the consumers who interacted with the date range picker, their initial interaction would use the feature to select a single day vs a ranges of dates.</li>
+                </ul>
+              </article>
+            </section>
+
+            <section class="story-section" id="who-we-interviewed">
+              <h2 class="section-title">Who We Interviewed</h2>
+              <article class="report-chapter">
+                <div class="reading-copy reading-copy-wide">
+                  <p class="body">
+                    Our pool consisted of <strong>30 participants</strong>, both men and women, from
+                    our current major markets. They were decision makers for their family's health
+                    care and has experience with online portals and scheduling their appointments
+                    online.
+                  </p>
+                </div>
+                <div class="finding-care-chart-grid">
+                  <article class="story-media-frame study-chart-frame">
+                    <div class="chart-head">
+                      <div class="chart-kicker">Participant profile</div>
+                      <div class="chart-title">Age Groups</div>
+                    </div>
+                    <div class="sharepoint-chart" aria-label="Age groups chart">
+                      <div class="sharepoint-chart-scale">Count of participants</div>
+                      <div class="sharepoint-chart-scroll">
+                        <div class="sharepoint-chart-plot" style="--chart-min: 360px;">
+                          <div class="sharepoint-y-axis" aria-hidden="true">
+                            <span>14</span><span>10</span><span>6</span><span>2</span><span>0</span>
+                          </div>
+                          <div class="sharepoint-bars" style="--max:14; --bars:4;">
+                            <div class="sharepoint-bar" style="--value:9;"><span class="sharepoint-bar-fill"></span><span class="sharepoint-bar-value">9</span><span class="sharepoint-bar-label">25-44</span></div>
+                            <div class="sharepoint-bar" style="--value:13;"><span class="sharepoint-bar-fill"></span><span class="sharepoint-bar-value">13</span><span class="sharepoint-bar-label">35-44</span></div>
+                            <div class="sharepoint-bar" style="--value:4;"><span class="sharepoint-bar-fill"></span><span class="sharepoint-bar-value">4</span><span class="sharepoint-bar-label">45-54</span></div>
+                            <div class="sharepoint-bar" style="--value:4;"><span class="sharepoint-bar-fill"></span><span class="sharepoint-bar-value">4</span><span class="sharepoint-bar-label">55-64</span></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="story-media-frame study-chart-frame">
+                    <div class="chart-head">
+                      <div class="chart-kicker">Participant profile</div>
+                      <div class="chart-title">Location</div>
+                    </div>
+                    <div class="sharepoint-chart" aria-label="Location chart">
+                      <div class="sharepoint-chart-scale">Count of participants</div>
+                      <div class="sharepoint-chart-scroll">
+                        <div class="sharepoint-chart-plot" style="--chart-min: 520px;">
+                          <div class="sharepoint-y-axis" aria-hidden="true">
+                            <span>7</span><span>5</span><span>3</span><span>1</span><span>0</span>
+                          </div>
+                          <div class="sharepoint-bars" style="--max:7; --bars:8;">
+                            <div class="sharepoint-bar" style="--value:7;"><span class="sharepoint-bar-fill"></span><span class="sharepoint-bar-value">7</span><span class="sharepoint-bar-label">Florida</span></div>
+                            <div class="sharepoint-bar" style="--value:6;"><span class="sharepoint-bar-fill"></span><span class="sharepoint-bar-value">6</span><span class="sharepoint-bar-label">Texas</span></div>
+                            <div class="sharepoint-bar" style="--value:5;"><span class="sharepoint-bar-fill"></span><span class="sharepoint-bar-value">5</span><span class="sharepoint-bar-label">Illinois</span></div>
+                            <div class="sharepoint-bar" style="--value:4;"><span class="sharepoint-bar-fill"></span><span class="sharepoint-bar-value">4</span><span class="sharepoint-bar-label">Colorado</span></div>
+                            <div class="sharepoint-bar" style="--value:3;"><span class="sharepoint-bar-fill"></span><span class="sharepoint-bar-value">3</span><span class="sharepoint-bar-label">Georgia</span></div>
+                            <div class="sharepoint-bar" style="--value:2;"><span class="sharepoint-bar-fill"></span><span class="sharepoint-bar-value">2</span><span class="sharepoint-bar-label">North Carolina</span></div>
+                            <div class="sharepoint-bar" style="--value:2;"><span class="sharepoint-bar-fill"></span><span class="sharepoint-bar-value">2</span><span class="sharepoint-bar-label">Kansas</span></div>
+                            <div class="sharepoint-bar" style="--value:1;"><span class="sharepoint-bar-fill"></span><span class="sharepoint-bar-value">1</span><span class="sharepoint-bar-label">Kentucky</span></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </article>
+            </section>
+
+            <section class="story-section" id="observations">
+              <h2 class="section-title">Our Observations</h2>
+
+              <article class="report-chapter">
+                <div class="reading-copy reading-copy-wide">
+                  <h3>Previous Shopping Experiences</h3>
+                  <p class="body">
+                    In their past shopping experiences, participants mentioned that they had
+                    difficulty finding a primary care physician who met their specific criteria.
+                    This included specific ratings, reviews, specialization, and acceptance of their
+                    insurance plans.
+                  </p>
+                  <p class="body">
+                    They also expressed frustration over long waiting times and inflexible
+                    scheduling for specialist appointments, such as those for ENTs, dermatologists,
+                    and therapists.
+                  </p>
+                  <p class="body">
+                    A common complaint was the lack of clear and reliable information regarding
+                    healthcare services and insurance coverage costs, leading to the risk of
+                    surprise bills or unexpected co-pays.
+                  </p>
+                  <p class="body">
+                    Participants emphasized the value of patient reviews and personal
+                    recommendations when selecting healthcare providers, especially in situations
+                    where online information was limited or unreliable. However, they also noted the
+                    potential biases and variability in online reviews.
+                  </p>
+                </div>
+                <div class="story-columns media-right">
+                  <article class="story-media-frame study-chart-frame">
+                    <div class="chart-head">
+                      <div class="chart-kicker">Satisfaction rating</div>
+                      <div class="chart-title">Previous Shopping Experiences</div>
+                    </div>
+                    <div class="sharepoint-chart" aria-label="Satisfaction with previous shopping experiences">
+                      <div class="sharepoint-chart-scale">Count of participants by 1-5 rating</div>
+                      <div class="sharepoint-chart-scroll">
+                        <div class="sharepoint-chart-plot" style="--chart-min: 420px;">
+                          <div class="sharepoint-y-axis" aria-hidden="true">
+                            <span>14</span><span>12</span><span>10</span><span>8</span><span>6</span><span>4</span><span>2</span><span>0</span>
+                          </div>
+                          <div class="sharepoint-bars" style="--max:14; --bars:5;">
+                            <div class="sharepoint-bar" style="--value:0;"><span class="sharepoint-bar-fill"></span><span class="sharepoint-bar-value">0</span><span class="sharepoint-bar-label">1</span></div>
+                            <div class="sharepoint-bar" style="--value:4;"><span class="sharepoint-bar-fill"></span><span class="sharepoint-bar-value">4</span><span class="sharepoint-bar-label">2</span></div>
+                            <div class="sharepoint-bar" style="--value:7;"><span class="sharepoint-bar-fill"></span><span class="sharepoint-bar-value">7</span><span class="sharepoint-bar-label">3</span></div>
+                            <div class="sharepoint-bar" style="--value:13;"><span class="sharepoint-bar-fill"></span><span class="sharepoint-bar-value">13</span><span class="sharepoint-bar-label">4</span></div>
+                            <div class="sharepoint-bar" style="--value:6;"><span class="sharepoint-bar-fill"></span><span class="sharepoint-bar-value">6</span><span class="sharepoint-bar-label">5</span></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                  <figure class="story-media-frame finding-care-video-frame">
+                    <div class="video-placeholder" role="img" aria-label="Placeholder for Existing Search Experiences video">
+                      <span class="video-play" aria-hidden="true"></span>
+                      <div>
+                        <div class="chart-kicker">Stream video</div>
+                        <div class="video-placeholder-title">Existing Search Experiences</div>
+                      </div>
+                    </div>
+                    <figcaption class="study-frame-caption">
+                      Original SharePoint Stream video could not be embedded or copied here for
+                      participant privacy and safety, so this placeholder preserves its position in
+                      the report.
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="reading-copy reading-copy-wide">
+                  <p class="body">
+                    Scheduling appointments, especially with specialists, is frustratingly slow, and
+                    there is significant confusion about costs and insurance coverage.
+                  </p>
+                  <p class="body">
+                    Patient portals lack clear information on insurance network status, adding to
+                    the complexity. Inconsistent experiences with healthcare facilities and staff
+                    further highlight the importance of personal recommendations.
+                  </p>
+                  <p class="body">
+                    Overall, patients desire more transparency, reliable review mechanisms, better
+                    scheduling systems, and improved patient portal functionalities to enhance their
+                    healthcare search experience.
+                  </p>
+                </div>
+              </article>
+
+              <article class="report-chapter">
+                <div class="story-columns media-right">
+                  <div class="reading-copy">
+                    <h3>Insurance is crucial</h3>
+                    <p class="body">
+                      In our previous research, we found that consumers typically begin their
+                      healthcare journey by confirming whether the providers they are considering
+                      accept their insurance.
+                    </p>
+                    <p class="body">
+                      This study further corroborates these findings, as well as the common practice
+                      of seeking recommendations from their current healthcare providers and Google.
+                    </p>
+                  </div>
+                  <figure class="story-media-frame">
+                    <img
+                      src="./assets/finding-care-understanding-behavior/journey-entry-points.png"
+                      alt="Chart showing where participants typically begin their care journey"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <figcaption class="study-frame-caption">
+                      Where the participants typically begin their journey.
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="report-quote-band">
+                  <blockquote class="report-quote-copy">
+                    “I'm looking across three different things; If they're accepted by my insurance,
+                    if they're getting good reviews, and where they're located.”
+                    <cite>Pamela J.</cite>
+                  </blockquote>
+                </div>
+              </article>
+
+              <article class="report-chapter">
+                <div class="reading-copy reading-copy-wide">
+                  <h3>Understanding their Behavior</h3>
+                  <p class="body">
+                    The participants had a generally positive experience using the website to search
+                    for healthcare. They appreciated the simplicity and effectiveness of the filters,
+                    which allowed them to specify their preferences, such as the gender of the
+                    doctor, expertise, language, and ratings. They also liked the simple design of
+                    the site, which made it easy to use.
+                  </p>
+                  <p class="body">
+                    Detailed doctor profiles, including information on their reviews, education, and
+                    specializations, received positive feedback. Additionally, the convenience and
+                    efficiency of being able to schedule appointments online were highlights for
+                    participants.
+                  </p>
+                  <p class="body">
+                    When comparing the participants' past experiences in seeking healthcare with our
+                    current experience in a patient's AdventHealth account, there was no significant
+                    difference between the two experiences. In fact, the calculated CSAT scores for
+                    both experiences were 63%.
+                  </p>
+                </div>
+                <article class="story-media-frame study-chart-frame finding-care-chart-full">
+                  <div class="chart-head">
+                    <div class="chart-kicker">Satisfaction rating</div>
+                    <div class="chart-title">Satisfaction with the AdventHealth Shopping Experience</div>
+                  </div>
+                  <div class="sharepoint-chart" aria-label="Satisfaction with the AdventHealth Shopping Experience">
+                    <div class="sharepoint-chart-scale">Count of participants by 1-5 rating</div>
+                    <div class="sharepoint-chart-scroll">
+                      <div class="sharepoint-chart-plot" style="--chart-min: 420px;">
+                        <div class="sharepoint-y-axis" aria-hidden="true">
+                          <span>10</span><span>8</span><span>6</span><span>4</span><span>2</span><span>0</span>
+                        </div>
+                        <div class="sharepoint-bars" style="--max:10; --bars:5;">
+                          <div class="sharepoint-bar" style="--value:1;"><span class="sharepoint-bar-fill"></span><span class="sharepoint-bar-value">1</span><span class="sharepoint-bar-label">1</span></div>
+                          <div class="sharepoint-bar" style="--value:3;"><span class="sharepoint-bar-fill"></span><span class="sharepoint-bar-value">3</span><span class="sharepoint-bar-label">2</span></div>
+                          <div class="sharepoint-bar" style="--value:7;"><span class="sharepoint-bar-fill"></span><span class="sharepoint-bar-value">7</span><span class="sharepoint-bar-label">3</span></div>
+                          <div class="sharepoint-bar" style="--value:10;"><span class="sharepoint-bar-fill"></span><span class="sharepoint-bar-value">10</span><span class="sharepoint-bar-label">4</span></div>
+                          <div class="sharepoint-bar" style="--value:9;"><span class="sharepoint-bar-fill"></span><span class="sharepoint-bar-value">9</span><span class="sharepoint-bar-label">5</span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+                <div class="story-columns media-left">
+                  <div class="reading-copy">
+                    <p class="body">
+                      Task: Sign in to our website and look for a care provider or health care
+                      service that currently interests you. If you don't have a particular service
+                      in mind, you can look for a Primary Care Physician, Gastroenterologist, or
+                      Cardiologist in your area.
+                    </p>
+                  </div>
+                  <figure class="story-media-frame">
+                    <img
+                      src="./assets/finding-care-understanding-behavior/task-prompt.png"
+                      alt="Task prompt for participants searching for a care provider"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </figure>
+                </div>
+                <article class="story-media-frame study-chart-frame finding-care-chart-full">
+                  <div class="chart-head">
+                    <div class="chart-kicker">First-click data</div>
+                    <div class="chart-title">First Click After Sign-in</div>
+                  </div>
+                  <div class="sharepoint-chart" aria-label="First Click After Sign-in chart">
+                    <div class="sharepoint-chart-scale">Count of first clicks after sign-in</div>
+                    <div class="sharepoint-chart-scroll">
+                      <div class="sharepoint-chart-plot" style="--chart-min: 520px;">
+                        <div class="sharepoint-y-axis" aria-hidden="true">
+                          <span>12</span><span>9</span><span>6</span><span>3</span><span>0</span>
+                        </div>
+                        <div class="sharepoint-bars" style="--max:12; --bars:5;">
+                          <div class="sharepoint-bar" style="--value:12;"><span class="sharepoint-bar-fill"></span><span class="sharepoint-bar-value">12</span><span class="sharepoint-bar-label">Find Care menu</span></div>
+                          <div class="sharepoint-bar" style="--value:10;"><span class="sharepoint-bar-fill"></span><span class="sharepoint-bar-value">10</span><span class="sharepoint-bar-label">PCP chip</span></div>
+                          <div class="sharepoint-bar" style="--value:6;"><span class="sharepoint-bar-fill"></span><span class="sharepoint-bar-value">6</span><span class="sharepoint-bar-label">Care Team</span></div>
+                          <div class="sharepoint-bar" style="--value:2;"><span class="sharepoint-bar-fill"></span><span class="sharepoint-bar-value">2</span><span class="sharepoint-bar-label">Women's Care</span></div>
+                          <div class="sharepoint-bar" style="--value:1;"><span class="sharepoint-bar-fill"></span><span class="sharepoint-bar-value">1</span><span class="sharepoint-bar-label">24/7 Urgent Care</span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+                <div class="story-columns media-right">
+                  <div class="reading-copy">
+                    <p class="body">
+                      Based on first-click data, 40% of the participants selected "Find Care" from
+                      the menu, while 30% opted for the “Primary Care Provider” common searches chip
+                      to begin looking for care.
+                    </p>
+                  </div>
+                  <figure class="story-media-frame">
+                    <img
+                      src="./assets/finding-care-understanding-behavior/ease-rating.png"
+                      alt="Ease rating chart showing participants reported an ease rating of 5.3"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <figcaption class="study-frame-caption">
+                      Participants reported an Ease rating of 5.3.
+                    </figcaption>
+                  </figure>
+                </div>
+                <article class="story-media-frame study-chart-frame finding-care-chart-full">
+                  <div class="chart-head">
+                    <div class="chart-kicker">Search terms</div>
+                    <div class="chart-title">Search Criteria</div>
+                  </div>
+                  <div class="sharepoint-chart" aria-label="Search Criteria chart">
+                    <div class="sharepoint-chart-scale">Count of searches by requested care type</div>
+                    <div class="sharepoint-chart-scroll">
+                      <div class="sharepoint-chart-plot" style="--chart-min: 780px;">
+                        <div class="sharepoint-y-axis" aria-hidden="true">
+                          <span>16</span><span>12</span><span>8</span><span>4</span><span>0</span>
+                        </div>
+                        <div class="sharepoint-bars" style="--max:16; --bars:11;">
+                          <div class="sharepoint-bar" style="--value:16;"><span class="sharepoint-bar-fill"></span><span class="sharepoint-bar-value">16</span><span class="sharepoint-bar-label">PCP</span></div>
+                          <div class="sharepoint-bar" style="--value:3;"><span class="sharepoint-bar-fill"></span><span class="sharepoint-bar-value">3</span><span class="sharepoint-bar-label">Women's Care</span></div>
+                          <div class="sharepoint-bar" style="--value:3;"><span class="sharepoint-bar-fill"></span><span class="sharepoint-bar-value">3</span><span class="sharepoint-bar-label">Dermatologist</span></div>
+                          <div class="sharepoint-bar" style="--value:3;"><span class="sharepoint-bar-fill"></span><span class="sharepoint-bar-value">3</span><span class="sharepoint-bar-label">Gastroenterology</span></div>
+                          <div class="sharepoint-bar" style="--value:2;"><span class="sharepoint-bar-fill"></span><span class="sharepoint-bar-value">2</span><span class="sharepoint-bar-label">OB/GYN</span></div>
+                          <div class="sharepoint-bar" style="--value:2;"><span class="sharepoint-bar-fill"></span><span class="sharepoint-bar-value">2</span><span class="sharepoint-bar-label">Cardiologist</span></div>
+                          <div class="sharepoint-bar" style="--value:1;"><span class="sharepoint-bar-fill"></span><span class="sharepoint-bar-value">1</span><span class="sharepoint-bar-label">Dentist</span></div>
+                          <div class="sharepoint-bar" style="--value:1;"><span class="sharepoint-bar-fill"></span><span class="sharepoint-bar-value">1</span><span class="sharepoint-bar-label">Accupuncture</span></div>
+                          <div class="sharepoint-bar" style="--value:1;"><span class="sharepoint-bar-fill"></span><span class="sharepoint-bar-value">1</span><span class="sharepoint-bar-label">ENT</span></div>
+                          <div class="sharepoint-bar" style="--value:1;"><span class="sharepoint-bar-fill"></span><span class="sharepoint-bar-value">1</span><span class="sharepoint-bar-label">Gyn. Oncologist</span></div>
+                          <div class="sharepoint-bar" style="--value:1;"><span class="sharepoint-bar-fill"></span><span class="sharepoint-bar-value">1</span><span class="sharepoint-bar-label">Neurologist</span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+                <div class="finding-care-video-grid">
+                  <figure class="story-media-frame finding-care-video-frame">
+                    <div class="video-placeholder" role="img" aria-label="Placeholder for Leah - AH Shopping Experience video">
+                      <span class="video-play" aria-hidden="true"></span>
+                      <div><div class="chart-kicker">Stream video</div><div class="video-placeholder-title">Leah - AH Shopping Experience</div></div>
+                    </div>
+                    <figcaption class="study-frame-caption">
+                      Original SharePoint Stream video could not be embedded or copied here for participant privacy and safety.
+                    </figcaption>
+                  </figure>
+                  <figure class="story-media-frame finding-care-video-frame">
+                    <div class="video-placeholder" role="img" aria-label="Placeholder for Amy - Shopping Experience video">
+                      <span class="video-play" aria-hidden="true"></span>
+                      <div><div class="chart-kicker">Stream video</div><div class="video-placeholder-title">Amy - Shopping Experience</div></div>
+                    </div>
+                    <figcaption class="study-frame-caption">
+                      Original SharePoint Stream video could not be embedded or copied here for participant privacy and safety.
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="reading-copy reading-copy-wide">
+                  <p class="body">
+                    Our system had trouble understanding common medical terms like "ENT" when
+                    participants entered them in the search bar. As a result, it provided unhelpful
+                    or irrelevant recommendations.
+                  </p>
+                  <p class="body">
+                    For example, our participant Amy had to resort to using Google to find the
+                    correct medical term. When she entered the updated term in our search bar, the
+                    search results showed care options that were unrelated.
+                  </p>
+                  <p class="body">
+                    Participants had mixed feelings about the coverage of our services. While some
+                    found the options in certain areas plentiful and detailed, others faced
+                    significant limitations based on their location.
+                  </p>
+                  <p class="body">
+                    For instance, one participant was disappointed to find no dermatologists
+                    available, while another could not locate any primary care physicians in one of
+                    our major markets. These experiences highlight the need for broader coverage
+                    options and perhaps alternative solutions, such as virtual options that cater to
+                    patients on the outskirts of our market areas.
+                  </p>
+                </div>
+                <figure class="story-media-frame finding-care-video-frame">
+                  <div class="video-placeholder" role="img" aria-label="Placeholder for Denise - Blown away video">
+                    <span class="video-play" aria-hidden="true"></span>
+                    <div><div class="chart-kicker">Stream video</div><div class="video-placeholder-title">Denise - Blown away-174903</div></div>
+                  </div>
+                  <figcaption class="study-frame-caption">
+                    Original SharePoint Stream video could not be embedded or copied here for participant privacy and safety.
+                  </figcaption>
+                </figure>
+                <div class="reading-copy reading-copy-wide">
+                  <p class="body">
+                    The scheduling process was highlighted as a strong point of the service, with
+                    participants finding it convenient to book appointments online without needing to
+                    make phone calls. This feature was seen as a significant delighter, as it
+                    provided clear information about the doctors, their availability, and reviews.
+                  </p>
+                  <p class="body">
+                    However, participants were frustrated by the lack of immediate appointment
+                    availability in the search results and the need to request appointments rather
+                    than being able to book them directly. Additionally, there was a concern about
+                    the inconsistency in showing providers' availability, as some participants found
+                    providers listed with no available slots when viewing the provider detail pages.
+                  </p>
+                </div>
+                <figure class="story-media-frame finding-care-video-frame">
+                  <div class="video-placeholder" role="img" aria-label="Placeholder for Laura - Impressions video">
+                    <span class="video-play" aria-hidden="true"></span>
+                    <div><div class="chart-kicker">Stream video</div><div class="video-placeholder-title">Laura - Impressions</div></div>
+                  </div>
+                  <figcaption class="study-frame-caption">
+                    Original SharePoint Stream video could not be embedded or copied here for participant privacy and safety.
+                  </figcaption>
+                </figure>
+              </article>
+            </section>
+
+            <section class="story-section" id="other-observations">
+              <h2 class="section-title">Other Observations</h2>
+              <div class="observation-grid">
+                <article class="observation-card">
+                  <h3>Map View</h3>
+                  <p class="body">
+                    Participants expressed a desire for a map view to see the geographical locations
+                    of providers relative to their own location.
+                  </p>
+                </article>
+                <article class="observation-card">
+                  <h3>Sorting and Filtering Options</h3>
+                  <p class="body">
+                    Participants wanted more robust sorting options, such as by distance and
+                    appointment availability, and added filters to remove options that did not offer
+                    online scheduling or providers without images to better match their preferences
+                    with the search results.
+                  </p>
+                </article>
+                <article class="observation-card">
+                  <h3>Disappointment with availability</h3>
+                  <p class="body">
+                    Consumers become frustrated when they find a provider only to discover there is
+                    no availability (sometimes 3+ months) when they visit the provider page.
+                  </p>
+                </article>
+                <article class="observation-card">
+                  <h3>Notification for Availability</h3>
+                  <p class="body">
+                    There was an ask for a system to notify participants when unavailable providers
+                    become available.
+                  </p>
+                </article>
+                <article class="observation-card">
+                  <h3>Range of Services</h3>
+                  <p class="body">
+                    The inability to find certain services like acupuncture, physical therapy, and
+                    Dermatologists was a point of contention.
+                  </p>
+                </article>
+                <article class="observation-card">
+                  <h3>Search Result Relevance</h3>
+                  <p class="body">
+                    Search results were not always relevant to the entered criteria (e.g., searching
+                    for PT showing neurology results).
+                  </p>
+                </article>
+              </div>
+            </section>
+
+            <section class="story-section" id="conclusion">
+              <h2 class="section-title">Conclusion</h2>
+              <article class="report-chapter">
+                <div class="reading-copy reading-copy-wide">
+                  <p class="body">
+                    In conclusion, the site was generally well-received for its clean design, ease of
+                    use, and filtering options. Participants valued seeing detailed information about
+                    doctors, including reviews and availability for online booking. However, there
+                    are issues with the availability of options for those on the edges of our
+                    geographical coverage. Other issues, such as search functionality and limited
+                    availability of online appointment scheduling deep within our market locations,
+                    highlighted areas for improvement.
+                  </p>
+                  <p class="body">
+                    It is recommended that we improve the website's ability to serve participants
+                    within and just outside our markets who have limited provider options. Also,
+                    enhancing search accuracy with simple language commonly used by patients and
+                    offering more immediate appointment options could greatly improve the overall
+                    experience of finding care.
+                  </p>
+                </div>
+              </article>
+            </section>
+
+          </div>
+        </section>
+
+        <section class="contact-hero" id="contact" data-content-id="contact.intro">
+          <div class="contact-hero-inner">
+            <div class="section-kicker">Contact</div>
+            <h2 class="section-title">Want to talk through the Finding Care study?</h2>
+            <p class="body">
+              The entry-point patterns, how insurance shaped trust, or what search relevance and
+              availability exposed about the experience — happy to get into any of it.
+            </p>
+            <p class="body contact-microcopy">
+              A good conversation is usually the best start.
+            </p>
+            <div class="button-row">
+              <a class="button button-accent" href="mailto:hello@thomas-graham.me?subject=Finding%20Care%20study">Get in touch about this study</a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer-bar">
+        <span class="footer-note">Thomas Graham · UX Researcher</span>
+        <div class="dot-row" aria-hidden="true">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </footer>
+    </div>
+    <script src="./contact-modal.js" defer></script>
+  </body>
+</html>
