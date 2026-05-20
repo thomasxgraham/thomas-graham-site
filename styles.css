@@ -2246,19 +2246,62 @@ main:has(.contact-hero:last-child) + .footer-bar {
   background: #f8f4ec;
 }
 
+.sharepoint-ob-gyn-scheduling {
+  --video-placeholder-image: url("./assets/sharepoint-reports/ob-gyn-scheduling/3738517899.png");
+}
+
+.sharepoint-app-3-in-person-study {
+  --video-placeholder-image: url("./assets/sharepoint-reports/app-3-in-person-study/3676251194.png");
+}
+
+.sharepoint-care-advocacy-automation {
+  --video-placeholder-image: url("./assets/sharepoint-reports/care-advocacy-automation/2204644818.png");
+}
+
+.sharepoint-checkout-experience-web {
+  --video-placeholder-image: url("./assets/sharepoint-reports/checkout-experience-web/1927348133.png");
+}
+
+.sharepoint-provider-communication-and-messaging {
+  --video-placeholder-image: url("./assets/sharepoint-reports/provider-communication-and-messaging/telemedicine-hero.jpg");
+}
+
+.sharepoint-system-wide-availability {
+  --video-placeholder-image: url("./assets/sharepoint-reports/system-wide-availability/2775929182image.png");
+}
+
 .sharepoint-report-chapter {
   gap: 22px;
 }
 
 .sharepoint-media-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
   gap: 18px;
   align-items: start;
+  justify-items: center;
 }
 
 .sharepoint-media-grid .story-media-frame {
-  height: 100%;
+  height: auto;
+}
+
+.sharepoint-report-page .sharepoint-import-media {
+  width: 100%;
+  max-width: min(100%, 780px);
+  justify-self: center;
+}
+
+.sharepoint-report-page .sharepoint-import-media img {
+  width: 100%;
+  max-width: 100%;
+  max-height: clamp(280px, 52vh, 560px);
+  justify-self: center;
+  object-fit: contain;
+}
+
+.sharepoint-report-page .sharepoint-import-media .study-frame-caption {
+  justify-self: stretch;
 }
 
 .sharepoint-import-media.media-unavailable {
@@ -2307,6 +2350,12 @@ main:has(.contact-hero:last-child) + .footer-bar {
   padding: 12px 12px 18px;
 }
 
+.sharepoint-report-page .finding-care-video-frame {
+  width: 100%;
+  max-width: min(100%, 780px);
+  justify-self: center;
+}
+
 .video-placeholder {
   position: relative;
   display: grid;
@@ -2323,14 +2372,41 @@ main:has(.contact-hero:last-child) + .footer-bar {
   overflow: hidden;
 }
 
+.sharepoint-report-page .video-placeholder {
+  isolation: isolate;
+  min-height: clamp(220px, 30vw, 340px);
+  background:
+    linear-gradient(135deg, rgba(30, 27, 24, 0.62), rgba(70, 62, 54, 0.74)),
+    var(--video-placeholder-image, linear-gradient(135deg, #302c27, #5f574d));
+  background-position: center;
+  background-size: cover;
+}
+
+.sharepoint-report-page .video-placeholder::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  background:
+    radial-gradient(circle at 18% 24%, rgba(255, 255, 255, 0.22), transparent 32%),
+    repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.08) 0 1px, transparent 1px 18px);
+  pointer-events: none;
+}
+
 .video-placeholder::after {
   content: "";
   position: absolute;
+  z-index: 1;
   inset: auto 18px 18px 18px;
   height: 5px;
   border-radius: 999px;
   background:
     linear-gradient(90deg, rgba(255, 126, 99, 0.96) 0 32%, rgba(255, 255, 255, 0.3) 32% 100%);
+}
+
+.sharepoint-report-page .video-placeholder > div {
+  position: relative;
+  z-index: 1;
 }
 
 .video-placeholder .chart-kicker {
@@ -2371,6 +2447,11 @@ main:has(.contact-hero:last-child) + .footer-bar {
   font-size: clamp(1.6rem, 2.6vw, 2.4rem);
   line-height: 0.98;
   letter-spacing: -0.045em;
+}
+
+.sharepoint-report-page .video-placeholder-title {
+  letter-spacing: 0;
+  overflow-wrap: anywhere;
 }
 
 .report-quote-band {
@@ -3950,6 +4031,15 @@ main:has(.contact-hero:last-child) + .footer-bar {
     border-top: 1px solid var(--line);
   }
 
+  .sharepoint-report-page .sharepoint-import-media,
+  .sharepoint-report-page .finding-care-video-frame {
+    max-width: min(100%, 720px);
+  }
+
+  .sharepoint-report-page .sharepoint-import-media img {
+    max-height: clamp(260px, 54vh, 500px);
+  }
+
   .category-preview-grid {
     grid-template-columns: 1fr;
   }
@@ -4327,6 +4417,33 @@ main:has(.contact-hero:last-child) + .footer-bar {
   .story-media-frame {
     min-height: 180px;
     padding: 8px 8px 14px;
+  }
+
+  .sharepoint-report-page .sharepoint-import-media,
+  .sharepoint-report-page .finding-care-video-frame {
+    max-width: min(100%, 560px);
+  }
+
+  .sharepoint-report-page .sharepoint-import-media img {
+    max-height: clamp(220px, 56vh, 420px);
+  }
+
+  .sharepoint-report-page .video-placeholder {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 14px;
+    min-height: 220px;
+    padding: 18px;
+  }
+
+  .sharepoint-report-page .video-play {
+    width: 54px;
+    height: 54px;
+  }
+
+  .sharepoint-report-page .video-placeholder-title {
+    font-size: clamp(1.35rem, 8vw, 1.9rem);
+    letter-spacing: 0;
+    overflow-wrap: anywhere;
   }
 
   .reports-page .site-shell {
