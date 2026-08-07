@@ -1,0 +1,28 @@
+{
+  "product": "example",
+  "metrics": [
+    {
+      "id": "M-001",
+      "name": "Example outcome",
+      "version": "1.0",
+      "decision": "Decision this metric informs",
+      "owner": "accountable-owner",
+      "definition": "Plain-language definition",
+      "population": "eligible population",
+      "numerator": "qualified outcomes",
+      "denominator": "eligible exposures",
+      "exclusions": "explicit exclusions",
+      "window": "calendar or rolling window",
+      "lineage": "event/query/model versions",
+      "freshness_sla": "expected update interval",
+      "missingness_threshold": "maximum acceptable missingness",
+      "baseline": "measured baseline or unknown",
+      "target": "accepted target or proposed",
+      "guardrails": ["named guardrail"],
+      "segments": ["representative segment"],
+      "strengths": "what this metric captures",
+      "weaknesses": "how this metric can mislead",
+      "effective_date": "YYYY-MM-DD"
+    }
+  ]
+}

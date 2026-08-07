@@ -1,0 +1,4 @@
+interface:
+  display_name: "Prioritize Product Roadmap"
+  short_description: "Make transparent product investment decisions"
+  default_prompt: "Use $prioritize-product-roadmap to rank options and explain the roadmap tradeoffs."

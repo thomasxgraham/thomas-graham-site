@@ -1,0 +1,164 @@
+{
+  "format": "product-source-manifest-v1",
+  "source_root": "cornell-product-management",
+  "file_count": 26,
+  "total_bytes": 3959897,
+  "files": [
+    {
+      "path": "CTECH103_course_project - Thomas Graham.docx",
+      "bytes": 158079,
+      "sha256": "5f4884b5afee8ed6074e4107c1efeb68260394694540f680a4b1bc5819d0b790",
+      "suffix": ".docx"
+    },
+    {
+      "path": "Grades for Thomas Graham_ Product Analytics and Iteration.pdf",
+      "bytes": 111110,
+      "sha256": "b74bd7442baae1dbb2b634e503ba8aaac207157ab466ba9a29d808de099750b1",
+      "suffix": ".pdf"
+    },
+    {
+      "path": "Project Repository - Thomas Graham.xlsx",
+      "bytes": 15631,
+      "sha256": "46cd1d0237905993db91469ab64a97ee37798651d6168d97c6a4177f5ee16c82",
+      "suffix": ".xlsx"
+    },
+    {
+      "path": "README.md",
+      "bytes": 778,
+      "sha256": "0c2c5a8c517afd373467bbe796ae33603f1ad29ec82b704e4d767c9413bac6e7",
+      "suffix": ".md"
+    },
+    {
+      "path": "ctech101_action-plan.pdf",
+      "bytes": 95788,
+      "sha256": "8c520416af85e50869b5c7b21d85fd0c9354a205884cee724f0d5009fb85ba22",
+      "suffix": ".pdf"
+    },
+    {
+      "path": "ctech101_course-transcript.pdf",
+      "bytes": 469042,
+      "sha256": "9be861b26c09c188be03c1f93cf56f97c64f3a93fcdb7e547f68f72a800de2ed",
+      "suffix": ".pdf"
+    },
+    {
+      "path": "ctech101_glossary.pdf",
+      "bytes": 89085,
+      "sha256": "ea4aa842f7ac227c241a82f0616c18a36eaba03051bb4ac64dab2a090b65cfce",
+      "suffix": ".pdf"
+    },
+    {
+      "path": "ctech101_guide-for-defining-user-personas.pdf",
+      "bytes": 100590,
+      "sha256": "6d847c93812aae106ab1b5f64394b3c146622c33ed35988df1f930f2dad6b220",
+      "suffix": ".pdf"
+    },
+    {
+      "path": "ctech101_interview-template.pdf",
+      "bytes": 111881,
+      "sha256": "e3ac032dd15cbb2885c08e7e4023a980f43849deb5b1ff857b2d3602a997a4ad",
+      "suffix": ".pdf"
+    },
+    {
+      "path": "ctech101_steps-for-choosing-the-right-problem.pdf",
+      "bytes": 115174,
+      "sha256": "760a5fc85d3198754407e9523402588692f1f34b4869d7436dc3ebcb08be0d7c",
+      "suffix": ".pdf"
+    },
+    {
+      "path": "ctech101_watch-or-listen-to-good-interviewers.pdf",
+      "bytes": 101240,
+      "sha256": "8818c0549a491820457304c90ab791901a980440df9f84042f84cedd225084fc",
+      "suffix": ".pdf"
+    },
+    {
+      "path": "ctech102_action-plan.pdf",
+      "bytes": 95074,
+      "sha256": "a01698a783e6135c81dd89ea13961aeedada30f175ad114e43535e71e46b04fe",
+      "suffix": ".pdf"
+    },
+    {
+      "path": "ctech102_activity-identify-key-results.pdf",
+      "bytes": 92789,
+      "sha256": "8a137cdb12217c189edb7249bf1f5caa0853458670b4d710893daebc85ed5439",
+      "suffix": ".pdf"
+    },
+    {
+      "path": "ctech102_activity-prioritize-objectives.pdf",
+      "bytes": 126487,
+      "sha256": "6fb332bace0f76e41ee52e5e9f92af0aa0a25f6ae43d281cd686577d80675886",
+      "suffix": ".pdf"
+    },
+    {
+      "path": "ctech103_collect-feedback-template.pdf",
+      "bytes": 166737,
+      "sha256": "4218e8bcaac2d4d54913a77d488bb873c4d60aff14932a9d13a577737396539c",
+      "suffix": ".pdf"
+    },
+    {
+      "path": "ctech103_draft-a-factor-list.pdf",
+      "bytes": 90452,
+      "sha256": "4599345f11c244b4abf59bdb8dacdbdbcb2fe172fdd65072e112b76c262efc52",
+      "suffix": ".pdf"
+    },
+    {
+      "path": "ctech103_factors-to-factor-in.pdf",
+      "bytes": 99907,
+      "sha256": "a9685d03f462095d54d8b1419ac6514b7bf19f52ab4fcac1e1492fd1c8444f32",
+      "suffix": ".pdf"
+    },
+    {
+      "path": "ctech103_find-key-roadmap-decisions.pdf",
+      "bytes": 122597,
+      "sha256": "a8748604b2c648f54440f77549abb87b530e209f43f0f7dac8d58972856c44a2",
+      "suffix": ".pdf"
+    },
+    {
+      "path": "ctech104_activity-critiquing-a-related-product.pdf",
+      "bytes": 96247,
+      "sha256": "89d27d06c1cac2ad92e624c9c40ae0bacd1bf55bafe5a22494abfc4ca5491c17",
+      "suffix": ".pdf"
+    },
+    {
+      "path": "ctech104_activity-critiquing-an-unrelated-product.pdf",
+      "bytes": 94855,
+      "sha256": "a23f6c098b0abdc49afde0a80ee2d0b17872384bd2d849aee138a148a95464b1",
+      "suffix": ".pdf"
+    },
+    {
+      "path": "ctech104_tool_best-practices-for-prototypes.pdf",
+      "bytes": 125999,
+      "sha256": "1cac69a1d211bd47738620e4b7e3bd562f2b6a1e14a3485a9ba9d6ccf49fbe8c",
+      "suffix": ".pdf"
+    },
+    {
+      "path": "ctech105_action-plan.pdf",
+      "bytes": 94367,
+      "sha256": "26b5d6965bf5f54a540aaeb9640e20165d417bf96806d9806e9875a1f9d17ff8",
+      "suffix": ".pdf"
+    },
+    {
+      "path": "ctech105_course_project.docx",
+      "bytes": 205699,
+      "sha256": "df5905e4d46be104ed9c18130a357e64ea7f605d33f4164ca68fe86d65da5293",
+      "suffix": ".docx"
+    },
+    {
+      "path": "ctech105_tool_product-lifecycle.pdf",
+      "bytes": 98117,
+      "sha256": "0c242aa4c18015312c884f60637d5bd3d449cfea86cfde650960863b68df4627",
+      "suffix": ".pdf"
+    },
+    {
+      "path": "ctech106_activity-create-a-backlog.pdf",
+      "bytes": 171979,
+      "sha256": "c17f36b8fb154c9ef2883743c300a9a05bd76410c303910c696a1f83a7115229",
+      "suffix": ".pdf"
+    },
+    {
+      "path": "eCornell - Page 1 Product Vision and Goals - Drawing the Business.jpeg",
+      "bytes": 910193,
+      "sha256": "fe8d1f186642d9b06508770f22de865d849a1045b9589e36a62e6beaa6a94814",
+      "suffix": ".jpeg"
+    }
+  ]
+}

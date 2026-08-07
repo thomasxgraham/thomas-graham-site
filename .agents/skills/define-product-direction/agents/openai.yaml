@@ -1,0 +1,4 @@
+interface:
+  display_name: "Define Product Direction"
+  short_description: "Set vision, viability, objectives, and KRs"
+  default_prompt: "Use $define-product-direction to turn discovery evidence into product direction."

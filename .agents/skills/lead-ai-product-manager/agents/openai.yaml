@@ -1,0 +1,4 @@
+interface:
+  display_name: "Lead AI Product Manager"
+  short_description: "Orchestrate evidence-led AI product delivery"
+  default_prompt: "Use $lead-ai-product-manager to assess this product and prepare the most important next action."

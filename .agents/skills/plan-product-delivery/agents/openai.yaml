@@ -1,0 +1,4 @@
+interface:
+  display_name: "Plan Product Delivery"
+  short_description: "Turn validated concepts into verified delivery"
+  default_prompt: "Use $plan-product-delivery to create a traceable backlog and delivery plan."

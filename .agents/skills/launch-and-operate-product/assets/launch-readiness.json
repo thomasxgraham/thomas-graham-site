@@ -1,0 +1,35 @@
+{
+  "metadata": {
+    "release": "example",
+    "environment": "staging",
+    "version": "0.0.0",
+    "author": "artifact-author",
+    "independent_verifier": "independent-verifier",
+    "decision_owner": "accountable-owner"
+  },
+  "authorization": {
+    "action": "release",
+    "target": "exact-environment-and-population",
+    "payload": "exact-version",
+    "approved_at": "YYYY-MM-DDTHH:MM:SSZ",
+    "expires_at": "YYYY-MM-DDTHH:MM:SSZ",
+    "rollback": "tested rollback reference"
+  },
+  "checks": {
+    "functional": {"status": "PENDING", "evidence_ids": []},
+    "safety": {"status": "PENDING", "evidence_ids": []},
+    "security": {"status": "PENDING", "evidence_ids": []},
+    "privacy": {"status": "PENDING", "evidence_ids": []},
+    "accessibility": {"status": "PENDING", "evidence_ids": []},
+    "performance": {"status": "PENDING", "evidence_ids": []},
+    "ai_evaluation": {"status": "PENDING", "evidence_ids": []},
+    "observability": {"status": "PENDING", "evidence_ids": []},
+    "support": {"status": "PENDING", "evidence_ids": []},
+    "rollback": {"status": "PENDING", "evidence_ids": [], "tested": false},
+    "human_escalation": {"status": "PENDING", "evidence_ids": []},
+    "kill_switch": {"status": "PENDING", "evidence_ids": []}
+  },
+  "unresolved_risks": [],
+  "rollout": {"stages": ["internal", "limited", "general"], "stop_conditions": ["named threshold"]},
+  "observation_window": "define before launch"
+}

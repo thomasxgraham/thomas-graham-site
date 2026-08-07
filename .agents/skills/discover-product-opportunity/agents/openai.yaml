@@ -1,0 +1,4 @@
+interface:
+  display_name: "Discover Product Opportunity"
+  short_description: "Find the right customer problem with evidence"
+  default_prompt: "Use $discover-product-opportunity to define and validate the customer problem."

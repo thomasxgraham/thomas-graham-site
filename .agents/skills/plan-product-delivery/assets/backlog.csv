@@ -1,0 +1,2 @@
+id,title,objective_id,evidence_ids,requirement,acceptance_criteria,owner,dependencies,size,status,verification
+US-001,Example outcome,OBJ-001,E-001,Describe the bounded requirement,"Given context, when action, then observable result",Unassigned,,1,Backlog,Pending independent verification

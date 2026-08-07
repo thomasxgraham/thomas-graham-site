@@ -1,0 +1,4 @@
+interface:
+  display_name: "Validate Product Concept"
+  short_description: "Test solution desirability and feasibility"
+  default_prompt: "Use $validate-product-concept to design a prototype and evidence-based validation plan."

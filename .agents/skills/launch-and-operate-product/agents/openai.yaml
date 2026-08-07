@@ -1,0 +1,4 @@
+interface:
+  display_name: "Launch and Operate Product"
+  short_description: "Govern rollout, operations, incidents, and sunset"
+  default_prompt: "Use $launch-and-operate-product to assess launch readiness and prepare a safe rollout."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Measure and Iterate Product"
+  short_description: "Measure outcomes and update product direction"
+  default_prompt: "Use $measure-and-iterate-product to interpret results and recommend the next product decision."
