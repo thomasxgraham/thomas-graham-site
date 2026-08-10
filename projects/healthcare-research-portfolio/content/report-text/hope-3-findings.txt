@@ -1,0 +1,362 @@
+Hope 3.0 Findings
+TL;DR
+•
+People want outcomes, not detours.
+Open-text feedback repeatedly calls out
+generic link
+-outs
+, broken/looping flows,
+and uncertainty about whether answers are
+specific to their plan and facility
+. This drives help-needed and hand-offs.
+•
+Estimator and Billing are
+high
+-
+value
+but fragile.
+Estimator links sometimes fail, long lists in chat are overwhelming
+without guided narrowing, and
+many don’t have procedure codes
+at the time of the chat inquiry
+. Billing answers often
+point to pages instead of explaining the bill in plain language.
+•
+Reliability and discoverability issues break trust early
+.
+Hard-to-find chat (esp. on mobile)
+in
+some sessions.
+•
+Task 1
+shows
+53%
+“no additional help needed”;
+Tasks
+2–3
+drop to
+35%
+and
+52%
+respectively; guidance sentiment skews
+neutral/negative, and CSA
+T is mixed-negative overall.
+•
+Updates to the
+testing
+environment during the unmoderated survey might'
+ve caused some friction
+: “We’re having
+some trouble,
+” and no-response states were due to updates made during the survey
+.
+Overall Quant Metrics
+•
+Overall CSA
+T
+:
+45%
+•
+Overall CES:
+4.31 (out of 7)
+•
+Overall Task Completion Rate (T
+CR):
+57.6%
+•
+Containment:
+63
+%
+•
+Confidence:
+3.13 (out of 5)
+•
+Helpfulness:
+34.3%
+Double-click the images to enlarge
+.
+1
+2
+Key Findings
+•
+Directory
+and
+phone lookups are a core winwhen labeled well.
+Participants appreciated quick paths to
+customer
+service
+,
+financial assistance
+, and
+care advocate
+lines, especially with hours and location context.
+•
+Price Estimator creates avoidable friction.
+People struggled with prerequisites (insurance, procedure naming, location
+specificity), and several were unsure whether results reflected
+their
+situation.
+•
+Billing guidance needs plain language and clear next steps.
+Participants sought “what this means” and a single
+recommended action, not multiple parallel options.
+•
+Escalation moments aren’t obvious enough.
+After repeated rephrases or low confidence, users want a clear “
+Talk to a
+person” that routes to the right department.
+•
+Survey
+and
+chat UX can interrupt task flow
+.
+Modal surveys and small chat windows clipped context; reliability hiccups
+(“having trouble”
+messages
+) reduced trust.
+What Worked
+•
+Friendly
+, conversational tone
+that kept people engaged.
+•
+Directory cards
+and
+labeled numbers
+(with hours) when present.
+•
+Billing tools (price estimates, financial aid) as
+a
+capability
+.
+Participants like that these exist and often try them first.
+Pain Points
+•
+Guidance that points outward instead of resolving inward.
+Link
+-outs without synthesis felt like “more work
+.
+”
+•
+Estimator uncertainty
+.
+People didn’t know what info to have ready
+, or whether results were personalized.
+•
+Ambiguity in billing language.
+Clinical or internal terminology caused avoidable confusion.
+•
+Escalation timing.
+Participants hit dead ends before seeing a human option.
+•
+Reliability
+and
+discoverability
+.
+Occasional chat non-response and hidden/vanishing entry points (especially on mobile)
+In-depth Insight Moderated Barb
+•
+Behavior
+:
+Explored directory and billing help; looked for a clearly labeled phone number and hours.
+•
+Tasks:
+Found hotline info useful; estimator flow felt uncertain without a “what you’ll need” primer
+.
+•
+Sentiment:
+Generally positive toward concept, but wanted fewer detours.
+•
+Notable Insight:
+Needed
+one
+confident next step (call X / complete Y), not multiple similar links.
+Irshad
+•
+Behavior
+:
+Tried price estimator and billing; rephrased queries when unsure.
+•
+Tasks:
+Reached relevant pages but wasn’t sure if results reflected his plan/facility
+.
+•
+Sentiment:
+Cautiously optimistic; trust dipped with vague or generic responses.
+•
+Notable Insight:
+Explicitly stating
+“using your location/plan”
+would boost confidence.
+Themes Posting
+and
+Next
+-Step Clarity
+•
+People value
+specific
+outcomes (e.g.,
+Call Financial Assistance at (XXX) with hours
+), not general menus.
+•
+Confidence rises when Hope explains
+whyshe
+’
+s asking something and what comes next.
+Task Completion
+and
+Usability
+•
+Billing
+tasks are attempted frequently and succeed when the wording is simple and the path is singular
+.
+•
+Price Estimator
+success depends on a small set of prerequisites (insurance, procedure/term, location).
+•
+Escalation
+should appear automatically when intent confidence is low or rephrases accumulate.
+Sentiment Trends
+•
+Many start curious but
+become neutral/negative
+if asked to chase links or repeat themselves.
+•
+Sentiment improves with
+clear labels
+,
+facility context
+, and
+one-session resolution
+.
+Usability Insights Area Strengths Weaknesses
+1
+Directory
+and
+Contacts Quick access to key lines; labels build
+confidence Missing/unclear facility context; multiple
+similar options create choice paralysis
+2
+Price Estimator High perceived value; people
+want
+this to
+work Unclear prerequisites; broken/ambiguous
+links; “
+does this match my plan?”
+3
+Billing & Financial Aid People actively seek it; expectations are
+concrete Clinical/inside terminology; unclear “what
+to do now”
+4
+Handoff/Escalation Users
+want
+a human at the right time Handoff appears late or generically;
+wrong queue risk
+5
+Conversational
+UX
+Conversational style is inviting Small window truncates context;
+occasional reliability issues
+6
+Discoverability Users engage when chat is clearly
+available Entry point can be easy to miss on
+mobile; chat sometimes “
+disappears”
+Recommendations Reduce Friction in High-Value Flows
+•
+Estimator Prep Card:
+Before the flow
+, show a micro-brief
+:
+“You’ll need: insurance/plan, procedure name/area, location.
+”
+,
+etc.
+•
+Guided Narrowing:
+Replace long link lists with stepped
+Q&A.
+•
+Personalization Call-outs:
+When authenticated or geo-located, state it:
+“Using your AdventHealth Orlando location and
+Aetna plan …
+”
+Turn Links into Outcomes
+•
+Billing Answers > Menus:
+Explain in plain language
+what this means
+and
+one
+recommended action (self
+-serve vs. call),
+then present a single CT
+A.
+•
+Directory Cards Everywhere:
+Always include labeled numbers,
+click
+-to-call
+, hours, and facility context.
+Make Escalation Timelyand Specific
+•
+Trigger rules:
+Show
+Talk to a personoption
+when (a) intent confidence is low
+, (b) ≥2 rephrases, or (c) sentiment drops.
+•
+Route precisely:
+Billing
+->
+Billing queue; Financial Assistance
+->
+F
+A queue; avoid generic handoffs.
+Smooth the Experience Around the Edges
+•
+Reliability guardrails:
+Graceful retries, backup responses, and an auto-escalation path on error
+.
+•
+Discoverability:
+Keep chat entry persistent on mobile; avoid states where the icon
+is hidden from view
+.
+•
+Survey timing:
+Trigger post
+-completion
+and before a patient attempts to exit the chat
+; keep one concise feedback path
+aligned with chat wordingand
+consider quick interaction feedback
+.
+Measure to Validate
+•
+Instrumentation:
+Log fallback events, rephrase count, turns, time-to-resolution, and intent confidence.
+•
+Targets (next release):
++10–15 pp
+containment
+, +10 pp
+confidence
+, −10 pp
+help-needed
+, +15 pp
+CSA
+T
+(satisfied/very).
+Moderated Session Videos Barb Herrera - Hope Chatbot Study-20250923_140224-Meet
+…
+https://ahsonline-my
+.sharepoint.com/:v:/g/personal/tgrc53_multihosp_net/EdlntSrSNwpEj6hC
+…
+Irshad Siddiqui - Hope Chatbot Study-20250923_110144-Me
+…
+https://ahsonline-my
+.sharepoint.com/:v:/g/personal/tgrc53_multihosp_net/EZKjDlT
+YjnhFjtpmo
+…

@@ -1,0 +1,655 @@
+Findings -
+Discovery Study on ZocDoc Experience Introduction This report presents the findings from a recent Discovery study aimed at understanding why patients are or are not scheduling
+appointments using our digital services. The study focused on uncovering insights to improve the user experience and increase
+the adoption of our online scheduling platform. Participants were observed interacting with ZocDoc, a third-party platform that
+helps users find healthcare providers. The study involved comprehensive feedback from patients to identify friction points and
+successes in the process.
+Methodology Participants were asked a series of questions during discovery interviews to gather their experiences and opinions on various
+aspects of using ZocDoc. The questions covered topics such as personal experiences searching for a primary care provider (PCP),
+challenges faced, thoughts on the guided search experience, and preferences for features like voice input and AI assistance.
+Key Findings First Impressions of ZocDoc Participants value:
+•
+Insurance Information
+: The inclusion of insurance information boosts confidence in coverage and aids in selecting providers.
+•
+Variety of Doctor Options
+: The availability of various specialists, not just primary care physicians (PCPs), enhances the
+service
+'
+s appeal
+. When irrelevant providers are included (i.e., searching for a Cardiologist and an OB/GYN provider
+embedded within the search results), trust in the service quickly erodes, potentially leading to abandonment.
+•
+Search Page Clarity
+: The straightforwardness of the search page, focusing on essential elements like insurance, location, and
+doctor type, is appreciated.
+Participants have concerns about:
+•
+Insurance Compatibility
+: Hesitation regarding the service
+'
+s ability to filter doctors based on specific insurance plans.
+•
+Initial Search Confusion
+: Potential confusion in the interface, with one participant mistakenly believing they were viewing
+search results without initiating a search.
+Sorting Search Results Participants find sorting functionality unclear and disorganized, with issues in ordering by location and specialty visibility:
+•
+Sorting Functionality is Unclear (2 mentions)
+: Confusion and frustration due to unclear sorting functionality
+.
+•
+Disorganized Experience Due to Titles and Practices (1 mention)
+: Confusing titles and the mix of practices versus individuals.
+•
+Inability to Order by Location (1 mention)
+: Need to sort search results by distance, but this option is unavailable or unclear
+.
+•
+Mismatch in Search Results (1 mention)
+: Frustration with search results showing primary care doctors instead of the
+requested specialists.
+•
+Need for Prominent Specialty Information (1 mention)
+: Desire for doctor specialties to be more prominently displayed.
+Map Features of ZocDoc Participants find the map feature useful for logistics and traffic, but some prefer filtering by location:
+•
+Map Feature Aids Logistics (2 mentions)
+: Helpful for assessing traffic conditions and narrowing down search results.
+•
+Preference for Location Filtering (1 mention)
+: Preference for filtering by location over using the map, finding the order of
+results confusing.
+Ratings and Reviews Participants value detailed reviews and information for informed decisions, with a preference for recent reviews and availability
+over high ratings:
+•
+Preference for Detailed Reviews (3 mentions)
+: Preference for reading detailed reviews for a comprehensive understanding,
+despite openness to AI-generated summaries.
+•
+Importance of Appointment Availability (2 mentions)
+: Prioritization of appointment availability over high ratings when
+choosing a doctor
+.
+•
+Value of Comprehensive Information (2 mentions)
+: Appreciation for detailed information like reviews, network status, and
+board certifications.
+•
+Significance of Recent Reviews (2 mentions)
+: Suggestion to show the age of reviews, as recent negative reviews may
+indicate a decline in quality
+.
+•
+Trust in Google Reviews (2 mentions)
+: Value placed on Google reviews, checking both positive and negative feedback to
+assess a doctor'
+s trustworthiness.
+Sponsored Listings in Search Results Participants express skepticism about sponsored listings, preferring clear labeling and relevant, high-quality results:
+•
+Skepticism Towards Sponsored Listings (3 mentions)
+: Skepticism about the quality of sponsored listings, preferring to rely
+on reviews and ratings.
+•
+Preference for Clear Labeling (3 mentions)
+: Acceptance of sponsored listings if they are clearly marked, understanding the
+need for revenue.
+•
+Irrelevance of Sponsored Results (2 mentions)
+: Frustration with sponsored results often being irrelevant to specific search
+needs.
+•
+Desire for Quality Control in Sponsorship (2 mentions)
+: Suggestion for a cutoff for sponsored listings based on ratings to
+ensure quality
+.
+Guided Search Participants have mixed feelings about the guided search process, with preferences for preliminary questions and simplicity:
+•
+Preference for Preliminary Questions (5 mentions)
+: Appreciation for preliminary questions to narrow down search results,
+valuing time-saving and specificity
+.
+•
+Concerns About Guided Process Timing (4 mentions)
+: Feeling that the guided process should be introduced earlier and not
+as a roadblock when searching for providers.
+•
+Desire for Interface Options (3 mentions)
+: Suggestion for multiple interface options, such as guided tours or AI assistance,
+to cater to different preferences.
+•
+Skepticism About Customization (3 mentions)
+: Doubt about the effectiveness of customization features, feeling they may
+not yield expected results.
+•
+Preference for Simplicity and Efficiency (3 mentions)
+: Value placed on simplicity
+, speed, and efficiency in the user interface,
+similar to the TurboTax approach.
+•
+Interest in AI Assistance (3 mentions)
+: Openness to AI-generated summaries and assistance, especially as an optional
+feature for mobile.
+•
+Specificity in Search Results (3 mentions)
+: Appreciation for the specificity of search results, especially when looking for
+specialists like dermatologists.
+•
+Concerns About Data Collection (2 mentions)
+: Preference for current interfaces over guided conversations due to concerns
+about data collection.
+•
+Preference for Direct Access to Providers (2 mentions)
+: Desire for direct access to all providers for their insurance without
+unnecessary steps.
+Overall Impressions of ZocDoc Participants appreciate the modern design and profile access but are frustrated with search accuracy and provider availability:
+•
+Frustration with Search Results (3 mentions)
+: Frustration with search results showing providers outside the specified area
+and not meeting their needs.
+•
+Appreciation for Modern Design (2 mentions)
+: Positive feedback on the website
+'
+s modern, well-designed, and easy-to-
+navigate interface, with features like insurance filters and automatic refresh.
+•
+Preference for Profile Information (2 mentions)
+: Value placed on the ability to view detailed profiles, including education
+and training, which is lacking in some provider apps.
+•
+Navigation and Interface Issues (2 mentions)
+: Frustration with tedious dropdown menus and the opening of multiple
+windows, despite the simple interface.
+Use of AI and Voice Input for Searching Participants are open to AI and voice features but have concerns about control, privacy
+, and efficiency:
+•
+Concerns About Control and Privacy (4 mentions)
+: Concerns about control, permissions, and privacy when using voice
+input features.
+•
+Preference for Typing Over Voice (4 mentions)
+: Preference for typing over voice input for control and familiarity
+, especially
+on desktops.
+•
+Voice Input as a Modern Feature (3 mentions)
+: Belief that voice input and AI features make the platform feel modern and
+innovative.
+•
+Voice Input on Mobile (2 mentions)
+: Finding voice input easier on mobile apps compared to typing in smaller dialog boxes.
+•
+AI-Generated Summaries (2 mentions)
+: Openness to AI-generated summaries but preference for reading full reviews for
+comprehensive understanding.
+•
+Preference for Convenience (2 mentions)
+: Value placed on convenience features like auto-populating information over
+lengthy question processes.
+•
+Preference for Typing on Desktops (3 mentions)
+: Preference for typing on desktops due to familiarity and simplicity
+, despite
+the availability of voice input options.
+•
+Voice Input on Mobile Apps (2 mentions)
+: Finding voice input easier on mobile apps compared to typing, especially in
+smaller dialog boxes.
+•
+Flexibility in Interaction Methods (3 mentions)
+: Emphasis on the need for flexibility in how they interact with sites,
+preferring both typing and voice options.
+•
+Voice Input Not Always Preferred (2 mentions)
+: Feeling that voice input does not add value and may lead to biased
+recommendations, describing it as 'gimmicky
+'.
+Cross-selling Participants are open to alternative options and non-specialists but prefer consent for changes and specialists for specific
+conditions:
+•
+Openness to Alternative Options (2 mentions)
+: Acceptance of being offered alternative options if initial preferences are
+unavailable.
+•
+Preference for Specialist Care (2 mentions)
+: Preference for specialists for specific conditions like hair loss, but comfort with
+non-specialists for general issues.
+Looking for Other Services While Searching for a Provider Participants prioritize finding a PCP and scheduling appointments based on specific needs and recommendations:
+•
+Participants prioritize finding a PCP (2 mentions)
+: Focus on finding a primary care provider (PCP) for annual physicals and
+consideration of additional services like pediatric care.
+•
+Appointments based on specific needs (2 mentions)
+: Preference for setting up appointments based on specific needs, such
+as annual checkups, and following additional suggestions from healthcare providers.
+Feature Suggestions Participants suggest enhancing search with filters, voice commands, and visual aids, and improving user experience with insurance
+and health record integration:
+•
+Enhance Search with Filters and Visuals (3 mentions)
+: Suggestion for immediate filtering based on known info, visual
+representation of ratings, and prioritizing insurance and top-rated doctors.
+•
+Integrate Insurance and Health Records (3 mentions)
+: Recommendation for features like taking a picture of insurance cards,
+syncing health records, and a guide for identifying insurance plans.
+Participant Task Observations Pains
+/ Friction Quotes Insights /
+Opportunities
+1
+Briana
+PCP / Other
+•
+Was asked to enter
+"
+Dermatology
+"
+instead
+of PCP
+•
+Liked the options
+presented
+•
+Selected
+"Skin
+problem", then
+"Dry/itchy skin
+"
+•
+Believes
+UI is a list
+of
+conditions
+•
+Wishes she could
+choose
+multiple
+conditions at a time
+instead of selecting
+just one
+"
+I really like this screen. If I
+didn
+'t know how to describe
+my condition, I like that
+they
+'
+re giving me options to
+work with."
+Consider a
+version
+of this
+design
+that is
+multi-
+selectand
+condition-
+focused
+•
+Voice Commands and Gender Preference (2 mentions)
+: Suggestion for adding voice commands for searching and a gender
+preference option for selecting doctors.
+Conclusion The findings from this Discovery study provide valuable insights into the user experience with ZocDoc. Participants appreciate
+features like
+ensuring the system knows about their
+insurance information
+upfront and before shopping
+,
+the
+variety of doctor
+options, and modern design but have concerns about search accuracy
+, sorting functionality
+, and the guided search process.
+Suggestions
+include integrating insurance and health records before the patient begins their search, and exploring
+voice
+commands. Addressing these concerns and implementing the suggested features can help improve the user experience and
+increase the adoption of our online scheduling platform.
+Other Observations:
+"
+Guided
+Scheduling"
+Tasks and
+Interactions
+2
+Briana
+Ortho
+•
+Did
+not have a chance
+to comment on the
+specific
+options
+presented
+•
+Selected "Spine &
+Back"
+•
+Concerned that the
+options are too general
+•
+Worried that there may
+be too many types of
+doctors to choose
+from in the results
+"
+Depending on what kind of
+pain I have, they may be
+able to recommend a lot of
+different doctors, which I'm
+kind of worried about. I just
+want one that specializes in
+the pain areas I have."
+Consider
+additional
+visual
+cues to
+ensure
+the
+user
+knows
+they
+are still
+searching by
+a
+specificspecialty
+3
+Briana
+OBGYN
+•
+Did
+not have a chance
+to comment on the
+specific
+options
+presented
+•
+Selected "Annual Exam"
+---
+---
+---
+4
+Edgar
+PCP / Other
+•
+Enters
+"
+Dermatology
+"
+instead of PCP
+•
+Liked the options
+presented
+•
+Selected
+"Skin
+problem", then
+"
+Rash
+"
+•
+Also notices the
+applied filters at the
+top of the search
+results screen.
+---
+"Let'
+s suppose that there are
+different types of
+dermatologists. I can make
+my search more specific,
+more accurate, more right
+to the point. You know?
+"
+"I think it'
+s great. I'm really
+doing a very specific search.
+From there, I can see
+specialists
+that can take care
+of me based on my needs."
+---
+5
+Edgar Ortho
+•
+Did
+not have a chance
+to comment on the
+specific
+options
+presented
+•
+Selected "Foot & Ankle
+"
+---
+---
+---
+6
+Gayle
+PCP / Other
+•
+Selected "Annual Exam"
+•
+Wishes there were pre-
+set preferences or
+connected health
+records to help
+personalize results
+---
+---
+---
+7
+Ken
+PCP / Other
+•
+Did
+not have a chance
+to comment on the
+specific
+options
+presented
+•
+Selected "Annual Exam"
+•
+Believes the options
+shown will narrow
+down specific doctors
+•
+Expects this to save
+him time from needing
+to filter results on his
+own
+---
+"
+Additional questions here
+are gonna save me time in
+filtering results.
+"
+"I would say the more
+preliminary questions, the
+easier this would be."
+---
+8
+Louis Ortho
+•
+Initially
+, this participant
+included the practice
+area in his keyword
+search (e.g. Orthopedic
+Leg and Knee)
+•
+Later
+, when asked to
+enter "Orthopedics" by
+itself
+, he was surprised
+by the list of options
+shown.
+•
+Was asked to select
+"Leg and Knee
+"
+•
+Did not feel that the
+options were helpful in
+his case
+•
+Expected this
+information earlier in
+the
+flow
+"
+It makes sense for an
+orthopedic because they all
+have different specialties.
+It'
+s
+just not where I expected it
+"
+"I feel like it'
+s something
+you need to do if you just
+don
+'t know what type of
+doctor you need."
+Only
+show
+this
+design
+when
+specificity or
+guidance is
+needed
+.
+Consider
+displaying
+these
+options
+in the
+keyword
+search
+recommendations
+(or
+"
+search
+view")
+9
+Meagan Ortho
+•
+Liked the options
+presented
+•
+Selected "Hand &
+Wrist"
+•
+Believes
+the
+UIis
+multi-
+select
+•
+Wishes
+she could
+chooseall
+options
+relevant to herconditions
+"I like it. It'
+s more specific.
+I'm wondering, can I pick
+more than one?"
+“I want to make sure that
+I'm with someone who can
+handle all of that. I think in
+general, an orthopedic
+surgeon can. But it'
+s just I
+don
+'t know
+.
+”
+Consider a
+version
+of this
+design
+that is
+multi-
+select
+10
+Meagan
+OBGYN
+•
+Did
+not have a chance
+to comment on the
+specific
+options
+presented
+•
+Was asked to select
+"Annual Exam"
+•
+Frustrated by so many
+different (and
+unexpected) types of
+providers in the search
+results
+"I'm hoping this gets me
+more customized results,
+but after my last experience,
+I don
+'t really know
+.
+”
+Test to
+ensure
+the
+results
+populated are
+relevant
+to the
+keywords and
+filters
+selected
+11
+Robert
+PCP / Other
+•
+Liked the options
+presented
+•
+Mentions that these
+options are good for
+his scenario, because
+he
+'
+s not searching for a
+specific condition at
+this time.
+•
+Selected "Annual Exam"
+---
+"It'
+s very minimal here, it
+almost looks like I'm on a
+completely different website
+from where I was before."
+"I think it makes sense to
+have this this step for 'here
+'
+s
+what I'm looking for'. You
+know? Is it urgent or not
+?
+That sort of thing."
+"I've just moved here,
+looking for a PCP
+. I don
+'t
+have a condition right now
+that I'm really super
+concerned about that needs
+immediate now for this
+thing.
+---

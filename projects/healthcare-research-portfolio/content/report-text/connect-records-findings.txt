@@ -1,0 +1,186 @@
+Findings Decision Re-align
+as a group on what we’re seeing
+in the Telephony data.
+tl;dr From Left to Right:
+"
+Control
+"
+(current),
+"
+Side-by-Side
+"
+, and "Preliminary
+" (decision-
+first)
+Across 45 participants
+(15 per variant),
+patients generally moved through the
+“
+connect records” experience smoothly and reported low need for additional
+support. The pattern we’re seeing suggests call volume is
+less likely driven by
+patients simply not noticing the “I don’t have a code” option
+, and more likely
+driven by
+broader uncertainty about what a code is, where it comes from, and
+what happens next
+.
+Next steps:
+align as a group on what we’re seeing, then either
+re-run the study
+to
+see if clearer quantitative separation emerges, or
+deep dive into call drivers
+in
+Five9 database
+(call logs/reasons) to pinpoint what’
+s actually prompting patients
+to pick up the phone.
+Also consider adding amplitude tags to the page to betterunderstand patient behavior in the moments we ask patients to connect their
+records.
+Study setup Who:
+Net
+-new patients unfamiliar with the AdventHealth portal experience What:
+Multivariate prototype study: Connect records flow (3 variants)
+How many:
+45 total (15 per variant)
+Key measures (1–7 scales):
+•
+Pre confidence:
+understanding what to do to connect records
+•
+Post confidence:
+confidence continuing on their own
+•
+Expectation alignment:
+flow worked as expected even without a code
+•
+Likelihood to call support
+if they didn’t have a code
+•
+Open text:
+“
+Are there any parts… where you would like additional support
+?”
+Key findings The majority of participants successfully navigate and understand their next steps
+when they do not have access to the After Visit Summary code across all three
+variants, which include the current production experience
+,
+with a low likelihood of
+calling Support for help.
+Control
+•
+Highest post
+-task confidence and highest expectation alignment
+, while also
+keeping
+call-likelihood low
+Participant Quotes:
+"You could see the prompt easily
+."
+"
+Because it was straight forward and intuitive
+" (What made the process feel
+simple?)
+"
+Since I don
+'t have paperwork
+, I needed that guidance.
+"
+"It literally said how to connect and all I would have to do without a code is
+put my personal info which would be very easy and fast."
+"
+i was able to see where i needed to go to complete the process"
+Side-by-Side
+•
+Lowest call likelihood overall
+and strong confidence gains, but trailed
+Control slightly on post
+-confidence and expectation alignment.
+Participant Quotes:
+"It was straightforward and easy
+"
+"It said, "to enter without a code
+" so that should be an option."
+"It was labeled clearly and once clicked showed what you would expect"
+"It was pretty self explanatory to me."
+"It had simple explanations for each step of the process"
+Preliminary
+•
+Highest call-likelihood, lowest post
+-confidence, lowest expectation
+alignment, and the longest time-on-study
+.
+Participant Quotes:
+"I think the set up was straight forward and clear
+.
+"Everything was neatly labeled and one step flowed seamlesslyinto the next."
+"It was always very obvious what buttons i should click next, they made it
+very simple to follow"
+"Because it was telling me exactly what I needed to do to find where to
+connect my medical records"
+"I probably would've stopped and tried to figure out if I needed the personal
+code first or not."
+Evidence Confidence levels
+of knowing what to do next Blue:
+confidence level pre-task Orange
+: confidence level post
+-task Likelihood to
+call
+support
+for assistance Blue:
+%
+low likelihood to call Orange
+:
+%
+high likelihood to call Alignment with what is expected to connect records Task alignment with participants' mental model Recommendations/Considerations
+1.
+Deep dive into call driversin Five9
+to pinpoint what’
+s actually prompting
+patients to pick up the phone.
+2.
+Set expectations:
+a.
+Make “no code” feel normal and safe (“with or without a code”).
+b.
+Ensure the next step after sign-in is explicit (“Here’
+s what happens next…
+”)
+3.
+Add Amplitude tags
+to the pages within the flow
+.
+Risks
+/
+open questions
+1.
+Why does Control still have a sizeable high-call group (26.7%) despite
+strong clarity scores?
+•
+Possible drivers: anxiety
+, privacy concerns, lack of paperwork
+, and
+uncertainty
+about code origin
+.
+2.
+What’
+s the real call driver in production?
+•
+Validate against call reasons/tags for
+connecting
+records/missing
+code/linking
+/etc.
+3.
+Segment effects
+•
+Are high-call respondents lower digital confidence or more risk
+-averse?
+i.
+check
+device type, age, etc.
+is
+available
+in the Telephony database.
