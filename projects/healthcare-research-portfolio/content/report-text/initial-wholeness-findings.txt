@@ -1,0 +1,117 @@
+Findings Overview We conducted a site visit in the lobby of the Lake Mary Health Park facility to evaluate the
+Request a Prayer
+feature. Patients were invited to interact with the feature and share their
+perceptions, expectations, and experiences.
+Our goal was to understand:
+•
+Whether the feature feels authentic and supportive.
+•
+What kinds of support patients expect.
+•
+How usable the prayer request form is.
+•
+Preferences for channels of communication.
+•
+Overall impressions of the feature.
+Key Findings Perception of Authenticity
+•
+We were unable to measure the sentiment towards any automated responses
+,
+as
+patients
+either did not want to include their mobile number or chose an option where
+the mobile number was optionally entered
+.
+Expectations of Support
+•
+Patients
+would appreciate
+encouraging wordsor follow-up supportregardless of the
+prayer option selected Effectiveness of Resources
+•
+When resources were provided, most found them
+relevant and helpful
+.
+•
+Opportunity: A library of varied resources (scripture, meditations, chaplain connections)
+could broaden value
+in follow-up interactions.
+Preferred Channels of Support
+•
+Patients mentioned multiple preferred channels:
+•
+SMS
+Text
+was most frequently referenced.
+Understanding of Options
+•
+Many patients showed
+confusion between “Silent prayer
+” and “
+Prayer
+.
+”
+•
+There was also confusion about sending a prayer vs requesting a prayer
+. Most patients
+expect to say/send a prayer to someone else upon initial interaction.
+•
+Recommendation:
+Arrange input to ensure prayer is top of mind vs asking what to do
+with the prayer Experience with the Form
+•
+Difficulty was correlated with confusion over prayer options
+and physical limitations
+(ability to see/process UI)
+.
+•
+Suggestion:
+How might the form be more scannable during interactions?
+Overall Impression
+•
+Nearly all participants rated their overall experience as
+positive or very positive
+and
+were delighted about the feature.
+•
+Even patients with minor confusion or difficulty still felt
+uplifted by the feature
+.
+•
+This shows strong
+emotional resonance
+.
+Recommendations Reattempt Validating
+Authenticity
+•
+Consider introducing a
+short delay
+before replies to feel more human
+•
+It still needs to be determined if
+this solution
+is effective
+or needed
+.
+Reevaluate
+Form Options and Sequencing
+•
+Consider reversing how we ask patients to enter a prayer
+or
+request.
+•
+Currently
+, we ask patients to choose the type of prayer they want to make,
+which is not always immediately clear during interaction. Then, we request
+more information to assist us behind the scenes, but it doesn’t offer immediate
+value to the consumer
+.
+•
+Reduce patient confusion by explaining exactly what happens
+after they submit
+.
+Communication Channels
+•
+Make
+Text
+a priority channel.

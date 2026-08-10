@@ -1,0 +1,257 @@
+Telephony Data Analysis We analyzed AI-generated call summaries from the Five9 CDS Dashboard to
+understand why patients contact support when using our digital tools. Across
+topics, the data reveals a consistent pattern: a security or identity step—such as
+verification, MF
+A
+, or password confirmation—is triggered, and that step fails in a
+way the patient does not understand or cannot complete.
+Most calls relate to access failures, but those failures present differently
+depending on where a patient is in their journey and how clearly the system
+communicates what is happening. Some callers explicitly describe not receiving a
+verification code, being prompted for MF
+A to the wrong number
+, or resetting a
+password without success. Others describe the problem more generically as “
+can’t
+log in” or “account not working.
+” Still others simply request help because they are
+unable to proceed toward their intended goal.
+These are not different problems. They are different symptoms of the same
+access and identity system failing patients at different points in their health
+journey
+.
+When a security or recovery step fails, the system does not clearly explain
+whyaccess is blocked or what it needs from the patient next. Patients then guess at
+recovery actions—retrying login, resetting passwords, or requesting additional
+codes. These attempts often fail to resolve the issue and can compound it by
+triggering lockouts or additional security challenges, at which point human
+intervention becomes necessary
+.
+This explains the quantitative patterns in the data. Roughly a third of calls
+explicitly reference verification or message delivery
+, while an even larger portion
+reference login or password recovery failures. These categories overlap because
+they represent progression through the same access failure lifecycle, not separate
+root causes.
+Note:
+"Cause Unclear"
+are categories that AI did not explicitly state
+a cause for
+the call
+; however
+,
+spot
+-checking
+call transcripts determines that a significant
+number could be included in the stated causes.
+At the core, the issue is not broken features
+of accessing health data
+, and it is not
+security doing something wrong.
+The issue is that patients encounter multiple
+security “
+doors” without a clear understanding of why each one exists
+,
+what it
+protects, or how to move forward when something goes wrong
+. Each additional
+security step increases friction and the likelihood of failure
+,
+especially when the
+data being accessed is low risk
+, such as appointment details or reminders.
+The opportunity is to treat access as readiness rather than authentication alone:
+making
+our system'
+s
+state visible
+to our patients
+, aligning recovery actions to
+actual system conditions, and
+assessing whether strict
+security requirements
+match the
+sensitivity of the data the patient
+is trying to access
+. Doing so
+couldreduce unnecessary barriers, prevent compounding failures, and lower support
+demand
+, all
+without weakening protections for sensitive health information
+and
+repairing
+compounding
+dissatisfaction
+with simply doing what we promised them
+they could do—access their health information.
+Considerations
+•
+Evaluate where patients encounter
+multiple security “
+doors”
+in a single
+journey and identify where those steps stack without added risk reduction.
+•
+Explore a
+tiered or graduated security model
+that aligns authentication
+strength with data sensitivity and patient intent (e.g., appointment details vs.
+clinical records).
+•
+Assess opportunities to leverage
+trusted devices
+and low-friction
+identity checks (such as date of birth) for low-risk interactions while
+preserving strong protections for sensitive data.
+•
+Improve
+visibility into access state
+so patients understand
+why
+access is
+blocked and
+what
+is required to proceed.
+•
+Reduce opportunities for
+compounding failure
+, such as retries or resets that
+lead to lockouts when the underlying issue is unrelated.
+•
+Align Product, Design, and Security on a single
+access failure
+lifecycle
+/comms
+to ensure teams are solving the same problem at different
+layers
+and using the same language
+.
+Where the issues present themselves:
+Stage 1
+Security and Identity Triggers
+•
+System-level events occur
+:
+•
+Identity verification required
+•
+MF
+A / 2F
+A challenge triggered
+•
+Password reset requires confirmation
+•
+Risk
+-based security check
+•
+Activation not fully complete
+Delivery mechanisms
+•
+Email
+•
+SMS
+•
+Phone call
+Patients are
+rarely told
+this is what’
+s happening
+, and/or are not aware/do not
+understand what'
+s happening.
+📌
+Stage 2
+Silent or Opaque Failures Something in
+Stage 1 fails
+:
+•
+Code not received
+•
+Wrong or inaccessible contact method
+•
+Verification expires
+•
+Dependency mismatch (record, proxy
+, contact info)
+Then the patient does not:
+•
+understand
+why
+•
+understand
+what is pending
+•
+know
+what will resolve it This is the
+common area where the experiences
+break
+.
+📌
+Stage 3
+Howthe patients feel pain
+:
+•
+“I can’t log in” a
+•
+“It’
+s not working”
+•
+“Still can’t access my account”
+•
+“My account is locked”
+•
+“I reset my password but it didn’t help
+”
+This is
+where most calls are categorized
+, but it’
+s
+not the root cause
+.
+📌
+Stage 4
+Retries and Compounding Failures Because the system offers actions without diagnosis,
+patients
+:
+•
+Retry login
+•
+Reset password again
+•
+Request more codes
+•
+Switch channels
+•
+Trigger lockouts or cooldowns
+Security responds by:
+•
+Tightening access
+•
+Limiting retries
+•
+Requiring human intervention
+Well-intentioned
+verificationrecovery attempts make the situation worse.
+📌
+Stage 5
+Human Interaction Required At this point:
+•
+Automation cannot proceed safely
+•
+Identity ambiguity exists
+•
+Security rules prohibit self
+-resolution
+Support must:
+•
+Interpret account and security state
+•
+Repair dependencies
+•
+Manually recover access
+Support becomes our system’
+s
+interpreter
+and construction worker
+.
+📌

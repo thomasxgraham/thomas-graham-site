@@ -1,0 +1,566 @@
+Wayfinding -
+Report
+Out Table of contents Executive Summary Current Landscape Navigation Challenges Observed Across Participants Willingness to Use Indoor Navigation What Matters Most When Navigating
+“Whole Journey” Needs Live Location Value and Risks Lag and drift reduce trust and increase stress More screen-checking, less awareness Implications for design Adoption Considerations Vendor Comparison Pointr Situm MappedIn Mean Scores by Vendor (1–5 scale)
+Recommendations Conclusion Executive Summary Across
+120
+respondents who tested indoor navigation software across three vendors and completed a series of surveys to
+understand, several clear patterns emerged:
+•
+Participants want digital indoor wayfinding
+because current hospital navigation creates stress, confusion, and delays.
+•
+The tools tested showed
+strong map visuals and mostly accurate routes
+, but all demonstrated weaknesses in
+orientation, live-location accuracy
+, POI completeness
+, and
+rerouting clarity
+.
+•
+Pointr
+delivered the most reliable
+participant
+experience.
+•
+Situm
+showed strong potential but inconsistent real-world usability due to content dependency
+.
+•
+MappedIn
+struggled to provide the clarity and trust needed for patient
+-facing navigation.
+These following insights inform clear next steps for vendor selection, implementation and strategy
+.
+Current Landscape Navigation Challenges Observed Across
+Participants Current hospital navigation
+contributes
+to stress and confusion.
+Most respondents have had
+trouble navigating AdventHealth hospitals
+or large facilities. Common issues include:
+•
+Signage problems:
+unclear or inconsistent signs, gaps after key decision points, and confusion leaving elevators or
+moving between departments.
+•
+Multi-building confusion:
+multiple entry points, construction changes, and buildings that look similar make it hard to
+know if you’re in the right place.
+•
+Parking and distance:
+uncertainty about where to park and concern about long walks, especially among those with
+mobility or breathing challenges.
+The physical environment frequently fails to support clear
+, continuous navigation. If implemented cleanly
+, reliably
+, and with
+strong content accuracy
+, we could meaningfully provide a solution to these challenges and friction points.
+Willingness to Use Indoor Navigation Most respondents say they would
+“Definitely”
+or
+“Probably”
+use indoor maps if their hospital offered them.
+Motivations include:
+•
+Reduced
+stress and anxiety
+about getting lost.
+•
+Increased
+confidence
+and independence.
+•
+Better ability to
+arrive on time
+.
+Those who are more hesitant tend to:
+•
+Prefer
+asking staff
+and relying on human reassurance.
+•
+Worry about
+tech adding stress
+in an already stressful setting.
+•
+Believe physical
+signage should also be improved
+, not ignored.
+People generally like the
+idea
+of indoor navigation; they’re wary of complexity and friction to an
+already noisy and disjointednavigating experience.
+What Matters Most When Navigating Across importance ratings and ranking tasks, several needs consistently rise to the top:
+•
+Arriving on time for appointments.
+•
+Avoiding getting lost and needing to backtrack
+.
+•
+Reducing stress along the way
+.
+•
+Having clear
+, step-by-step directions.
+•
+Knowing which floor they are on and which elevator/stairwell to take.
+•
+Seeing an E
+T
+A (estimated time of arrival).
+•
+Having accessible routes (wheelchairs, strollers, or limited stamina).
+On the map, respondents most want to see:
+•
+Entrances
+•
+Parking areas
+•
+Elevators/stairwells
+•
+Reception/front desk
+•
+Waiting rooms
+•
+Patient Rooms
+A successful solution should be
+judged on how well it improves orientation, confidence
+, and
+timing
+.
+“Whole Journey” Needs Participants don’t only care about clinical destinations. Commonly requested
+areas
+include:
+•
+Cafeteria / food & coffee
+•
+Gift shop
+•
+Chapel / prayer spaces
+•
+Outpatient services
+(lab, x-ray
+, registration, billing)
+•
+Vending machines, water/bottle refill, A
+TMs
+Some also mention wanting:
+•
+A phone number for help.
+•
+The ability to notify someone that they’re on their way or lost.
+Navigating our floors should support the entire visit experience, including care, comfort, and logistics.
+Live Location Value and Risks Participants generally see the idea of live location (“blue dot”) as
+helpful for staying oriented
+and
+tracking progress along a
+route
+. However
+, our observations in the POC highlight important risks in a hospital context.
+Lag and drift reduce trust and increase stress The “blue dot” is
+not consistently precise
+. Even small inaccuracies appearing slightly behind, off the corridor
+, or updating late
+can lead to missed turns, backtracking, and extra walking. In an already stressful situation, this
+can amplify frustration
+rather
+than reduce it.
+More screen-checking, less awareness When the “blue dot” is active,
+people look at their screens
+more frequently
+,
+paying less attention
+to signage, staff
+, and the
+physical environment. This increases the
+risk of collisions
+or near
+-misses in busy hallways and can
+quietly raise cognitive load
+,
+especially for anxious or less tech-comfortable participants.
+Implications for design
+•
+Treat live location as an
+optional enhancement
+, not a requirement.
+•
+Ensure participants can turn off live positioning and
+still get clear static routes
+and
+step-by-step
+instructions.
+•
+Design for
+glanceable use
+. Simple, high-contrast routes that support quick checks rather than continuous screen-
+watching.
+•
+Pair the blue dot with clear
+, simple
+messaging about accuracy limits
+and
+how to fall back
+on written directions and
+physical signs when needed.
+Adoption Considerations Participants are willing to use indoor navigation only if certain conditions are met.
+Commonly selected statements include (
+in order of importance)
+:
+•
+It works without creating an account.
+•
+I don’t have to download & install a new app.
+•
+There’
+s clear privacy info.
+•
+I can opt out of providing live location and still use the map.
+•
+There is clear communication about how my location data will be used.
+A few respondents also:
+•
+Express concern about screen use while walking
+(safety and collisions)
+.
+•
+Prefer something that feels glanceable or simple, not another app to manage.
+Adoption is constrained by friction and trust, therefore the solution should:
+•
+Offer a low-friction access path
+(e.g., QR/App Clip/browser
+) that doesn’t require new accounts.
+•
+Provide short, plain-language privacy explanations.
+•
+Allow basic use without live positioning for those who prefer that.
+Vendor Comparison Pointr
+•
+Pros: Clear basics, labeled locations, color coding; some appreciate more options visible.
+•
+Cons: For some,
+it
+feels visually busy or overly detailed.
+The Pointr experience combined intuitive interaction, accurate positioning, strong visual presentation, and dependable
+routing.
+Participants
+consistently reported positive interactions with the system and had the highest task
+-completion success
+rate.
+•
+Highest scores in usability
+, confidence, intuitiveness, and trust
+•
+Smoothest orientation and best overall
+participant
+confidence
+•
+Participants appreciated arrival confirmations and route clarity
+•
+Some feedback noted longer
+-than-necessary routes
+•
+All participants completed their routes
+UX Summary:
+Pointr stands out as the most consistent and patient
+-ready experience among the vendors evaluated. Participants rated it
+highly across ease of use, intuitive interaction, trust, and clarity of instructions. Route completion success was strong, and
+feedback frequently described the experience as smooth, confidence-building, and easy to follow
+. Pointr delivered reliable
+navigation across conditions, making it the strongest candidate for patient
+-facing deployment.
+Participant Quotes:
+•
+“Overall, a very smooth experience.
+”
+•
+“I love that it said when I arrived.
+”
+•
+“I liked it when it gave the written directions like Google Maps.
+”
+•
+“It took me a longer route when there was a shorter way
+.
+”
+Situm
+•
+Pros: Frequently called out as
+easy to read
+, with good layout and
+clear symbols/legend
+.
+•
+Cons: Some still see it as somewhat dense Situm displayed the strongest map richness and some of the most accurate routing, but
+participant
+experiences varied widely
+based on whether content was correctly implemented and live tracking was available.
+•
+Strong map richness and detail layers
+•
+Participants praised visuals and zoom functionality
+•
+Highly accurate when POIs and content were present
+•
+Multiple participants experienced missing destinations
+, which broke trust and blocked completion
+•
+Of the reports where participants reported "missing destinations", participants did not utilize live-positioning ("Blue
+dot") when participating in the study
+. Not easily seeing POIs at specific zoom levels directly prevented successful task
+completion. This is a content governance, not technical, failure, but it directly impacts UX
+.
+UX Summary:
+Situm demonstrated strong potential, particularly with its detailed maps, visual clarity
+, and accurate routing when POI content
+and live tracking were correctly configured. However
+, performance varied depending on the completeness and accuracy of the
+underlying content. Missing destinations, search issues, or inconsistent live-location behavior directly affected
+participants'
+ability to complete routes. Situm performs extremely well when supported by comprehensive POI data and stable tracking,
+but these dependencies introduce variability that must be addressed through strong operational governance.
+Participant
+quotes:
+•
+“I liked the layers and accurate representation of the map.
+”
+•
+“
+The zoom-in feature and detail were great.
+”
+•
+“I really liked seeing the mini digital version of the hospital.
+”
+•
+“
+The destinations on my form were not loaded as options.
+”
+•
+“I couldn’t find
+Oak 2
+, it wasn’t listed.
+”
+MappedIn
+•
+Pros: Seen as
+simple, clean, and clear
+; good font and icon sizes; easy to interpret.
+•
+Cons: A few worry about interior details going out of date or wanting slightly more labeling.
+MappedIn showed persistent issues with responsiveness and overall usability
+.
+Participant
+trust and confidence were
+significantly lower than those of other vendors. The MappedIn experience
+did not
+include live position tracking during
+implementation.
+•
+Participants
+struggled to understand the system and were not confident it would reliably guide them.
+•
+Difficulty understanding where to begin or how to orient oneself lead to hesitation and cognitive friction.
+•
+Confidence following routes was significantly lower than
+that of
+other vendors
+•
+Participants
+often described the experience as outdated or unintuitive
+UX Summary:
+MappedIn presented challenges in core trust
+-building moments such as initial orientation, live feedback
+, and route clarity
+.
+Participants often struggled to understand their starting point or direction, and without reliable real-time positioning,
+confidence declined quickly
+. While some
+participants
+adapted over time and found aspects of the interface workable,
+recurring issues with responsiveness, orientation, and route accuracy indicate that the experience does not yet meet the
+expectations needed for a patient navigation workflow in a hospital environment.
+Participant Quotes:
+•
+"There wasn
+'t any orientation. Where you start is dependent on a static location that you may or may not be at.
+Ultimately
+, I just looked at the map and followed the path without the instructions."
+•
+“It felt like MapQuest.
+”
+•
+"Path took me where there was no access. Route in inaccurate by headquarters."
+•
+"The route took me on a sidewalk that did not exist. There was no real-time location to help guide me."
+•
+"Once you get used to the app,
+it'
+s
+easier to understand
+.
+"
+Mean Scores by Vendor (1–5 scale)
+Metric Pointr Situm MappedIn
+1
+Ease of Start
+4.44
+3.74
+3.36
+2
+Route Match to Real
+World
+4.00
+3.89
+3.57
+3
+Confidence Following
+Directions
+4.25
+3.95
+2.86
+4
+Intuitive Interface
+4.38
+3.58
+3.29
+5
+Speed & Responsiveness
+3.75
+3.53
+2.86
+6
+Visual Appeal
+4.50
+3.89
+4.00
+7
+Trust
+3.94
+3.21
+2.50
+8
+Recommend
+4.19
+3.21
+2.50
+Recommendations Navigating
+should
+start simple, stay clear
+, and prioritize what matters most.
+Frictionless Access
+•
+Provide a
+no-download, no-account
+entry point (e.g., QR code/App Clip/browser
+-based experience).
+•
+Long-term: integrate with the
+AdventHealth app
+, but preserve a “
+guest” mode.
+Orientation-First Design
+•
+Start with
+an obvious
+“You are here
+"
+indicationwitha
+clearly labeled building andfloors
+, and
+facing
+the
+directionintended
+,
+•
+Make elevator choice and floor changes
+unmissable
+in the UI.
+Feature Prioritization
+•
+Default to: route
+with
+E
+T
+A
+, floor indicator
+, and quick access to
+parking, entrances, reception, restrooms, elevators/stairs,
+nurse’
+s station, patient rooms, cafeteria
+.
+Visual Style
+•
+Use a
+clean, flat, easy-to-scan map style
+.
+•
+Keep icons self
+-explanatory; minimize reliance on legends.
+•
+Use 3D or extra detail only if it clearly improves orientation.
+Privacy
+and
+Control
+•
+Present a
+short, friendly privacy explanation
+at first use.
+•
+Allow
+live-location opt
+-out
+while still letting
+participants
+view maps and routes.
+Fallback
+and
+Reliability
+•
+If live positioning is weak
+, fall back to:
+•
+Static routes
+•
+Occasional prompts to
+confirm location
+•
+Scan a
+QR code to reorient
+/update location Conclusion This evaluation makes one message clear
+:
+patients want indoor navigation because it reduces stress, confusion, and late
+arrivals—and they will adopt it when it is simple, clear
+, and trustworthy
+.
+A successful solution must help users orient quickly
+,
+understand where they are going, and feel confident every step of the way
+.
+Among the vendors assessed,
+Pointr delivers the most patient
+-ready experience
+, with strong orientation, intuitive routing,
+and reliable content that builds trust.
+Situm shows strong potential
+, but its performance depends heavily on complete and
+well-governed POI data.
+MappedIn lacks the clarity
+, responsiveness, and confidence-building cues needed for patient
+-
+facing use
+, and would require substantial improvement before deployment.
+Beyond vendor performance, the research highlights a broader opportunity: indoor navigation must support the
+entire
+journey
+, including parking, entrances, amenities, and non-clinical stops that shape emotional wellbeing. Patients also want
+frictionless access
+—no downloads, no accounts, transparent privacy—and the ability to navigate even without live location
+enabled.
+If executed with strong content governance, simple entry points, clear orientation cues, and intuitive visuals, indoor navigation
+can meaningfully reduce patient anxiety and improve on-time arrivals across AdventHealth. With Pointr as the strongest
+candidate today
+, AdventHealth has a clear path to implementing a solution that elevates both the digital ecosystem and the
+in-person experience, making visits feel more guided, confident, and human-centered.

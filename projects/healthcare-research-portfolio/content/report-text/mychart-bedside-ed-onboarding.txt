@@ -1,0 +1,172 @@
+MyChart Bedside ED
+Onboarding How long does it take from receiving an invite text to being logged
+into your account as a brand new user of MyChart Bedside ED and
+the AdventHealth mobile app?
+•
+What is the added time when you get through that flow and
+have to download the app and log in again Measuring Stick
+:
+~5 minutes for a new patient to use MyChart Bedside ED
+comfortably on their own.
+Timeline Friday
+, 01/16
+- Align on "Bookends"
+•
+(ST
+AR
+T)
+> ?? > SMS > Bedside ED Access > ?? > AdventHealth app
+Installation > ?? > Log in > access Bedside features >
+(ST
+OP)
+•
+Identify owners for
+:
+•
+Flow SME
+(MyChart Bedside ED)
+•
+Dummy Accounts
+(if needed, may not be)
+•
+Participant Recruiting
+•
+Crafting email messages
+•
+Contacting leaders for participation request
+•
+etc.??
+Goal
+: Remove any ambiguity
+on steps and ensure we can progress with the
+study without backtracking Monday
+, 01/19
+- Lockdown Flow
+•
+Walkthrough with SME to confirm the
+real
+end-to-end flow/steps and
+triggers
+•
+Capture screenshots/notes of the exact steps and any possible branching Artifact
+: Final Flow Map Tuesday
+, 01/20
+- Build the "Run Kit"
+•
+Invite logistics
+•
+Participant instructions
+(screen record, stop/start, what to submit, and
+where to submit)
+•
+Simple timing form for
+participants
+•
+Total time
+(most important)
+•
+Device/OS
+•
+Wi-Fi/cellular
+•
+Success/Fail
+/Friction
+•
+If Fail
+/Friction
+, why
+?
+•
+Notes
+•
+Upload process and naming conventions Artifacts
+: Run kit
+(v1)
+, data capture form, storage location Wednesday
+, 01/21
+- Pilot
+•
+Run 2-3
+Pilots, end-to-end
+(screen recorded),
+on mobile
+•
+Validate:
+•
+Recording process make sense
+•
+Free from frustration Artifacts
+: Run Kit
+(v2, if needed),
+Known issues list Thursday
+, 01/22
+- Day 1
+•
+Run 8-15 proxy participants
+•
+Ensure coverage mix
+•
+iOS/Android
+•
+Wi-Fi/Cellular
+•
+Comfortable
+/Uncomfortable w/
+technology
+•
+Completeness checks on storage so nothing is missing
+•
+Preliminary Analysis on length of videos in storage
+•
+Preliminary Analysis on actual time spent during the flow
+.
+•
+Noting of
+actual
+time spent during flow Artifacts
+: Datasets in the recordings (storage) folder Friday
+, 01/23
+- Day 2
+•
+Repeat of Day 1
+Monday
+, 01/26
+-
+Tuesday
+, 01/27
+- Analysis and Draft Findings
+•
+Finalize extracting timestamps from recordings
+into step-level timing
+•
+Tag friction
+/fail
+moments
+•
+Baseline metrics
+(time stamps)
+•
+SMS received to First Successful login/access
+of MyChart Bedside
+•
+Main Metric
+(
+≤ 5 minutes)
+•
+Added time
+from handoff
+to app install, to second login
+•
+Variance driver summary and the largest time-sucks
+•
+Prep final report Artifact
+:
+Draft Report w/ timing table
+(total time and step-level
+), top
+friction
+themes, short highlights clips Wednesday
+, 01/28
+- Delivery
+•
+Deliver Research Report

@@ -1,0 +1,230 @@
+Onboarding Experience
+Evaluation Overview The onboarding process for our healthcare app is the critical first interaction
+patients have when engaging with digital health services. Currently
+, onboarding
+requires multiple steps to register
+, verify
+, and connect medical records. Initial
+feedback and observations
+suggest
+that the complexity of the experiencecoulddeter adoption and reduce satisfaction.
+Three onboarding experiences will be evaluated:
+1.
+Current Process
+(V3)
+:
+The existing multi-step flow in our app
+/web portal
+.
+2.
+Updated Iteration
+(v4.1)
+:
+A
+streamlined flow with fewer steps designed to
+reduce friction
+and time to engagement
+.
+3.
+MyChart Native Experience
+:
+The baseline
+default Epic-
+provided onboarding
+as a comparison benchmark
+.
+This study will establish baseline usability and satisfaction metrics to inform
+design decisions and ensure our onboarding experience fosters trust, accessibility
+,
+and patient engagement
+as new patients begin their health journey
+.
+Objectives
+•
+Measure
+effectiveness, efficiency
+, and satisfaction
+across three onboarding
+approaches.
+•
+Establish
+baseline usability metrics
+for future iterations.
+•
+Identify
+pain points and qualitative insights
+to guide refinement.
+•
+Compare the streamlined experience against both the current process and
+MyChart’
+s native onboarding.
+Methodology Study Type:
+•
+Moderated usability test (
+remote or in-person
+)
+•
+Unmoderated usability test (
+if Maze is available
+)
+Participants:
+15–18 participants, balanced across age, tech comfort, and patient
+status.
+Incentives:
+$120 for in-person observations and $60 for remote sessions Approach
+:
+Within-subjects (
+each participant completes all three
+experiences in
+counterbalanced order
+)
+on both the mobile app and the web experiences.
+Data Collection
+•
+Quantitative metrics:
+•
+Time to Completion
+•
+Single Ease Question (SEQ)
+after each task
+•
+System Usability Scale (SUS)
+after each flow
+•
+CSA
+T (Customer Satisfaction)
+at the end of the session
+•
+Qualitative data:
+•
+Observed behaviors, think
+-aloud comments, post
+-task interviews
+, and
+follow-ups.
+Tasks Participants will be asked to simulate signing up for and onboarding into the
+patient portal
+. Sample tasks include:
+1.
+Current Flow
+•
+Download/open the app.
+•
+Register with an email and create a password.
+•
+Verify account through email/SMS.
+•
+Connect medical records.
+2.
+Current Flow with
+Updated
+Activation
+•
+Begin onboarding with a reduced-step process (fewer screens, simplified
+verification).
+•
+Connect medical records.
+3.
+MyChart Native Flow
+•
+Access and onboard using the Epic MyChart
+experience
+.
+•
+Link records to their provider
+.
+Metrics Efficiency
+•
+Task Completion Rate (%)
+•
+Time on Task (seconds/minutes)
+•
+Error Rate (frequency and type of errors)
+Perceived Ease
+•
+SEQ (1–7 scale after each task)
+Usability
+•
+SUS (10-item standard survey after each flow)
+Satisfaction
+•
+CSA
+T (1–5 Likert scale at the end of session)
+Qualitative Feedback
+•
+Open-ended debrief questions:
+•
+What was most confusing about the onboarding process?
+•
+At what point did you feel confident/doubtful in the process?
+•
+How does this compare to your expectations for signing up for a
+healthcare service?
+•
+Out of the three
+flows,
+which one
+did you prefer
+and why
+?
+Measurement Questions Pre-
+task
+•
+Have you ever used a healthcare or patient portal app before?
+•
+What do you expect when signing up for one?
+Post
+-task
+•
+How easy or difficult was this process?
+•
+What part of the flow stood out as particularly helpful or frustrating?
+•
+Which onboarding experience would you prefer to use, and why
+?
+•
+What concerns, if any
+, would you have about using this app?
+•
+How confident do you feel that your medical information is safe in each
+version?
+or
+SUS
+Based on your onboarding experience, select a box that best describes your
+reactions:
+(
+Likert scale: "Strongly disagree -> Strongly agree
+"
+)
+•
+I think that I would like to use this website frequently
+.
+•
+I found this website unnecessarily complex
+•
+I thought this website was easy to use.
+•
+I think that I would need assistance to be able to use this website.
+•
+I found the various functions of this website were well integrated.
+•
+I thought there was too much inconsistency in this website.
+•
+I would imagine that most people would learn to use the website very
+quickly
+.
+•
+I found
+this website very cumbersome/awkward to use.
+•
+I felt very confident using this website.
+•
+I need to learn a lot of things before I can get going with this website.
+Deliverables
+1.
+Research findings deck with baseline metrics, task analysis, and key themes.
+2.
+Comparative usability benchmarks across all three flows.
+3.
+Recommendations for optimizing the onboarding experience prior to
+development.

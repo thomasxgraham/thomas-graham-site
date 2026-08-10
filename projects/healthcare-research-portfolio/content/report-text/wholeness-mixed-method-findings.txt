@@ -1,0 +1,56 @@
+Findings
+from
+Moderated/Unmoderated
+Interviews
+TL;DR
+•
+First impressions:
+Most thought Wholeness measured
+emotional well-being
+or
+offered a
+general wellness score
+,
+but many were
+unclear about its purpose
+.
+•
+What resonated:
+Participants liked the
+easy UI
+,
+reflective concept
+, and
+alignment with whole-person care
+.
+•
+What didn’t:
+Unclear purpose, technical issues,
+and
+privacy concerns
+reduced
+trust and engagement.
+•
+What to fix:
+Clarify
+why
+the feature
+matters
+, show
+how results are used
+,
+and
+strengthen
+data transparency
+.
+Overall:
+The concept inspires interest and fits AdventHealth’
+s mission
+, but it must
+communicate purpose and value more clearly to feel credible
+,
+meaningful
+, and
+ensure repeated use
+.
+Data Visualization
